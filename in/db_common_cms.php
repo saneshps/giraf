@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database ="girafcreatives";
+$database ="giraf_new_db";
 
 
 // Create connection
