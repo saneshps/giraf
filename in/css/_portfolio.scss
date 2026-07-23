@@ -1,0 +1,1116 @@
+.portfolio-area {
+    padding: 0 0 0 0;
+    overflow: hidden;
+
+    .about-home-first {
+        padding: 30px 0;
+
+        @include respond-below(md) {
+            padding: 30px 0 10px 0;
+        }
+
+        h6 {
+            color: $brand-color;
+            font-weight: 400;
+            font-size: 1.3rem !important;
+
+            @include respond-below(md) {
+                font-size: 1.2rem !important;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.1rem !important;
+            }
+
+        }
+
+        h4 {
+            color: $primary-color;
+            line-height: 40px;
+            padding-top: 14px;
+            font-size: 2rem;
+
+            @include respond-below(lg) {
+                line-height: 30px;
+            }
+
+            @include respond-below(md) {
+                line-height: 26px;
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .about-home-scnd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond-below(md) {
+            padding: 0;
+        }
+
+        p {
+            line-height: 22px;
+            color: $primary-color;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+    .col-xl-3 {
+        padding: 0 4px 0px 0;
+    }
+
+    .portfolio-boxes {
+        padding: 40px 0 20px 0;
+
+        &.hm-portfolio-bx {
+            padding: 20px 50px;
+
+            @include respond-below(sm) {
+                padding: 20px 10px;
+            }
+
+
+            .hm-portfolio-single-box {
+                padding: 50px 0 30px 0;
+
+                .portfolio-videos-area {
+                    padding: 0;
+                }
+
+                .video-1 {
+                    padding: 0 10px 20px 10px !important;
+
+                    .hero-video {
+                        top: 0;
+
+                        .pulse1 {
+                            i {
+                                padding: 24px 26px;
+                                font-size: 23px;
+                                color: #fff;
+
+                                @include respond-below(lg) {
+                                    padding: 14px 16px;
+                                    font-size: 15px;
+                                }
+
+                                @include respond-below(md) {
+                                    padding: 22px 24px;
+                                    font-size: 18px;
+                                }
+
+                                @include respond-below(sm) {
+                                    padding: 14px 16px;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .portfolio-page-box {
+                    padding: 0 10px 20px 10px;
+
+                    &.corporate {
+                        padding: 10px 10px;
+                        border-radius: 30px;
+                        border: 1px solid #363636;
+
+                        img {
+                            border-radius: 30px;
+                        }
+                    }
+                }
+
+
+                .box {
+                    border-radius: 30px;
+
+                    &:before {
+                        display: none;
+                    }
+
+                    img {
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-box {
+        background: $box-color;
+        position: relative;
+        padding: 40px 0 40px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .portfolio-p {
+            line-height: 22px;
+            color: $primary-color;
+            font-size: 15px;
+            font-weight: 300;
+            padding: 0 0 30px 0;
+            text-align: center;
+
+            @include respond-below(sm) {
+                text-align: justify;
+            }
+        }
+
+
+        .read-more {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(sm) {
+                bottom: -50px;
+            }
+
+            a {
+                font-size: 16px !important;
+                letter-spacing: 2px;
+                padding: 15px 40px !important;
+                color: $box-color;
+
+                @include respond-below(sm) {
+                    padding: 14px 25px !important;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                i {
+                    animation: move .3s ease-in-out alternate infinite;
+                    padding-left: 10px;
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+}
+
+.hm-portfolio-video {
+    position: relative;
+}
+
+.box {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.box:before {
+    content: '';
+    background-color: $brand-color;
+    height: 0;
+    width: 100%;
+    transform: translateY(-50%) rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: height 0.4s ease 0s, transform 0.3s ease 0.2s;
+}
+
+.box:hover:before {
+    opacity: 0.8;
+    height: 99.5%;
+    transform: translateY(-50.2%) rotate(0);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box .box-content {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transition: all 0.5s ease 0.1s;
+}
+
+.box:hover .box-content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.box .title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin: 0 0 2px;
+}
+
+.box .post {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    display: block;
+}
+
+.box .icon {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    transition: all 0.4s ease-out;
+}
+
+.box:hover .icon {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -110px;
+}
+
+.box .icon li {
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.box .icon li a {
+    color: #fff;
+    background-color: $brand-color;
+    font-size: 16px;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    transition: all 0.3s;
+}
+
+.box .icon li a:hover {
+    color: #f03c5b;
+    background-color: #fff;
+}
+
+@media only screen and (max-width:990px) {
+    .box {
+        margin: 0px;
+    }
+}
+
+
+// ==================================  PORTFOLIO PAGE START ===================================
+.portfolio-page-area {
+    padding: 120px 0 60px 0;
+
+    .portfolio-box {
+
+        padding: 0 60px 0 0px;
+        margin: 0 0 100px 0;
+
+        @include respond-below(xl) {
+            padding: 0 40px 0 0px;
+            margin: 0 0 50px 0;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 30px 0 0px;
+            margin: 0 0 50px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 10px 0 0px;
+            margin: 0 0 40px 0;
+        }
+
+        @include respond-below(sm) {
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        h4 {
+            color: #fff;
+            text-transform: uppercase;
+            padding: 20px 0 10px 0;
+            font-size: 1.5rem;
+        }
+
+        h6 {
+            color: #fff;
+            text-transform: capitalize;
+            padding: 0px 0 10px 0;
+        }
+
+        &.right {
+            padding: 100px 0 0 60px;
+
+            @include respond-below(xl) {
+                padding: 70px 0px 0 40px;
+                margin: 0 0 30px 0;
+            }
+
+            @include respond-below(lg) {
+                padding: 70px 0px 0 30px;
+                margin: 0 0 30px 0;
+            }
+
+            @include respond-below(md) {
+                padding: 50px 0px 0 10px;
+                margin: 0 0 40px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 0px 0 0px;
+                margin: 0 0 30px 0;
+            }
+
+
+        }
+
+
+    }
+}
+
+// ==================================  PORTFOLIO PAGE END =====================================
+
+
+
+// ==================================  PORTFOLIO FULL START =====================================
+
+.portfolio-full-area {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .col-md-12 {
+        padding: 0;
+
+    }
+
+}
+
+// ==================================  PORTFOLIO FULL END =====================================
+
+
+// ==================================  PORTFOLIO VIDEOS ARE START =====================================
+.portfolio-videos-area {
+
+
+    .video-1 {
+        padding: 20px;
+
+        @include respond-below(sm) {
+            padding: 0px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+        }
+
+        .hero-video {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            @include respond-below(sm) {
+                top: -15%;
+            }
+
+            .video-play-btn1 {
+                left: 0px;
+                color: #FFFFFF;
+                text-decoration: none;
+                transform: scale(1.25);
+                animation: zoomInUp 1s linear infinite alternate;
+                -webkit-animation: zoomInUp 1s linear infinite alternate;
+
+                i {
+                    font-size: 40px;
+                    color: #5a5a5a;
+
+                    @include respond-below(lg) {
+                        font-size: 30px;
+                    }
+
+                    @include respond-below(sm) {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .pulse1 {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                i {
+                    background: $brand-color;
+                    padding: 30px 35px 30px 35px;
+                    border-radius: 50%;
+                    animation: animate-pulse 3s linear infinite;
+
+                    @include respond-below(lg) {
+                        padding: 20px 23px 20px 23px;
+                    }
+
+                    @include respond-below(sm) {
+                        padding: 13px 14px;
+                        font-size: 14px !important;
+                    }
+
+                    @include respond-below(xs) {
+                        padding: 13px 14px;
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+
+        &.phot-serv {
+            margin: 0 0 100px 0;
+
+            @include respond-below(lg) {
+                margin: 0 0 20px 0;
+            }
+
+            @include respond-below(md) {
+                margin: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                margin: 0 0 50px 0;
+            }
+
+            @include respond-below(xs) {
+                margin: 0 0 50px 0;
+            }
+        }
+    }
+
+
+}
+
+// ==================================  PORTFOLIO VIDEOS ARE END =====================================
+
+
+// ==================================  LETS TALK ARE START =====================================
+
+.lets-talk-area {
+    padding: 0 0 60px 0;
+
+    @include respond-below(md) {
+        padding: 30px 0;
+    }
+
+    .main-box {
+        background: $box-color;
+        position: relative;
+        padding: 40px 0;
+
+        @include respond-below(lg) {
+            padding: 50px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .lets-talk-first {
+            padding: 30px 0;
+
+            @include respond-below(md) {
+                padding: 30px 0 10px 0;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 6rem !important;
+                font-family: Roboto serif !important;
+                color: transparent;
+                margin-right: 80px;
+                position: relative;
+                top: -2px;
+                transition: all .45s;
+                -webkit-text-stroke-color: #ffffffb8;
+                -webkit-text-stroke-width: 1px;
+
+                @include respond-below(lg) {
+                    font-size: 5rem !important;
+                }
+
+                @include respond-below(md) {
+                    font-size: 5rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 3rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $brand-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 1.5rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+
+
+        }
+
+        .lets-talk-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 0 20px 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        .read-more {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            right: 0;
+
+            @include respond-below(sm) {
+                bottom: -50px;
+            }
+
+            a {
+                font-size: 16px !important;
+                letter-spacing: 2px;
+                padding: 15px 40px !important;
+                color: $box-color;
+
+                @include respond-below(sm) {
+                    padding: 14px 25px !important;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                i {
+                    animation: move .3s ease-in-out alternate infinite;
+                    padding-left: 10px;
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+// ==================================  LETS TALK ARE END =====================================
+
+
+
+
+// ==================================  PORTFOLIO PAGE BOXES AREA START =====================================
+.portfolio-page-boxes {
+    padding: 120px 0 100px 0;
+
+    @include respond-below(xl) {
+        padding: 100px 0 80px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 80px 0 80px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 70px 0 60px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 50px 0 40px 0;
+    }
+
+
+
+    .box {
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .box:before {
+        display: none !important;
+    }
+
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .box:hover:before {
+        opacity: 1;
+        height: 98.5%;
+        transform: translateY(-50%) rotate(0);
+        z-index: 99;
+        border-radius: 8px;
+    }
+
+
+
+    @media only screen and (max-width:990px) {
+        .box {
+            margin: 0;
+        }
+    }
+
+    h4 {
+        margin: 5px 0 10px 0;
+
+        a {
+
+
+            color: #fff !important;
+            margin: 10px 0 10px 0;
+            position: relative;
+            z-index: 98;
+            font-size: 22px !important;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            @include respond-below(lg) {
+                font-size: 1.2rem !important;
+            }
+
+            @include respond-below(md) {
+                padding: 0 10px;
+            }
+
+            @include respond-below(sm) {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    h6 {
+
+        a {
+            color: $light-gray !important;
+            font-size: 1rem;
+            font-weight: 300;
+
+            @include respond-below(md) {
+                padding: 0 10px;
+            }
+
+            @include respond-below(sm) {
+                text-align: center;
+            }
+
+            &:hover {
+                color: $light-gray;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .portfolio-page-box {
+        padding: 0 20px 60px 20px;
+
+
+        @include respond-below(xl) {
+            padding: 0 15px 40px 15px;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 10px 40px 10px;
+        }
+
+        .box {
+            img {
+                border-radius: 8px;
+            }
+        }
+
+        &.corporate {
+            border: 1px solid #363636;
+            border-radius: 10px;
+            height: 100%;
+
+            @include respond-below(md) {
+                margin: 0 0 30px 0;
+            }
+
+            @include respond-below(sm) {
+                height: auto;
+            }
+        }
+
+        .flag-container {
+            height: auto;
+            overflow: hidden;
+            perspective: 70px;
+            position: absolute;
+            bottom: 38px;
+            right: 20px;
+
+            @include respond-below(lg) {
+                right: 10px;
+            }
+
+            &.video-flag {
+                right: 40px;
+                bottom: 75px;
+
+                @include respond-below(xl) {
+                    right: 30px;
+                    bottom: 30px;
+                }
+
+                @include respond-below(lg) {
+                    right: 30px;
+                    bottom: 40px;
+                }
+
+                @include respond-below(sm) {
+                    right: 10px;
+                    bottom: 38px;
+                }
+
+                .flag {
+                    width: 50px;
+                    animation: wave 2s infinite linear;
+                    transform-origin: left center;
+                    border-radius: 0;
+
+                    @include respond-below(xl) {
+                        width: 38px;
+                    }
+
+                    @include respond-below(lg) {
+                        width: 35px;
+                    }
+
+                    @include respond-below(sm) {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        .flag {
+            width: 45px;
+            animation: wave 2s infinite linear;
+            transform-origin: left center;
+            border-radius: 0;
+
+            @include respond-below(xl) {
+                width: 40px;
+            }
+
+            @include respond-below(lg) {
+                width: 35px;
+            }
+
+            @include respond-below(sm) {
+                width: 35px;
+            }
+        }
+
+    }
+
+
+
+
+    .title {
+        font-family: inherit;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: inherit;
+        color: #252b46;
+        text-transform: capitalize;
+    }
+
+    .paragraph {
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: inherit;
+        max-width: 100%;
+        margin-top: 0.5rem;
+        color: #9194a1;
+    }
+
+    .tab {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .tab-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        transition: all 0.3s ease;
+
+
+        @include respond-below(lg) {
+            flex-direction: unset;
+            flex-wrap: wrap;
+            width: 90%;
+            justify-content: flex-start;
+        }
+
+        @include respond-below(md) {
+            flex-direction: unset;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+
+        @include respond-below(sm) {
+            flex-direction: row;
+        }
+
+        @include respond-below(xs) {
+            flex-direction: row;
+        }
+    }
+
+    .tab-menu-link {
+
+        position: relative;
+        overflow: hidden;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: inherit;
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        border: none;
+        color: #000000;
+        background: #F9B217;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        margin: 0 10px;
+
+        @include respond-below(xl) {
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        @include respond-below(lg) {
+            margin: 0 5px 5px 5px;
+            width: auto;
+            padding: 10px 20px;
+        }
+
+
+
+        @include respond-below(md) {
+
+            margin: 0 5px 10px 5px;
+        }
+
+        @include respond-below(sm) {
+
+            margin: 0 5px 5px 0px;
+        }
+
+        @include respond-below(xs) {
+
+            margin: 0 5px 5px 0px;
+        }
+    }
+
+    .tab-menu-link::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+
+    .tab-menu-link.is-active {
+        bottom: 0px;
+        z-index: 0;
+        overflow: hidden;
+        // border-bottom: 2.5px solid $brand-color;
+        color: #252b46;
+        background: #ffffff;
+    }
+
+    .tab-bar {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .tab-bar-content {
+        display: none;
+        width: 100%;
+        min-height: 10rem;
+        transition: all 0.3s ease;
+    }
+
+    .tab-bar-content.is-active {
+        display: flex;
+        margin: 50px 0 0 0;
+    }
+
+    .main-box {
+        background: #000000;
+        position: relative;
+        padding: 20px 0;
+        border-radius: 12px;
+    }
+
+}
+
+// ==================================  PORTFOLIO PAGE BOXES AREA END =====================================
+
+// ==================================  PORTFOLIO DETAILS PAGE AREA START ==================================
+.portfolio-details-area {
+    padding: 80px 0;
+
+
+    .portfolio-details-first {
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .portfolio-details-second {
+
+        padding: 0 80px;
+
+        @include respond-below(lg) {
+            padding: 0 20px;
+        }
+
+        @include respond-below(md) {
+            margin-top: 30px;
+        }
+
+
+        h2 {
+            font-size: 3rem;
+            color: #fff;
+            margin: 0 0 20px 0;
+
+
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin: 0 0 10px 0;
+        }
+
+        h6 {
+            margin: 0 0 20px 0;
+
+            a {
+                font-weight: 300;
+                color: #f9b217;
+                text-decoration: none;
+            }
+        }
+
+        p {
+            line-height: 26px;
+            text-align: justify;
+            color: #e6e6e6;
+            font-weight: 300;
+            margin: 0 0 15px 0;
+        }
+    }
+}
+
+// ==================================  PORTFOLIO DETAILS PAGE AREA END =====================================

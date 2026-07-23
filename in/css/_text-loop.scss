@@ -1,0 +1,316 @@
+.text-loop-area {
+  padding: 50px 0 40px 0;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  flex-direction: column;
+  font-size: 6rem;
+  -webkit-text-stroke: 1px $light-gray;
+  -webkit-text-fill-color: black;
+  -webkit-animation: fill 0.5s infinite alternate;
+  width: 100vw;
+  overflow-x: hidden;
+  justify-content: center;
+
+  @include respond-below(md) {
+    padding: 30px 0;
+    margin: 30px 0 0 0;
+  }
+
+  @include respond-below(sm) {
+    padding: 30px 0;
+    margin: 30px 0 0 0;
+  }
+
+
+  .loop-overlay {
+    height: 300px;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background: #020024;
+    background: linear-gradient(90deg, #020024b5 0%, rgb(10 10 11) 0%, rgba(255, 255, 255, 0) 49%, #0a0a0b 100%) !important;
+    left: 0;
+
+    @include respond-below(sm) {
+      background: linear-gradient(90deg, #02002480 0%, rgb(10 10 11 / 47%) 0%, rgba(255, 255, 255, 0) 49%, #0a0a0b70 100%) !important;
+    }
+
+  }
+
+  //  ============= Text loop =======
+
+  .l {
+
+    width: fit-content;
+    white-space: nowrap;
+    animation: example 50s linear 0.5s infinite;
+    color: $light-gray;
+    font-size: 6.5rem;
+    -webkit-text-fill-color: #C5C5C5;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    font-family: Roboto serif;
+
+    @include respond-below(xl) {
+      font-size: 5rem;
+      margin: 0 0 25px 0;
+
+    }
+
+    @include respond-below(lg) {
+      font-size: 3.5rem;
+      margin: 0 0 25px 0;
+
+    }
+
+    @include respond-below(md) {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+
+    }
+
+    @include respond-below(sm) {
+      font-size: 2rem;
+      margin: 0 0 20px 0;
+
+    }
+  }
+
+  .r {
+    width: fit-content;
+    white-space: nowrap;
+    animation: example2 50s linear 0.8s infinite;
+    color: #fff;
+    font-size: 6.5rem;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    font-family: Roboto serif;
+
+    @include respond-below(lg) {
+      font-size: 3.5rem;
+      margin: 0 0 25px 0;
+    }
+
+    @include respond-below(md) {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+    }
+
+    @include respond-below(sm) {
+      font-size: 2rem;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  @keyframes example2 {
+    0% {
+      margin-left: 150%;
+      opacity: 100%;
+
+    }
+
+    10% {
+      opacity: 100%;
+    }
+
+    90% {
+      opacity: 100%;
+
+    }
+
+    100% {
+      margin-left: -190%;
+      opacity: 0%;
+    }
+  }
+
+  @keyframes example {
+    0% {
+      margin-left: 190%;
+      opacity: 100%;
+    }
+
+    10% {
+      opacity: 100%;
+    }
+
+    90% {
+      opacity: 100%;
+
+    }
+
+    100% {
+      margin-left: -210%;
+      opacity: 0%;
+    }
+  }
+
+  //  ============= Text loop =======
+
+  .loop-overlay {
+
+    @include respond-below(lg) {
+      height: 210px;
+    }
+
+    @include respond-below(md) {
+      height: 200px;
+    }
+
+    @include respond-below(sm) {
+      height: 100px;
+    }
+  }
+
+}
+
+
+
+
+@media only screen and (min-width : 1300px) and (max-width : 1400px) {
+
+  @keyframes example {
+    0% {
+      margin-left: 220%;
+
+    }
+
+    100% {
+      margin-left: -220%;
+    }
+  }
+
+
+  @keyframes example2 {
+    0% {
+      margin-right: 320%;
+
+    }
+
+    100% {
+      margin-right: -320%;
+
+    }
+
+  }
+
+
+}
+
+
+@media only screen and (min-width : 1080px) and (max-width : 1299px) {
+
+  @keyframes example {
+    0% {
+      margin-left: 280%;
+
+    }
+
+    100% {
+      margin-left: -220%;
+    }
+  }
+
+  @keyframes example2 {
+    0% {
+      margin-right: 320%;
+
+    }
+
+    100% {
+      margin-right: -320%;
+
+    }
+
+  }
+
+
+}
+
+@media only screen and (min-width : 992px) and (max-width :1079px) {
+
+  @keyframes example {
+    0% {
+      margin-left: 220%;
+
+    }
+
+    100% {
+      margin-left: -200%;
+    }
+  }
+
+  @keyframes example2 {
+    0% {
+      margin-right: 200%;
+
+    }
+
+    100% {
+      margin-right: -200%;
+
+    }
+
+  }
+
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+  @keyframes example {
+    0% {
+      margin-left: 260%;
+
+    }
+
+    100% {
+      margin-left: -230%;
+    }
+  }
+
+  @keyframes example2 {
+    0% {
+      margin-right: 250%;
+
+    }
+
+    100% {
+      margin-right: -250%;
+
+    }
+
+  }
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px) {
+
+  @keyframes example {
+    0% {
+      margin-left: 340%;
+
+    }
+
+    100% {
+      margin-left: -330%;
+    }
+  }
+
+  @keyframes example2 {
+    0% {
+      margin-right: 350%;
+
+    }
+
+    100% {
+      margin-right: -330%;
+
+    }
+
+  }
+
+
+}

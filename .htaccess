@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Skip if real file or folder exists
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Blog details for IN and DE
+RewriteRule ^(in|de)/blog-details/([A-Za-z0-9-]+)/?$ $1/blog-details.php?slug=$2 [L,QSA]
+
+# Generic country page rule
+RewriteRule ^(in|de)/([^/]+)/?$ $1/$2.php [L,QSA]
+
+</IfModule>

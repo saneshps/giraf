@@ -1,0 +1,88 @@
+.case-study-area {
+
+    padding: 120px 0 100px 0;
+
+    @include respond-below(xl) {
+        padding: 120px 0 100px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 100px 0 80px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 80px 0 80px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 60px 0;
+    }
+
+    @include respond-below(xs) {
+        padding: 60px 0;
+    }
+
+    h2 {
+        color: #b9b9b9;
+        margin: 0px 0 70px 0;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .case-study-boxes {
+
+        margin: 0px 0 50px 0;
+
+
+        .case-study-image {
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .case-study-content {
+            h4 {
+                color: #b9b9b9;
+                margin: 0px 0 10px 0;
+            }
+
+            p {
+                color: #cfcfcf;
+                margin: 0px 0 30px 0;
+                line-height: 30px;
+            }
+
+            ul {
+
+                margin: 0 0 20px 0;
+
+                li {
+                    list-style-type: none;
+                    line-height: 32px;
+                    color: #b9b9b9;
+                    position: relative;
+                    padding-left: 36px;
+
+                    i {
+                        position: absolute;
+                        margin-top: 6px;
+                        left: 10px;
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    .read-more
+    {
+        a 
+        {
+            text-transform: lowercase !important;
+        }
+    }
+}

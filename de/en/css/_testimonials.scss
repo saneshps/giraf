@@ -1,0 +1,380 @@
+// ===============================  TEAM HOME START
+.testimonials-home-area {
+    padding: 130px 0 0px 0;
+    display: none;
+
+    @include respond-below(md) {
+        padding: 30px 0;
+    }
+
+    .main-box {
+
+        background: #fff;
+        position: relative;
+        padding: 0;
+        padding: 0;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+
+        @include respond-below(lg) {
+            padding: 60px 0 0px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 50px 0 0px 0;
+        }
+
+        .testimonials-text {
+            padding: 80px 30px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @include respond-below(lg) {
+                padding: 40px 0;
+                justify-content: flex-start;
+            }
+
+            @include respond-below(md) {
+                padding: 60px 0 0 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 20px 30px 20px;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 45px;
+                padding-top: 14px;
+                font-size: 2.4rem;
+                width: 100%;
+
+                @include respond-below(xl) {
+                    line-height: 33px;
+                }
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                    width: 90%;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                    width: 100%;
+                }
+
+                @include respond-below(sm) {
+                    width: 100%;
+                }
+            }
+
+            .read-more {
+                position: relative;
+                top: 40px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 0;
+                margin: 0;
+
+                @include respond-below(xl) {
+                    top: 27px;
+                }
+
+                @include respond-below(md) {
+                    display: block;
+                    top: 100px;
+                    left: -7px;
+                }
+
+                @include respond-below(sm) {
+                    top: 40px;
+                }
+
+                a {
+                    font-size: 16px !important;
+                    letter-spacing: 2px;
+                    padding: 15px 40px !important;
+                    color: $box-color;
+                    margin: 0;
+
+                    @include respond-below(sm) {
+                        padding: 14px 25px !important;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+
+                    i {
+                        animation: move .3s ease-in-out alternate infinite;
+                        padding-left: 10px;
+                    }
+                }
+
+
+            }
+        }
+
+
+        .testimonials-pic {
+            padding: 40px 0 0 0;
+
+            @include respond-below(sm) {
+                padding: 0 0 30px 0;
+            }
+
+            .demo {}
+
+            .testimonial .pic {
+                width: 30%;
+                padding: 0;
+                margin: 0 6% 0 0%;
+                float: left;
+                position: relative;
+                z-index: 1;
+
+                @include respond-below(xl) {
+                    width: 220px;
+                    margin: 0 0% 0 0%;
+                }
+
+                @include respond-below(sm) {
+                    width: 80%;
+                    padding: 0;
+                }
+            }
+
+            .testimonial .pic:before,
+            .testimonial .pic:after {
+                content: "";
+                width: 130px;
+                height: 150px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .testimonial .pic:before {
+                top: 0;
+                right: -20px;
+            }
+
+            .testimonial .pic:after {
+                bottom: 0;
+                left: -20px;
+            }
+
+            .testimonial .pic img {
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+            }
+
+            .testimonial .testimonial-content {
+                width: 62%;
+                float: right;
+
+                @include respond-below(lg) {
+                    width: 58%;
+                }
+
+            }
+
+            .testimonial .title {
+                display: block;
+                font-size: 18px !important;
+                font-weight: 600;
+                color: $brand-color;
+                margin: 0;
+                text-transform: uppercase;
+                padding-top: 45px;
+                padding-left: 15px;
+
+                @include respond-below(lg) {
+                    padding-top: 0px;
+                }
+
+                @include respond-below(sm) {
+                    padding-top: 0px;
+                }
+            }
+
+            .testimonial .post {
+                display: block;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 27px;
+                color: #333;
+                text-transform: capitalize;
+                margin-bottom: 25px;
+                padding-left: 15px;
+            }
+
+            .testimonial .description {
+                font-size: 16px;
+                color: #333;
+                padding: 0 15px;
+                margin: 0 0 20px 0;
+                position: relative;
+                font-weight: 300;
+                line-height: 22px;
+            }
+
+            .testimonial .description:before,
+            .testimonial .description:after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 17px;
+                color: $brand-color;
+                position: relative;
+            }
+
+            .testimonial .description:before {
+                content: "\f10d";
+                margin-right: 5px;
+                top: 0;
+                left: 0;
+            }
+
+            .testimonial .description:after {
+                content: "\f10e";
+                margin-left: 5px;
+                position: relative;
+                bottom: 0;
+                right: 0;
+            }
+
+            .owl-theme .owl-controls {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                position: relative;
+                bottom: 0;
+                right: 0;
+
+                @include respond-below(xl) {
+                    left: 17px;
+                }
+
+                @include respond-below(lg) {
+                    left: 52px;
+                    top: 20px;
+                }
+            }
+
+            .owl-theme .owl-controls .owl-buttons div {
+                width: 70px;
+                height: 90px;
+                line-height: 50px;
+                background: transparent;
+                border-radius: 0;
+                opacity: 1;
+                position: relative;
+                margin: 0 -25px 0 0;
+
+                @include respond-below(lg) {
+                    margin: 0 -30px 0 0;
+                }
+
+                @include respond-below(md) {
+                    margin: 20px -77px 0 47px;
+                }
+            }
+
+            .owl-prev:before,
+            .owl-next:before {
+                content: "\f104";
+                font-family: "fontawesome";
+                font-size: 35px;
+                font-weight: normal;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                left: -38px;
+                background: #f9b217;
+                padding: 0 9px;
+
+                @include respond-below(lg) {
+                    font-size: 24px;
+                }
+            }
+
+            .owl-next:before {
+                content: "\f105";
+            }
+
+
+
+            @media only screen and (max-width: 990px) {
+                .testimonial {
+                    text-align: center;
+                }
+
+                .testimonial .pic {
+                    width: 200px;
+                    margin: 0 auto;
+                    float: none;
+                }
+
+                .testimonial .pic:before,
+                .testimonial .pic:after {
+                    width: 80px;
+                    height: 100px;
+                }
+
+                .testimonial .testimonial-content {
+                    width: 100%;
+                    float: none;
+                }
+
+                .testimonial .title {
+                    padding: 15px 0 0 0;
+                }
+
+                .testimonial .post {
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+
+                .owl-theme .owl-controls {
+                    width: 100%;
+                    position: static;
+                    text-align: center;
+                }
+
+                .owl-theme .owl-controls .owl-buttons div {
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+}
+
+// ===============================  TEAM HOME END

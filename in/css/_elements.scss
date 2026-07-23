@@ -1,0 +1,11 @@
+h2 {
+    font-size: 3rem;
+
+    @include respond-below(sm) {
+        font-size: 1.8rem;
+    }
+
+    @include respond-below(md) {
+        font-size: 2rem;
+    }
+}

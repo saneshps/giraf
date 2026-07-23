@@ -1,0 +1,88 @@
+//  ========================= TRUST AREA START =========================
+.trust-area {
+
+    @include respond-below(md) {
+        padding: 30px 0;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 30px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .trust-first {
+
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding: 14px 40px 0 0;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    padding: 14px 20px 0 0;
+                }
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                    padding: 14px 20px 0 0;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .trust-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @include respond-below(md) {
+                padding: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 0 20px 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+                margin: 0 0 10px 0;
+            }
+        }
+
+
+    }
+
+}
+
+//  ========================= TRUST AREA END =========================

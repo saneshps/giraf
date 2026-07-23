@@ -1,0 +1,157 @@
+h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 600;
+
+    @include respond-below(xxl) {
+        font-size: 4.5rem !important;
+    }
+
+    @include respond-below(xl) {
+        font-size: 4.2rem !important;
+    }
+
+    @include respond-below(lg) {
+        font-size: 3.5rem !important;
+    }
+
+    @include respond-below(md) {
+        font-size: 2.9rem !important;
+    }
+
+    @include respond-below(sm) {
+        font-size: 2.3rem !important;
+    }
+}
+
+h2 {
+    font-size: 3.2rem !important;
+    color: #fff;
+    font-weight: 600;
+
+    @include respond-below(xxl) {
+        font-size: 3.2rem !important;
+    }
+
+    @include respond-below(xl) {
+        font-size: 3rem !important;
+    }
+
+    @include respond-below(lg) {
+        font-size: 2.5rem !important;
+    }
+
+    @include respond-below(md) {
+        font-size: 2.1rem !important;
+    }
+
+    @include respond-below(sm) {
+        font-size: 1.8rem !important;
+    }
+}
+
+h3 {
+    font-size: 3.2rem !important;
+    color: #fff;
+    font-weight: 600;
+
+    @include respond-below(xxl) {
+        font-size: 3rem !important;
+    }
+
+    @include respond-below(xl) {
+        font-size: 2.8rem !important;
+    }
+
+    @include respond-below(lg) {
+        font-size: 2.2rem !important;
+    }
+
+    @include respond-below(md) {
+        font-size: 1.9rem !important;
+    }
+
+    @include respond-below(sm) {
+        font-size: 1.5rem !important;
+    }
+}
+
+h4 {
+    font-size: 2rem !important;
+    color: #fff;
+    font-weight: 500;
+
+    @include respond-below(xxl) {
+        font-size: 2rem !important;
+    }
+
+    @include respond-below(xl) {
+        font-size: 2rem !important;
+    }
+
+    @include respond-below(lg) {
+        font-size: 1.8rem !important;
+        line-height: 34px;
+    }
+
+    @include respond-below(md) {
+        font-size: 1.8rem !important;
+        line-height: 34px !important;
+    }
+
+    @include respond-below(sm) {
+        font-size: 1.5rem !important;
+        line-height: 28px !important;
+    }
+}
+
+h5 {
+    font-size: 1.3rem !important;
+    color: #fff;
+    font-weight: 500;
+
+    @include respond-below(xxl) {
+        font-size: 1.3rem !important;
+    }
+
+    @include respond-below(xl) {
+        font-size: 1.1rem !important;
+    }
+
+    @include respond-below(lg) {
+        font-size: 1.1rem !important;
+    }
+
+    @include respond-below(md) {
+        font-size: 1rem !important;
+    }
+
+    @include respond-below(sm) {
+        font-size: 1rem !important;
+    }
+}
+
+h6 {
+    font-size: 1rem !important;
+    color: #fff;
+
+    @include respond-below(xxl) {
+        font-size: 1rem !important;
+    }
+
+    @include respond-below(xl) {
+        font-size: 1rem !important;
+    }
+
+    @include respond-below(lg) {
+        font-size: 1rem !important;
+    }
+
+    @include respond-below(md) {
+        font-size: 15px !important;
+    }
+
+    @include respond-below(sm) {
+        font-size: 14px !important;
+    }
+}

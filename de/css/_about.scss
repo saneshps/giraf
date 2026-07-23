@@ -1,0 +1,398 @@
+//  ========================= ABOUT HOME AREA START =========================
+.about-home-area {
+    padding: 100px 0;
+
+    @include respond-below(md) {
+        padding: 30px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 30px 0 60px 0;
+    }
+
+    .main-box {
+        background: #fff;
+        position: relative;
+        padding: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        @include respond-below(sm) {
+            padding: 0px 20px 25px 20px;
+            border-radius: 30px;
+        }
+
+        .about-home-first {
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @include respond-below(md) {
+                padding: 30px 0 10px 0;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 34px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .about-home-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 0 20px 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        .read-more {
+            position: absolute;
+            bottom: -30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            right: 0;
+
+            @include respond-below(sm) {
+                bottom: -30px;
+            }
+
+            a {
+                font-size: 16px !important;
+                letter-spacing: 2px;
+                padding: 15px 40px !important;
+                color: #000;
+
+                @include respond-below(sm) {
+                    padding: 14px 25px !important;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                i {
+                    animation: move .3s ease-in-out alternate infinite;
+                    padding-left: 10px;
+                }
+            }
+
+
+        }
+
+    }
+
+    .felix-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+
+            @include respond-below(lg) {
+                width: 150px;
+            }
+
+            @include respond-below(sm) {
+                width: 130px;
+            }
+        }
+
+        h4 {
+            font-size: 28px !important;
+            margin: 10px 0 10px 0;
+
+            @include respond-below(lg) {
+                font-size: 24px !important;
+                margin: 10px 0 5px 0;
+            }
+
+            @include respond-below(sm) {
+                font-size: 22px !important;
+                margin: 10px 0 5px 0;
+            }
+        }
+
+        h5 {
+
+
+            a {
+                font-size: 18px !important;
+                color: #000;
+
+                &:hover {
+                    color: $brand-color;
+                    text-decoration: none;
+                }
+            }
+
+            @include respond-below(sm) {
+                margin: 0px 0 5px 0;
+            }
+        }
+    }
+
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(3px);
+    }
+}
+
+//  ========================= ABOUT HOME AREA END =========================
+
+
+//  ========================= ABOUT PAGE AREA START =========================
+.about-area {
+
+    .main-box {
+        padding: 70px 0 50px 0;
+        position: relative;
+
+        @include respond-below(lg) {
+            padding: 50px 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 50px 0 40px 0;
+        }
+
+        @include respond-below(sm) {
+            padding: 30px 0 40px 0;
+        }
+
+
+
+        .about-first {
+            padding: 0 100px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @include respond-below(xl) {
+                padding: 0 40px 0 0;
+            }
+
+            @include respond-below(lg) {
+                padding: 0;
+                margin: 0 0 80px 0;
+            }
+
+            @include respond-below(md) {
+                padding: 20px 0 0 0;
+                margin: 0 0 40px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 30px 10px 0 10px;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.2rem !important;
+                }
+
+            }
+
+            h4 {
+                color: #333;
+                line-height: 40px;
+                padding: 20px 0;
+                font-size: 2.4rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 34px;
+                    padding-top: 8px;
+                }
+            }
+
+            p {
+                color: #333;
+                line-height: 26px;
+                text-align: justify;
+                margin: 0 0 10px 0;
+            }
+        }
+
+        .about-second {
+            .about-second-image-first {
+                margin-bottom: 30px;
+
+                img {
+                    width: 98%;
+                    object-fit: cover;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .about-second-image-second {
+                .about-second-first-image {
+                    margin-bottom: 30px;
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+
+                .about-second-image {
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+//  ========================= ABOUT PAGE AREA END =========================
+
+//  ========================= felix kistler AREA start =======================
+.Felix-kistler {
+    background: #fff;
+    padding: 0;
+
+    @include respond-below(lg) {
+        margin: 40px 0 0 0;
+    }
+
+    @include respond-below(md) {
+        margin: 40px 0 0 0;
+    }
+
+    @include respond-below(sm) {
+        margin: 0;
+    }
+
+    .main-box {
+
+        .felix-description {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            h4 {
+                color: #333;
+                margin: 0 0 10px 0;
+            }
+
+            h5 {
+                color: #333;
+                margin: 0 0 10px 0;
+            }
+
+            h6 {
+                padding: 25px 25px;
+                margin: 20px 0;
+                border: 1px solid #ccc;
+                border-radius: 12px;
+                line-height: 28px;
+                font-style: italic;
+                font-weight: 500;
+            }
+
+            p {
+                color: #333;
+                line-height: 28px;
+            }
+        }
+
+        // .felix-image {
+
+        //     img {
+        //         width: 85%;
+
+        //         @include respond-below(md) {
+        //             width: 55%;
+        //             margin: 0 0 40px 0;
+        //         }
+
+        //         @include respond-below(sm) {
+        //             width: 50%;
+        //         }
+        //     }
+
+
+        // }
+    }
+
+
+}
+
+//  ========================= felix kistler AREA END =========================

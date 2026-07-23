@@ -1,0 +1,2545 @@
+// ==================================   SERVICES AREA START
+.services-home-area {
+    padding: 30px 0 60px 0;
+    overflow: hidden;
+
+
+    @include respond-below(md) {
+        padding: 30px 0;
+    }
+
+    @include respond-below(sm) {
+        margin: 0;
+        padding: 0 0 70px 0;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 40px 0 100px 0;
+        border-radius: 30px;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .services-home-first {
+            padding: 30px 0;
+
+            @include respond-below(md) {
+                padding: 30px 0 10px 0;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: #333;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .services-home-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        .read-more {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            right: 0;
+
+            @include respond-below(sm) {
+                bottom: -90px;
+            }
+
+            a {
+                font-size: 16px !important;
+                letter-spacing: 2px;
+                padding: 15px 40px !important;
+                color: #000;
+
+                @include respond-below(sm) {
+                    padding: 14px 25px !important;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                i {
+                    animation: move .3s ease-in-out alternate infinite;
+                    padding-left: 10px;
+                }
+
+                &.btn {
+                    position: relative;
+
+                    &::before {
+                        border: 2px solid #333;
+                    }
+                }
+            }
+
+
+        }
+
+        .services-home {
+            justify-content: flex-start;
+            align-items: center;
+            display: flex;
+            padding: 0 0 60px 0;
+            position: relative;
+
+            @include respond-below(sm) {
+                padding: 20px 0 30px 0;
+            }
+
+            ul {
+                li {
+                    h2 {
+                        font-size: 3.5rem !important;
+                        text-align: left;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        text-transform: capitalize;
+                        line-height: 70px;
+
+                        @include respond-below(xl) {
+                            font-size: 3.5rem !important;
+                            line-height: 70px;
+                        }
+
+                        @include respond-below(lg) {
+                            font-size: 3rem !important;
+                            line-height: 60px;
+                        }
+
+                        @include respond-below(md) {
+                            font-size: 3rem !important;
+                            line-height: 58px;
+                        }
+
+                        @include respond-below(sm) {
+                            font-size: 1.8rem !important;
+                            line-height: 38px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #333;
+
+                            &:hover {
+                                text-decoration: none;
+                                color: $brand-color;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .serv-giraf {
+                position: absolute;
+                right: -80px;
+                top: -110px;
+
+                @include respond-below(xl) {
+                    right: -110px;
+                    top: -70px;
+                    width: 70%;
+
+                }
+
+                @include respond-below(lg) {
+                    right: -110px;
+                    top: -70px;
+                    width: 70%;
+
+                }
+
+                @include respond-below(md) {
+                    right: -110px;
+                    top: 0px;
+                    width: 70%;
+
+                }
+
+                @include respond-below(sm) {
+                    right: -10px;
+                    top: 0;
+                    width: 74%;
+
+                }
+            }
+        }
+
+    }
+
+}
+
+// ==================================   SERVICES HOME AREA END
+
+
+
+// ==================================   SERVICES PAGE TEXT START
+
+.services-text-area {
+    padding: 100px 0 30px 0;
+
+    @include respond-below(md) {
+        padding: 30px 0;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 20px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .box-commn {
+            @include respond-below(sm) {
+                padding: 30px 15px 10px 15px;
+            }
+        }
+
+        .services-text-first {
+
+
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+                text-transform: uppercase;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .services-text-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 0 20px 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+
+
+    }
+
+}
+
+// ==================================   SERVICES PAGE TEXT END
+
+
+
+// ==================================   SERVICES PAGE LIST AREA STRAT
+.services-list-area {
+
+
+    .services-list {
+        margin: 0 auto;
+
+        .services-list-box {
+            margin: 0 0 0px 0;
+
+            @include respond-below(lg) {
+                margin: 0 0 10px 0;
+            }
+
+            @include respond-below(md) {
+                margin: 0 0 10px 0;
+            }
+
+            @include respond-below(sm) {
+                margin: 0 0 10px 0;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 6rem !important;
+                font-family: Roboto serif !important;
+                color: #333;
+                margin-right: 80px;
+                position: relative;
+                top: -2px;
+                transition: all 0.45s;
+                -webkit-text-stroke-color: rgba(255, 255, 255, 0.7215686275);
+                -webkit-text-stroke-width: 1px;
+                position: relative;
+
+                @include respond-below(xl) {
+                    font-size: 5rem !important;
+                }
+
+                @include respond-below(lg) {
+                    font-size: 4rem !important;
+                }
+
+                @include respond-below(md) {
+                    font-size: 4rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 5rem !important;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: -5px;
+                    left: 0;
+                    background: rgba(255, 255, 255, 0.7215686275);
+                    height: 1px;
+                    width: 350px;
+
+                    @include respond-below(xl) {
+                        width: 300px;
+                    }
+
+                    @include respond-below(lg) {
+                        width: 250px;
+                    }
+
+                    @include respond-below(md) {
+                        width: 200px;
+                    }
+
+                    @include respond-below(sm) {
+                        width: 300px;
+                    }
+                }
+            }
+
+            h2 {
+                color: #333;
+                line-height: 42px;
+                font-size: 2.2rem !important;
+                padding: 20px 0 10px 0;
+                margin: 0 0 5px 0;
+
+                @include respond-below(xl) {
+                    font-size: 2rem !important;
+                    line-height: 40px;
+                }
+
+                @include respond-below(lg) {
+                    font-size: 1.8rem !important;
+                    padding: 18px 0 8px 0;
+                    line-height: 35px;
+                }
+
+                @include respond-below(md) {
+                    font-size: 2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.5rem !important;
+                    padding: 15px 0 3px 0;
+                }
+
+            }
+
+            p {
+                color: #333;
+                line-height: 25px;
+                padding: 0;
+
+                @include respond-below(sm) {
+                    padding: 0;
+                }
+            }
+
+            a {
+                color: $brand-color;
+            }
+
+            &:hover {
+
+
+                a {
+                    text-decoration: none;
+                }
+
+
+            }
+
+            &.left {
+                padding: 0 70px 0 0px;
+
+                @include respond-below(lg) {
+                    padding: 0 30px 0 0px;
+                }
+
+                @include respond-below(sm) {
+                    padding: 0px;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0%;
+                    height: auto;
+                    left: -67%;
+                    width: 60%;
+                    z-index: 1;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(40px) rotate(0deg) skewY(-10deg);
+                    transform-origin: top center;
+                    transition: all .45s;
+
+                    @include respond-below(lg) {
+                        top: 18%;
+                        left: -52%;
+                        width: 50%;
+                    }
+
+                    @include respond-below(md) {
+                        display: none;
+                    }
+
+                    @include respond-below(sm) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                        transform: translateY(0) skewY(0) scaleZ(1) rotate(-0deg);
+                        visibility: visible;
+                    }
+                }
+            }
+
+            &.right {
+                padding: 0 0px 0 70px;
+
+                @include respond-below(lg) {
+                    padding: 0 0px 0 30px;
+                }
+
+                @include respond-below(sm) {
+                    padding: 0px;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0%;
+                    height: auto;
+                    right: -67%;
+                    width: 60%;
+                    z-index: 1;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(40px) rotate(0deg) skewY(-10deg);
+                    transform-origin: top center;
+                    transition: all .45s;
+
+                    @include respond-below(lg) {
+                        top: 18%;
+                        height: auto;
+                        right: -52%;
+                        width: 50%;
+                    }
+
+                    @include respond-below(md) {
+                        display: none;
+                    }
+
+                    @include respond-below(sm) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                        transform: translateY(0) skewY(0) scaleZ(1) rotate(-0deg);
+                        visibility: visible;
+                    }
+                }
+            }
+
+
+            &.serv-detail-space {
+                padding: 30px 40px;
+
+                @include respond-below(xl) {
+                    padding: 30px 30px;
+                }
+
+                @include respond-below(lg) {
+                    padding: 30px 30px;
+                }
+
+                @include respond-below(md) {
+                    padding: 30px 20px;
+                    min-height: auto;
+                }
+
+                @include respond-below(sm) {
+                    padding: 20px 10px;
+                    min-height: auto;
+                }
+
+
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    text-align: left;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+
+                &.serv-detail-flex {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    @include respond-below(xl) {}
+
+                    @include respond-below(lg) {}
+
+                    h2 {
+                        color: $brand-color;
+                        padding: 100px 70px;
+                        line-height: 50px;
+                        font-style: italic;
+                        font-weight: 300;
+                        border-top: 1px solid #F9B217;
+                        border-radius: 10px;
+                        border-bottom: 1px solid #F9B217;
+                        font-size: 2.7rem !important;
+
+                        @include respond-below(xl) {
+                            font-size: 2.3rem !important;
+                            padding: 60px 30px;
+                        }
+
+                        @include respond-below(lg) {
+                            font-size: 2.2rem !important;
+                            padding: 60px 20px !important;
+                            line-height: 45px !important;
+                        }
+
+                        @include respond-below(md) {
+                            font-size: 2rem !important;
+                            padding: 60px 20px !important;
+                        }
+
+                        @include respond-below(sm) {
+                            font-size: 1.8rem !important;
+                            padding: 40px 20px;
+                        }
+                    }
+                }
+
+                &.serv-page {
+                    padding: 30px 40px;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    min-height: 460px;
+                    margin: 0 0 30px 0;
+
+                    @include respond-below(xl) {
+                        min-height: 530px;
+                    }
+
+                    @include respond-below(lg) {
+                        min-height: 400px;
+                        padding: 30px 20px;
+                    }
+
+                    @include respond-below(md) {
+                        min-height: auto;
+                        margin: 20px 0;
+                    }
+
+                    @include respond-below(sm) {
+                        padding: 20px 20px;
+                        margin: 20px 0;
+                    }
+
+                    span {
+                        color: $brand-color;
+                        cursor: pointer;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    h5 {
+                        color: $primary-color;
+                        margin-bottom: 10px;
+                    }
+                }
+
+            }
+
+            .services-list-ul {
+                padding: 0 0 0 0;
+
+                li {
+                    list-style: none;
+                    line-height: 30px;
+                    position: relative;
+                    padding-left: 10px;
+
+                    a {
+                        color: #474545;
+
+                        i {
+                            padding: 0 10px 0 0;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+        .services-list-box1 {
+            border-radius: 8px;
+            margin: 0 0px 0px 0px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: #676767;
+                line-height: 28px;
+                padding: 0 0 15px 0;
+            }
+
+            a {
+                color: $brand-color;
+            }
+
+
+
+            .serv-detail-space1 {
+                padding: 10px 30px;
+                border: 1px solid rgba(204, 204, 204, 0.2784313725);
+                border-radius: 8px;
+                margin: 0 10px 50px 10px;
+                height: 100%;
+
+                @include respond-below(xl) {
+                    padding: 0 30px;
+                }
+
+                @include respond-below(lg) {
+                    padding: 0 30px;
+                }
+
+                @include respond-below(md) {
+                    padding: 0 20px;
+                }
+
+                @include respond-below(sm) {
+                    padding: 0 10px;
+                }
+
+
+                h4 {
+                    color: #f9b217bd;
+                    text-align: left;
+                    font-size: 26px !important;
+                    padding: 20px 0 10px 0;
+
+
+                }
+
+                p {
+                    text-align: left;
+                    padding: 0;
+                    color: #b9b9b9;
+                }
+
+                &:hover {
+                    h4 {
+                        color: $brand-color;
+                    }
+
+                    p {
+                        color: #ccc;
+                    }
+
+                }
+
+            }
+        }
+
+        &.p-a-p {
+            padding-top: 50px 0 0 0;
+
+            @include respond-below(xl) {
+                padding-top: 50px 0 0 0;
+            }
+
+            @include respond-below(lg) {
+                padding-top: 50px 0 0 0;
+            }
+
+            @include respond-below(md) {
+                padding-top: 50px 0 0 0;
+            }
+
+            @include respond-below(sm) {
+                padding-top: 20px 0 0 0;
+            }
+        }
+    }
+
+    &.serv-detail {
+        margin: 0 0 60px 0;
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: $brand-color;
+            margin: 0 0 45px 0;
+
+            @include respond-below(md) {
+                margin: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                margin: 0 0 20px 0;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+            color: #333;
+            margin: 0 0 10px 0;
+            line-height: 25px;
+        }
+
+
+        .services-list {
+            padding: 40px 20px 10px 20px;
+            border-radius: 10px;
+            margin: 0 0 60px 0;
+
+            @include respond-below(xl) {
+                padding: 20px 20px 10px 20px;
+            }
+
+            @include respond-below(lg) {
+                padding: 20px 20px 10px 20px;
+            }
+
+            @include respond-below(md) {
+                padding: 20px 20px 10px 20px;
+            }
+
+            @include respond-below(sm) {
+                padding: 20px 20px 10px 20px;
+                margin: 0;
+            }
+
+            .serv-detail-space {
+                h4 {
+                    color: $brand-color;
+                    margin: 0 0 10px 0;
+                }
+            }
+
+            &.serv-first {
+                padding: 0;
+
+                .serv-detail-space {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    h4 {
+                        line-height: 40px;
+                    }
+
+                    &.serv-digital {
+                        padding: 0 30px;
+                        margin: 0;
+                        min-height: auto;
+
+                        @include respond-below(md) {
+                            padding: 20px 20px 10px 20px;
+                        }
+                    }
+                }
+
+                .serv-digital-image {
+                    img {
+                        border-radius: 8px;
+                        margin: 10px 0 0 0;
+                        width: 100%;
+                    }
+                }
+
+                .serv-digi {
+                    padding: 30px 30px;
+
+                    @include respond-below(sm) {
+                        padding: 0px 10px 30px 10px;
+                    }
+
+                    .serv-digi-p {
+                        text-align: left;
+                        padding: 0px 20px;
+                        border-left: 5px solid #292929;
+                        margin: 15px 0 0 0;
+
+                        @include respond-below(md) {
+                            margin: 0;
+                        }
+
+
+                    }
+                }
+            }
+
+            &.designing-brdr {
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 30px 30px 10px 30px;
+                background: #fff;
+                margin: 0 0 40px 0;
+            }
+
+            .phase-m-app-title {
+                margin: 30px 0 30px 0;
+
+                h4 {
+                    color: $brand-color;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &.serv-detail1 {
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: $brand-color;
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+            color: #c9c9c9;
+            margin: 0 0 4px 0;
+            line-height: 25px;
+            font-weight: 300;
+        }
+
+
+        .services-list {
+            margin: 50px 0 0px 0;
+
+            .serv-detail-space {
+                h2 {
+                    font-size: 2.2rem !important;
+                }
+            }
+        }
+    }
+
+    .main-box {
+        background: $box-color;
+        position: relative;
+        padding: 20px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .service-detailes-brief-first {
+            padding: 30px 0;
+
+            @include respond-below(md) {
+                padding: 30px 0 10px 0;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .service-detailes-brief-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 0 20px 0;
+            }
+
+            p {
+                line-height: 28px;
+                color: $primary-color;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+
+
+
+    }
+
+
+}
+
+.service-web-app {
+    .box-commn-mbl {
+        margin: 0 0 30px 0;
+        min-height: 220px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 40px 30px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include respond-below(xl) {
+            min-height: 280px;
+        }
+
+        @include respond-below(lg) {
+            min-height: 300px;
+        }
+
+        @include respond-below(md) {
+            min-height: auto;
+        }
+
+        @include respond-below(sm) {
+            padding: 30px 20px;
+        }
+
+        h5 {
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+.service-anim {
+    .box-commn-anm {
+        margin: 0 0 30px 0;
+        min-height: 220px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 20px 30px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include respond-below(xl) {
+            min-height: 320px;
+            padding: 30px 30px;
+        }
+
+        @include respond-below(lg) {
+            min-height: auto;
+        }
+
+        @include respond-below(md) {
+            min-height: auto;
+        }
+
+        @include respond-below(sm) {
+            padding: 30px 20px;
+        }
+
+        h5 {
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+// ==================================   SERVICES PAGE LIST AREA END
+
+// ==================================   SERVICES PAGE BENIFTS AREA START
+.benifits-area {
+    padding: 10px 0;
+
+    @include respond-below(xl) {
+        padding: 0px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 0px 0;
+    }
+
+    .main-box {
+
+        position: relative;
+        padding: 20px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+
+        .box-commn {
+            @include respond-below(sm) {
+                padding: 20px 15px;
+            }
+        }
+
+        .benifits-first {
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+                text-transform: uppercase;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .benifits-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+
+    }
+
+    // ===========faq
+    .benifits-faq-section {
+        padding: 30px 0 0 0;
+
+        .benifits-faq-image {
+            padding: 0;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .benifits-faq-box {
+
+            padding: 0 0 0 110px;
+
+            @include respond-below(lg) {
+                padding: 0 0 0 40px;
+            }
+
+            @include respond-below(md) {
+                padding: 30px 0 0 0px;
+            }
+
+            .accordion {
+                width: 100%;
+                position: relative;
+                margin: 0 0 13px 0;
+                padding: 0 20px 0 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .accordian-chk {
+                width: 100%;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -o-appearance: none;
+                -khtml-appearance: none;
+                appearnace: none;
+                cursor: pointer;
+                box-sizing: border-box;
+                padding: 0 20px;
+                z-index: 2;
+                margin: 0px;
+            }
+
+            .accordion h4 {
+                position: relative;
+                padding: 10px;
+                color: #333;
+                font-size: 24px !important;
+                font-weight: normal;
+                font-family: arial;
+                margin: 0;
+                z-index: 1;
+                line-height: 32px;
+
+                @include respond-below(xl) {
+                    font-size: 24px !important;
+                }
+
+                @include respond-below(lg) {
+                    font-size: 20px !important;
+                }
+            }
+
+            .accordion h4 .acc-icon {
+                width: 0;
+                height: 0;
+                position: absolute;
+                right: -20px;
+                top: 15px;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-top: 9px solid #f9b217;
+                border-bottom: 9px solid transparent;
+            }
+
+            .accordion .accordian-chk:checked+h4>.acc-icon {
+                top: 10px;
+
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom: 9px solid #f9b217;
+                border-top: 9px solid transparent;
+            }
+
+            .accordion .accordian-chk:checked+h4+div.accordian-content {
+                opacity: 1;
+                -moz-transition-duration: 0.5s;
+                -webkit-transition-duration: 0.5s;
+                -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                max-height: 1000px;
+                overflow: hidden;
+                padding: 15px;
+                color: #333;
+                font-weight: 300;
+                line-height: 24px;
+
+                @include respond-below(lg) {
+                    padding: 5px 0 10px 10px;
+                }
+            }
+
+            .accordian-content {
+                opacity: 0;
+                padding: 15px;
+                overflow: hidden;
+                max-height: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                -moz-transition-duration: 0.5s;
+                -webkit-transition-duration: 0.5s;
+                -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                border: 1px solid rgb(249 178 23 / 8%);
+                border-bottom: none;
+                border-left: none;
+                margin-bottom: 2px;
+                border-right: none;
+
+                p {
+                    .itlc {
+                        color: #1a1a1a;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        &.box-commn {
+            padding: 40px 40px 20px 40px;
+            margin: 60px -15px 0 -15px;
+
+            @include respond-below(md) {
+                padding: 30px 20px 20px 20px;
+            }
+
+            @include respond-below(sm) {
+                padding: 20px 15px 10px 15px;
+            }
+        }
+    }
+
+    // ===========faq
+
+}
+
+// ==================================   SERVICES PAGE BENIFTS AREA END
+
+// ==================================   SERVICES DETAIL PAGE  AREA START
+.service-detailes-brief-area {
+    padding: 100px 0 0 0;
+
+    @include respond-below(xl) {
+        padding: 50px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 50px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 50px 0 0 0;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 20px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .service-detailes-brief-first {
+            padding: 30px 0;
+
+            @include respond-below(md) {
+                padding: 30px 0 10px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 30px 10px 10px 10px;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+
+            .w-app {
+                font-weight: 500 !important;
+                line-height: 60px;
+
+                @include respond-below(lg) {
+                    font-size: 2.5rem !important;
+                    margin: 0 0 10px 0;
+                }
+
+                @include respond-below(md) {
+                    font-size: 2.5rem !important;
+                    margin: 0 0 10px 0;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.6rem !important;
+                }
+            }
+        }
+
+        .service-detailes-brief-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0 0 20px 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 10px 20px 10px;
+            }
+
+            .witness {
+                margin: 10px 0 0 0;
+                font-weight: 500;
+            }
+
+            .magic {
+                font-weight: 500 !important;
+                line-height: 60px;
+            }
+
+            p {
+                line-height: 28px;
+                color: $primary-color;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            ul {
+                padding: 10px 0 10px 30px;
+
+                li {
+                    list-style: disc;
+                    line-height: 28px;
+                }
+            }
+
+            .service-detailes-brief-scnd-list {
+                list-style: square;
+                padding: 0 0 0 20px;
+                line-height: 26px;
+                color: $primary-color;
+                font-size: 15px;
+            }
+        }
+
+
+
+    }
+
+    .book-call {
+        padding: 50px 0 20px 0;
+    }
+
+}
+
+
+
+.service-detailes-content {
+    color: #0d0d0d;
+
+    .main-box {
+        position: relative;
+        padding: 60px 0;
+
+        @include respond-below(xl) {
+            padding: 50px 0;
+        }
+
+        @include respond-below(lg) {
+            padding: 50px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 30px 0;
+        }
+
+
+        h4 {
+            padding: 16px 0;
+            width: 100%;
+        }
+
+        h2 {}
+
+        p {
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            margin: 0 0 10px 0;
+
+            a {
+                color: $brand-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+    }
+
+    .pdng {
+        padding: 20px 30px;
+
+        @include respond-below(md) {
+            padding: 10px 20px;
+        }
+
+        @include respond-below(sm) {
+            padding: 10px 0px;
+        }
+    }
+}
+
+// ==================================   SERVICES DETAIL PAGE  AREA END
+
+// ==================================   SERVICES DETAIL PAGE STRIP AREA START
+.services-details-strip-area {
+    background: url(../img/services/service-strip.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    @include respond-below(xl) {
+        margin: 10px 0 50px 0;
+        height: 500px;
+    }
+
+    @include respond-below(lg) {
+        margin: 10px 0 50px 0;
+        height: 400px;
+    }
+
+    @include respond-below(sm) {
+        height: 300px;
+    }
+
+    .main-box {
+        position: relative;
+        margin: 0 9% !important;
+        width: 100% !important;
+    }
+
+    .strip-text {
+        padding: 300px 0 0 0;
+
+        @include respond-below(xl) {
+            padding: 220px 0 0 0;
+        }
+
+        @include respond-below(sm) {
+            padding: 0;
+        }
+
+        h4 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+
+            @include respond-below(lg) {
+                font-size: 1.1rem !important;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1rem !important;
+            }
+
+
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 2.4rem;
+            line-height: 60px;
+            margin: 15px 0 0 0;
+
+            @include respond-below(xl) {
+                line-height: 50px;
+            }
+
+            @include respond-below(lg) {
+                line-height: 36px;
+                font-size: 2rem !important;
+            }
+
+            @include respond-below(sm) {
+                line-height: 25px;
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+
+    &.brand-strip {
+        background: url(../img/services/branding-strip.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+
+        @include respond-below(xl) {
+            margin: 10px 0 50px 0;
+            height: 500px;
+        }
+
+        @include respond-below(lg) {
+            margin: 10px 0 50px 0;
+            height: 400px;
+        }
+
+        @include respond-below(sm) {
+            height: 300px;
+        }
+
+        .main-box {
+            position: relative;
+            margin: 0 9% !important;
+            width: 100% !important;
+        }
+
+        .strip-text {
+            padding: 300px 0 0 0;
+
+            @include respond-below(xl) {
+                padding: 220px 0 0 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0;
+            }
+
+            h4 {
+                color: $brand-color;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+
+                @include respond-below(lg) {
+                    font-size: 1.1rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1rem !important;
+                }
+
+
+            }
+
+            h3 {
+                color: #fff;
+                font-size: 2.4rem;
+                line-height: 60px;
+                margin: 15px 0 0 0;
+
+                @include respond-below(xl) {
+                    line-height: 50px;
+                }
+
+                @include respond-below(lg) {
+                    line-height: 36px;
+                    font-size: 2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    line-height: 25px;
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+}
+
+// ==================================   SERVICES DETAIL PAGE STRIP AREA END
+
+// ==================================   SERVICES DETAIL PAGE FORMS AREA START
+.services-form-area {
+    padding: 80px 0 0px 0;
+
+    @include respond-below(xl) {
+        padding: 50px 0 60px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 40px 0 60px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 20px 0 50px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 10px 0 40px 0;
+    }
+
+    .form-container {
+        font-size: 0;
+        border-radius: 9px;
+        overflow: hidden;
+    }
+
+    .form-container .form-img {
+        background-image: url('https://source.unsplash.com/600x600/?clothes');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 50%;
+        height: 554px;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .form-container .form-horizontal {
+        background: #fff;
+        padding: 70px 60px;
+
+        @include respond-below(lg) {
+            padding: 50px 40px;
+        }
+
+        @include respond-below(sm) {
+            padding: 30px 15px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .get-in-tuch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding: 40px 0 0 0;
+
+            @include respond-below(lg) {
+                padding: 20px 0 0 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 10px 0 0 0;
+            }
+
+            .btn {
+
+
+                @include respond-below(sm) {
+                    font-size: 16px !important;
+                    padding: 11px 25px !important;
+                }
+            }
+        }
+    }
+
+}
+
+.form-container .title {
+
+    color: #171616;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0 0 20px;
+    text-align: center;
+
+    @include respond-below(xl) {
+        font-size: 25px !important;
+    }
+
+    span {
+        color: $brand-color;
+    }
+
+}
+
+.form-container p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0 0 50px 0;
+    line-height: 22px;
+}
+
+.form-container .form-horizontal .form-group {
+    margin: 0 40px 10px 40px;
+
+    @include respond-below(xl) {
+        margin: 0 20px 10px 20px;
+    }
+
+    @include respond-below(lg) {
+        margin: 0 5px 10px 5px;
+    }
+
+
+
+}
+
+.form-container .form-horizontal .form-group input::placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+.form-container .form-horizontal .form-group textarea::placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+.form-container .form-horizontal .form-control {
+    color: #323232;
+    background: transparent;
+    padding: 15px 0;
+    margin-bottom: 33px;
+    border: none;
+    border-bottom: 1px solid #575757;
+    border-radius: 0;
+}
+
+.form-container .form-horizontal .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-container .form-horizontal .form-control::placeholder {
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-container .form-horizontal .form-group select.form-control option {
+    color: #000;
+    background: #fff;
+}
+
+.form-container .form-horizontal .btn {
+    color: #000;
+    background: $brand-color;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    padding: 14px 35px !important;
+    border: none;
+    transition: all 0.4s ease;
+    margin: 0;
+}
+
+.form-container .form-horizontal .btn i {
+    animation: move 0.3s ease-in-out alternate infinite;
+    padding-left: 10px;
+}
+
+.form-container .form-horizontal .btn:hover {
+    color: #fff;
+}
+
+.form-container .form-horizontal .btn:focus {
+    outline: none;
+}
+
+@media only screen and (max-width:576px) {
+    .form-container .form-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-container .form-horizontal {
+        width: 100%;
+    }
+}
+
+
+// ==================================   SERVICES DETAIL PAGE FORMS AREA END
+
+.digital-serv {
+    text-align: center;
+    padding: 30px 0 20px 0;
+
+    @include respond-below(lg) {
+        padding: 0px 0 0px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 0px 0 0px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 0px 0 0px 0;
+    }
+
+    h2 {
+        @include respond-below(sm) {
+            font-size: 1.5rem !important;
+            line-height: 30px;
+        }
+    }
+}
+
+// ==================================   SERVICES DETAIL BOXES AREA STRAT
+.services-details-boxes {
+    padding: 40px 0 100px 0;
+
+    @include respond-below(xl) {
+        padding: 0 0 80px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 0 0 80px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 60px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 40px 0;
+    }
+
+
+
+    .box {
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s;
+
+
+    }
+
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .box:hover:before {
+        opacity: 1;
+        height: 98.5%;
+        transform: translateY(-50%) rotate(0);
+        z-index: 99;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        transform: rotate(0deg) scale(1);
+        transition: all .8s;
+        border-radius: 8px;
+    }
+
+    .box:hover img {
+        opacity: 0.3;
+        filter: grayscale(100%);
+    }
+
+    .box .box-content {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding: 160px 40px;
+        z-index: 999;
+    }
+
+    .box .box-content .content {
+        overflow: hidden;
+        height: 50px;
+    }
+
+    .box .title {
+        color: $box-color;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 15px 0;
+        transform: translateY(250%);
+        transition: all 0.6s ease 0s;
+
+        @include respond-below(xl) {
+            font-size: 24px !important;
+        }
+    }
+
+    .box .post {
+        color: #1a1a1a;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0 0 10px;
+        display: block;
+        transform: translateY(250%);
+        transition: all 0.6s ease 0s;
+        line-height: 24px;
+    }
+
+    .box:hover .title,
+    .box:hover .post {
+        transform: translateY(0);
+    }
+
+    .box .icon {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .box .icon li {
+        margin: 0 4px;
+        display: inline-block;
+        transform: translateY(-150%);
+        transition: all 0.6s ease 0s;
+    }
+
+    .box:hover .icon li {
+        transform: translateY(0);
+    }
+
+    .box .icon li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 34px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.3s ease 0s;
+    }
+
+    .box .icon li a:hover {
+        color: #fff;
+        transform: rotate(360deg);
+    }
+
+    @media only screen and (max-width:990px) {
+        .box {
+            margin: 0 0 20px;
+        }
+    }
+
+    h4 {
+
+
+        margin: 20px 0 10px 0;
+
+        a {
+            font-size: 1.5rem;
+            color: #fff !important;
+            text-decoration: none;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.2rem !important;
+        }
+
+        @include respond-below(md) {
+            padding: 0 10px;
+        }
+
+        @include respond-below(sm) {
+            text-align: center;
+        }
+
+    }
+
+
+
+    h6 {
+
+
+        a {
+            color: $light-gray;
+            font-size: 1rem;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        @include respond-below(md) {
+            padding: 0 10px;
+        }
+
+        @include respond-below(sm) {
+            text-align: center;
+        }
+    }
+
+    .services-details-box {
+        padding: 0 60px;
+
+        @include respond-below(xl) {
+            padding: 0 35px;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 35px;
+        }
+    }
+
+    .services-details-box:nth-child(even) {
+        padding: 130px 50px 60px 50px;
+
+        @include respond-below(xl) {
+            padding: 80px 40px 50px 40px;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 35px 60px 35px;
+        }
+
+        @include respond-below(md) {
+            padding: 50px 40px;
+        }
+    }
+
+}
+
+// ==================================   SERVICES DETAIL BOXES AREA END
+
+.photo-video-fin-content {
+    p {
+        color: #676767;
+        line-height: 24px;
+
+        a {
+            text-decoration: none;
+            color: $brand-color;
+        }
+    }
+}
+
+.photography-titles {
+
+    .photography-head {
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 0 30px 0;
+        padding: 20px 10px 20px 10px;
+        border-radius: 15px;
+
+        @include respond-below(lg) {
+            align-items: flex-start;
+        }
+
+        @include respond-below(sm) {
+            padding: 0 0 10px 0;
+        }
+
+        .photography-head-image {
+
+            @include respond-below(lg) {
+                padding: 10px 0 0 0;
+            }
+
+            @include respond-below(sm) {
+                padding: 0;
+            }
+
+            img {
+                width: 90%;
+                border-radius: 10px;
+
+                @include respond-below(lg) {
+                    width: 100%;
+                }
+
+                @include respond-below(md) {
+                    padding: 20px 0 0 0;
+                }
+
+                @include respond-below(sm) {
+                    padding: 20px 0 0 0;
+                }
+            }
+        }
+
+        .photography-head-content {
+            p {
+                color: #333;
+                line-height: 28px;
+                font-size: 16px;
+            }
+
+            h4 {
+                color: #333;
+                font-size: 27px !important;
+                margin-bottom: 14px;
+                line-height: 35px !important;
+
+                @include respond-below(md) {
+                    margin-top: 20px;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 24px !important;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .photography-subs {
+        padding-top: 50px;
+        margin: 0 0 60px 0;
+
+        .photography-sub-title {
+            border-left: 1px solid #5d5d5d;
+            padding: 10px 20px;
+            margin: 0 0 40px 0;
+
+            h4 {
+                color: #333;
+                font-size: 27px !important;
+                margin-bottom: 14px;
+            }
+
+            p {
+                color: #333;
+                line-height: 28px;
+                font-size: 16px;
+            }
+
+            img {
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// =================================   PHOTOGRAPHY TITLES AREA END
+
+// ====================================   how-we-do-the-magic-area AREA START
+.how-we-do-the-magic-area {
+    padding: 0px 0 50px 0;
+
+    @include respond-below(sm) {
+        padding: 0px 0 50px 0;
+    }
+
+    h2 {
+        text-align: center;
+        color: #F9B217;
+        margin: 0 0 80px 0;
+
+        @include respond-below(lg) {
+            margin: 0 0 40px 0;
+        }
+
+        @include respond-below(md) {
+            margin: 0 0 40px 0;
+        }
+    }
+
+    .magic-box {
+        transition: all .5s ease-in-out;
+
+        @include respond-below(lg) {
+            padding: 10px;
+        }
+
+        @include respond-below(sm) {
+            padding: 0px;
+        }
+
+        &:nth-child(even) {
+            padding: 40px 0 0 0;
+
+            @include respond-below(sm) {
+                padding: 20px 0 20px 0;
+            }
+
+        }
+
+        &:hover {
+            transform: translateY(40px);
+
+            @include respond-below(sm) {
+                transform: translateY(0px);
+            }
+        }
+
+        .how-we-do-the-magic-box {
+            margin: 0 0 0 0;
+            position: relative;
+            border: 1px solid #6a6a6a;
+            border-radius: 10px;
+            padding: 20px 16px 18px 16px;
+
+
+
+
+            h5 {
+                color: #2d2b2b;
+                line-height: 28px;
+                margin-bottom: 14px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                span {
+                    color: #333;
+                    font-size: 16px;
+                    background: #fff;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin: 0 10px 0 0;
+                    font-weight: 700;
+                    padding: 0 15px;
+                }
+            }
+
+            p {
+                color: #272727;
+                line-height: 28px;
+                font-size: 16px;
+            }
+
+
+
+
+
+        }
+    }
+
+
+}
+
+// ====================================   how-we-do-the-magic-area AREA END
+
+// ====================================   individualy-area AREA start
+.individualy-area {
+    padding: 0px 0 50px 0;
+
+    @include respond-below(xl) {
+        padding: 0px 0 50px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 0px 0 50px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 0px 0 50px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 40px 0 50px 0;
+    }
+
+    h2 {
+        text-align: center;
+        color: #F9B217;
+        margin: 0 0 80px 0;
+    }
+
+    .individualy-box {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px 20px 20px 20px;
+        min-height: 320px;
+
+        @include respond-below(xl) {
+            min-height: 400px;
+        }
+
+        @include respond-below(lg) {
+            min-height: auto;
+            margin: 0 0 30px 0;
+        }
+
+
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            color: $brand-color;
+            padding: 15px 0 20px 0;
+        }
+
+        p {
+            line-height: 27px;
+            color: #333;
+        }
+    }
+}
+
+// ====================================   individualy-area AREA END
+
+// ====================================   UNICORNS AREA START
+.unicorns {
+    margin: 0;
+    padding: 0;
+}
+
+// ====================================   UNICORNS AREA END
+
+.book-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $primary-color;
+            font-weight: 400;
+        }
+    }
+}
+
+@keyframes blink {
+    10% {
+        opacity: .4;
+    }
+
+    25% {
+        opacity: .6;
+    }
+
+    75% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink-button {
+    background-color: #F9B217;
+    color: #333;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: blink 1s infinite;
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1600px) {
+    .photography-titles .photography-head .photography-head-image img {
+        width: 100%;
+    }
+
+    .photography-titles .photography-head .photography-head-image {
+        padding: 10px 0 0 0;
+    }
+
+    .photography-titles .photography-head {
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1365px) {
+    .photography-titles .photography-head .photography-head-image img {
+        width: 100%;
+    }
+
+    .photography-titles .photography-head .photography-head-image {
+        padding: 10px 0 0 0;
+    }
+
+    .photography-titles .photography-head {
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://girafcreatives.com/uk/sitemap.xml

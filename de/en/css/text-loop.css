@@ -1,0 +1,11 @@
+.internal-link
+{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.internal-link:hover
+{
+    color: #F9B217;
+    text-decoration: none;
+}

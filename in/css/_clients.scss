@@ -1,0 +1,234 @@
+// ======================================  CLIENTS HOME AREA START
+
+.clients-home-area {
+    padding: 0;
+
+    @include respond-below(md) {
+        padding: 130px 0 0 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 130px 0 0 0;
+    }
+
+    .main-box {
+        background: $box-color;
+        position: relative;
+        padding: 20px 0;
+
+        @include respond-below(lg) {
+            padding: 0 0 10px 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 40px 0;
+        }
+
+        .clients-home-first {
+            padding: 30px 0;
+
+            @include respond-below(md) {
+                padding: 30px 0 10px 0;
+            }
+
+            h6 {
+                color: $brand-color;
+                font-weight: 400;
+                font-size: 1.3rem !important;
+
+                @include respond-below(md) {
+                    font-size: 1.2rem !important;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 1.1rem !important;
+                }
+
+            }
+
+            h4 {
+                color: $primary-color;
+                line-height: 40px;
+                padding-top: 14px;
+                font-size: 2rem;
+
+                @include respond-below(lg) {
+                    line-height: 30px;
+                }
+
+                @include respond-below(md) {
+                    line-height: 26px;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        .clients-home-scnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond-below(md) {
+                padding: 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: $primary-color;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        .read-more {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            right: 0;
+
+            @include respond-below(sm) {
+                bottom: -50px;
+            }
+
+            a {
+                font-size: 16px !important;
+                letter-spacing: 2px;
+                padding: 15px 40px !important;
+                color: $box-color;
+
+                @include respond-below(sm) {
+                    padding: 14px 25px !important;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                i {
+                    animation: move .3s ease-in-out alternate infinite;
+                    padding-left: 10px;
+                }
+            }
+
+
+        }
+
+        .clients-home {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 0 0 60px 0;
+
+            @include respond-below(sm) {
+                padding: 20px 0 30px 0;
+            }
+
+            ul {
+                li {
+                    h2 {
+                        font-size: 6rem !important;
+                        text-align: center;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        text-transform: capitalize;
+                        font-family: Roboto serif !important;
+                        line-height: 105px;
+
+                        @include respond-below(xl) {
+                            font-size: 5.8rem !important;
+                        }
+
+                        @include respond-below(lg) {
+                            font-size: 4rem !important;
+                            line-height: 80px;
+                        }
+
+                        @include respond-below(md) {
+                            font-size: 3rem !important;
+                            line-height: 58px;
+                        }
+
+                        @include respond-below(sm) {
+                            font-size: 1.8rem !important;
+                            line-height: 38px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $light-gray;
+
+                            &:hover {
+                                text-decoration: none;
+                                color: $brand-color;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+
+.customer-logos {
+    background: $primary-color;
+}
+
+// ======================================  CLIENTS HOME AREA END
+
+// ======================================  CLIENTS ABOUT AREA START
+.clients-about-area {
+    background: $primary-color;
+    padding: 20px 0;
+    margin: 0 0 60px 0;
+
+    .col-xl-2 {
+
+        margin: 15px 0;
+
+        .clients-logos {
+
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            border: 1px solid #e9e9e9;
+
+            img {
+                max-width: 150px;
+                height: auto;
+
+                @include respond-below(xl) {
+                    max-width: 120px;
+                }
+
+                @include respond-below(lg) {
+                    max-width: 120px;
+                }
+
+                @include respond-below(md) {
+                    max-width: 120px;
+                }
+
+                @include respond-below(sm) {
+                    max-width: 100%;
+                    padding: 10px 10px;
+                }
+
+
+            }
+        }
+    }
+
+
+}
+
+// ======================================  CLIENTS ABOUT AREA END

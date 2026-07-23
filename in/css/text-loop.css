@@ -1,0 +1,9 @@
+.loop-overlay {
+    height: 300px;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background: #020024;
+    background: linear-gradient(90deg, #020024b5 0%, rgb(10 10 11) 0%, rgba(255, 255, 255, 0) 49%, #0a0a0b 100%) !important;
+
+}
