@@ -189,7 +189,7 @@ $result = $conn->query($sql);
 
                     <!-- col-md-8 -->
                     <div class="col-xl-8 col-lg-8 col-md-12 about-home-scnd flex-row">
-                        <p> In today's competitive market, businesses need more than visibility they need a strategic advertising
+                        <p class="mb-4"> In today's competitive market, businesses need more than visibility they need a strategic advertising
                              partner who understands their unique challenges and can deliver measurable results through creative
                               excellence and data-driven execution. Giraf Creatives is a full-service advertising agency
                                in India helping businesses build memorable brands, connect with their target audience,

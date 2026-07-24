@@ -58,11 +58,7 @@
             }
         }
 
-        .about-home-scnd {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: row;
+        .about-home-scnd { 
 
             @include respond-below(md) {
                 padding: 0 0 20px 0;
