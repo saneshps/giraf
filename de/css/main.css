@@ -594,7 +594,6 @@ button:focus {
   padding: 1rem 0.5rem;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -995,7 +994,8 @@ h2 {
 .banner-area img {
   width: 100%;
   height: 60vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .banner-area img {
@@ -1052,7 +1052,8 @@ h2 {
 .banner-area.portfolio img {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .banner-area.portfolio img {
@@ -1403,7 +1404,8 @@ h2 {
 }
 .about-area .main-box .about-second .about-second-image-first img {
   width: 98%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
@@ -1501,6 +1503,7 @@ h2 {
   left: 0;
 }
 .text-loop-area .l {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   animation: example 50s linear 0.5s infinite;
@@ -1537,6 +1540,7 @@ h2 {
   }
 }
 .text-loop-area .r {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   animation: example2 50s linear 0.8s infinite;
@@ -3954,13 +3958,7 @@ h2 {
 }
 .benifits-area .benifits-faq-section .benifits-faq-box .accordion .accordian-chk:checked + h4 + div.accordian-content {
   opacity: 1;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   max-height: 1000px;
   overflow: hidden;
@@ -3983,13 +3981,7 @@ h2 {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   border: 1px solid rgba(249, 178, 23, 0.08);
   border-bottom: none;
@@ -4515,7 +4507,17 @@ h2 {
   }
 }
 
+.form-container .form-horizontal .form-group input::-moz-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
 .form-container .form-horizontal .form-group input::placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.form-container .form-horizontal .form-group textarea::-moz-placeholder {
   color: #333;
   opacity: 1;
 }
@@ -4538,6 +4540,12 @@ h2 {
 .form-container .form-horizontal .form-control:focus {
   outline: none;
   box-shadow: none;
+}
+
+.form-container .form-horizontal .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .form-container .form-horizontal .form-control::placeholder {
@@ -4911,7 +4919,8 @@ h2 {
 .photography-titles .photography-subs .photography-sub-title img {
   width: 100%;
   height: 160px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .how-we-do-the-magic-area {
@@ -7012,7 +7021,8 @@ h2 {
 .blog-slider__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   opacity: 0;
   border-radius: 6px;
@@ -7465,7 +7475,8 @@ h2 {
 .blog-details-content .blog-details-right .latest-post-ul li img {
   width: 100px;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 6px;
 }
 @media (max-width: 1199px) {
@@ -7951,6 +7962,11 @@ h2 {
 .address-from-area .address-from .form-container .form-horizontal .form-control:focus {
   outline: none;
   box-shadow: none;
+}
+.address-from-area .address-from .form-container .form-horizontal .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
 }
 .address-from-area .address-from .form-container .form-horizontal .form-control::placeholder {
   color: #ccc;
@@ -9263,7 +9279,6 @@ h2 {
   top: 5px;
   margin-right: 16px;
   text-align: center;
-  -webkit-transition: all 250ms ease 0s;
   transition: all 250ms ease 0s;
 }
 .career-form-box .form-horizontal .radio input[type=radio]:checked + .radio-label:before {
@@ -9656,4 +9671,4 @@ nav .navbar .links li:hover .js-sub-menu {
   nav .navbar .nav-links {
     max-width: 100%;
   }
-}
+}/*# sourceMappingURL=main.css.map */

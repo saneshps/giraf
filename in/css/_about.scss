@@ -60,8 +60,9 @@
 
         .about-home-scnd {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            flex-direction: row;
 
             @include respond-below(md) {
                 padding: 0 0 20px 0;

@@ -1136,8 +1136,9 @@ h2 {
 }
 .about-home-area .main-box .about-home-scnd {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
 }
 @media (max-width: 991px) {
   .about-home-area .main-box .about-home-scnd {

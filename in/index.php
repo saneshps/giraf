@@ -181,18 +181,36 @@ $result = $conn->query($sql);
 
                     <!-- col-md-4 -->
                     <div class="col-xl-4 col-lg-4 col-md-12 about-home-first">
-                        <h6> ABOUT US </h6>
-                        <h4> A bunch of creative, out-of-the-box thinkers who can catapult your brand to greater heights
-                        </h4>
+                        <h6> Advertising Agency in India for Digital Marketing & Branding  </h6>
+                        <h4>  Strategic Creative Solutions with 3+ Years of Strategic Excellence </h4>
                     </div>
                     <!--// col-md-4 -->
 
 
                     <!-- col-md-8 -->
-                    <div class="col-xl-8 col-lg-8 col-md-12 about-home-scnd">
-                        <p> We aren't much different from you. We are equally ambitious. Beyond that, we possess a
-                            certain set of skills that will make us think beyond the boundaries. Crafting unique and
-                            thought-provoking digital marketing creatives. </p>
+                    <div class="col-xl-8 col-lg-8 col-md-12 about-home-scnd flex-row">
+                        <p> In today's competitive market, businesses need more than visibility they need a strategic advertising
+                             partner who understands their unique challenges and can deliver measurable results through creative
+                              excellence and data-driven execution. Giraf Creatives is a full-service advertising agency
+                               in India helping businesses build memorable brands, connect with their target audience,
+                                and achieve sustainable growth through integrated digital marketing and creative solutions.
+                                 Based in Calicut, Kerala, we've spent 3+ years building expertise in advertising and
+                                  creative services. Our team of 30+ professionals including strategists, designers, 
+                                  developers, and animators work collaboratively to solve real business problems for
+                                   clients across India.
+                             </p>
+                             <p> We don't believe in one-size-fits-all advertising. Instead, we combine strategic thinking,
+                                 creative excellence, and technology to create advertising campaigns that strengthen your brand,
+                                  improve online visibility, generate qualified leads, and drive revenue growth. Unlike many advertising
+                                   agencies that focus on just one channel (digital-only or traditional-only), we provide integrated
+                                    advertising campaigns that work across multiple channels from Google Ads and social media to brand 
+                                    design and video production ensuring consistent messaging and maximum impact. We measure success
+                                     the same way you do through real business metrics like website traffic, lead generation,
+                                      conversions, and revenue. Every advertising strategy we develop is built with clear,
+                                       measurable objectives and continuous optimization to ensure you get the best possible
+                                        return on your marketing investment. 
+
+                             </p>
                     </div>
                     <!--// col-md-8 -->
 
