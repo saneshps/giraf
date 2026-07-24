@@ -1,0 +1,348 @@
+//  ========================= ADVERTISING AGENCY AREA START =========================
+.advertising-agency-area {
+    padding: 40px 0 100px;
+    position: relative;
+    overflow: hidden;
+
+    @include respond-below(lg) {
+        padding: 20px 0 80px;
+    }
+
+    @include respond-below(md) {
+        padding: 10px 0 70px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 60px;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 90px 0 95px;
+        border-radius: 28px;
+        overflow: hidden;
+        background:
+            radial-gradient(ellipse 55% 70% at 100% 0%, rgba($brand-color, 0.14) 0%, transparent 58%),
+            radial-gradient(ellipse 45% 55% at 0% 100%, rgba($brand-color, 0.07) 0%, transparent 55%),
+            linear-gradient(145deg, #0f0f0f 0%, $box-color 42%, #121212 100%);
+        border: 1px solid rgba($brand-color, 0.16);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 28px 60px rgba(0, 0, 0, 0.45);
+
+        @include respond-below(lg) {
+            padding: 65px 0 70px;
+            border-radius: 22px;
+        }
+
+        @include respond-below(md) {
+            padding: 48px 0 55px;
+            border-radius: 18px;
+        }
+
+        @include respond-below(sm) {
+            padding: 40px 0 48px;
+            border-radius: 16px;
+        }
+
+        // Top gold hairline
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 8%;
+            right: 8%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.55) 35%,
+                rgba(#ffc84a, 0.9) 50%,
+                rgba($brand-color, 0.55) 65%,
+                transparent 100%
+            );
+            z-index: 1;
+        }
+
+        // Bottom soft edge
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(180deg, transparent 0%, rgba($brand-color, 0.04) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            @include respond-below(sm) {
+                padding: 0 25px !important;
+            }
+        }
+    }
+
+    .ad-agency-glow {
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        top: -120px;
+        left: -80px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba($brand-color, 0.18) 0%, transparent 70%);
+        filter: blur(8px);
+        pointer-events: none;
+        z-index: 0;
+        animation: adAgencyPulse 7s ease-in-out infinite;
+
+        @include respond-below(md) {
+            width: 200px;
+            height: 200px;
+            top: -80px;
+            left: -60px;
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .ad-agency-ring {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        bottom: -70px;
+        right: -50px;
+        border: 1px solid rgba($brand-color, 0.22);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 28px;
+            border: 1px solid rgba($brand-color, 0.12);
+            border-radius: 50%;
+        }
+
+        @include respond-below(md) {
+            width: 150px;
+            height: 150px;
+            bottom: -50px;
+            right: -40px;
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .ad-agency-title {
+        position: relative;
+        padding: 10px 50px 10px 28px;
+
+        @include respond-below(xl) {
+            padding: 10px 30px 10px 20px;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 0 32px 16px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid rgba($brand-color, 0.14);
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 26px 10px;
+        }
+
+        @include respond-below(sm) {
+            padding: 0 0 22px 4px;
+        }
+
+        .ad-agency-accent {
+            display: block;
+            width: 48px;
+            height: 3px;
+            margin-bottom: 28px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, $brand-color 0%, #ffc84a 55%, transparent 100%);
+            box-shadow: 0 0 18px rgba($brand-color, 0.45);
+            transform-origin: left center;
+            animation: adAgencyAccent 3.2s ease-in-out infinite;
+
+            @include respond-below(lg) {
+                margin-bottom: 20px;
+            }
+
+            @include respond-below(sm) {
+                width: 36px;
+                height: 2px;
+                margin-bottom: 16px;
+            }
+        }
+
+        h2 {
+            color: $primary-color;
+            font-weight: 600;
+            line-height: 1.22;
+            letter-spacing: -0.025em;
+            margin: 0;
+            font-size: 2.65rem !important;
+            max-width: 520px;
+            position: relative;
+
+            @include respond-below(xl) {
+                font-size: 2.35rem !important;
+            }
+
+            @include respond-below(lg) {
+                font-size: 2.2rem !important;
+                max-width: 100%;
+                line-height: 1.28;
+            }
+
+            @include respond-below(md) {
+                font-size: 1.85rem !important;
+                line-height: 1.32;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.55rem !important;
+                line-height: 1.35;
+                letter-spacing: -0.015em;
+            }
+        }
+    }
+
+    .ad-agency-content {
+        padding: 12px 10px 10px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+
+        @include respond-below(xl) {
+            padding: 12px 8px 10px 28px;
+        }
+
+        @include respond-below(lg) {
+            padding: 24px 0 0 16px;
+            gap: 18px;
+        }
+
+        @include respond-below(md) {
+            padding: 20px 0 0 10px;
+            gap: 16px;
+        }
+
+        @include respond-below(sm) {
+            padding: 18px 0 0 4px;
+            gap: 14px;
+        }
+
+        // Vertical gold divider (desktop)
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 16px;
+            bottom: 16px;
+            width: 1px;
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                rgba($brand-color, 0.45) 25%,
+                rgba(#ffc84a, 0.7) 50%,
+                rgba($brand-color, 0.45) 75%,
+                transparent 100%
+            );
+
+            @include respond-below(lg) {
+                display: none;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: 15.5px;
+            font-weight: 300;
+            line-height: 1.78;
+            color: rgba($primary-color, 0.8);
+            text-align: left;
+
+            @include respond-below(md) {
+                font-size: 15px;
+                line-height: 1.72;
+            }
+
+            @include respond-below(sm) {
+                font-size: 14.5px;
+                line-height: 1.7;
+            }
+
+            &:first-child {
+                color: rgba($primary-color, 0.94);
+                font-weight: 400;
+                position: relative;
+                padding-bottom: 24px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 64px;
+                    height: 2px;
+                    border-radius: 2px;
+                    background: linear-gradient(90deg, $brand-color, transparent);
+
+                    @include respond-below(sm) {
+                        width: 48px;
+                    }
+                }
+
+                @include respond-below(sm) {
+                    padding-bottom: 16px;
+                }
+            }
+
+            &:last-child {
+                color: rgba($primary-color, 0.78);
+            }
+        }
+    }
+}
+
+@keyframes adAgencyPulse {
+    0%,
+    100% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes adAgencyAccent {
+    0%,
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleX(1.35);
+        opacity: 0.85;
+    }
+}
+
+//  ========================= ADVERTISING AGENCY AREA END =========================

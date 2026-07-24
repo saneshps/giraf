@@ -170,6 +170,23 @@ $result = $conn->query($sql);
           SLIDER AREA END
      ===================== -->
 
+     
+    <!-- =======================
+           TEXT LOOP AREA START
+        ======================== -->
+    <section class="text-loop-area">
+        <div class="loop-overlay"></div>
+        <div class="l">
+            Digital Marketing | Branding | Designing | Web and App Development | Product Explanatory Videos | Animation
+        </div>
+        <div class="r">
+            Digital Marketing | Branding | Designing | Web and App Development | Product Explanatory Videos | Animation
+        </div>
+    </section>
+
+    <!-- =====================
+          TEXT LOOP AREA END
+        ====================== -->
 
     <!-- =======================
           ABOUT HOME AREA START
@@ -230,23 +247,81 @@ $result = $conn->query($sql);
           ABOUT HOME AREA END
         ====================== -->
 
-
-    <!-- =======================
-           TEXT LOOP AREA START
-        ======================== -->
-    <section class="text-loop-area">
-        <div class="loop-overlay"></div>
-        <div class="l">
-            Digital Marketing | Branding | Designing | Web and App Development | Product Explanatory Videos | Animation
+    <!-- ================================
+          Advertising Agency AREA START
+        ================================= -->
+    <section class="advertising-agency-area">
+        <div class="main-box">
+            <div class="ad-agency-glow" aria-hidden="true"></div>
+            <div class="ad-agency-ring" aria-hidden="true"></div>
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-xl-5 col-lg-5 col-md-12 ad-agency-title" data-aos="fade-right">
+                        <span class="ad-agency-accent" aria-hidden="true"></span>
+                        <h2>What Is an Advertising Agency &amp; What We Do</h2>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-12 ad-agency-content" data-aos="fade-left">
+                        <p>An advertising agency is a strategic business partner that creates, plans, and executes comprehensive advertising campaigns to help brands reach their target audience, build awareness, generate leads, and drive sales. Unlike in-house marketing departments that are often stretched thin across multiple functions, advertising agencies like Giraf Creatives bring specialized expertise, creative talent, and strategic thinking focused specifically on growing your business through effective advertising.</p>
+                        <p>At Giraf Creatives, we've applied this expertise to help startups, scale-ups, and established companies grow their business through strategic, creative advertising campaigns. Whether you need a complete brand overhaul, digital marketing excellence, or integrated advertising campaigns we have the expertise and experience to deliver.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="r">
-            Digital Marketing | Branding | Designing | Web and App Development | Product Explanatory Videos | Animation
+    </section>
+    <!-- ===============================
+          Advertising Agency AREA END
+        ================================= -->
+
+    <!-- ===============================
+          Creative Partner AREA START
+        ================================= -->
+    <section class="creative-partner-area">
+        <div class="main-box">
+            <div class="cp-glow" aria-hidden="true"></div>
+            <div class="cp-orb" aria-hidden="true"></div>
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-xl-5 col-lg-5 col-md-12 cp-header" data-aos="fade-right">
+                        <span class="cp-accent" aria-hidden="true"></span>
+                        <h2>Why Businesses Choose Giraf Creatives as Their Creative Partner in India</h2>
+                        <p class="cp-intro">We've spent 3+ years building trust with clients by combining strategic thinking, creative excellence, and a results-focused approach. Here's why businesses across India and globally choose Giraf Creatives as their advertising agency.</p>
+                    </div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-12 cp-side" data-aos="fade-left">
+                        <div class="cp-expertise">
+                            <h3 class="cp-expertise-label">Our expertise includes:</h3>
+                            <ul class="cp-expertise-list">
+                                <li><span class="cp-num">01</span><span class="cp-text">Branding &amp; Brand Identity Development</span></li>
+                                <li><span class="cp-num">02</span><span class="cp-text">Digital Marketing Services</span></li>
+                                <li><span class="cp-num">03</span><span class="cp-text">Social Media Marketing</span></li>
+                                <li><span class="cp-num">04</span><span class="cp-text">Creative Designing</span></li>
+                                <li><span class="cp-num">05</span><span class="cp-text">Website Design &amp; Development</span></li>
+                                <li><span class="cp-num">06</span><span class="cp-text">Animation Services</span></li>
+                                <li><span class="cp-num">07</span><span class="cp-text">Product Explanatory Videos</span></li>
+                                <li><span class="cp-num">08</span><span class="cp-text">Content Creation &amp; Visual Storytelling</span></li>
+                                <li><span class="cp-num">09</span><span class="cp-text">Marketing Campaign Development</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="cp-mission" data-aos="fade-up" data-aos-delay="100">
+                            <span class="cp-mission-mark" aria-hidden="true"></span>
+                            <p>As a creative agency in India, our mission is to help businesses grow through innovative ideas, strategic execution, and impactful communication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- =====================
-          TEXT LOOP AREA END
-        ====================== -->
+    <!-- ===============================
+          Creative Partner AREA END
+        ================================= -->
+
+
 
 
     <!-- ======================

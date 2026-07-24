@@ -1,0 +1,500 @@
+//  ========================= CREATIVE PARTNER AREA START =========================
+.creative-partner-area {
+    padding: 20px 0 100px;
+    position: relative;
+    overflow: hidden;
+
+    @include respond-below(lg) {
+        padding: 10px 0 80px;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 70px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 60px;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 90px 0 85px;
+        border-radius: 28px;
+        overflow: hidden;
+        background:
+            radial-gradient(ellipse 50% 60% at 0% 0%, rgba($brand-color, 0.1) 0%, transparent 55%),
+            radial-gradient(ellipse 40% 50% at 100% 100%, rgba($brand-color, 0.08) 0%, transparent 50%),
+            linear-gradient(160deg, #111111 0%, $box-color 48%, #0d0d0d 100%);
+        border: 1px solid rgba($brand-color, 0.14);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 28px 60px rgba(0, 0, 0, 0.45);
+
+        @include respond-below(lg) {
+            padding: 65px 0 70px;
+            border-radius: 22px;
+        }
+
+        @include respond-below(md) {
+            padding: 48px 0 52px;
+            border-radius: 18px;
+        }
+
+        @include respond-below(sm) {
+            padding: 40px 0 44px;
+            border-radius: 16px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.5) 30%,
+                rgba(#ffc84a, 0.85) 50%,
+                rgba($brand-color, 0.5) 70%,
+                transparent 100%
+            );
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            @include respond-below(sm) {
+                padding: 0 25px !important;
+            }
+        }
+    }
+
+    .cp-glow {
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        top: -140px;
+        right: -100px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba($brand-color, 0.16) 0%, transparent 70%);
+        filter: blur(10px);
+        pointer-events: none;
+        z-index: 0;
+        animation: cpPulse 8s ease-in-out infinite;
+
+        @include respond-below(md) {
+            width: 220px;
+            height: 220px;
+            top: -90px;
+            right: -70px;
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .cp-orb {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        bottom: 8%;
+        left: -40px;
+        border: 1px solid rgba($brand-color, 0.18);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        animation: cpOrbFloat 9s ease-in-out infinite;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 22px;
+            border: 1px solid rgba($brand-color, 0.1);
+            border-radius: 50%;
+        }
+
+        @include respond-below(md) {
+            width: 110px;
+            height: 110px;
+            bottom: 6%;
+            left: -30px;
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .cp-header {
+        position: relative;
+        padding: 10px 36px 10px 10px;
+        margin-bottom: 48px;
+
+        @include respond-below(xl) {
+            padding: 10px 24px 10px 8px;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 0 28px 8px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid rgba($brand-color, 0.14);
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 24px 4px;
+            margin-bottom: 24px;
+        }
+
+        @include respond-below(sm) {
+            padding: 0 0 20px 0;
+            margin-bottom: 22px;
+        }
+
+        .cp-accent {
+            display: block;
+            width: 48px;
+            height: 3px;
+            margin-bottom: 26px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, $brand-color 0%, #ffc84a 55%, transparent 100%);
+            box-shadow: 0 0 18px rgba($brand-color, 0.45);
+            transform-origin: left center;
+            animation: cpAccent 3.2s ease-in-out infinite;
+
+            @include respond-below(sm) {
+                width: 36px;
+                height: 2px;
+                margin-bottom: 16px;
+            }
+        }
+
+        h2 {
+            color: $primary-color;
+            font-weight: 600;
+            line-height: 1.24;
+            letter-spacing: -0.025em;
+            margin: 0 0 24px;
+            font-size: 2.35rem !important;
+            max-width: 480px;
+
+            @include respond-below(xl) {
+                font-size: 2.1rem !important;
+            }
+
+            @include respond-below(lg) {
+                font-size: 2rem !important;
+                max-width: 100%;
+                line-height: 1.28;
+            }
+
+            @include respond-below(md) {
+                font-size: 1.75rem !important;
+                line-height: 1.32;
+                margin-bottom: 18px;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.45rem !important;
+                line-height: 1.35;
+                letter-spacing: -0.015em;
+                margin-bottom: 14px;
+            }
+        }
+
+        .cp-intro {
+            margin: 0;
+            max-width: 460px;
+            font-size: 15.5px;
+            font-weight: 300;
+            line-height: 1.78;
+            color: rgba($primary-color, 0.82);
+
+            @include respond-below(lg) {
+                max-width: 100%;
+            }
+
+            @include respond-below(md) {
+                font-size: 15px;
+                line-height: 1.72;
+            }
+
+            @include respond-below(sm) {
+                font-size: 14.5px;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .cp-side {
+        position: relative;
+        padding: 6px 8px 10px 40px;
+        margin-bottom: 48px;
+
+        @include respond-below(xl) {
+            padding: 6px 4px 10px 28px;
+        }
+
+        @include respond-below(lg) {
+            padding: 8px 0 0 8px;
+            margin-bottom: 32px;
+        }
+
+        @include respond-below(md) {
+            padding: 4px 0 0 4px;
+            margin-bottom: 28px;
+        }
+
+        @include respond-below(sm) {
+            padding: 0;
+            margin-bottom: 26px;
+        }
+
+        // Vertical gold divider (desktop)
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 12px;
+            bottom: 12px;
+            width: 1px;
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                rgba($brand-color, 0.45) 25%,
+                rgba(#ffc84a, 0.7) 50%,
+                rgba($brand-color, 0.45) 75%,
+                transparent 100%
+            );
+
+            @include respond-below(lg) {
+                display: none;
+            }
+        }
+    }
+
+    .cp-expertise {
+        position: relative;
+
+        .cp-expertise-label {
+            margin: 0 0 20px;
+            font-size: 0.95rem !important;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $brand-color;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(90deg, rgba($brand-color, 0.7), transparent);
+            }
+
+            @include respond-below(sm) {
+                font-size: 0.88rem !important;
+                margin-bottom: 16px;
+                padding-bottom: 8px;
+            }
+        }
+
+        .cp-expertise-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 12px;
+
+            @include respond-below(md) {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 14px 16px;
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.02);
+                border: 1px solid rgba($brand-color, 0.1);
+                transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+
+                // Last item spans full width when odd count
+                &:last-child {
+                    @include respond-above(md) {
+                        grid-column: 1 / -1;
+                    }
+                }
+
+                @include respond-below(sm) {
+                    padding: 13px 14px;
+                    gap: 10px;
+                    border-radius: 10px;
+                }
+
+                &:hover {
+                    border-color: rgba($brand-color, 0.38);
+                    background: rgba($brand-color, 0.05);
+                    transform: translateY(-2px);
+                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+
+                    .cp-num {
+                        color: $brand-color;
+                        text-shadow: 0 0 16px rgba($brand-color, 0.45);
+                    }
+
+                    .cp-text {
+                        color: $primary-color;
+                    }
+                }
+
+                .cp-num {
+                    flex-shrink: 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.06em;
+                    color: rgba($brand-color, 0.7);
+                    transition: color 0.35s ease, text-shadow 0.35s ease;
+                    font-variant-numeric: tabular-nums;
+                }
+
+                .cp-text {
+                    font-size: 14.5px;
+                    font-weight: 400;
+                    line-height: 1.35;
+                    color: rgba($primary-color, 0.88);
+                    transition: color 0.35s ease;
+
+                    @include respond-below(sm) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cp-mission {
+        position: relative;
+        padding: 28px 32px 28px 36px;
+        border-radius: 16px;
+        background:
+            linear-gradient(135deg, rgba($brand-color, 0.08) 0%, rgba(255, 255, 255, 0.02) 55%, transparent 100%);
+        border: 1px solid rgba($brand-color, 0.18);
+        overflow: hidden;
+
+        @include respond-below(md) {
+            padding: 24px 22px 24px 26px;
+            border-radius: 14px;
+        }
+
+        @include respond-below(sm) {
+            padding: 20px 18px 20px 20px;
+            border-radius: 12px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 18%;
+            bottom: 18%;
+            width: 3px;
+            border-radius: 0 3px 3px 0;
+            background: linear-gradient(180deg, $brand-color, #ffc84a, transparent);
+            box-shadow: 0 0 14px rgba($brand-color, 0.4);
+        }
+
+        .cp-mission-mark {
+            position: absolute;
+            top: -18px;
+            right: 28px;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 1px solid rgba($brand-color, 0.12);
+            pointer-events: none;
+
+            @include respond-below(sm) {
+                width: 48px;
+                height: 48px;
+                top: -10px;
+                right: 14px;
+            }
+        }
+
+        p {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.75;
+            color: rgba($primary-color, 0.92);
+            letter-spacing: -0.01em;
+
+            @include respond-below(md) {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            @include respond-below(sm) {
+                font-size: 14.5px;
+                line-height: 1.68;
+            }
+        }
+    }
+}
+
+@keyframes cpPulse {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes cpOrbFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.85;
+    }
+
+    50% {
+        transform: translateY(-12px);
+        opacity: 1;
+    }
+}
+
+@keyframes cpAccent {
+    0%,
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleX(1.35);
+        opacity: 0.85;
+    }
+}
+
+//  ========================= CREATIVE PARTNER AREA END =========================
