@@ -281,10 +281,14 @@ $result = $conn->query($sql);
             <div class="cp-orb" aria-hidden="true"></div>
             <div class="container">
                 <div class="row align-items-start">
-                    <div class="col-xl-5 col-lg-5 col-md-12 cp-header" data-aos="fade-right">
+                    <div class="col-xl-5 col-lg-5 col-md-12 cp-header-box" data-aos="fade-right">
                         <span class="cp-accent" aria-hidden="true"></span>
-                        <h2>Why Businesses Choose Giraf Creatives as Their Creative Partner in India</h2>
-                        <p class="cp-intro">We've spent 3+ years building trust with clients by combining strategic thinking, creative excellence, and a results-focused approach. Here's why businesses across India and globally choose Giraf Creatives as their advertising agency.</p>
+                        <div class="content-box">
+                            <h2>  Why Businesses Choose Giraf Creatives as Their Creative Partner in India </h2>
+                            <p class="mb-4 text-white">We've spent 3+ years building trust with clients by combining strategic thinking, creative excellence,
+                                 and a results-focused approach. Here's why businesses across India and globally choose Giraf Creatives as
+                                  their advertising agency.</p>
+                        </div>
                     </div>
 
                     <div class="col-xl-7 col-lg-7 col-md-12 cp-side" data-aos="fade-left">

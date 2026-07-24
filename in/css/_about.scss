@@ -138,15 +138,12 @@
                     display: none;
                 }
 
-                @include respond-below(md) {
-                    font-size: 0.85rem !important;
+                @include respond-below(md) { 
                     letter-spacing: 1.2px;
-                    margin-bottom: 14px;
-                    padding-left: 16px;
+                    margin-bottom: 14px; 
                 }
 
-                @include respond-below(sm) {
-                    font-size: 0.78rem !important;
+                @include respond-below(sm) { 
                     letter-spacing: 1px;
                     margin-bottom: 12px;
                 }
