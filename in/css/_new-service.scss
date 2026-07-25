@@ -1,0 +1,599 @@
+// ========================= NEW SERVICES HOME AREA START =========================
+.new-services-home-area {
+    padding: 40px 0 100px;
+    position: relative;
+    overflow: hidden;
+
+    @include respond-below(lg) {
+        padding: 20px 0 80px;
+    }
+
+    @include respond-below(md) {
+        padding: 10px 0 70px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 60px;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 90px 0 70px;
+        border-radius: 28px;
+        overflow: hidden;
+        background:
+            radial-gradient(ellipse 45% 55% at 100% 0%, rgba($brand-color, 0.1) 0%, transparent 55%),
+            radial-gradient(ellipse 40% 45% at 0% 100%, rgba($brand-color, 0.07) 0%, transparent 50%),
+            linear-gradient(165deg, #101010 0%, $box-color 50%, #0c0c0c 100%);
+        border: 1px solid rgba($brand-color, 0.14);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 28px 60px rgba(0, 0, 0, 0.45);
+
+        @include respond-below(lg) {
+            padding: 65px 0 55px;
+            border-radius: 22px;
+        }
+
+        @include respond-below(md) {
+            padding: 48px 0 44px;
+            border-radius: 18px;
+        }
+
+        @include respond-below(sm) {
+            padding: 40px 0 36px;
+            border-radius: 16px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 12%;
+            right: 12%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.5) 30%,
+                rgba(#ffc84a, 0.85) 50%,
+                rgba($brand-color, 0.5) 70%,
+                transparent 100%
+            );
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            @include respond-below(sm) {
+                padding: 0 15px !important;
+            }
+        }
+    }
+
+    .ns-glow {
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: -160px;
+        left: -120px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba($brand-color, 0.14) 0%, transparent 70%);
+        filter: blur(12px);
+        pointer-events: none;
+        z-index: 0;
+        animation: nsPulse 9s ease-in-out infinite;
+
+        &--alt {
+            width: 320px;
+            height: 320px;
+            top: auto;
+            bottom: -100px;
+            left: auto;
+            right: -80px;
+            background: radial-gradient(circle, rgba($brand-color, 0.1) 0%, transparent 70%);
+            animation-delay: -4s;
+        }
+
+        @include respond-below(md) {
+            width: 220px;
+            height: 220px;
+            top: -90px;
+            left: -70px;
+
+            &--alt {
+                width: 160px;
+                height: 160px;
+                bottom: -60px;
+                right: -50px;
+            }
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .ns-header {
+        margin-bottom: 48px;
+        position: relative;
+        z-index: 2;
+
+        @include respond-below(lg) {
+            margin-bottom: 36px;
+        }
+
+        @include respond-below(md) {
+            margin-bottom: 28px;
+        }
+
+        @include respond-below(sm) {
+            margin-bottom: 24px;
+        }
+
+        .ns-label {
+            display: inline-block;
+            margin: 0 0 18px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: $brand-color;
+            position: relative;
+            padding-bottom: 10px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 42px;
+                height: 2px;
+                border-radius: 2px;
+                background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+                box-shadow: 0 0 14px rgba($brand-color, 0.45);
+            }
+
+            @include respond-below(sm) {
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+                letter-spacing: 0.12em;
+            }
+        }
+
+        h2 {
+            color: $primary-color;
+            font-weight: 600;
+            line-height: 1.24;
+            letter-spacing: -0.025em;
+            margin: 0;
+            font-size: 2.35rem !important;
+            max-width: 640px;
+
+            @include respond-below(xl) {
+                font-size: 2.1rem !important;
+            }
+
+            @include respond-below(lg) {
+                font-size: 2rem !important;
+                max-width: 100%;
+            }
+
+            @include respond-below(md) {
+                font-size: 1.75rem !important;
+                line-height: 1.32;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.45rem !important;
+                line-height: 1.35;
+                letter-spacing: -0.015em;
+            }
+        }
+    }
+
+    .ns-header-actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 22px;
+        padding-bottom: 6px;
+
+        @include respond-below(lg) {
+            justify-content: flex-start;
+            margin-top: 22px;
+            padding-bottom: 0;
+        }
+
+        @include respond-below(sm) {
+            gap: 16px;
+            margin-top: 18px;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .ns-nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ns-nav-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid rgba($brand-color, 0.35);
+        background: rgba($brand-color, 0.06);
+        color: $brand-color;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.35s ease;
+        font-size: 14px;
+        outline: none;
+
+        &:hover,
+        &:focus-visible {
+            background: $brand-color;
+            color: $box-color;
+            border-color: $brand-color;
+            box-shadow: 0 0 24px rgba($brand-color, 0.35);
+            transform: translateY(-2px);
+        }
+
+        &.swiper-button-disabled {
+            opacity: 0.35;
+            pointer-events: none;
+            transform: none;
+            box-shadow: none;
+        }
+
+        @include respond-below(sm) {
+            width: 42px;
+            height: 42px;
+            font-size: 13px;
+        }
+    }
+
+    .ns-counter {
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+        font-variant-numeric: tabular-nums;
+        min-width: 58px;
+
+        .ns-counter-current {
+            color: $brand-color;
+            font-size: 1.35rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .ns-counter-sep {
+            color: rgba($primary-color, 0.35);
+            font-size: 0.95rem;
+            margin: 0 2px;
+        }
+
+        .ns-counter-total {
+            color: rgba($primary-color, 0.55);
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        @include respond-below(sm) {
+            .ns-counter-current {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .ns-slider-wrap {
+        position: relative;
+        z-index: 2;
+        padding: 0 0 8px;
+
+        // Bleed slider past container padding for a cinematic edge
+        margin-left: 5%;
+        width: 95%;
+
+        @include respond-below(md) {
+            margin-left: 4%;
+            width: 96%;
+        }
+
+        @include respond-below(sm) {
+            margin-left: 15px;
+            width: calc(100% - 15px);
+        }
+    }
+
+    .newServicesSwiper {
+        overflow: visible;
+        padding-bottom: 8px;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        .swiper-slide {
+            height: auto;
+            transition: transform 0.45s ease, opacity 0.45s ease;
+
+            &:not(.swiper-slide-active):not(.swiper-slide-next) {
+                @include respond-above(lg) {
+                    opacity: 0.72;
+                }
+            }
+        }
+    }
+
+    .ns-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: 520px;
+        border-radius: 22px;
+        overflow: hidden;
+        text-decoration: none;
+        background: linear-gradient(180deg, #161616 0%, #0e0e0e 100%);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+        position: relative;
+
+        @include respond-below(lg) {
+            min-height: 480px;
+            border-radius: 18px;
+        }
+
+        @include respond-below(md) {
+            min-height: 460px;
+        }
+
+        @include respond-below(sm) {
+            min-height: 440px;
+            border-radius: 16px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            pointer-events: none;
+            box-shadow: inset 0 0 0 1px rgba($brand-color, 0);
+            transition: box-shadow 0.4s ease;
+        }
+
+        &:hover,
+        &:focus-visible {
+            border-color: rgba($brand-color, 0.4);
+            box-shadow:
+                0 24px 50px rgba(0, 0, 0, 0.45),
+                0 0 0 1px rgba($brand-color, 0.12);
+            transform: translateY(-6px);
+            outline: none;
+
+            &::after {
+                box-shadow: inset 0 0 0 1px rgba($brand-color, 0.2);
+            }
+
+            .ns-card-media img {
+                transform: scale(1.08);
+            }
+
+            .ns-card-media::before {
+                opacity: 0.55;
+            }
+
+            .ns-card-link {
+                color: $brand-color;
+                gap: 12px;
+
+                i {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+
+    .ns-card-media {
+        position: relative;
+        height: 240px;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        @include respond-below(lg) {
+            height: 210px;
+        }
+
+        @include respond-below(sm) {
+            height: 190px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.05) 0%,
+                rgba(0, 0, 0, 0.35) 55%,
+                rgba(0, 0, 0, 0.75) 100%
+            );
+            z-index: 1;
+            opacity: 0.85;
+            transition: opacity 0.4s ease;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background: linear-gradient(90deg, $brand-color, #ffc84a 40%, transparent 85%);
+            z-index: 2;
+            opacity: 0.7;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+    }
+
+    .ns-card-num {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        z-index: 3;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        color: $box-color;
+        background: $brand-color;
+        padding: 7px 12px;
+        border-radius: 999px;
+        box-shadow: 0 8px 20px rgba($brand-color, 0.35);
+        line-height: 1;
+
+        @include respond-below(sm) {
+            top: 14px;
+            left: 14px;
+            font-size: 0.78rem;
+            padding: 6px 10px;
+        }
+    }
+
+    .ns-card-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 28px 26px 26px;
+        position: relative;
+
+        @include respond-below(lg) {
+            padding: 24px 22px 22px;
+        }
+
+        @include respond-below(sm) {
+            padding: 20px 18px 20px;
+        }
+
+        h3 {
+            margin: 0 0 14px;
+            color: $primary-color;
+            font-size: 1.45rem !important;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+
+            @include respond-below(lg) {
+                font-size: 1.3rem !important;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.2rem !important;
+                margin-bottom: 12px;
+            }
+        }
+
+        p {
+            margin: 0 0 22px;
+            flex: 1;
+            color: rgba($primary-color, 0.72);
+            font-size: 14.5px;
+            font-weight: 300;
+            line-height: 1.72;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            @include respond-below(lg) {
+                font-size: 14px;
+                line-height: 1.68;
+                -webkit-line-clamp: 4;
+            }
+
+            @include respond-below(sm) {
+                font-size: 13.5px;
+                margin-bottom: 18px;
+                -webkit-line-clamp: 5;
+            }
+        }
+    }
+
+    .ns-card-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: auto;
+        color: rgba($primary-color, 0.9);
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        transition: color 0.35s ease, gap 0.35s ease;
+
+        i {
+            font-size: 0.75rem;
+            color: $brand-color;
+            transition: transform 0.35s ease;
+        }
+    }
+
+    .ns-progress {
+        margin-top: 36px;
+        margin-right: 5%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 2px;
+        overflow: hidden;
+
+        @include respond-below(md) {
+            margin-top: 28px;
+            margin-right: 4%;
+        }
+
+        @include respond-below(sm) {
+            margin-top: 22px;
+            margin-right: 15px;
+        }
+    }
+
+    .ns-progress-bar {
+        height: 100%;
+        width: 0;
+        border-radius: 2px;
+        background: linear-gradient(90deg, $brand-color, #ffc84a);
+        box-shadow: 0 0 12px rgba($brand-color, 0.5);
+        transition: width 0.35s ease;
+    }
+}
+
+@keyframes nsPulse {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+// ========================= NEW SERVICES HOME AREA END =========================

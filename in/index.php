@@ -338,7 +338,7 @@ $result = $conn->query($sql);
 
                     <!-- col-md-4 -->
                     <div class="col-xl-4 col-lg-4 col-md-12 about-home-first">
-                        <h6> WORKS </h6>
+                        <h6> Portfolio </h6>
                         <h4> Ignite your Brand image with Giraf. </h4>
                     </div>
                     <!--// col-md-4 -->
@@ -508,6 +508,141 @@ $result = $conn->query($sql);
     <!-- =======================
            PORTFOLIO AREA START
         ======================== -->
+
+
+    <!-- =============================
+          NEW SERVICES HOME AREA START
+        ============================ -->
+    <section class="new-services-home-area">
+        <div class="main-box">
+            <div class="ns-glow" aria-hidden="true"></div>
+            <div class="ns-glow ns-glow--alt" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="row align-items-end ns-header">
+                    <div class="col-xl-8 col-lg-8 col-md-12" data-aos="fade-right">
+                        <span class="ns-label">Services</span>
+                        <h2>Comprehensive Creative &amp; Marketing Services.</h2>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 ns-header-actions" data-aos="fade-left">
+                        <div class="ns-nav">
+                            <button type="button" class="ns-nav-btn ns-prev" aria-label="Previous service">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button type="button" class="ns-nav-btn ns-next" aria-label="Next service">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="ns-counter" aria-live="polite">
+                            <span class="ns-counter-current">01</span>
+                            <span class="ns-counter-sep">/</span>
+                            <span class="ns-counter-total">06</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ns-slider-wrap" data-aos="fade-up" data-aos-delay="80">
+                <div class="swiper newServicesSwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="branding.php" class="ns-card">
+                                <div class="ns-card-media">
+                                    <img src="./img/services/branding.jpg" alt="Branding services">
+                                    <span class="ns-card-num">01</span>
+                                </div>
+                                <div class="ns-card-body">
+                                    <h3>Branding</h3>
+                                    <p>A strong brand creates trust and recognition. We help businesses build distinctive brand identities through logo design, brand strategy, visual identity systems, and brand communication that leave a lasting impression.</p>
+                                    <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="digital-marketing.php" class="ns-card">
+                                <div class="ns-card-media">
+                                    <img src="./img/services/digital-marketing.jpg" alt="Digital Marketing services">
+                                    <span class="ns-card-num">02</span>
+                                </div>
+                                <div class="ns-card-body">
+                                    <h3>Digital Marketing</h3>
+                                    <p>Our digital marketing services help businesses increase visibility, attract potential customers, and generate growth through strategic online marketing campaigns across multiple digital channels.</p>
+                                    <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="designing.php" class="ns-card">
+                                <div class="ns-card-media">
+                                    <img src="./img/services/Designing-banner.jpg" alt="Creative Designing services">
+                                    <span class="ns-card-num">03</span>
+                                </div>
+                                <div class="ns-card-body">
+                                    <h3>Creative Designing</h3>
+                                    <p>From marketing materials and social media creatives to corporate presentations and promotional designs, we create visually compelling designs that communicate your message effectively and strengthen your brand image.</p>
+                                    <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="web-and-app-development.php" class="ns-card">
+                                <div class="ns-card-media">
+                                    <img src="./img/services/web-app-development.jpg" alt="Website Design and Development">
+                                    <span class="ns-card-num">04</span>
+                                </div>
+                                <div class="ns-card-body">
+                                    <h3>Website Design &amp; Development</h3>
+                                    <p>We design and develop responsive, user-friendly websites that provide seamless user experiences while supporting your business objectives. Our websites are built to engage visitors and convert them into customers.</p>
+                                    <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="animation.php" class="ns-card">
+                                <div class="ns-card-media">
+                                    <img src="./img/services/MOTION-GRAPHICS.jpeg" alt="Animation Services">
+                                    <span class="ns-card-num">05</span>
+                                </div>
+                                <div class="ns-card-body">
+                                    <h3>Animation Services</h3>
+                                    <p>Animation is a powerful way to communicate ideas and capture attention. We create engaging animations, motion graphics, and visual storytelling content that simplify complex concepts and enhance audience engagement.</p>
+                                    <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="photography-and-video-production.php" class="ns-card">
+                                <div class="ns-card-media">
+                                    <img src="./img/services/PRODUCT-VIDEOS.jpeg" alt="Product Explanatory Videos">
+                                    <span class="ns-card-num">06</span>
+                                </div>
+                                <div class="ns-card-body">
+                                    <h3>Product Explanatory Videos</h3>
+                                    <p>Our product explanatory videos help businesses showcase their products and services in a clear, engaging, and easy-to-understand format. These videos are designed to educate audiences, increase conversions, and strengthen brand communication.</p>
+                                    <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="ns-progress">
+                    <div class="ns-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
+          NEW SERVICES HOME AREA END
+        ============================ -->
 
 
     <!-- =============================
@@ -1556,6 +1691,75 @@ $result = $conn->query($sql);
     </script>
 
     <!--// animate aos -->
+
+    <!-- New Services slider -->
+    <script>
+        (function () {
+            var nsCounter = document.querySelector(".ns-counter-current");
+            var nsProgress = document.querySelector(".ns-progress-bar");
+            var nsTotal = 6;
+
+            function pad(n) {
+                return n < 10 ? "0" + n : String(n);
+            }
+
+            function updateNsUi(swiper) {
+                var current = swiper.realIndex + 1;
+                if (nsCounter) nsCounter.textContent = pad(current);
+                if (nsProgress) {
+                    nsProgress.style.width = ((current / nsTotal) * 100) + "%";
+                }
+            }
+
+            var newServicesSwiper = new Swiper(".newServicesSwiper", {
+                slidesPerView: 1.15,
+                spaceBetween: 16,
+                speed: 700,
+                grabCursor: true,
+                watchSlidesProgress: true,
+                autoplay: {
+                    delay: 3800,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                navigation: {
+                    nextEl: ".ns-next",
+                    prevEl: ".ns-prev",
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1.35,
+                        spaceBetween: 18,
+                    },
+                    768: {
+                        slidesPerView: 2.05,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 2.35,
+                        spaceBetween: 22,
+                    },
+                    1200: {
+                        slidesPerView: 2.75,
+                        spaceBetween: 24,
+                    },
+                    1400: {
+                        slidesPerView: 3.15,
+                        spaceBetween: 26,
+                    },
+                },
+                on: {
+                    init: function (swiper) {
+                        updateNsUi(swiper);
+                    },
+                    slideChange: function (swiper) {
+                        updateNsUi(swiper);
+                    },
+                },
+            });
+        })();
+    </script>
+    <!--// New Services slider -->
 
     <!-- Team slider -->
     <script>
