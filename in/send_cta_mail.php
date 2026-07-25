@@ -56,7 +56,7 @@ try {
     $mail->addReplyTo($email, $name);
 
     // Test recipient — add original mail after testing, e.g.:
-    // $mail->addAddress('info@girafcreatives.com');
+    // $mail->addAddress('saneshbigleap@gmail.com');
     $mail->addAddress('saneshbigleap@gmail.com');
 
     $mail->isHTML(true);
@@ -69,7 +69,7 @@ try {
         '{{name}}'    => htmlspecialchars($name),
         '{{email}}'   => htmlspecialchars($email),
         '{{phone}}'   => htmlspecialchars($phone),
-        '{{message}}' => htmlspecialchars($message),
+        '{{message}}' => nl2br(htmlspecialchars($message)),
         '{{subject}}' => htmlspecialchars($subject !== '' ? $subject : 'Homepage CTA'),
     ];
 
@@ -88,7 +88,6 @@ try {
     echo json_encode([
         'status' => 'error',
         'message' => 'Message could not be sent. Please try again later.',
-        // Uncomment while debugging SMTP issues:
-        // 'debug' => $mail->ErrorInfo,
+        'debug' => $mail->ErrorInfo,
     ]);
 }
