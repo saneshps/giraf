@@ -7,6 +7,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+session_start();
 header('Content-Type: application/json');
 
 require 'vendor/autoload.php';
@@ -105,9 +106,12 @@ try {
     $reply->Body = fillTemplate('email-auto-reply.html', $replacements);
     $reply->send();
 
+    $_SESSION['cta_thank_you_name'] = $name;
+
     echo json_encode([
         'status' => 'success',
-        'message' => 'Thank you! Your message has been sent.'
+        'message' => 'Thank you! Your message has been sent.',
+        'redirect' => 'thank-you.php'
     ]);
 } catch (Exception $e) {
     echo json_encode([

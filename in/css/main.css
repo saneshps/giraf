@@ -556,7 +556,6 @@ button:focus {
   padding: 1rem 0.5rem;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -952,7 +951,8 @@ h2 {
 .banner-area img {
   width: 100%;
   height: 60vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .banner-area img {
@@ -1009,7 +1009,8 @@ h2 {
 .banner-area.portfolio img {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .banner-area.portfolio img {
@@ -1494,7 +1495,8 @@ h2 {
 }
 .about-area .main-box .about-second .about-second-image-first img {
   width: 98%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
@@ -1704,6 +1706,7 @@ h2 {
   }
 }
 .text-loop-area .l {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   animation: example 50s linear 0.5s infinite;
@@ -1739,6 +1742,7 @@ h2 {
   }
 }
 .text-loop-area .r {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   animation: example2 50s linear 0.8s infinite;
@@ -4026,13 +4030,7 @@ h2 {
 }
 .benifits-area .benifits-faq-section .benifits-faq-box .accordion .accordian-chk:checked + h4 + div.accordian-content {
   opacity: 1;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   max-height: 1000px;
   overflow: hidden;
@@ -4055,13 +4053,7 @@ h2 {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   border: 1px solid rgba(249, 178, 23, 0.08);
   border-bottom: none;
@@ -4504,6 +4496,12 @@ h2 {
   box-shadow: none;
 }
 
+.form-container .form-horizontal .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .form-container .form-horizontal .form-control::placeholder {
   color: #ccc;
   font-size: 16px;
@@ -4875,7 +4873,8 @@ h2 {
 .photography-titles .photography-subs .photography-sub-title img {
   width: 100%;
   height: 160px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .how-we-do-the-magic-area {
@@ -6891,7 +6890,8 @@ h2 {
 .blog-slider__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   opacity: 0;
   border-radius: 6px;
@@ -7316,7 +7316,8 @@ h2 {
 .blog-details-content .blog-details-right .latest-post-ul li img {
   width: 100px;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 6px;
 }
 @media (max-width: 1199px) {
@@ -7819,6 +7820,11 @@ h2 {
 .address-from-area .address-from .form-container .form-horizontal .form-control:focus {
   outline: none;
   box-shadow: none;
+}
+.address-from-area .address-from .form-container .form-horizontal .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
 }
 .address-from-area .address-from .form-container .form-horizontal .form-control::placeholder {
   color: #ccc;
@@ -9006,7 +9012,6 @@ h2 {
   top: 5px;
   margin-right: 16px;
   text-align: center;
-  -webkit-transition: all 250ms ease 0s;
   transition: all 250ms ease 0s;
 }
 .career-form-box .form-horizontal .radio input[type=radio]:checked + .radio-label:before {
@@ -10287,8 +10292,10 @@ h2 {
 .new-services-home-area .ns-card-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -10353,7 +10360,9 @@ h2 {
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 0.06);
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   z-index: 0;
 }
 @media (max-width: 991px) {
@@ -10429,6 +10438,7 @@ h2 {
   align-items: center;
   gap: 8px;
   margin-top: auto;
+  width: -moz-fit-content;
   width: fit-content;
   color: #FFFFFF;
   font-size: 0.82rem;
@@ -10908,6 +10918,10 @@ h2 {
   line-height: 1.4;
   transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
+.call-to-action-area .cta-field .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 300;
+}
 .call-to-action-area .cta-field .form-control::placeholder {
   color: rgba(255, 255, 255, 0.38);
   font-weight: 300;
@@ -11055,5 +11069,162 @@ h2 {
     opacity: 1;
   }
 }
+.thank-you-area {
+  padding: 120px 0 100px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(ellipse 50% 45% at 10% 0%, rgba(249, 178, 23, 0.1) 0%, transparent 55%), radial-gradient(ellipse 40% 40% at 90% 100%, rgba(249, 178, 23, 0.07) 0%, transparent 50%), linear-gradient(180deg, #111111 0%, #0a0a0a 100%);
+}
+@media (max-width: 991px) {
+  .thank-you-area {
+    padding: 100px 0 80px;
+    min-height: 60vh;
+  }
+}
+@media (max-width: 639px) {
+  .thank-you-area {
+    padding: 90px 0 70px;
+  }
+}
+.thank-you-area .thank-you-box {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 56px 40px 48px;
+  border-radius: 28px;
+  background: radial-gradient(ellipse 55% 50% at 50% 0%, rgba(249, 178, 23, 0.1) 0%, transparent 60%), linear-gradient(160deg, #161616 0%, #0f0f0f 100%);
+  border: 1px solid rgba(249, 178, 23, 0.16);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 639px) {
+  .thank-you-area .thank-you-box {
+    padding: 40px 22px 36px;
+    border-radius: 22px;
+  }
+}
+.thank-you-area .thank-you-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F9B217 0%, #ffc84a 100%);
+  color: #111;
+  font-size: 28px;
+  box-shadow: 0 10px 28px rgba(249, 178, 23, 0.35);
+  animation: thankYouPop 0.55s ease both;
+}
+.thank-you-area .thank-you-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #F9B217;
+}
+.thank-you-area h2 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 639px) {
+  .thank-you-area h2 {
+    font-size: 28px;
+  }
+}
+.thank-you-area .thank-you-text {
+  margin: 0 auto 28px;
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 639px) {
+  .thank-you-area .thank-you-text {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+}
+.thank-you-area .thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+.thank-you-area .thank-you-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.thank-you-area .thank-you-btn i {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+.thank-you-area .thank-you-btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.thank-you-area .thank-you-btn:hover i {
+  transform: translateX(3px);
+}
+.thank-you-area .thank-you-btn--primary {
+  color: #111;
+  background: linear-gradient(135deg, #F9B217 0%, #ffc84a 100%);
+  box-shadow: 0 8px 24px rgba(249, 178, 23, 0.3);
+}
+.thank-you-area .thank-you-btn--primary:hover {
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(249, 178, 23, 0.42);
+}
+.thank-you-area .thank-you-btn--ghost {
+  color: rgba(255, 255, 255, 0.85);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.thank-you-area .thank-you-btn--ghost:hover {
+  color: #fff;
+  border-color: rgba(249, 178, 23, 0.55);
+  background: rgba(249, 178, 23, 0.08);
+}
+.thank-you-area .thank-you-meta {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 13px;
+}
+.thank-you-area .thank-you-meta a {
+  color: #F9B217;
+  text-decoration: none;
+  font-weight: 500;
+}
+.thank-you-area .thank-you-meta a:hover {
+  text-decoration: underline;
+}
 
-/*# sourceMappingURL=main.css.map */
+@keyframes thankYouPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=main.css.map */

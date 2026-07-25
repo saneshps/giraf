@@ -244,23 +244,22 @@ if (typeof Swiper !== 'undefined') {
             })
             .then(function (data) {
                 if (data && data.status === 'success') {
-                    form.reset();
-                    clearError(nameInput, nameError);
-                    clearError(emailInput, emailError);
-                    clearError(phoneInput, phoneError);
-                    showStatus('success', data.message || 'Thank you! Your message has been sent.');
-                } else {
-                    showStatus('error', (data && data.message) || 'Something went wrong. Please try again.');
+                    window.location.href = data.redirect || 'thank-you.php';
+                    return;
                 }
-            })
-            .catch(function () {
-                showStatus('error', 'Something went wrong. Please try again later.');
-            })
-            .finally(function () {
+
                 if (submitBtn) {
                     submitBtn.disabled = false;
                     submitBtn.classList.remove('is-sending');
                 }
+                showStatus('error', (data && data.message) || 'Something went wrong. Please try again.');
+            })
+            .catch(function () {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('is-sending');
+                }
+                showStatus('error', 'Something went wrong. Please try again later.');
             });
     });
 })();

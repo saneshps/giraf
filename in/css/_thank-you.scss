@@ -1,0 +1,178 @@
+// ========================= THANK YOU AREA START =========================
+.thank-you-area {
+    padding: 120px 0 100px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(ellipse 50% 45% at 10% 0%, rgba($brand-color, 0.1) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 90% 100%, rgba($brand-color, 0.07) 0%, transparent 50%),
+        linear-gradient(180deg, #111111 0%, #0a0a0a 100%);
+
+    @include respond-below(md) {
+        padding: 100px 0 80px;
+        min-height: 60vh;
+    }
+
+    @include respond-below(sm) {
+        padding: 90px 0 70px;
+    }
+
+    .thank-you-box {
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 56px 40px 48px;
+        border-radius: 28px;
+        background:
+            radial-gradient(ellipse 55% 50% at 50% 0%, rgba($brand-color, 0.1) 0%, transparent 60%),
+            linear-gradient(160deg, #161616 0%, #0f0f0f 100%);
+        border: 1px solid rgba($brand-color, 0.16);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+
+        @include respond-below(sm) {
+            padding: 40px 22px 36px;
+            border-radius: 22px;
+        }
+    }
+
+    .thank-you-icon {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, $brand-color 0%, #ffc84a 100%);
+        color: #111;
+        font-size: 28px;
+        box-shadow: 0 10px 28px rgba($brand-color, 0.35);
+        animation: thankYouPop 0.55s ease both;
+    }
+
+    .thank-you-eyebrow {
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: $brand-color;
+    }
+
+    h2 {
+        margin: 0 0 14px;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+
+        @include respond-below(sm) {
+            font-size: 28px;
+        }
+    }
+
+    .thank-you-text {
+        margin: 0 auto 28px;
+        max-width: 420px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 16px;
+        line-height: 1.6;
+
+        @include respond-below(sm) {
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .thank-you-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+
+    .thank-you-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 13px 26px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+
+        i {
+            font-size: 12px;
+            transition: transform 0.25s ease;
+        }
+
+        &:hover {
+            text-decoration: none;
+            transform: translateY(-2px);
+
+            i {
+                transform: translateX(3px);
+            }
+        }
+
+        &--primary {
+            color: #111;
+            background: linear-gradient(135deg, $brand-color 0%, #ffc84a 100%);
+            box-shadow: 0 8px 24px rgba($brand-color, 0.3);
+
+            &:hover {
+                color: #fff;
+                box-shadow: 0 12px 30px rgba($brand-color, 0.42);
+            }
+        }
+
+        &--ghost {
+            color: rgba(255, 255, 255, 0.85);
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            &:hover {
+                color: #fff;
+                border-color: rgba($brand-color, 0.55);
+                background: rgba($brand-color, 0.08);
+            }
+        }
+    }
+
+    .thank-you-meta {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 13px;
+
+        a {
+            color: $brand-color;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@keyframes thankYouPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    70% {
+        transform: scale(1.08);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+// ========================= THANK YOU AREA END =========================
