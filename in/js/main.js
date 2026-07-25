@@ -195,12 +195,72 @@ if (typeof Swiper !== 'undefined') {
     emailInput.addEventListener('blur', validateEmail);
     phoneInput.addEventListener('blur', validatePhone);
 
-    form.addEventListener('submit', function (event) {
-        if (!validateForm()) {
-            event.preventDefault();
+    var statusEl = document.getElementById('cta_form_status');
+    var submitBtn = form.querySelector('.cta-submit');
 
+    function showStatus(type, message) {
+        if (!statusEl) return;
+        statusEl.hidden = false;
+        statusEl.className = 'cta-form-status is-' + type;
+        statusEl.textContent = message;
+    }
+
+    function clearStatus() {
+        if (!statusEl) return;
+        statusEl.hidden = true;
+        statusEl.className = 'cta-form-status';
+        statusEl.textContent = '';
+    }
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!validateForm()) {
             var firstInvalid = form.querySelector('.cta-field.is-invalid .form-control');
             if (firstInvalid) firstInvalid.focus();
+            return;
         }
+
+        clearStatus();
+
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.classList.add('is-sending');
+        }
+
+        var formData = new FormData(form);
+
+        fetch(form.action || 'send_cta_mail.php', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then(function (response) {
+                return response.json().catch(function () {
+                    throw new Error('Invalid server response');
+                });
+            })
+            .then(function (data) {
+                if (data && data.status === 'success') {
+                    form.reset();
+                    clearError(nameInput, nameError);
+                    clearError(emailInput, emailError);
+                    clearError(phoneInput, phoneError);
+                    showStatus('success', data.message || 'Thank you! Your message has been sent.');
+                } else {
+                    showStatus('error', (data && data.message) || 'Something went wrong. Please try again.');
+                }
+            })
+            .catch(function () {
+                showStatus('error', 'Something went wrong. Please try again later.');
+            })
+            .finally(function () {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('is-sending');
+                }
+            });
     });
 })();

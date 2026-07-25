@@ -679,7 +679,7 @@ $result = $conn->query($sql);
                                 <p>Tell us about your project — we'll get back within 24 hours.</p>
                             </div>
 
-                            <form class="cta-form" method="post" action="connect-us.php" id="cta_contact_form" novalidate>
+                            <form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
                                 <div class="cta-form-grid">
                                     <div class="cta-field">
                                         <label for="cta_name">Full name *</label>
@@ -705,6 +705,8 @@ $result = $conn->query($sql);
                                         <textarea id="cta_msg" name="msg" class="form-control" rows="4" placeholder="Share a little about your brand or goals..."></textarea>
                                     </div>
                                 </div>
+
+                                <p class="cta-form-status" id="cta_form_status" role="status" aria-live="polite" hidden></p>
 
                                 <button type="submit" class="cta-submit">
                                     Get in Touch

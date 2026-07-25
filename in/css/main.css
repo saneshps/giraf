@@ -10957,6 +10957,22 @@ h2 {
 .call-to-action-area .cta-field.is-invalid .cta-field-error {
   display: block;
 }
+.call-to-action-area .cta-form-status {
+  margin: 16px 0 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.call-to-action-area .cta-form-status.is-success {
+  color: #1b5e20;
+  background: rgba(76, 175, 80, 0.12);
+}
+.call-to-action-area .cta-form-status.is-error {
+  color: #b71c1c;
+  background: rgba(239, 83, 80, 0.12);
+}
 .call-to-action-area .cta-submit {
   display: inline-flex;
   align-items: center;
@@ -11004,6 +11020,12 @@ h2 {
 .call-to-action-area .cta-submit:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(249, 178, 23, 0.35), 0 8px 28px rgba(249, 178, 23, 0.32);
+}
+.call-to-action-area .cta-submit:disabled, .call-to-action-area .cta-submit.is-sending {
+  cursor: wait;
+  opacity: 0.75;
+  transform: none;
+  pointer-events: none;
 }
 @media (max-width: 639px) {
   .call-to-action-area .cta-submit {
