@@ -1,0 +1,578 @@
+// ========================= CALL TO ACTION AREA START =========================
+.call-to-action-area {
+    padding: 20px 0 100px;
+    position: relative;
+    overflow: hidden;
+
+    @include respond-below(lg) {
+        padding: 10px 0 80px;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 70px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 60px;
+    }
+
+    .main-box {
+        position: relative;
+        padding: 90px 0 85px;
+        border-radius: 28px;
+        overflow: hidden;
+        background:
+            radial-gradient(ellipse 48% 55% at 0% 0%, rgba($brand-color, 0.12) 0%, transparent 55%),
+            radial-gradient(ellipse 42% 50% at 100% 100%, rgba($brand-color, 0.09) 0%, transparent 50%),
+            linear-gradient(155deg, #111111 0%, $box-color 48%, #0d0d0d 100%);
+        border: 1px solid rgba($brand-color, 0.14);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 28px 60px rgba(0, 0, 0, 0.45);
+
+        @include respond-below(lg) {
+            padding: 65px 0 70px;
+            border-radius: 22px;
+        }
+
+        @include respond-below(md) {
+            padding: 48px 0 52px;
+            border-radius: 18px;
+        }
+
+        @include respond-below(sm) {
+            padding: 40px 0 44px;
+            border-radius: 16px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.5) 30%,
+                rgba(#ffc84a, 0.85) 50%,
+                rgba($brand-color, 0.5) 70%,
+                transparent 100%
+            );
+            z-index: 1;
+        }
+
+        // Subtle diagonal hatch texture
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 18px,
+                rgba(255, 255, 255, 0.012) 18px,
+                rgba(255, 255, 255, 0.012) 19px
+            );
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            @include respond-below(sm) {
+                padding: 0 15px !important;
+            }
+        }
+    }
+
+    .cta-glow {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        top: -150px;
+        left: -110px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba($brand-color, 0.15) 0%, transparent 70%);
+        filter: blur(12px);
+        pointer-events: none;
+        z-index: 0;
+        animation: ctaPulse 9s ease-in-out infinite;
+
+        &--alt {
+            width: 340px;
+            height: 340px;
+            top: auto;
+            bottom: -120px;
+            left: auto;
+            right: -90px;
+            background: radial-gradient(circle, rgba($brand-color, 0.11) 0%, transparent 70%);
+            animation-delay: -4.5s;
+        }
+
+        @include respond-below(md) {
+            width: 220px;
+            height: 220px;
+            top: -90px;
+            left: -70px;
+
+            &--alt {
+                width: 180px;
+                height: 180px;
+                bottom: -70px;
+                right: -55px;
+            }
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .cta-orb {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        bottom: 12%;
+        left: 42%;
+        border: 1px solid rgba($brand-color, 0.16);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        animation: ctaOrbFloat 10s ease-in-out infinite;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 20px;
+            border: 1px solid rgba($brand-color, 0.09);
+            border-radius: 50%;
+        }
+
+        @include respond-below(lg) {
+            display: none;
+        }
+    }
+
+    .cta-row {
+        position: relative;
+        z-index: 2;
+    }
+
+    // ---- Left content ----
+    .cta-content {
+        padding-right: 36px;
+
+        @include respond-below(xl) {
+            padding-right: 24px;
+        }
+
+        @include respond-below(lg) {
+            padding-right: 16px;
+            margin-bottom: 36px;
+        }
+
+        @include respond-below(md) {
+            padding-right: 0;
+            margin-bottom: 28px;
+        }
+
+        @include respond-below(sm) {
+            margin-bottom: 24px;
+        }
+    }
+
+    .cta-label {
+        display: inline-block;
+        margin: 0 0 18px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: $brand-color;
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba($brand-color, 0.75), transparent);
+        }
+
+        @include respond-below(sm) {
+            font-size: 0.85rem;
+            margin-bottom: 14px;
+            letter-spacing: 0.12em;
+        }
+    }
+
+    .cta-content h2 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.24;
+        letter-spacing: -0.025em;
+        margin: 0 0 22px;
+        font-size: 2.35rem !important;
+        max-width: 520px;
+
+        @include respond-below(xl) {
+            font-size: 2.1rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 2rem !important;
+            max-width: 100%;
+            line-height: 1.28;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.75rem !important;
+            line-height: 1.32;
+            margin-bottom: 16px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.45rem !important;
+            line-height: 1.35;
+            letter-spacing: -0.015em;
+            margin-bottom: 14px;
+        }
+    }
+
+    .cta-content p {
+        margin: 0 0 14px;
+        max-width: 500px;
+        font-size: 15.5px;
+        font-weight: 300;
+        line-height: 1.78;
+        color: rgba($primary-color, 0.82);
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include respond-below(lg) {
+            max-width: 100%;
+            font-size: 15px;
+            line-height: 1.72;
+        }
+
+        @include respond-below(sm) {
+            font-size: 14.5px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+    }
+
+    .cta-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        list-style: none;
+        margin: 28px 0 0;
+        padding: 0;
+
+        @include respond-below(md) {
+            margin-top: 22px;
+            gap: 8px 14px;
+        }
+
+        @include respond-below(sm) {
+            margin-top: 18px;
+            gap: 8px 12px;
+        }
+
+        li {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: rgba($primary-color, 0.88);
+
+            @include respond-below(sm) {
+                font-size: 12.5px;
+                gap: 6px;
+            }
+
+            i {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                font-size: 8px;
+                color: #111;
+                background: linear-gradient(135deg, $brand-color 0%, #ffc84a 100%);
+                box-shadow: 0 0 12px rgba($brand-color, 0.35);
+                flex-shrink: 0;
+
+                @include respond-below(sm) {
+                    width: 16px;
+                    height: 16px;
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+
+    // ---- Form panel ----
+    .cta-form-col {
+        @include respond-below(lg) {
+            padding-left: 8px;
+        }
+
+        @include respond-below(md) {
+            padding-left: 0;
+        }
+    }
+
+    .cta-form-panel {
+        position: relative;
+        padding: 36px 34px 34px;
+        border-radius: 20px;
+        background:
+            linear-gradient(165deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.015) 100%);
+        border: 1px solid rgba($brand-color, 0.22);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+            0 20px 48px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(6px);
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                $brand-color 25%,
+                #ffc84a 50%,
+                $brand-color 75%,
+                transparent 100%
+            );
+        }
+
+        @include respond-below(xl) {
+            padding: 30px 28px 28px;
+        }
+
+        @include respond-below(md) {
+            padding: 26px 22px 24px;
+            border-radius: 16px;
+        }
+
+        @include respond-below(sm) {
+            padding: 22px 16px 20px;
+            border-radius: 14px;
+        }
+    }
+
+    .cta-form-head {
+        margin-bottom: 26px;
+
+        @include respond-below(sm) {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin: 0 0 8px;
+            color: $primary-color;
+            font-size: 1.35rem !important;
+            font-weight: 560;
+            letter-spacing: -0.015em;
+            line-height: 1.3;
+
+            @include respond-below(sm) {
+                font-size: 1.15rem !important;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: 13.5px;
+            font-weight: 300;
+            line-height: 1.55;
+            color: rgba($primary-color, 0.62);
+
+            @include respond-below(sm) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .cta-form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 14px;
+
+        @include respond-below(sm) {
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+    }
+
+    .cta-field {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        &--full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: rgba($brand-color, 0.9);
+        }
+
+        .form-control {
+            width: 100%;
+            color: $primary-color;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 14.5px;
+            font-weight: 300;
+            line-height: 1.4;
+            transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+
+            &::placeholder {
+                color: rgba($primary-color, 0.38);
+                font-weight: 300;
+            }
+
+            &:hover {
+                border-color: rgba($brand-color, 0.35);
+                background: rgba(255, 255, 255, 0.055);
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba($brand-color, 0.18);
+                border-color: rgba($brand-color, 0.65);
+                background: rgba(255, 255, 255, 0.06);
+            }
+
+            @include respond-below(sm) {
+                padding: 11px 12px;
+                font-size: 14px;
+                border-radius: 8px;
+            }
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+
+            @include respond-below(sm) {
+                min-height: 90px;
+            }
+        }
+    }
+
+    .cta-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 22px;
+        padding: 14px 28px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #111;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        background: linear-gradient(135deg, $brand-color 0%, #ffc84a 100%);
+        box-shadow: 0 8px 28px rgba($brand-color, 0.32);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+
+        i {
+            font-size: 13px;
+            transition: transform 0.3s ease;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.28) 50%, transparent 70%);
+            transform: translateX(-120%);
+            transition: transform 0.55s ease;
+        }
+
+        &:hover {
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 34px rgba($brand-color, 0.45);
+
+            i {
+                transform: translateX(4px);
+            }
+
+            &::before {
+                transform: translateX(120%);
+            }
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba($brand-color, 0.35), 0 8px 28px rgba($brand-color, 0.32);
+        }
+
+        @include respond-below(sm) {
+            margin-top: 18px;
+            padding: 13px 22px;
+            font-size: 15px;
+        }
+    }
+}
+
+@keyframes ctaPulse {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes ctaOrbFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(-14px);
+        opacity: 1;
+    }
+}
+// ========================= CALL TO ACTION AREA END =========================

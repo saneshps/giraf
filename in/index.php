@@ -641,73 +641,86 @@ $result = $conn->query($sql);
     </section>
 
     <!-- =============================
-          NEW SERVICES HOME AREA END
+          CALL TO ACTION AREA START
         ============================ -->
-
-
-    <!-- =============================
-          SERVICES HOME AREA START
-        ============================ -->
-    <section class="services-home-area">
+    <section class="call-to-action-area">
         <div class="main-box">
+            <div class="cta-glow" aria-hidden="true"></div>
+            <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
+            <div class="cta-orb" aria-hidden="true"></div>
+
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center cta-row">
 
-                    <!-- col-md-4 -->
-                    <div class="col-xl-5 col-lg-5 col-md-12 services-home-first">
-                        <h6> SERVICES </h6>
-                        <h4> We stay local but we play global </h4>
+                    <div class="col-xl-6 col-lg-6 col-md-12 cta-content" data-aos="fade-right">
+                        <span class="cta-label">Call To Action</span>
+                        <h2>Ready to Grow Your Brand with Creative Solutions?</h2>
+                        <p>
+                            At Giraf Creatives, we help businesses build stronger brands through strategic branding,
+                            digital marketing, creative designing, web development, animation, and product explanatory videos.
+                        </p>
+                        <p>
+                            Whether you're launching a new business, refreshing your brand, or expanding your digital presence,
+                            our team is ready to create solutions tailored to your goals.
+                        </p>
+
+                        <ul class="cta-highlights" aria-label="What we offer">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Strategic Branding</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Digital Marketing</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Web Development</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Animation &amp; Video</li>
+                        </ul>
                     </div>
-                    <!--// col-md-4 -->
 
+                    <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col" data-aos="fade-left">
+                        <div class="cta-form-panel">
+                            <div class="cta-form-head">
+                                <h3>Let's Start a Conversation</h3>
+                                <p>Tell us about your project — we'll get back within 24 hours.</p>
+                            </div>
 
-                    <!-- col-md-8 -->
-                    <!-- <div class="col-xl-8 col-lg-8 col-md-12 services-home-scnd">
-            <p> We are providing services for your company’s tip-to-toe development.
-              We are here to build your company in a creative way. To help you to reach
-              the success milestone. Yeah, competition is increasing day by day and you
-              need a different story for the customer, to make the people listen to you,
-              follow you, and become your fan. </p>
-          </div> -->
-                    <!--// col-md-8 -->
+                            <form class="cta-form" method="post" action="connect-us.php" id="cta_contact_form">
+                                <div class="cta-form-grid">
+                                    <div class="cta-field">
+                                        <label for="cta_name">Name *</label>
+                                        <input type="text" id="cta_name" name="firstname" class="form-control" placeholder="Your full name" required>
+                                    </div>
+                                    <div class="cta-field">
+                                        <label for="cta_phone">Phone</label>
+                                        <input type="tel" id="cta_phone" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX">
+                                    </div>
+                                    <div class="cta-field cta-field--full">
+                                        <label for="cta_email">Email *</label>
+                                        <input type="email" id="cta_email" name="email" class="form-control" placeholder="you@company.com" required>
+                                    </div>
+                                    <div class="cta-field cta-field--full">
+                                        <label for="cta_subject">Subject</label>
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" placeholder="How can we help?">
+                                    </div>
+                                    <div class="cta-field cta-field--full">
+                                        <label for="cta_msg">Message *</label>
+                                        <textarea id="cta_msg" name="msg" class="form-control" rows="4" placeholder="Share a little about your brand or goals..." required></textarea>
+                                    </div>
+                                </div>
 
-
-
-                </div>
-
-                <div class="row services-home">
-                    <img class="serv-giraf" data-aos="fade-left" data-aos-duration="2000"
-                        src="./img/services/services-1.png" alt="giraf">
-                    <ul>
-                        <li>
-
-                            <h2> <a href="branding.php"> Branding </a> </h2>
-                            <h2> <a href="designing.php"> Designing </a> </h2>
-                            <h2> <a href="digital-marketing.php"> Digital Marketing </a> </h2>
-                            <h2> <a href="animation.php"> Animation </a> </h2>
-                            <h2> <a href="photography-and-video-production.php"> Product Explanatory Videos </a> </h2>
-                            <h2> <a href="web-and-app-development.php"> Web & App Development </a> </h2>
-
-
-                        </li>
-                    </ul>
-
-                    <!-- =============== BUTTON =================== -->
-                    <div class="read-more">
-                        <a href="services.php" class="btn btn-lg">
-                            Our Services
-                            <i class="fas fa-angle-right"></i>
-                        </a>
+                                <button type="submit" class="cta-submit">
+                                    Get in Touch
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                    <!-- =============== BUTTON =================== -->
 
                 </div>
             </div>
         </div>
     </section>
-    <!-- ==========================
-          SERVICES HOME AREA END
-       ========================= -->
+    <!-- =============================
+          CALL TO ACTION AREA END
+        ============================ -->
+
+
+ 
 
     <!-- ==========================
           TEAM HOME AREA START
