@@ -1,8 +1,8 @@
 <?php
 /**
  * Homepage CTA form mailer only.
- * Test recipient: saneshbigleap@gmail.com
- * After testing, add the original address (e.g. info@girafcreatives.com) below.
+ * 1) Internal notification → saneshbigleap@gmail.com
+ * 2) Auto-reply confirmation → the user who submitted the form
  */
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -41,9 +41,29 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-$mail = new PHPMailer(true);
+$safeName    = htmlspecialchars($name);
+$safeEmail   = htmlspecialchars($email);
+$safePhone   = htmlspecialchars($phone);
+$safeSubject = htmlspecialchars($subject !== '' ? $subject : 'Homepage CTA');
+$safeMessage = nl2br(htmlspecialchars($message));
 
-try {
+$replacements = [
+    '{{name}}'    => $safeName,
+    '{{email}}'   => $safeEmail,
+    '{{phone}}'   => $safePhone,
+    '{{message}}' => $safeMessage,
+    '{{subject}}' => $safeSubject,
+];
+
+function fillTemplate($file, $replacements) {
+    $template = file_get_contents($file);
+    foreach ($replacements as $key => $value) {
+        $template = str_replace($key, $value, $template);
+    }
+    return $template;
+}
+
+function configureSmtp(PHPMailer $mail) {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
@@ -51,34 +71,39 @@ try {
     $mail->Password   = 'bzxvsgeinuwisdkt';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
+    $mail->CharSet    = 'UTF-8';
+}
+
+try {
+    // 1) Internal notification
+    $mail = new PHPMailer(true);
+    configureSmtp($mail);
 
     $mail->setFrom('saneshbigleap@gmail.com', 'Giraf Creatives');
     $mail->addReplyTo($email, $name);
-
     // Test recipient — add original mail after testing, e.g.:
-    // $mail->addAddress('saneshbigleap@gmail.com');
+    // $mail->addAddress('info@girafcreatives.com');
     $mail->addAddress('saneshbigleap@gmail.com');
 
     $mail->isHTML(true);
     $mail->Subject = $subject !== ''
         ? $subject
         : 'New Message From Homepage CTA';
-
-    $template = file_get_contents('email-template.html');
-    $replacements = [
-        '{{name}}'    => htmlspecialchars($name),
-        '{{email}}'   => htmlspecialchars($email),
-        '{{phone}}'   => htmlspecialchars($phone),
-        '{{message}}' => nl2br(htmlspecialchars($message)),
-        '{{subject}}' => htmlspecialchars($subject !== '' ? $subject : 'Homepage CTA'),
-    ];
-
-    foreach ($replacements as $key => $value) {
-        $template = str_replace($key, $value, $template);
-    }
-
-    $mail->Body = $template;
+    $mail->Body = fillTemplate('email-template.html', $replacements);
     $mail->send();
+
+    // 2) Auto-reply to the user
+    $reply = new PHPMailer(true);
+    configureSmtp($reply);
+
+    $reply->setFrom('saneshbigleap@gmail.com', 'Giraf Creatives');
+    $reply->addAddress($email, $name);
+    $reply->addReplyTo('saneshbigleap@gmail.com', 'Giraf Creatives');
+
+    $reply->isHTML(true);
+    $reply->Subject = 'Thank you for contacting Giraf Creatives';
+    $reply->Body = fillTemplate('email-auto-reply.html', $replacements);
+    $reply->send();
 
     echo json_encode([
         'status' => 'success',
@@ -88,6 +113,6 @@ try {
     echo json_encode([
         'status' => 'error',
         'message' => 'Message could not be sent. Please try again later.',
-        'debug' => $mail->ErrorInfo,
+        'debug' => isset($mail) ? $mail->ErrorInfo : (isset($reply) ? $reply->ErrorInfo : $e->getMessage()),
     ]);
 }
