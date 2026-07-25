@@ -551,7 +551,7 @@ $result = $conn->query($sql);
                                     <img src="./img/services/branding.jpg" alt="Branding services">
                                     <span class="ns-card-num">01</span>
                                 </div>
-                                <div class="ns-card-body">
+                                <div class="ns-card-body" data-index="01">
                                     <h3>Branding</h3>
                                     <p>A strong brand creates trust and recognition. We help businesses build distinctive brand identities through logo design, brand strategy, visual identity systems, and brand communication that leave a lasting impression.</p>
                                     <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
@@ -565,7 +565,7 @@ $result = $conn->query($sql);
                                     <img src="./img/services/digital-marketing.jpg" alt="Digital Marketing services">
                                     <span class="ns-card-num">02</span>
                                 </div>
-                                <div class="ns-card-body">
+                                <div class="ns-card-body" data-index="02">
                                     <h3>Digital Marketing</h3>
                                     <p>Our digital marketing services help businesses increase visibility, attract potential customers, and generate growth through strategic online marketing campaigns across multiple digital channels.</p>
                                     <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
@@ -579,7 +579,7 @@ $result = $conn->query($sql);
                                     <img src="./img/services/Designing-banner.jpg" alt="Creative Designing services">
                                     <span class="ns-card-num">03</span>
                                 </div>
-                                <div class="ns-card-body">
+                                <div class="ns-card-body" data-index="03">
                                     <h3>Creative Designing</h3>
                                     <p>From marketing materials and social media creatives to corporate presentations and promotional designs, we create visually compelling designs that communicate your message effectively and strengthen your brand image.</p>
                                     <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
@@ -593,7 +593,7 @@ $result = $conn->query($sql);
                                     <img src="./img/services/web-app-development.jpg" alt="Website Design and Development">
                                     <span class="ns-card-num">04</span>
                                 </div>
-                                <div class="ns-card-body">
+                                <div class="ns-card-body" data-index="04">
                                     <h3>Website Design &amp; Development</h3>
                                     <p>We design and develop responsive, user-friendly websites that provide seamless user experiences while supporting your business objectives. Our websites are built to engage visitors and convert them into customers.</p>
                                     <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
@@ -607,7 +607,7 @@ $result = $conn->query($sql);
                                     <img src="./img/services/MOTION-GRAPHICS.jpeg" alt="Animation Services">
                                     <span class="ns-card-num">05</span>
                                 </div>
-                                <div class="ns-card-body">
+                                <div class="ns-card-body" data-index="05">
                                     <h3>Animation Services</h3>
                                     <p>Animation is a powerful way to communicate ideas and capture attention. We create engaging animations, motion graphics, and visual storytelling content that simplify complex concepts and enhance audience engagement.</p>
                                     <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
@@ -621,7 +621,7 @@ $result = $conn->query($sql);
                                     <img src="./img/services/PRODUCT-VIDEOS.jpeg" alt="Product Explanatory Videos">
                                     <span class="ns-card-num">06</span>
                                 </div>
-                                <div class="ns-card-body">
+                                <div class="ns-card-body" data-index="06">
                                     <h3>Product Explanatory Videos</h3>
                                     <p>Our product explanatory videos help businesses showcase their products and services in a clear, engaging, and easy-to-understand format. These videos are designed to educate audiences, increase conversions, and strengthen brand communication.</p>
                                     <span class="ns-card-link">Explore <i class="fas fa-arrow-right"></i></span>
@@ -1733,19 +1733,19 @@ $result = $conn->query($sql);
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 18,
+                        spaceBetween: 16,
                     },
                     992: {
-                        slidesPerView: 2.25,
-                        spaceBetween: 20,
+                        slidesPerView: 2,
+                        spaceBetween: 18,
                     },
                     1200: {
-                        slidesPerView: 2.75,
-                        spaceBetween: 24,
+                        slidesPerView: 3,
+                        spaceBetween: 20,
                     },
                     1400: {
-                        slidesPerView: 3.15,
-                        spaceBetween: 26,
+                        slidesPerView: 3,
+                        spaceBetween: 22,
                     },
                 },
                 on: {
