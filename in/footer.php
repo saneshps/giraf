@@ -2,13 +2,15 @@
     <div class="container">
       <div class="row">
         <!-- first -->
-        <div class="col-xl-4 col-lg-4 col-md-6 footer-first">
-          <p class="f-address"> Masters Building Mavoor, <br>
-            Calicut - 673661 <br>
-            Kerala - India.
-          </p>
-          <p> <a href="tel:918075461989"> +91 80 75 46 19 89 </a> </p>
-          <p> <a href="mailto:info@girafcreatives.com "> info@girafcreatives.com  </a> </p>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-first">
+          <ul>
+            <li> <i class="fas fa-chevron-right"></i> <a href="./branding.php"> Branding </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="./digital-marketing.php"> Digital Marketing </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="./designing.php"> Creative Designing </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="./web-and-app-development.php"> Website Design & Development </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="./animation.php"> Animation Services </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="./photography-and-video-production.php"> Product Explanatory Videos </a> </li> 
+          </ul>
 
         </div>
         <!-- first -->
@@ -38,7 +40,14 @@
         </div>
         <!-- secnd -->
         <!-- Third -->
-        <div class="col-xl-4 col-lg-4 col-md-6 footer-third">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-third">
+        <p class="f-address"> Masters Building Mavoor, <br>
+            Calicut - 673661 <br>
+            Kerala - India.
+          </p>
+          <p> <a href="tel:918075461989"> +91 80 75 46 19 89 </a> </p>
+          <p> <a href="mailto:info@girafcreatives.com "> info@girafcreatives.com  </a> </p>
+
           <h4> SOCIAL MEDIA </h4>
           <div class="social-links">
 

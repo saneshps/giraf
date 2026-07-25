@@ -6319,20 +6319,54 @@ h2 {
   justify-content: flex-end;
   align-items: flex-start;
 }
-.footer-area .footer-first .f-address {
+@media (max-width: 639px) {
+  .footer-area .footer-first {
+    text-align: center;
+  }
+}
+@media (max-width: 639px) {
+  .footer-area .footer-first ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.footer-area .footer-first ul li {
+  list-style: none;
+  margin: 0;
   line-height: 30px;
+  padding: 0 0 0 20px;
 }
-.footer-area .footer-first p {
-  color: #C5C5C5;
-  padding: 0 0 12px 0;
+@media (max-width: 639px) {
+  .footer-area .footer-first ul li {
+    padding: 0px 13px;
+    border: 1px solid rgba(175, 175, 175, 0.5098039216);
+    border-radius: 6px;
+  }
 }
-.footer-area .footer-first p a {
+.footer-area .footer-first ul li a {
   text-decoration: none;
   color: #C5C5C5;
 }
-.footer-area .footer-first p a:hover {
+@media (max-width: 639px) {
+  .footer-area .footer-first ul li a {
+    font-size: 14px;
+  }
+}
+.footer-area .footer-first ul li a:hover {
   color: #C5C5C5;
   text-decoration: none;
+}
+.footer-area .footer-first ul i {
+  margin: 0 10px 0 0;
+  color: #F9B217;
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: middle;
+  line-height: 30px;
+  display: inline-block;
 }
 .footer-area .footer-first h6 {
   color: #C5C5C5;
@@ -6395,17 +6429,40 @@ h2 {
 }
 @media (max-width: 639px) {
   .footer-area .footer-third {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0 0 0;
+    text-align: center;
   }
 }
 .footer-area .footer-third h4 {
   color: #F9B217;
   font-size: 1.3rem;
+  margin: 20px 0 0 0;
 }
 .footer-area .footer-third .social-links {
   padding: 30px 0 0 0;
+}
+.footer-area .footer-third .f-address {
+  line-height: 30px;
+}
+.footer-area .footer-third p {
+  color: #C5C5C5;
+  padding: 0 0 12px 0;
+  text-align: right;
+}
+@media (max-width: 639px) {
+  .footer-area .footer-third p {
+    text-align: center;
+  }
+}
+.footer-area .footer-third p a {
+  text-decoration: none;
+  color: #C5C5C5;
+}
+.footer-area .footer-third p a:hover {
+  color: #C5C5C5;
+  text-decoration: none;
 }
 
 #intro {
