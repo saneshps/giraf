@@ -295,25 +295,15 @@
     .ns-slider-wrap {
         position: relative;
         z-index: 2;
-        padding: 0 0 8px;
-
-        // Bleed slider past container padding for a cinematic edge
-        margin-left: 5%;
-        width: 95%;
-
-        @include respond-below(md) {
-            margin-left: 4%;
-            width: 96%;
-        }
-
-        @include respond-below(sm) {
-            margin-left: 15px;
-            width: calc(100% - 15px);
-        }
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 4px 0 10px;
     }
 
     .newServicesSwiper {
-        overflow: visible;
+        overflow: hidden;
+        width: 100%;
         padding-bottom: 8px;
         cursor: grab;
 
@@ -321,9 +311,19 @@
             cursor: grabbing;
         }
 
+        .swiper-wrapper {
+            box-sizing: border-box;
+        }
+
         .swiper-slide {
             height: auto;
+            width: 100%;
+            box-sizing: border-box;
             transition: transform 0.45s ease, opacity 0.45s ease;
+
+            @include respond-below(md) {
+                opacity: 1 !important;
+            }
 
             &:not(.swiper-slide-active):not(.swiper-slide-next) {
                 @include respond-above(lg) {
@@ -357,8 +357,9 @@
         }
 
         @include respond-below(sm) {
-            min-height: 440px;
+            min-height: 0;
             border-radius: 16px;
+            width: 100%;
         }
 
         &::after {
@@ -375,9 +376,9 @@
         &:focus-visible {
             border-color: rgba($brand-color, 0.4);
             box-shadow:
-                0 24px 50px rgba(0, 0, 0, 0.45),
+                0 18px 40px rgba(0, 0, 0, 0.45),
                 0 0 0 1px rgba($brand-color, 0.12);
-            transform: translateY(-6px);
+            transform: translateY(-3px);
             outline: none;
 
             &::after {
@@ -557,7 +558,7 @@
 
     .ns-progress {
         margin-top: 36px;
-        margin-right: 5%;
+        width: 100%;
         height: 2px;
         background: rgba(255, 255, 255, 0.08);
         border-radius: 2px;
@@ -565,12 +566,10 @@
 
         @include respond-below(md) {
             margin-top: 28px;
-            margin-right: 4%;
         }
 
         @include respond-below(sm) {
             margin-top: 22px;
-            margin-right: 15px;
         }
     }
 

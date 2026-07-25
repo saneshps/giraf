@@ -540,9 +540,8 @@ $result = $conn->query($sql);
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="ns-slider-wrap" data-aos="fade-up" data-aos-delay="80">
+                <div class="ns-slider-wrap" data-aos="fade-up" data-aos-delay="80">
                 <div class="swiper newServicesSwiper">
                     <div class="swiper-wrapper">
 
@@ -635,6 +634,7 @@ $result = $conn->query($sql);
 
                 <div class="ns-progress">
                     <div class="ns-progress-bar"></div>
+                </div>
                 </div>
             </div>
         </div>
@@ -1712,8 +1712,8 @@ $result = $conn->query($sql);
             }
 
             var newServicesSwiper = new Swiper(".newServicesSwiper", {
-                slidesPerView: 1.15,
-                spaceBetween: 16,
+                slidesPerView: 1,
+                spaceBetween: 0,
                 speed: 700,
                 grabCursor: true,
                 watchSlidesProgress: true,
@@ -1728,16 +1728,16 @@ $result = $conn->query($sql);
                 },
                 breakpoints: {
                     576: {
-                        slidesPerView: 1.35,
-                        spaceBetween: 18,
+                        slidesPerView: 1,
+                        spaceBetween: 0,
                     },
                     768: {
-                        slidesPerView: 2.05,
-                        spaceBetween: 20,
+                        slidesPerView: 2,
+                        spaceBetween: 18,
                     },
                     992: {
-                        slidesPerView: 2.35,
-                        spaceBetween: 22,
+                        slidesPerView: 2.25,
+                        spaceBetween: 20,
                     },
                     1200: {
                         slidesPerView: 2.75,
