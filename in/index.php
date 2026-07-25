@@ -679,27 +679,30 @@ $result = $conn->query($sql);
                                 <p>Tell us about your project — we'll get back within 24 hours.</p>
                             </div>
 
-                            <form class="cta-form" method="post" action="connect-us.php" id="cta_contact_form">
+                            <form class="cta-form" method="post" action="connect-us.php" id="cta_contact_form" novalidate>
                                 <div class="cta-form-grid">
                                     <div class="cta-field">
-                                        <label for="cta_name">Name *</label>
-                                        <input type="text" id="cta_name" name="firstname" class="form-control" placeholder="Your full name" required>
+                                        <label for="cta_name">Full name *</label>
+                                        <input type="text" id="cta_name" name="firstname" class="form-control" placeholder="Your full name" autocomplete="name">
+                                        <span class="cta-field-error" id="cta_name_error" role="alert"></span>
                                     </div>
                                     <div class="cta-field">
-                                        <label for="cta_phone">Phone</label>
-                                        <input type="tel" id="cta_phone" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX">
+                                        <label for="cta_phone">Phone number *</label>
+                                        <input type="tel" id="cta_phone" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX" autocomplete="tel" inputmode="tel">
+                                        <span class="cta-field-error" id="cta_phone_error" role="alert"></span>
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_email">Email *</label>
-                                        <input type="email" id="cta_email" name="email" class="form-control" placeholder="you@company.com" required>
+                                        <input type="email" id="cta_email" name="email" class="form-control" placeholder="you@company.com" autocomplete="email">
+                                        <span class="cta-field-error" id="cta_email_error" role="alert"></span>
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_subject">Subject</label>
                                         <input type="text" id="cta_subject" name="subject" class="form-control" placeholder="How can we help?">
                                     </div>
                                     <div class="cta-field cta-field--full">
-                                        <label for="cta_msg">Message *</label>
-                                        <textarea id="cta_msg" name="msg" class="form-control" rows="4" placeholder="Share a little about your brand or goals..." required></textarea>
+                                        <label for="cta_msg">Message</label>
+                                        <textarea id="cta_msg" name="msg" class="form-control" rows="4" placeholder="Share a little about your brand or goals..."></textarea>
                                     </div>
                                 </div>
 

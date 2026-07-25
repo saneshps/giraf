@@ -486,6 +486,29 @@
                 min-height: 90px;
             }
         }
+
+        &.is-invalid .form-control {
+            border-color: #e57373;
+            box-shadow: none;
+
+            &:focus {
+                border-color: #ef5350;
+                box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.2);
+            }
+        }
+
+        .cta-field-error {
+            display: none;
+            margin-top: -2px;
+            color: #ef5350;
+            font-size: 12.5px;
+            font-weight: 400;
+            line-height: 1.35;
+        }
+
+        &.is-invalid .cta-field-error {
+            display: block;
+        }
     }
 
     .cta-submit {

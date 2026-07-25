@@ -10938,6 +10938,25 @@ h2 {
     min-height: 90px;
   }
 }
+.call-to-action-area .cta-field.is-invalid .form-control {
+  border-color: #e57373;
+  box-shadow: none;
+}
+.call-to-action-area .cta-field.is-invalid .form-control:focus {
+  border-color: #ef5350;
+  box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.2);
+}
+.call-to-action-area .cta-field .cta-field-error {
+  display: none;
+  margin-top: -2px;
+  color: #ef5350;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.call-to-action-area .cta-field.is-invalid .cta-field-error {
+  display: block;
+}
 .call-to-action-area .cta-submit {
   display: inline-flex;
   align-items: center;
