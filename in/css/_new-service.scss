@@ -363,14 +363,7 @@
             inset: 0;
             z-index: 2;
             pointer-events: none;
-            background:
-                linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.15) 0%,
-                    rgba(0, 0, 0, 0.2) 35%,
-                    rgba(0, 0, 0, 0.72) 68%,
-                    rgba(0, 0, 0, 0.92) 100%
-                );
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.2) 35%, rgb(0 0 0 / 88%) 68%, rgba(0, 0, 0, 0.92) 100%);
             transition: opacity 0.45s ease;
         }
 
