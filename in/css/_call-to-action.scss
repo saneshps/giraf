@@ -587,9 +587,13 @@
         &:disabled,
         &.is-sending {
             cursor: wait;
-            opacity: 0.75;
+            opacity: 0.9;
             transform: none;
             pointer-events: none;
+
+            i {
+                animation: ctaArrowSend 0.7s ease-in-out infinite;
+            }
         }
 
         @include respond-below(sm) {
@@ -597,6 +601,21 @@
             padding: 13px 22px;
             font-size: 15px;
         }
+    }
+}
+
+@keyframes ctaArrowSend {
+    0% {
+        opacity: 0.35;
+        transform: translateX(-6px);
+    }
+    45% {
+        opacity: 1;
+        transform: translateX(6px);
+    }
+    100% {
+        opacity: 0.35;
+        transform: translateX(14px);
     }
 }
 
