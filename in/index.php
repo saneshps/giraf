@@ -1785,7 +1785,7 @@ $result = $conn->query($sql);
             slidesPerView: 1,
             spaceBetween: 10,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".teamSlider .swiper-pagination",
                 clickable: true,
             },
             autoplay: {
@@ -1793,8 +1793,8 @@ $result = $conn->query($sql);
                 disableOnInteraction: false,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".teamSlider .swiper-button-next",
+                prevEl: ".teamSlider .swiper-button-prev",
             },
             breakpoints: {
                 // when window width is >= 320px
@@ -1913,12 +1913,8 @@ $result = $conn->query($sql);
                 disableOnInteraction: false,
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".bloghomeSwiper .swiper-pagination",
                 clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
             },
         });
     </script>

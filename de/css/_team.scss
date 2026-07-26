@@ -105,54 +105,43 @@
 
             .prev-next {
                 margin: 20px 0 0 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                z-index: 20;
 
                 @include respond-below(lg) {
-                    display: flex;
                     justify-content: center;
                     margin: 20px 0 0 0;
                 }
 
                 @include respond-below(md) {
-                    display: flex;
                     justify-content: center;
                 }
 
                 @include respond-below(sm) {
-                    display: flex;
                     justify-content: center;
+                    gap: 8px;
                 }
-            }
-
-            .team-home-area .main-box .team-pic .swiper-button-next,
-            .team-home-area .main-box .team-pic .swiper-button-prev {
-                position: initial !important;
-                z-index: 999999;
-                cursor: pointer;
-                color: #fff;
-                display: inline !important;
-                justify-content: start !important;
-                margin: 0 !important;
-                height: auto !important;
             }
 
             .swiper-button-next,
             .swiper-button-prev {
-                position: initial !important;
+                position: static !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                width: auto !important;
+                height: auto !important;
+                margin: 0 !important;
+                margin-top: 0 !important;
                 cursor: pointer;
-                display: inline !important;
-                margin: 0 0 0 10px;
-
-                @include respond-below(lg) {
-                    margin: 0 8px;
-                }
-
-                @include respond-below(md) {
-                    margin: 0 7px;
-                }
-
-                @include respond-below(sm) {
-                    margin: 0 6px;
-                }
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                z-index: 20;
             }
 
             .swiper-button-next:after,
@@ -162,7 +151,10 @@
                 font-size: 25px !important;
                 padding: 12px 10px !important;
                 display: inline-flex !important;
+                align-items: center;
+                justify-content: center;
                 color: #fff !important;
+                line-height: 1;
 
                 @include respond-below(lg) {
                     padding: 8px 10px !important;
@@ -184,7 +176,10 @@
                 font-size: 25px !important;
                 padding: 12px 10px !important;
                 display: inline-flex !important;
+                align-items: center;
+                justify-content: center;
                 color: #fff !important;
+                line-height: 1;
 
                 @include respond-below(lg) {
                     padding: 8px 10px !important;
