@@ -26,7 +26,7 @@
      <!-- push logo -->
      <img class="push-logo" src="./img/push-logo.png" alt="logo">
      <!-- push logo -->
-     <ul class="nav">
+     <ul class="site-nav">
        <li class="<?php echo ($curPageName == "index.php") ? 'active' : '' ?>">
          <a href="index.php"> Home </a>
        </li>

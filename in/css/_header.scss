@@ -154,29 +154,34 @@ main {
   z-index: 99;
 }
 
-.nav {
+/* .site-nav avoids Bootstrap .nav flex-wrap conflict; !important locks layout */
+.nav-wrapper ul.site-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  align-content: flex-start !important;
   transform: rotateY(90deg);
   transform-origin: left center;
   transition: transform 0.6s;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 0;
-  list-style: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+  margin: 0 !important;
+  list-style: none !important;
   padding: 48px 48px 48px 72px !important;
   background: #0A0A0B;
-  width: min(560px, 100vw);
-  height: 100vh;
+  width: min(560px, 100vw) !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
   position: absolute;
   right: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
+  top: 0;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: rgba(249, 178, 23, 0.45) transparent;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -188,51 +193,56 @@ main {
   }
 
   @include respond-below(xl) {
-    width: min(480px, 100vw);
+    width: min(480px, 100vw) !important;
     padding: 40px 36px 40px 56px !important;
   }
 
   @include respond-below(lg) {
-    width: min(420px, 100vw);
+    width: min(420px, 100vw) !important;
     padding: 36px 28px 36px 40px !important;
   }
 
   @include respond-below(md) {
-    width: min(380px, 100vw);
-    padding: 32px 24px 32px 32px !important;
+    width: min(400px, 100vw) !important;
+    padding: 32px 24px 32px 28px !important;
   }
 
   @include respond-below(sm) {
-    width: 100vw;
-    padding: 100px 24px 40px !important;
-    justify-content: flex-start;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 96px 28px 48px !important;
+    justify-content: flex-start !important;
   }
 
   > li {
-    width: 100%;
-    flex: 0 0 auto;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 auto !important;
+    float: none !important;
+    position: relative;
   }
 }
 
-.nav-visible .nav {
+.nav-visible .nav-wrapper ul.site-nav {
   transform: rotateY(0deg);
 }
 
-.nav > li.active > a,
-.nav > li.active > .nav-parent {
+.nav-wrapper ul.site-nav > li.active > a, .nav-wrapper ul.site-nav > li.active > .nav-parent {
   color: #F9B217;
 }
 
-.nav > li > a,
-.nav > li > .nav-parent {
-  display: block;
-  width: 100%;
-  line-height: 1.15;
-  padding: 10px 0;
-  margin: 0;
+.nav-wrapper ul.site-nav > li > a,
+.nav-wrapper ul.site-nav > li > .nav-parent {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  line-height: 1.2 !important;
+  padding: 12px 0 !important;
+  margin: 0 !important;
   text-transform: capitalize;
   font-family: "Roboto Serif", "Roboto serif", Georgia, serif;
-  font-size: clamp(1rem, 1.4vw, 1.4rem);
+  font-size: 2.75rem !important;
   color: #d9d9d9;
   font-weight: 700;
   background: transparent !important;
@@ -243,51 +253,56 @@ main {
   text-align: left;
   cursor: pointer;
   transition: color 0.3s ease;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  @include respond-below(xl) {
+    font-size: 2.4rem !important;
+    padding: 11px 0 !important;
+  }
 
   @include respond-below(lg) {
-    font-size: clamp(1.85rem, 3.6vw, 2.6rem);
-    padding: 9px 0;
+    font-size: 2.15rem !important;
+    padding: 10px 0 !important;
   }
 
   @include respond-below(md) {
-    font-size: 2rem;
-    padding: 8px 0;
+    font-size: 2rem !important;
+    padding: 10px 0 !important;
   }
 
   @include respond-below(sm) {
-    font-size: 1.85rem;
+    font-size: 1.75rem !important;
     font-weight: 600;
-    padding: 10px 0;
-    text-align: center;
-    white-space: normal;
+    padding: 11px 0 !important;
+    text-align: left;
   }
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover,
-.nav > li > .nav-parent:focus,
-.nav > li > .nav-parent:hover {
+.nav-wrapper ul.site-nav > li > a:focus,
+.nav-wrapper ul.site-nav > li > a:hover,
+.nav-wrapper ul.site-nav > li > .nav-parent:focus,
+.nav-wrapper ul.site-nav > li > .nav-parent:hover {
   color: #F9B217;
   text-decoration: none;
   outline: none;
 }
 
-.has-submenu {
+.nav-wrapper ul.site-nav > li.has-submenu {
   position: relative;
 
   > .nav-parent {
-    display: inline-flex !important;
+    display: flex !important;
     align-items: center;
+    justify-content: flex-start;
     gap: 12px;
-    max-width: 100%;
-    width: auto;
+    width: 100% !important;
 
     @include respond-below(sm) {
-      justify-content: center;
-      width: 100%;
+      justify-content: flex-start;
     }
   }
 
@@ -314,33 +329,39 @@ main {
   }
 }
 
-.nav-submenu {
+.nav-wrapper ul.site-nav .nav-submenu {
+  display: block !important;
   list-style: none !important;
-  margin: 0 0 8px !important;
-  padding: 0 0 0 4px !important;
+  margin: 0 0 6px !important;
+  padding: 0 0 0 6px !important;
   max-height: 0;
   opacity: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   visibility: hidden;
-  transform: translateY(-6px);
+  transform: none;
   transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.3s ease,
-    transform 0.3s ease,
     visibility 0.3s ease,
     padding 0.3s ease;
   border-left: 1px solid rgba(249, 178, 23, 0.3);
-  width: 100%;
-  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  float: none !important;
+  position: static !important;
 
   @include respond-below(sm) {
     margin: 0 auto 8px !important;
     padding-left: 0 !important;
     border-left: 0;
-    max-width: 280px;
+    width: 100% !important; 
   }
 
   > li {
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
     opacity: 0;
     transform: translateY(6px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -348,6 +369,8 @@ main {
 
   a {
     display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     align-items: center !important;
     gap: 12px !important;
     padding: 8px 0 8px 14px !important;
@@ -362,15 +385,19 @@ main {
     text-transform: none !important;
     white-space: normal !important;
     position: relative;
-    transition: color 0.25s ease, padding-left 0.25s ease;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    float: none !important;
 
     @include respond-below(sm) {
-      justify-content: flex-start;
-      padding: 9px 4px !important;
+      justify-content: flex-start !important;
+      padding: 9px 2px !important;
       font-size: 14px !important;
-      text-align: left;
+      text-align: left !important;
     }
 
     &::before {
@@ -397,7 +424,7 @@ main {
       outline: none;
 
       @include respond-below(sm) {
-        padding-left: 4px !important;
+        padding-left: 2px !important;
       }
 
       &::before {
@@ -411,7 +438,7 @@ main {
   }
 
   .sub-index {
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     font-family: Oswald, sans-serif !important;
     font-size: 11px !important;
     font-weight: 700 !important;
@@ -419,15 +446,18 @@ main {
     color: rgba(249, 178, 23, 0.75) !important;
     line-height: 1 !important;
     min-width: 22px;
+    width: auto !important;
   }
 
   .sub-label {
-    flex: 1 1 auto;
-    min-width: 0;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    width: auto !important;
     font-size: inherit !important;
     font-weight: inherit !important;
     line-height: inherit !important;
     color: inherit !important;
+    white-space: normal !important;
   }
 
   .is-current > a {
@@ -456,6 +486,7 @@ main {
       transition: transform 0.25s ease;
       display: inline-block;
       font-size: 14px !important;
+      flex: 0 0 auto;
     }
 
     a:hover .sub-arrow,
@@ -465,11 +496,10 @@ main {
   }
 }
 
-.has-submenu.is-open > .nav-submenu {
-  max-height: 420px;
+.nav-wrapper ul.site-nav > li.has-submenu.is-open > .nav-submenu {
+  max-height: 480px;
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
   padding-top: 6px !important;
   padding-bottom: 10px !important;
 
@@ -482,6 +512,12 @@ main {
         transition-delay: #{0.035s * $i};
       }
     }
+  }
+}
+
+.nav-wrapper .nav-marker {
+  @include respond-below(sm) {
+    display: none;
   }
 }
 
@@ -859,8 +895,8 @@ section {
 
 @media only screen and (min-width : 1200px) and (max-width : 1320px) {
 
-  .nav > li > a,
-  .nav > li > .nav-parent {
-    font-size: 2.6rem;
+  .nav-wrapper ul.site-nav > li > a,
+  .nav-wrapper ul.site-nav > li > .nav-parent {
+    font-size: 2.35rem !important;
   }
 }

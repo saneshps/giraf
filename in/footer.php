@@ -3,6 +3,7 @@
       <div class="row">
         <!-- first -->
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-first">
+          <h4>Our Services</h4>
           <ul>
             <li> <i class="fas fa-chevron-right"></i> <a href="./branding.php"> Branding </a> </li>
             <li> <i class="fas fa-chevron-right"></i> <a href="./digital-marketing.php"> Digital Marketing </a> </li>
@@ -41,6 +42,7 @@
         <!-- secnd -->
         <!-- Third -->
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-third">
+          <h4> Our Office </h4>
         <p class="f-address"> Masters Building Mavoor, <br>
             Calicut - 673661 <br>
             Kerala - India.
