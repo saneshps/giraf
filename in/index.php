@@ -1833,45 +1833,49 @@ $result = $conn->query($sql);
                 slidesToShow: 6,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 1500,
+                autoplaySpeed: 0,
+                speed: 4000,
+                cssEase: 'linear',
+                infinite: true,
                 arrows: false,
                 dots: false,
                 pauseOnHover: false,
+                pauseOnFocus: false,
+                swipe: true,
+                touchMove: true,
                 responsive: [{
-                        breakpoint: 1920,
-                        settings: {
-                            slidesToShow: 6
-                        }
-                    },
-                    {
                         breakpoint: 1600,
                         settings: {
-                            slidesToShow: 5
+                            slidesToShow: 5,
+                            speed: 4000
                         }
                     },
                     {
                         breakpoint: 1200,
                         settings: {
-                            slidesToShow: 4
+                            slidesToShow: 4,
+                            speed: 3500
                         }
                     },
                     {
                         breakpoint: 992,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 3,
+                            speed: 3000
                         }
                     },
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 3,
+                            speed: 3000
                         }
                     },
-
                     {
                         breakpoint: 520,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 2,
+                            speed: 2500
                         }
                     }
                 ]
