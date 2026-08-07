@@ -1,7 +1,7 @@
 <?php
 /**
  * Homepage CTA form mailer only.
- * 1) Internal notification → saneshbigleap@gmail.com
+ * 1) Internal notification → info@girafcreatives.com
  * 2) Auto-reply confirmation → the user who submitted the form
  */
 use PHPMailer\PHPMailer\PHPMailer;
@@ -80,11 +80,11 @@ try {
     $mail = new PHPMailer(true);
     configureSmtp($mail);
 
-    $mail->setFrom('saneshbigleap@gmail.com', 'Giraf Creatives');
+    $mail->setFrom('info@girafcreatives.com', 'Giraf Creatives');
     $mail->addReplyTo($email, $name);
     // Test recipient — add original mail after testing, e.g.:
     // $mail->addAddress('info@girafcreatives.com');
-    $mail->addAddress('saneshbigleap@gmail.com');
+    $mail->addAddress('info@girafcreatives.com');
 
     $mail->isHTML(true);
     $mail->Subject = $subject !== ''
@@ -97,9 +97,9 @@ try {
     $reply = new PHPMailer(true);
     configureSmtp($reply);
 
-    $reply->setFrom('saneshbigleap@gmail.com', 'Giraf Creatives');
+    $reply->setFrom('info@girafcreatives.com', 'Giraf Creatives');
     $reply->addAddress($email, $name);
-    $reply->addReplyTo('saneshbigleap@gmail.com', 'Giraf Creatives');
+    $reply->addReplyTo('info@girafcreatives.com', 'Giraf Creatives');
 
     $reply->isHTML(true);
     $reply->Subject = 'Thank you for contacting Giraf Creatives';
