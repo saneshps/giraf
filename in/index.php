@@ -829,7 +829,7 @@ $result = $conn->query($sql);
                                             </div>
                                             <div class="team-content">
                                                 <h3 class="title"> Basil </h3>
-                                                <span class="post"> Animation Team Lead </span>
+                                                <span class="post"> Lead Technical Artist </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1004,20 +1004,7 @@ $result = $conn->query($sql);
                                         </div>
                                     </div>
                                     <!-- slide -->
-                                    <!-- slide -->
-                                    <div class="swiper-slide">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/team/muhsin.jpg" alt="Muhsin">
-
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title"> Muhammed Muhsin </h3>
-                                                <span class="post"> Senior Laravel Developer </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slide -->
+                             
 
 
 

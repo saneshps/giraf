@@ -73,7 +73,7 @@
     <!-- CookieConsent -->
 
     <!-- blogs -->
-    <?php include("gtag_head.php"); ?>
+    <?php include ('gtag_head.php'); ?>
 </head>
 
 <body>
@@ -83,7 +83,7 @@
 
 
 
-    <?php include("header.php"); ?>
+    <?php include ('header.php'); ?>
 
 
     <!-- =====================
@@ -485,20 +485,7 @@
                     </div>
                     <!-- team -->
 
-                    <!-- team -->
-                    <div class="col-xl-3 col-lg-4 col-md-4">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/team/muhsin.jpg" alt="Muhsin">
-
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title"> Muhammed Muhsin </h3>
-                                <span class="post"> Senior Laravel Developer </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- team -->
+                 
 
                     <!-- team -->
                     <div class="col-xl-3 col-lg-4 col-md-4">
@@ -661,7 +648,7 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Basil </h3>
-                                <span class="post"> Animation Team Lead </span>
+                                <span class="post"> Lead Technical Artist </span>
                             </div>
                         </div>
                     </div>
@@ -729,20 +716,7 @@
                     </div>
                     <!-- team -->
 
-                    <!-- team -->
-                    <div class="col-xl-3 col-lg-4 col-md-4">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/team/Trisha.jpg" alt="Trisha">
-
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title"> Trisha </h3>
-                                <span class="post"> Jr Animator </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- team -->
+               
 
                     <!-- team -->
                     <div class="col-xl-3 col-lg-4 col-md-4">
@@ -1379,7 +1353,7 @@
     <!-- ======================
           FOOTER AREA START
        ====================== -->
-    <?php include("footer.php"); ?>
+    <?php include ('footer.php'); ?>
 
     <!-- =====================
           LINES AREA START

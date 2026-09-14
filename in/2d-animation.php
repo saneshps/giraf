@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Giraf is a professional 3D animation agency in India.Contact us for professional and affordable animated video production services">
-  <title> Best Animation Company,India|3D Animation Studio |Giraf Creatives </title>
+  <title> Best Animation Company,India|2D Animation Studio |Giraf Creatives </title>
   <!-- canonical -->
   <link href="https://girafcreatives.com/in/animation.php" rel="canonical">
   <!--// canonical -->
@@ -104,8 +104,8 @@
      ===================== -->
   <section>
     <div class="banner-area">
-      <img src="./img/services/Animation-banner.jpg" alt="banner">
-      <h1> Animation </h1>
+      <img src="./img/services/Animation-banner.jpg" alt="banner"> 
+      <h1> 2D Animation Service India </h1>
     </div>
   </section>
   <!-- =====================
@@ -117,38 +117,43 @@
   <!-- =======================
           SERVICES BRIEF AREA START
         ======================== -->
-  <section class="service-detailes-brief-area">
+  <section class="service-detailes-brief-area anim-brief-area">
     <div class="main-box">
+      <span class="anim-brief-glow" aria-hidden="true"></span>
+      <span class="anim-brief-glow anim-brief-glow--alt" aria-hidden="true"></span>
       <div class="container">
-        <div class="row">
-
-          <!-- col-md-4 -->
-          <div class="col-xl-4 col-lg-4 col-md-12 service-detailes-brief-first">
-            <h6> Animation </h6>
-            <h4> YOU DREAM IT AND WE DO IT </h4>
+        <div class="anim-brief">
+          <div class="anim-brief__intro">
+            <span class="anim-brief__label">2D Animation</span>
+            <h2>Make Your Ideas Visible With 2D Animation Services</h2>
           </div>
-          <!--// col-md-4 -->
 
-
-          <!-- col-md-8 -->
-          <div class="col-xl-8 col-lg-8 col-md-12 service-detailes-brief-scnd">
-            <p> Giraf is a full-service provider of video animation, offering an outsourced framework
-              that fits any kind of budget while assisting businesses in differentiating their content
-              and advancing their social media and marketing strategies.
+          <div class="anim-brief__content">
+            <p class="anim-brief__lead">
+              India’s media and entertainment sector is becoming increasingly digital connecting to
+              diverse fields such as advertising, gaming, streaming, digital media, and global production.
             </p>
-
-
+            <p>
+              In this trajectory to becoming one of the globally connected production bases for animation,
+              VFX, post-production, and related creative work, businesses in India are now looking more into
+              utilizing animated communication, creating more engaging and riveting content, quite in contrast
+              to the traditional descriptions and explanations.
+            </p>
+            <p>
+              But animation isn’t just about creating random movements. It’s about bringing an idea to life,
+              making your intent visible, and communicating it with the audience in a way they can relate to.
+            </p>
+            <p>
+              That’s the approach we bring to 2D animation at Giraf Creatives. We bring that thinking into our
+              works and services as the 2D animation company in India, dedicated to creating content that helps
+              brands explain, communicate, and promote their ideas.
+            </p>
           </div>
-          <!--// col-md-8 -->
 
-
-
+          <div class="anim-brief__cta book-call">
+            <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+          </div>
         </div>
-
-        <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
-        </div>
-
       </div>
     </div>
   </section>
@@ -157,49 +162,33 @@
       ========================= -->
 
   <!-- ==============================
-         TWO SERVICES AREA START
-       ============================== -->
-  <section class="two-services-area">
+          Around Your Intent AREA START
+      ========================= -->
+  <section class="around-your-intent-area">
     <div class="container">
-      <div class="two-services-head">
-        <span>Our Expertise</span>
-        <h2>2D &amp; 3D Animation</h2>
-      </div>
-      <div class="row two-services-grid">
-        <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="2d-animation-services.php">
-          <article class="two-services-box">
-            <div class="two-services-box__media">
-              <img src="./img/services/2d-animation-service.jpg" alt="2D Animation Services">
-              <span class="two-services-box__badge">2D</span>
-            </div>
-            <div class="two-services-box__body">
-              <h4>2D Animation Services</h4>
-              <p>2D animation is crafted with hand-drawn and digital illustrations. It brings cartoons, explainer videos, games, and web motion to life with character-driven storytelling.</p>
-            </div>
-          </article>
-          </a>
+      <div class="around-your-intent">
+        <div class="around-your-intent__intro">
+          <span class="around-your-intent__label">From Idea to Delivery</span>
+          <h2>2D Animation Services Built Around Your Intent</h2>
         </div>
-        <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="3d-animation-services.php">
-          <article class="two-services-box">
-            <div class="two-services-box__media">
-              <img src="./img/services/3d-animation-service.jpg" alt="3D Animation Services">
-              <span class="two-services-box__badge">3D</span>
-            </div>
-            <div class="two-services-box__body">
-              <h4>3D Animation Services</h4>
-              <p>3D animation uses depth, light, and realistic form. It is ideal for product films, characters, games, and cinematic visuals that feel tactile and immersive.</p>
-            </div>
-          </article>
-          </a>
+
+        <div class="around-your-intent__content">
+          <p class="around-your-intent__lead">
+            As the 2D animation company in India, at Giraf, we handle projects right from their ideation to the final animated video.
+            Immense processes happen in between script writing, giving visual direction, character designing, backgrounds,
+            animating the scenes, sound mixing, and preparing the files for final delivery.
+          </p>
+          <p>
+            Maybe you would have your script ready; maybe it would be just a rough idea. Either way, our creative team starts
+            the process by understanding what you want your audience to see and understand by watching the animation.
+          </p> 
         </div>
       </div>
     </div>
   </section>
   <!-- ==============================
-         TWO SERVICES AREA END
-       ============================== -->
+          Around Your Intent AREA END
+      ========================= -->
 
   <!-- ================================
            SERVICES CONTENT AREA START

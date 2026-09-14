@@ -1354,7 +1354,1015 @@
 
 }
 
+// ==================================   2D ANIMATION BRIEF REDESIGN START
+.anim-brief-area {
+    padding: 90px 0;
 
+    @include respond-below(xl) {
+        padding: 60px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 50px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 36px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 28px 0;
+    }
+
+    .main-box {
+        position: relative;
+        overflow: hidden;
+        padding: 72px 0 64px;
+        border-radius: 28px;
+        background:
+            radial-gradient(ellipse 48% 55% at 0% 0%, rgba($brand-color, 0.1) 0%, transparent 55%),
+            radial-gradient(ellipse 40% 50% at 100% 100%, rgba($brand-color, 0.07) 0%, transparent 52%),
+            linear-gradient(165deg, #101010 0%, $box-color 48%, #0b0b0b 100%);
+        border: 1px solid rgba($brand-color, 0.14);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 28px 60px rgba(0, 0, 0, 0.45);
+
+        @include respond-below(lg) {
+            padding: 56px 0 50px;
+            border-radius: 22px;
+        }
+
+        @include respond-below(md) {
+            padding: 42px 0 40px;
+            border-radius: 18px;
+        }
+
+        @include respond-below(sm) {
+            padding: 34px 0 32px;
+            border-radius: 16px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 12%;
+            right: 12%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.5) 30%,
+                rgba(#ffc84a, 0.85) 50%,
+                rgba($brand-color, 0.5) 70%,
+                transparent 100%
+            );
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            @include respond-below(sm) {
+                padding: 0 15px !important;
+            }
+        }
+    }
+
+    .anim-brief-glow {
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        top: -140px;
+        right: -100px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba($brand-color, 0.13) 0%, transparent 70%);
+        filter: blur(12px);
+        pointer-events: none;
+        z-index: 0;
+        animation: animBriefPulse 9s ease-in-out infinite;
+
+        &--alt {
+            width: 280px;
+            height: 280px;
+            top: auto;
+            bottom: -90px;
+            right: auto;
+            left: -70px;
+            background: radial-gradient(circle, rgba($brand-color, 0.09) 0%, transparent 70%);
+            animation-delay: -4s;
+        }
+
+        @include respond-below(md) {
+            width: 200px;
+            height: 200px;
+            top: -80px;
+            right: -60px;
+
+            &--alt {
+                width: 150px;
+                height: 150px;
+                bottom: -50px;
+                left: -40px;
+            }
+        }
+
+        @include respond-below(sm) {
+            display: none;
+        }
+    }
+
+    .anim-brief {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        grid-template-areas:
+            "intro content"
+            "cta content";
+        gap: 28px 64px;
+        align-items: start;
+
+        @include respond-below(lg) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "intro"
+                "content"
+                "cta";
+            gap: 28px;
+        }
+
+        @include respond-below(md) {
+            gap: 24px;
+        }
+
+        @include respond-below(sm) {
+            gap: 22px;
+        }
+    }
+
+    .anim-brief__intro {
+        grid-area: intro;
+        position: relative;
+        padding-right: 12px;
+
+        @include respond-below(lg) {
+            padding-right: 0;
+        }
+    }
+
+    .anim-brief__label {
+        display: inline-block;
+        margin: 0 0 18px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: $brand-color;
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 42px;
+            height: 2px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+            box-shadow: 0 0 14px rgba($brand-color, 0.45);
+        }
+
+        @include respond-below(sm) {
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.12em;
+        }
+    }
+
+    .anim-brief__intro h2 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.24;
+        letter-spacing: -0.025em;
+        margin: 0;
+        font-size: 2.35rem !important;
+        max-width: 520px;
+
+        @include respond-below(xl) {
+            font-size: 2.1rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 2rem !important;
+            max-width: 100%;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.75rem !important;
+            line-height: 1.32;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.45rem !important;
+            line-height: 1.35;
+            letter-spacing: -0.015em;
+        }
+    }
+
+    .anim-brief__cta {
+        grid-area: cta;
+        margin: 8px 0 0;
+        padding: 0;
+
+        @include respond-below(lg) {
+            margin: 4px 0 0;
+        }
+
+        @include respond-below(sm) {
+            .blink-button {
+                display: inline-block;
+                width: 100%;
+                max-width: 280px;
+                padding: 14px 24px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .anim-brief__content {
+        grid-area: content;
+        position: relative;
+        padding-left: 36px;
+        border-left: 1px solid rgba($brand-color, 0.22);
+
+        @include respond-below(lg) {
+            padding-left: 0;
+            border-left: none;
+            padding-top: 8px;
+            border-top: 1px solid rgba($brand-color, 0.18);
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.75;
+            margin: 0 0 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include respond-below(md) {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 16px;
+            }
+
+            @include respond-below(sm) {
+                font-size: 14.5px;
+                line-height: 1.68;
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+    .anim-brief__lead {
+        color: $primary-color !important;
+        font-size: 1.08rem !important;
+        font-weight: 400 !important;
+        line-height: 1.7 !important;
+        position: relative;
+        padding: 18px 20px 18px 22px;
+        margin-bottom: 24px !important;
+        border-radius: 14px;
+        background: linear-gradient(
+            135deg,
+            rgba($brand-color, 0.1) 0%,
+            rgba(255, 255, 255, 0.03) 55%,
+            transparent 100%
+        );
+        border: 1px solid rgba($brand-color, 0.16);
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            bottom: 14px;
+            width: 3px;
+            border-radius: 3px;
+            background: linear-gradient(180deg, $brand-color, #ffc84a);
+            box-shadow: 0 0 12px rgba($brand-color, 0.4);
+        }
+
+        @include respond-below(md) {
+            font-size: 1rem !important;
+            padding: 16px 16px 16px 18px;
+            margin-bottom: 18px !important;
+            border-radius: 12px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 0.95rem !important;
+            padding: 14px 14px 14px 16px;
+            margin-bottom: 16px !important;
+        }
+    }
+}
+
+@keyframes animBriefPulse {
+    0%,
+    100% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+}
+// ==================================   2D ANIMATION BRIEF REDESIGN END
+
+// ==================================   TWO SERVICES AREA START
+.two-services-area {
+    padding: 20px 0 100px;
+    position: relative;
+
+    @include respond-below(xl) {
+        padding: 10px 0 80px;
+    }
+
+    @include respond-below(lg) {
+        padding: 0 0 70px;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 50px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 40px;
+    }
+
+    .container {
+        @include respond-below(sm) {
+            padding: 0 15px !important;
+        }
+    }
+
+    .two-services-head {
+        text-align: center;
+        margin: 0 0 48px;
+
+        @include respond-below(lg) {
+            margin: 0 0 36px;
+        }
+
+        @include respond-below(md) {
+            margin: 0 0 28px;
+        }
+
+        @include respond-below(sm) {
+            margin: 0 0 22px;
+        }
+
+        span {
+            display: inline-block;
+            margin: 0 0 12px;
+            font-size: 0.92rem;
+            font-weight: 500;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: $brand-color;
+            position: relative;
+            padding-bottom: 10px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 42px;
+                height: 2px;
+                border-radius: 2px;
+                transform: translateX(-50%);
+                background: linear-gradient(90deg, transparent, $brand-color, #ffc84a, transparent);
+                box-shadow: 0 0 14px rgba($brand-color, 0.45);
+            }
+
+            @include respond-below(sm) {
+                font-size: 0.8rem;
+                letter-spacing: 0.12em;
+                margin-bottom: 8px;
+            }
+        }
+
+        h2 {
+            color: $primary-color;
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            margin: 0;
+            font-size: 2.2rem !important;
+
+            @include respond-below(xl) {
+                font-size: 2rem !important;
+            }
+
+            @include respond-below(lg) {
+                font-size: 1.85rem !important;
+            }
+
+            @include respond-below(md) {
+                font-size: 1.65rem !important;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+
+    .two-services-grid {
+        margin-left: -16px;
+        margin-right: -16px;
+
+        @include respond-below(md) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        @include respond-below(sm) {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+
+    .two-services-col {
+        display: flex;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 0;
+
+        @include respond-below(lg) {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        @include respond-below(md) {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include respond-below(sm) {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 16px;
+        }
+
+        > a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            color: inherit;
+            text-decoration: none !important;
+            outline: none;
+            box-shadow: none;
+
+            &:hover,
+            &:focus,
+            &:focus-visible,
+            &:active,
+            &:visited {
+                color: inherit;
+                text-decoration: none !important;
+                outline: none;
+                box-shadow: none;
+            }
+
+            h4,
+            p,
+            span {
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .two-services-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        isolation: isolate;
+        border-radius: 24px;
+        background:
+            radial-gradient(ellipse 70% 55% at 0% 0%, rgba($brand-color, 0.08) 0%, transparent 55%),
+            linear-gradient(165deg, #121212 0%, $box-color 55%, #0b0b0b 100%);
+        border: 1px solid rgba($brand-color, 0.16);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 22px 48px rgba(0, 0, 0, 0.42);
+        transition:
+            border-color 0.45s ease,
+            box-shadow 0.45s ease,
+            transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+        @include respond-below(lg) {
+            border-radius: 20px;
+        }
+
+        @include respond-below(md) {
+            border-radius: 18px;
+        }
+
+        @include respond-below(sm) {
+            border-radius: 16px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            z-index: 4;
+            background: linear-gradient(90deg, $brand-color 0%, #ffc84a 50%, transparent 100%);
+            transform: scaleX(0.28);
+            transform-origin: left center;
+            transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        &:hover {
+            border-color: rgba($brand-color, 0.42);
+            box-shadow:
+                0 28px 56px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba($brand-color, 0.14),
+                0 0 36px rgba($brand-color, 0.12);
+            transform: translateY(-6px);
+
+            &::after {
+                transform: scaleX(1);
+            }
+
+            .two-services-box__media img {
+                transform: scale(1.08);
+            }
+
+            .two-services-box__badge {
+                background: $brand-color;
+                color: $box-color;
+            }
+
+            h4 {
+                color: $brand-color;
+            }
+        }
+
+        @include respond-below(md) {
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        @include respond-below(sm) {
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+
+    .two-services-box__media {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        background: #0a0a0a;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1);
+            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 42%;
+            pointer-events: none;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.72) 100%);
+        }
+
+        @include respond-below(sm) {
+            aspect-ratio: 16 / 10;
+        }
+    }
+
+    .two-services-box__badge {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        z-index: 3;
+        min-width: 52px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-align: center;
+        color: $brand-color;
+        background: rgba(0, 0, 0, 0.62);
+        border: 1px solid rgba($brand-color, 0.45);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+        transition: all 0.35s ease;
+
+        @include respond-below(md) {
+            top: 14px;
+            left: 14px;
+            min-width: 46px;
+            padding: 5px 12px;
+            font-size: 0.72rem;
+        }
+
+        @include respond-below(sm) {
+            top: 12px;
+            left: 12px;
+        }
+    }
+
+    .two-services-box__body {
+        position: relative;
+        z-index: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 28px 30px 32px;
+
+        @include respond-below(xl) {
+            padding: 24px 26px 28px;
+        }
+
+        @include respond-below(lg) {
+            padding: 22px 22px 26px;
+        }
+
+        @include respond-below(md) {
+            padding: 20px 20px 24px;
+        }
+
+        @include respond-below(sm) {
+            padding: 18px 16px 20px;
+        }
+
+        h4 {
+            color: $primary-color;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 0 0 12px;
+            font-size: 1.55rem !important;
+            letter-spacing: -0.015em;
+            transition: color 0.35s ease;
+
+            @include respond-below(xl) {
+                font-size: 1.4rem !important;
+            }
+
+            @include respond-below(lg) {
+                font-size: 1.3rem !important;
+            }
+
+            @include respond-below(md) {
+                font-size: 1.28rem !important;
+                margin-bottom: 10px;
+            }
+
+            @include respond-below(sm) {
+                font-size: 1.18rem !important;
+                margin-bottom: 8px;
+            }
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 15.5px;
+            font-weight: 300;
+            line-height: 1.7;
+            margin: 0;
+
+            @include respond-below(md) {
+                font-size: 15px;
+                line-height: 1.65;
+            }
+
+            @include respond-below(sm) {
+                font-size: 14.5px;
+                line-height: 1.62;
+            }
+        }
+    }
+}
+// ==================================   TWO SERVICES AREA END
+
+// ==================================   AROUND YOUR INTENT AREA START
+.around-your-intent-area {
+    padding: 20px 0 100px;
+    position: relative;
+
+    @include respond-below(xl) {
+        padding: 10px 0 80px;
+    }
+
+    @include respond-below(lg) {
+        padding: 0 0 70px;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 50px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 40px;
+    }
+
+    .container {
+        @include respond-below(sm) {
+            padding: 0 15px !important;
+        }
+    }
+
+    .around-your-intent {
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 48px 72px;
+        align-items: start;
+        padding: 64px 56px;
+        border-radius: 28px;
+        background:
+            radial-gradient(ellipse 46% 58% at 100% 0%, rgba($brand-color, 0.1) 0%, transparent 54%),
+            radial-gradient(ellipse 38% 48% at 0% 100%, rgba($brand-color, 0.07) 0%, transparent 50%),
+            linear-gradient(165deg, #101010 0%, $box-color 50%, #0b0b0b 100%);
+        border: 1px solid rgba($brand-color, 0.14);
+        box-shadow:
+            0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+            0 28px 60px rgba(0, 0, 0, 0.45);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 12%;
+            right: 12%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.5) 30%,
+                rgba(#ffc84a, 0.85) 50%,
+                rgba($brand-color, 0.5) 70%,
+                transparent 100%
+            );
+        }
+
+        @include respond-below(xl) {
+            gap: 40px 52px;
+            padding: 52px 44px;
+            border-radius: 24px;
+        }
+
+        @include respond-below(lg) {
+            grid-template-columns: 1fr;
+            gap: 28px;
+            padding: 44px 36px;
+            border-radius: 22px;
+        }
+
+        @include respond-below(md) {
+            padding: 34px 24px;
+            border-radius: 18px;
+            gap: 24px;
+        }
+
+        @include respond-below(sm) {
+            padding: 28px 18px;
+            border-radius: 16px;
+            gap: 20px;
+        }
+    }
+
+    .around-your-intent__intro {
+        position: relative;
+        z-index: 1;
+        padding-right: 8px;
+
+        @include respond-below(lg) {
+            padding-right: 0;
+        }
+    }
+
+    .around-your-intent__label {
+        display: inline-block;
+        margin: 0 0 18px;
+        font-size: 0.92rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: $brand-color;
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 42px;
+            height: 2px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+            box-shadow: 0 0 14px rgba($brand-color, 0.45);
+        }
+
+        @include respond-below(sm) {
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            margin-bottom: 12px;
+        }
+    }
+
+    .around-your-intent__intro h2 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.28;
+        letter-spacing: -0.025em;
+        margin: 0;
+        font-size: 2.2rem !important;
+        max-width: 460px;
+
+        @include respond-below(xl) {
+            font-size: 2rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.85rem !important;
+            max-width: 100%;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.6rem !important;
+            line-height: 1.32;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.38rem !important;
+            line-height: 1.35;
+            letter-spacing: -0.015em;
+        }
+    }
+
+    .around-your-intent__content {
+        position: relative;
+        z-index: 1;
+        padding-left: 36px;
+        border-left: 1px solid rgba($brand-color, 0.22);
+
+        @include respond-below(lg) {
+            padding-left: 0;
+            border-left: none;
+            padding-top: 6px;
+            border-top: 1px solid rgba($brand-color, 0.18);
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.75;
+            margin: 0 0 18px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            @include respond-below(md) {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 14px;
+            }
+
+            @include respond-below(sm) {
+                font-size: 14.5px;
+                line-height: 1.68;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .around-your-intent__lead {
+        color: $primary-color !important;
+        font-size: 1.05rem !important;
+        font-weight: 400 !important;
+        line-height: 1.7 !important;
+        position: relative;
+        padding: 18px 20px 18px 22px;
+        margin-bottom: 20px !important;
+        border-radius: 14px;
+        background: linear-gradient(
+            135deg,
+            rgba($brand-color, 0.1) 0%,
+            rgba(255, 255, 255, 0.03) 55%,
+            transparent 100%
+        );
+        border: 1px solid rgba($brand-color, 0.16);
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            bottom: 14px;
+            width: 3px;
+            border-radius: 3px;
+            background: linear-gradient(180deg, $brand-color, #ffc84a);
+            box-shadow: 0 0 12px rgba($brand-color, 0.4);
+        }
+
+        @include respond-below(md) {
+            font-size: 0.98rem !important;
+            padding: 16px 16px 16px 18px;
+            margin-bottom: 16px !important;
+            border-radius: 12px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 0.94rem !important;
+            padding: 14px 14px 14px 16px;
+            margin-bottom: 14px !important;
+        }
+    }
+
+    .around-your-intent__steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        margin: 26px 0 0;
+        padding: 0;
+
+        @include respond-below(md) {
+            margin-top: 20px;
+            gap: 8px;
+        }
+
+        @include respond-below(sm) {
+            margin-top: 16px;
+            gap: 8px;
+        }
+
+        li {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: rgba(255, 255, 255, 0.88);
+            background: rgba($brand-color, 0.08);
+            border: 1px solid rgba($brand-color, 0.22);
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $box-color;
+                background: $brand-color;
+                border-color: $brand-color;
+            }
+
+            @include respond-below(sm) {
+                font-size: 12px;
+                padding: 7px 12px;
+            }
+        }
+    }
+}
+// ==================================   AROUND YOUR INTENT AREA END
 
 .service-detailes-content {
     color: #fff;
