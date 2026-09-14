@@ -2346,6 +2346,2682 @@
 }
 // ==================================   AROUND YOUR INTENT AREA END
 
+// ==================================   3D COMES IN AREA START
+.comes-in-3d-area {
+  padding: 70px 0 90px;
+  position: relative;
+
+  @include respond-below(xl) {
+    padding: 50px 0 70px;
+  }
+
+  @include respond-below(lg) {
+    padding: 40px 0 60px;
+  }
+
+  @include respond-below(md) {
+    padding: 28px 0 46px;
+  }
+
+  @include respond-below(sm) {
+    padding: 20px 0 36px;
+  }
+
+  .container {
+    @include respond-below(sm) {
+      padding: 0 15px !important;
+    }
+  }
+}
+
+.comes-in-3d {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.28fr);
+  grid-template-areas:
+    "visual intro"
+    "visual content"
+    "work work";
+  gap: 28px 64px;
+  align-items: start;
+  padding: 64px 56px 56px;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      ellipse 42% 52% at 0% 12%,
+      rgba($brand-color, 0.12) 0%,
+      transparent 56%
+    ),
+    radial-gradient(
+      ellipse 36% 46% at 100% 100%,
+      rgba($brand-color, 0.07) 0%,
+      transparent 50%
+    ),
+    linear-gradient(165deg, #101010 0%, $box-color 48%, #0b0b0b 100%);
+  border: 1px solid rgba($brand-color, 0.14);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 60px rgba(0, 0, 0, 0.45);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.5) 30%,
+      rgba(#ffc84a, 0.85) 50%,
+      rgba($brand-color, 0.5) 70%,
+      transparent 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    right: -90px;
+    top: -110px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba($brand-color, 0.12) 0%,
+      transparent 70%
+    );
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  @include respond-below(xl) {
+    gap: 24px 48px;
+    padding: 52px 44px 46px;
+    border-radius: 24px;
+  }
+
+  @include respond-below(lg) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "visual"
+      "content"
+      "work";
+    gap: 28px;
+    padding: 44px 36px 40px;
+    border-radius: 22px;
+  }
+
+  @include respond-below(md) {
+    padding: 34px 24px 32px;
+    border-radius: 18px;
+    gap: 24px;
+
+    &::after {
+      width: 180px;
+      height: 180px;
+      right: -50px;
+      top: -70px;
+    }
+  }
+
+  @include respond-below(sm) {
+    padding: 28px 18px 24px;
+    border-radius: 16px;
+    gap: 22px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.comes-in-3d__visual {
+  grid-area: visual;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 28px;
+  padding-top: 8px;
+
+  @include respond-below(lg) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 0;
+  }
+
+  @include respond-below(md) {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+.comes-in-3d__stage {
+  width: 168px;
+  height: 168px;
+  perspective: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  @include respond-below(md) {
+    width: 140px;
+    height: 140px;
+  }
+
+  @include respond-below(sm) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.comes-in-3d__cube {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  transform-style: preserve-3d;
+  animation: comesIn3dSpin 14s linear infinite;
+
+  @include respond-below(md) {
+    width: 66px;
+    height: 66px;
+  }
+
+  @include respond-below(sm) {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.comes-in-3d__face {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba($brand-color, 0.55);
+  background: linear-gradient(
+    145deg,
+    rgba($brand-color, 0.22) 0%,
+    rgba($brand-color, 0.06) 100%
+  );
+  box-shadow: 0 0 18px rgba($brand-color, 0.12) inset;
+  backface-visibility: hidden;
+
+  &--front {
+    transform: translateZ(39px);
+  }
+
+  &--back {
+    transform: rotateY(180deg) translateZ(39px);
+  }
+
+  &--right {
+    transform: rotateY(90deg) translateZ(39px);
+  }
+
+  &--left {
+    transform: rotateY(-90deg) translateZ(39px);
+  }
+
+  &--top {
+    transform: rotateX(90deg) translateZ(39px);
+    background: linear-gradient(
+      145deg,
+      rgba(#ffc84a, 0.38) 0%,
+      rgba($brand-color, 0.12) 100%
+    );
+  }
+
+  &--bottom {
+    transform: rotateX(-90deg) translateZ(39px);
+  }
+
+  @include respond-below(md) {
+    &--front {
+      transform: translateZ(33px);
+    }
+
+    &--back {
+      transform: rotateY(180deg) translateZ(33px);
+    }
+
+    &--right {
+      transform: rotateY(90deg) translateZ(33px);
+    }
+
+    &--left {
+      transform: rotateY(-90deg) translateZ(33px);
+    }
+
+    &--top {
+      transform: rotateX(90deg) translateZ(33px);
+    }
+
+    &--bottom {
+      transform: rotateX(-90deg) translateZ(33px);
+    }
+  }
+
+  @include respond-below(sm) {
+    &--front {
+      transform: translateZ(28px);
+    }
+
+    &--back {
+      transform: rotateY(180deg) translateZ(28px);
+    }
+
+    &--right {
+      transform: rotateY(90deg) translateZ(28px);
+    }
+
+    &--left {
+      transform: rotateY(-90deg) translateZ(28px);
+    }
+
+    &--top {
+      transform: rotateX(90deg) translateZ(28px);
+    }
+
+    &--bottom {
+      transform: rotateX(-90deg) translateZ(28px);
+    }
+  }
+}
+
+.comes-in-3d__compare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+
+  @include respond-below(lg) {
+    max-width: 360px;
+  }
+
+  @include respond-below(sm) {
+    gap: 8px;
+  }
+}
+
+.comes-in-3d__compare-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 16px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  i {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  span {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+  }
+
+  small {
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &--active {
+    background: linear-gradient(
+      160deg,
+      rgba($brand-color, 0.18) 0%,
+      rgba($brand-color, 0.05) 100%
+    );
+    border-color: rgba($brand-color, 0.38);
+    box-shadow: 0 10px 24px rgba($brand-color, 0.08);
+
+    i,
+    span {
+      color: $brand-color;
+    }
+
+    small {
+      color: rgba(#ffc84a, 0.85);
+    }
+  }
+
+  @include respond-below(sm) {
+    padding: 12px 8px;
+    border-radius: 12px;
+
+    i {
+      font-size: 15px;
+    }
+
+    span {
+      font-size: 11.5px;
+    }
+
+    small {
+      font-size: 10px;
+    }
+  }
+}
+
+.comes-in-3d__compare-arrow {
+  color: $brand-color;
+  font-size: 16px;
+  flex-shrink: 0;
+  text-shadow: 0 0 12px rgba($brand-color, 0.45);
+
+  @include respond-below(sm) {
+    font-size: 13px;
+  }
+}
+
+.comes-in-3d__intro {
+  grid-area: intro;
+  position: relative;
+  z-index: 1;
+}
+
+.comes-in-3d__label {
+  display: inline-block;
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-color;
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+    box-shadow: 0 0 14px rgba($brand-color, 0.45);
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+  }
+}
+
+.comes-in-3d__intro h2 {
+  color: $primary-color;
+  font-weight: 600;
+  line-height: 1.26;
+  letter-spacing: -0.025em;
+  margin: 0;
+  font-size: 2.25rem !important;
+  max-width: 560px;
+
+  @include respond-below(xl) {
+    font-size: 2rem !important;
+  }
+
+  @include respond-below(lg) {
+    font-size: 1.85rem !important;
+    max-width: 100%;
+  }
+
+  @include respond-below(md) {
+    font-size: 1.6rem !important;
+    line-height: 1.32;
+  }
+
+  @include respond-below(sm) {
+    font-size: 1.38rem !important;
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+  }
+}
+
+.comes-in-3d__content {
+  grid-area: content;
+  position: relative;
+  z-index: 1;
+  padding-left: 36px;
+  border-left: 1px solid rgba($brand-color, 0.22);
+
+  @include respond-below(lg) {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 6px;
+    border-top: 1px solid rgba($brand-color, 0.18);
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0 0 18px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.comes-in-3d__lead {
+  color: $primary-color !important;
+  font-size: 1.05rem !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  position: relative;
+  padding: 18px 20px 18px 22px;
+  margin-bottom: 20px !important;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba($brand-color, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 55%,
+    transparent 100%
+  );
+  border: 1px solid rgba($brand-color, 0.16);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 14px;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, $brand-color, #ffc84a);
+    box-shadow: 0 0 12px rgba($brand-color, 0.4);
+  }
+
+  @include respond-below(md) {
+    font-size: 0.98rem !important;
+    padding: 16px 16px 16px 18px;
+    margin-bottom: 16px !important;
+    border-radius: 12px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.94rem !important;
+    padding: 14px 14px 14px 16px;
+    margin-bottom: 14px !important;
+  }
+}
+
+.comes-in-3d__work {
+  grid-area: work;
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 22px 0 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  border-top: 1px solid rgba($brand-color, 0.16);
+
+  @include respond-below(xl) {
+    gap: 10px;
+  }
+
+  @media (max-width: 1365px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @include respond-below(lg) {
+    padding-top: 20px;
+  }
+
+  @include respond-below(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 4px;
+
+    li:last-child {
+      grid-column: 1 / -1;
+      max-width: calc(50% - 5px);
+      width: 100%;
+      justify-self: center;
+    }
+  }
+
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-top: 16px;
+
+    li:last-child {
+      grid-column: auto;
+      max-width: none;
+      justify-self: stretch;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 64px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba($brand-color, 0.16);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      border-color: rgba($brand-color, 0.45);
+      background: rgba($brand-color, 0.1);
+    }
+
+    @include respond-below(xl) {
+      padding: 12px 12px;
+      font-size: 13px;
+      gap: 10px;
+    }
+
+    @include respond-below(sm) {
+      min-height: 54px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 14px;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+.comes-in-3d__work-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba($brand-color, 0.14);
+  color: $brand-color;
+  font-size: 15px;
+  box-shadow: 0 0 12px rgba($brand-color, 0.12);
+
+  @include respond-below(sm) {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+@keyframes comesIn3dSpin {
+  from {
+    transform: rotateX(-22deg) rotateY(28deg);
+  }
+
+  to {
+    transform: rotateX(-22deg) rotateY(388deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comes-in-3d__cube {
+    animation: none;
+    transform: rotateX(-22deg) rotateY(32deg);
+  }
+
+  .comes-in-3d__work li:hover {
+    transform: none;
+  }
+}
+// ==================================   3D COMES IN AREA END
+
+// ==================================   WHAT DOES AREA START
+.what-does-area {
+  padding: 10px 0 90px;
+  position: relative;
+
+  @include respond-below(xl) {
+    padding: 0 0 70px;
+  }
+
+  @include respond-below(lg) {
+    padding: 0 0 60px;
+  }
+
+  @include respond-below(md) {
+    padding: 0 0 46px;
+  }
+
+  @include respond-below(sm) {
+    padding: 0 0 36px;
+  }
+
+  .container {
+    @include respond-below(sm) {
+      padding: 0 15px !important;
+    }
+  }
+}
+
+.what-does {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  grid-template-areas:
+    "intro note"
+    "lead lead"
+    "copy copy"
+    "phases phases";
+  gap: 22px 48px;
+  align-items: start;
+  padding: 60px 56px 52px;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      ellipse 48% 42% at 100% 0%,
+      rgba($brand-color, 0.1) 0%,
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 34% 48% at 0% 100%,
+      rgba($brand-color, 0.07) 0%,
+      transparent 48%
+    ),
+    linear-gradient(165deg, #101010 0%, $box-color 52%, #0c0c0c 100%);
+  border: 1px solid rgba($brand-color, 0.14);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 60px rgba(0, 0, 0, 0.45);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.5) 30%,
+      rgba(#ffc84a, 0.85) 50%,
+      rgba($brand-color, 0.5) 70%,
+      transparent 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    left: -80px;
+    bottom: -90px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba($brand-color, 0.1) 0%,
+      transparent 70%
+    );
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  @include respond-below(xl) {
+    gap: 20px 44px;
+    padding: 50px 44px 44px;
+    border-radius: 24px;
+  }
+
+  @include respond-below(lg) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "lead"
+      "copy"
+      "note"
+      "phases";
+    gap: 22px;
+    padding: 42px 36px 38px;
+    border-radius: 22px;
+  }
+
+  @include respond-below(md) {
+    padding: 32px 24px 30px;
+    border-radius: 18px;
+    gap: 20px;
+
+    &::after {
+      width: 160px;
+      height: 160px;
+      left: -40px;
+      bottom: -50px;
+    }
+  }
+
+  @include respond-below(sm) {
+    padding: 26px 18px 22px;
+    border-radius: 16px;
+    gap: 18px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.what-does__intro {
+  grid-area: intro;
+  position: relative;
+  z-index: 1;
+}
+
+.what-does__label {
+  display: inline-block;
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-color;
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+    box-shadow: 0 0 14px rgba($brand-color, 0.45);
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+  }
+}
+
+.what-does__intro h2 {
+  color: $primary-color;
+  font-weight: 600;
+  line-height: 1.26;
+  letter-spacing: -0.025em;
+  margin: 0;
+  font-size: 2.25rem !important;
+  max-width: 620px;
+
+  @include respond-below(xl) {
+    font-size: 2rem !important;
+  }
+
+  @include respond-below(lg) {
+    font-size: 1.85rem !important;
+    max-width: 100%;
+  }
+
+  @include respond-below(md) {
+    font-size: 1.6rem !important;
+    line-height: 1.32;
+  }
+
+  @include respond-below(sm) {
+    font-size: 1.38rem !important;
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+  }
+}
+
+.what-does__lead {
+  grid-area: lead;
+  position: relative;
+  z-index: 1;
+  color: $primary-color;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  padding: 18px 20px 18px 22px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba($brand-color, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 55%,
+    transparent 100%
+  );
+  border: 1px solid rgba($brand-color, 0.16);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 14px;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, $brand-color, #ffc84a);
+    box-shadow: 0 0 12px rgba($brand-color, 0.4);
+  }
+
+  @include respond-below(md) {
+    font-size: 0.98rem;
+    padding: 16px 16px 16px 18px;
+    border-radius: 12px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.94rem;
+    padding: 14px 14px 14px 16px;
+  }
+}
+
+.what-does__body {
+  grid-area: copy;
+  position: relative;
+  z-index: 1;
+  display: contents;
+}
+
+.what-does__copy {
+  grid-area: copy;
+  position: relative;
+  z-index: 1;
+
+  p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0 0 18px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.what-does__note {
+  grid-area: note;
+  position: relative;
+  z-index: 1;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 36px 28px 28px;
+  border-radius: 20px;
+  background: linear-gradient(
+    165deg,
+    rgba($brand-color, 0.16) 0%,
+    rgba($brand-color, 0.04) 48%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1px solid rgba($brand-color, 0.28);
+  box-shadow: 0 16px 36px rgba($brand-color, 0.06);
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    font-size: 64px;
+    line-height: 1;
+    color: rgba($brand-color, 0.55);
+    font-family: Georgia, "Times New Roman", serif;
+    pointer-events: none;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: $primary-color;
+    font-size: 1.02rem;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  @include respond-below(xl) {
+    padding: 34px 24px 24px;
+  }
+
+  @include respond-below(lg) {
+    padding: 32px 26px 24px;
+    border-radius: 16px;
+  }
+
+  @include respond-below(md) {
+    padding: 30px 20px 20px;
+
+    &::before {
+      font-size: 52px;
+      left: 16px;
+    }
+
+    p {
+      font-size: 0.96rem;
+    }
+  }
+
+  @include respond-below(sm) {
+    padding: 28px 18px 18px;
+    border-radius: 14px;
+
+    &::before {
+      font-size: 46px;
+      top: 4px;
+      left: 14px;
+    }
+
+    p {
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+  }
+}
+
+.what-does__phases {
+  grid-area: phases;
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  counter-reset: what-does-phase;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid rgba($brand-color, 0.16);
+
+  @include respond-below(xl) {
+    gap: 8px;
+  }
+
+  @media (max-width: 1365px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  @include respond-below(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 4px;
+    padding-top: 20px;
+
+    li:last-child {
+      grid-column: 1 / -1;
+      max-width: calc(50% - 5px);
+      width: 100%;
+      justify-self: center;
+    }
+  }
+
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-top: 16px;
+
+    li:last-child {
+      grid-column: auto;
+      max-width: none;
+      justify-self: stretch;
+    }
+  }
+
+  li {
+    counter-increment: what-does-phase;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 118px;
+    padding: 16px 14px 14px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba($brand-color, 0.16);
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.35;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+
+    &::after {
+      content: counter(what-does-phase, decimal-leading-zero);
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      color: rgba($brand-color, 0.42);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      border-color: rgba($brand-color, 0.45);
+      background: rgba($brand-color, 0.1);
+    }
+
+    @include respond-below(xl) {
+      min-height: 110px;
+      padding: 14px 12px 12px;
+      font-size: 12.5px;
+      border-radius: 14px;
+    }
+
+    @include respond-below(md) {
+      min-height: 88px;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      font-size: 14px;
+    }
+
+    @include respond-below(sm) {
+      min-height: 62px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 14px;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+.what-does__phase-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba($brand-color, 0.14);
+  color: $brand-color;
+  font-size: 15px;
+  box-shadow: 0 0 12px rgba($brand-color, 0.12);
+
+  @include respond-below(sm) {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .what-does__phases li:hover {
+    transform: none;
+  }
+}
+// ==================================   WHAT DOES AREA END
+
+// ==================================   WORK 3D PORTFOLIO AREA START
+.work-3d-area {
+  padding: 10px 0 90px;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
+
+  @include respond-below(xl) {
+    padding: 0 0 70px;
+  }
+
+  @include respond-below(lg) {
+    padding: 0 0 60px;
+  }
+
+  @include respond-below(md) {
+    padding: 0 0 46px;
+  }
+
+  @include respond-below(sm) {
+    padding: 0 0 36px;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 1180px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+
+    @include respond-below(sm) {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+}
+
+.work-3d {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.work-3d__intro {
+  max-width: 760px;
+  margin: 0 auto 56px;
+  text-align: center;
+  overflow-wrap: break-word;
+
+  @include respond-below(lg) {
+    margin-bottom: 42px;
+  }
+
+  @include respond-below(md) {
+    margin-bottom: 32px;
+  }
+
+  @include respond-below(sm) {
+    margin-bottom: 26px;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.025em;
+    margin: 0 0 18px;
+    font-size: 2.2rem !important;
+
+    @include respond-below(xl) {
+      font-size: 2rem !important;
+    }
+
+    @include respond-below(lg) {
+      font-size: 1.85rem !important;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.6rem !important;
+      line-height: 1.32;
+      margin-bottom: 14px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.38rem !important;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+      margin-bottom: 12px;
+    }
+  }
+
+  > p {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0;
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+    }
+  }
+}
+
+.work-3d__label {
+  display: inline-block;
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-color;
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      $brand-color,
+      #ffc84a,
+      transparent
+    );
+    box-shadow: 0 0 14px rgba($brand-color, 0.45);
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+  }
+}
+
+.work-3d__stage {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  gap: 28px;
+
+  @include respond-below(lg) {
+    gap: 22px;
+  }
+
+  @include respond-below(md) {
+    gap: 18px;
+  }
+
+  @include respond-below(custom-tablet) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+
+.work-3d__card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 100%;
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      ellipse 58% 48% at 0% 0%,
+      rgba($brand-color, 0.12) 0%,
+      transparent 58%
+    ),
+    linear-gradient(165deg, #141414 0%, $box-color 52%, #090909 100%);
+  border: 1px solid rgba($brand-color, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 56px rgba(0, 0, 0, 0.46);
+  transition:
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16%;
+    right: 16%;
+    height: 1px;
+    z-index: 3;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.5) 28%,
+      rgba(#ffc84a, 0.9) 50%,
+      rgba($brand-color, 0.5) 72%,
+      transparent 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    z-index: 3;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      $brand-color 22%,
+      #ffc84a 50%,
+      $brand-color 78%,
+      transparent 100%
+    );
+    opacity: 0.88;
+  }
+
+  &:hover {
+    border-color: rgba($brand-color, 0.38);
+    transform: translateY(-6px);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+      0 0 36px rgba($brand-color, 0.14),
+      0 32px 64px rgba(0, 0, 0, 0.52);
+
+    .work-3d__media img {
+      transform: scale(1.045);
+    }
+
+    .work-3d__overlay {
+      opacity: 0.58;
+    }
+
+    .work-3d__play {
+      transform: translate(-50%, -50%) scale(1.08);
+      box-shadow:
+        0 0 0 10px rgba($brand-color, 0.16),
+        0 14px 32px rgba($brand-color, 0.38);
+    }
+  }
+
+  @include respond-below(xl) {
+    border-radius: 22px;
+  }
+
+  @include respond-below(md) {
+    border-radius: 18px;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  @include respond-below(sm) {
+    border-radius: 16px;
+  }
+}
+
+.work-3d__media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  flex: 0 0 auto;
+  aspect-ratio: 16 / 9;
+  background: #0d0d0d;
+  text-decoration: none;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $brand-color;
+    outline-offset: 3px;
+  }
+}
+
+.work-3d__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.22) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.08) 62%, rgba(0, 0, 0, 0.38) 100%);
+  opacity: 0.42;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.work-3d__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #1a1204;
+  background: radial-gradient(circle at 32% 28%, #ffd056 0%, $brand-color 58%, #d9940c 100%);
+  box-shadow:
+    0 0 0 8px rgba($brand-color, 0.18),
+    0 12px 28px rgba($brand-color, 0.34);
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1.5px solid rgba($brand-color, 0.45);
+    animation: work3dPulse 2.4s ease-out infinite;
+    pointer-events: none;
+  }
+
+  &::after {
+    animation-delay: 1.2s;
+  }
+
+  i {
+    font-size: 24px;
+    margin-left: 4px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @include respond-below(md) {
+    width: 68px;
+    height: 68px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  @include respond-below(sm) {
+    width: 58px;
+    height: 58px;
+    box-shadow:
+      0 0 0 6px rgba($brand-color, 0.16),
+      0 10px 22px rgba($brand-color, 0.3);
+
+    i {
+      font-size: 16px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.work-3d__tag {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $box-color;
+  background: $brand-color;
+  box-shadow: 0 6px 14px rgba($brand-color, 0.28);
+
+  @include respond-below(sm) {
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+.work-3d__meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+  padding: 20px 22px 24px;
+  padding-right: 72px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+
+  @include respond-below(md) {
+    padding: 16px 18px 20px;
+    padding-right: 64px;
+    gap: 12px;
+  }
+
+  @include respond-below(sm) {
+    padding: 14px 14px 18px;
+    padding-right: 58px;
+    align-items: center;
+  }
+}
+
+.work-3d__copy {
+  min-width: 0;
+
+  h3 {
+    color: $primary-color;
+    font-weight: 500;
+    line-height: 1.32;
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+    font-size: 1.22rem !important;
+    overflow-wrap: anywhere;
+
+    @include respond-below(md) {
+      font-size: 1.05rem !important;
+      margin-bottom: 4px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1rem !important;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @include respond-below(sm) {
+      font-size: 13px;
+    }
+  }
+}
+
+.work-3d__flag {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+  width: 40px;
+  height: 26px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.28);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @include respond-below(md) {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  @include respond-below(sm) {
+    width: 34px;
+    height: 22px;
+    border-radius: 4px;
+    right: 14px;
+    bottom: 16px;
+  }
+}
+
+@keyframes work3dPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-3d__card,
+  .work-3d__card:hover,
+  .work-3d__media img,
+  .work-3d__play {
+    transition: none;
+    transform: none;
+  }
+
+  .work-3d__play::before,
+  .work-3d__play::after {
+    animation: none;
+  }
+}
+// ==================================   WORK 3D PORTFOLIO AREA END
+
+// ==================================   DIFFERENT IDEAS AREA START
+.different-ideas-area {
+  padding: 10px 0 90px;
+  position: relative;
+
+  @include respond-below(xl) {
+    padding: 0 0 70px;
+  }
+
+  @include respond-below(lg) {
+    padding: 0 0 60px;
+  }
+
+  @include respond-below(md) {
+    padding: 0 0 46px;
+  }
+
+  @include respond-below(sm) {
+    padding: 0 0 36px;
+  }
+
+  .container {
+    @include respond-below(sm) {
+      padding: 0 15px !important;
+    }
+  }
+}
+
+.different-ideas {
+  position: relative;
+}
+
+.different-ideas__intro {
+  max-width: 760px;
+  margin: 0 auto 56px;
+  text-align: center;
+
+  @include respond-below(lg) {
+    margin-bottom: 42px;
+  }
+
+  @include respond-below(md) {
+    margin-bottom: 32px;
+  }
+
+  @include respond-below(sm) {
+    margin-bottom: 26px;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.025em;
+    margin: 0;
+    font-size: 2.2rem !important;
+
+    @include respond-below(xl) {
+      font-size: 2rem !important;
+    }
+
+    @include respond-below(lg) {
+      font-size: 1.85rem !important;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.6rem !important;
+      line-height: 1.32;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.38rem !important;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+    }
+  }
+}
+
+.different-ideas__label {
+  display: inline-block;
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-color;
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      $brand-color,
+      #ffc84a,
+      transparent
+    );
+    box-shadow: 0 0 14px rgba($brand-color, 0.45);
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+  }
+}
+
+.different-ideas__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+
+  @include respond-below(xl) {
+    gap: 20px;
+  }
+
+  @include respond-below(lg) {
+    gap: 18px;
+  }
+
+  @include respond-below(custom-tablet) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+}
+
+.different-ideas__card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  padding: 36px 32px 32px;
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      ellipse 58% 48% at 0% 0%,
+      rgba($brand-color, 0.12) 0%,
+      transparent 58%
+    ),
+    linear-gradient(165deg, #141414 0%, $box-color 52%, #090909 100%);
+  border: 1px solid rgba($brand-color, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 56px rgba(0, 0, 0, 0.46);
+  transition:
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16%;
+    right: 16%;
+    height: 1px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.5) 28%,
+      rgba(#ffc84a, 0.9) 50%,
+      rgba($brand-color, 0.5) 72%,
+      transparent 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      $brand-color 22%,
+      #ffc84a 50%,
+      $brand-color 78%,
+      transparent 100%
+    );
+    opacity: 0.88;
+  }
+
+  &:hover {
+    border-color: rgba($brand-color, 0.38);
+    transform: translateY(-6px);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+      0 0 36px rgba($brand-color, 0.14),
+      0 32px 64px rgba(0, 0, 0, 0.52);
+
+    .different-ideas__icon {
+      background: rgba($brand-color, 0.22);
+      box-shadow: 0 0 18px rgba($brand-color, 0.22);
+    }
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0 0 16px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+      margin-bottom: 12px;
+    }
+  }
+
+  @include respond-below(xl) {
+    padding: 30px 26px 28px;
+    border-radius: 22px;
+  }
+
+  @include respond-below(lg) {
+    padding: 26px 22px 24px;
+  }
+
+  @include respond-below(md) {
+    border-radius: 18px;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  @include respond-below(sm) {
+    padding: 22px 18px 20px;
+    border-radius: 16px;
+  }
+}
+
+.different-ideas__card--featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 36px 48px;
+  padding: 44px 48px 42px;
+
+  @include respond-below(xl) {
+    gap: 28px 36px;
+    padding: 36px 36px 34px;
+  }
+
+  @include respond-below(lg) {
+    grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
+    gap: 24px 28px;
+    padding: 30px 28px 28px;
+  }
+
+  @include respond-below(md) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 28px 24px 26px;
+  }
+
+  @include respond-below(sm) {
+    padding: 24px 18px 22px;
+  }
+}
+
+.different-ideas__visual {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+
+  @include respond-below(lg) {
+    min-height: 200px;
+  }
+
+  @include respond-below(md) {
+    display: none;
+  }
+}
+
+.different-ideas__explode {
+  position: relative;
+  width: 168px;
+  height: 220px;
+  perspective: 860px;
+  animation: differentIdeasFloat 6s ease-in-out infinite;
+
+  span {
+    position: absolute;
+    left: 50%;
+    width: 118px;
+    height: 72px;
+    margin-left: -59px;
+    border-radius: 14px;
+    border: 1.5px solid rgba($brand-color, 0.48);
+    background: linear-gradient(
+      145deg,
+      rgba($brand-color, 0.22) 0%,
+      rgba($brand-color, 0.05) 100%
+    );
+    box-shadow:
+      0 10px 22px rgba(0, 0, 0, 0.28),
+      0 0 16px rgba($brand-color, 0.1) inset;
+    transform: rotateX(62deg) rotateZ(-20deg);
+    backface-visibility: hidden;
+
+    &:nth-child(1) {
+      top: 8px;
+      opacity: 0.42;
+    }
+
+    &:nth-child(2) {
+      top: 54px;
+      opacity: 0.62;
+      border-color: rgba($brand-color, 0.58);
+    }
+
+    &:nth-child(3) {
+      top: 100px;
+      opacity: 0.82;
+      background: linear-gradient(
+        145deg,
+        rgba(#ffc84a, 0.32) 0%,
+        rgba($brand-color, 0.08) 100%
+      );
+    }
+
+    &:nth-child(4) {
+      top: 146px;
+      opacity: 1;
+      box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba($brand-color, 0.16) inset;
+    }
+  }
+
+  @include respond-below(lg) {
+    width: 140px;
+    height: 186px;
+
+    span {
+      width: 98px;
+      height: 60px;
+      margin-left: -49px;
+      border-radius: 12px;
+
+      &:nth-child(1) {
+        top: 6px;
+      }
+
+      &:nth-child(2) {
+        top: 44px;
+      }
+
+      &:nth-child(3) {
+        top: 82px;
+      }
+
+      &:nth-child(4) {
+        top: 120px;
+      }
+    }
+  }
+}
+
+.different-ideas__body {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.different-ideas__index {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  z-index: 1;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: rgba($brand-color, 0.16);
+  pointer-events: none;
+
+  .different-ideas__card--featured & {
+    top: 0;
+    right: 0;
+  }
+
+  @include respond-below(lg) {
+    font-size: 2.2rem;
+    top: 18px;
+    right: 18px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 1.85rem;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.different-ideas__head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 0 48px 20px 0;
+
+  @include respond-below(md) {
+    gap: 14px;
+    margin: 0 40px 16px 0;
+  }
+
+  @include respond-below(sm) {
+    gap: 12px;
+    margin: 0 36px 14px 0;
+  }
+
+  h3 {
+    color: $primary-color;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding-top: 6px;
+    font-size: 1.32rem !important;
+
+    @include respond-below(lg) {
+      font-size: 1.18rem !important;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.08rem !important;
+      padding-top: 4px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.02rem !important;
+    }
+  }
+}
+
+.different-ideas__icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba($brand-color, 0.14);
+  color: $brand-color;
+  font-size: 18px;
+  box-shadow: 0 0 14px rgba($brand-color, 0.12);
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+
+  @include respond-below(md) {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  @include respond-below(sm) {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+}
+
+@keyframes differentIdeasFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .different-ideas__card,
+  .different-ideas__card:hover,
+  .different-ideas__icon {
+    transition: none;
+    transform: none;
+  }
+
+  .different-ideas__explode {
+    animation: none;
+  }
+}
+// ==================================   DIFFERENT IDEAS AREA END
+
+// ==================================   STUDIO 3D PIPELINE AREA START
+.studio-3d-area {
+  padding: 10px 0 90px;
+  position: relative;
+
+  @include respond-below(xl) {
+    padding: 0 0 70px;
+  }
+
+  @include respond-below(lg) {
+    padding: 0 0 60px;
+  }
+
+  @include respond-below(md) {
+    padding: 0 0 46px;
+  }
+
+  @include respond-below(sm) {
+    padding: 0 0 36px;
+  }
+
+  .container {
+    @include respond-below(sm) {
+      padding: 0 15px !important;
+    }
+  }
+}
+
+.studio-3d {
+  position: relative;
+}
+
+.studio-3d__intro {
+  max-width: 780px;
+  margin: 0 auto 56px;
+  text-align: center;
+
+  @include respond-below(lg) {
+    margin-bottom: 42px;
+  }
+
+  @include respond-below(md) {
+    margin-bottom: 32px;
+  }
+
+  @include respond-below(sm) {
+    margin-bottom: 26px;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.025em;
+    margin: 0 0 16px;
+    font-size: 2.2rem !important;
+
+    @include respond-below(xl) {
+      font-size: 2rem !important;
+    }
+
+    @include respond-below(lg) {
+      font-size: 1.85rem !important;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.6rem !important;
+      line-height: 1.32;
+      margin-bottom: 12px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.38rem !important;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0;
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+    }
+  }
+}
+
+.studio-3d__pipeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include respond-below(xl) {
+    gap: 18px 20px;
+  }
+
+  @include respond-below(lg) {
+    gap: 16px 18px;
+  }
+
+  @include respond-below(md) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-left: 28px;
+  }
+
+  @include respond-below(sm) {
+    padding-left: 24px;
+  }
+
+  @include respond-below(md) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      bottom: 28px;
+      left: 7px;
+      width: 2px;
+      border-radius: 2px;
+      background: linear-gradient(
+        180deg,
+        rgba($brand-color, 0.08) 0%,
+        rgba($brand-color, 0.55) 18%,
+        #ffc84a 50%,
+        rgba($brand-color, 0.55) 82%,
+        rgba($brand-color, 0.08) 100%
+      );
+      box-shadow: 0 0 16px rgba($brand-color, 0.2);
+    }
+  }
+}
+
+.studio-3d__step {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  height: 100%;
+
+  @include respond-below(md) {
+    padding: 0 0 16px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: -25px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $brand-color;
+      box-shadow:
+        0 0 0 4px rgba($brand-color, 0.16),
+        0 0 14px rgba($brand-color, 0.45);
+      z-index: 1;
+    }
+  }
+
+  @include respond-below(sm) {
+    padding-bottom: 14px;
+
+    &::before {
+      left: -21px;
+      width: 10px;
+      height: 10px;
+      top: 26px;
+    }
+  }
+}
+
+.studio-3d__step--final {
+  .studio-3d__card {
+    border-color: rgba($brand-color, 0.38);
+    background:
+      radial-gradient(
+        ellipse 70% 60% at 100% 0%,
+        rgba($brand-color, 0.16) 0%,
+        transparent 58%
+      ),
+      linear-gradient(165deg, #181410 0%, $box-color 52%, #090909 100%);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+      0 0 28px rgba($brand-color, 0.1),
+      0 28px 56px rgba(0, 0, 0, 0.46);
+  }
+
+  .studio-3d__icon {
+    background: rgba($brand-color, 0.22);
+    box-shadow: 0 0 18px rgba($brand-color, 0.22);
+  }
+
+  @include respond-below(md) {
+    &::before {
+      background: #ffc84a;
+      box-shadow:
+        0 0 0 5px rgba($brand-color, 0.2),
+        0 0 18px rgba($brand-color, 0.55);
+    }
+  }
+}
+
+.studio-3d__card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  padding: 32px 28px 28px;
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      ellipse 58% 48% at 0% 0%,
+      rgba($brand-color, 0.12) 0%,
+      transparent 58%
+    ),
+    linear-gradient(165deg, #141414 0%, $box-color 52%, #090909 100%);
+  border: 1px solid rgba($brand-color, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 56px rgba(0, 0, 0, 0.46);
+  transition:
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16%;
+    right: 16%;
+    height: 1px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.5) 28%,
+      rgba(#ffc84a, 0.9) 50%,
+      rgba($brand-color, 0.5) 72%,
+      transparent 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      $brand-color 22%,
+      #ffc84a 50%,
+      $brand-color 78%,
+      transparent 100%
+    );
+    opacity: 0.88;
+  }
+
+  &:hover {
+    border-color: rgba($brand-color, 0.38);
+    transform: translateY(-6px);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+      0 0 36px rgba($brand-color, 0.14),
+      0 32px 64px rgba(0, 0, 0, 0.52);
+
+    .studio-3d__icon {
+      background: rgba($brand-color, 0.22);
+      box-shadow: 0 0 18px rgba($brand-color, 0.22);
+    }
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0;
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+    }
+  }
+
+  @include respond-below(xl) {
+    padding: 28px 24px 24px;
+    border-radius: 20px;
+  }
+
+  @include respond-below(lg) {
+    padding: 24px 20px 22px;
+  }
+
+  @include respond-below(md) {
+    border-radius: 18px;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  @include respond-below(sm) {
+    padding: 20px 16px 18px;
+    border-radius: 16px;
+  }
+}
+
+.studio-3d__num {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  z-index: 1;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: rgba($brand-color, 0.16);
+  pointer-events: none;
+
+  @include respond-below(lg) {
+    font-size: 2rem;
+    top: 16px;
+    right: 16px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 1.7rem;
+    top: 14px;
+    right: 14px;
+  }
+}
+
+.studio-3d__head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 0 48px 16px 0;
+
+  @include respond-below(md) {
+    gap: 12px;
+    margin: 0 40px 14px 0;
+  }
+
+  @include respond-below(sm) {
+    gap: 10px;
+    margin: 0 36px 12px 0;
+  }
+
+  h3 {
+    color: $primary-color;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding-top: 8px;
+    font-size: 1.28rem !important;
+
+    @include respond-below(lg) {
+      font-size: 1.14rem !important;
+      padding-top: 6px;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.06rem !important;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.02rem !important;
+      padding-top: 4px;
+    }
+  }
+}
+
+.studio-3d__icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba($brand-color, 0.14);
+  color: $brand-color;
+  font-size: 17px;
+  box-shadow: 0 0 14px rgba($brand-color, 0.12);
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+
+  @include respond-below(md) {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  @include respond-below(sm) {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-3d__card,
+  .studio-3d__card:hover,
+  .studio-3d__icon {
+    transition: none;
+    transform: none;
+  }
+}
+// ==================================   STUDIO 3D PIPELINE AREA END
+
 // ==================================   WHAT WE HELP AREA START
 .what-we-help-area {
   padding: 20px 0 100px;
