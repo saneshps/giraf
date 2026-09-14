@@ -6698,7 +6698,7 @@ h2 {
   height: 3px;
   z-index: 3;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.88;
 }
 .work-3d__card:hover {
@@ -7150,7 +7150,7 @@ h2 {
   height: 3px;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.88;
 }
 .different-ideas__card:hover {
@@ -7710,7 +7710,7 @@ h2 {
   height: 3px;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.88;
 }
 .studio-3d__card:hover {
@@ -7950,7 +7950,7 @@ h2 {
   height: 3px;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.85;
 }
 @media (max-width: 1599px) {
@@ -8316,7 +8316,7 @@ h2 {
   height: 3px;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.88;
 }
 .choose-3d__card:hover {
@@ -9705,7 +9705,7 @@ h2 {
   bottom: 0;
   height: 3px;
   z-index: 2;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.85;
 }
 @media (max-width: 1599px) {
@@ -10203,7 +10203,7 @@ h2 {
   height: 3px;
   z-index: 3;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.88;
 }
 .services-portfolio__card:hover {
@@ -10537,7 +10537,7 @@ h2 {
   bottom: 0;
   height: 3px;
   z-index: 2;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.85;
 }
 @media (max-width: 1599px) {
@@ -11408,7 +11408,7 @@ h2 {
   height: 3px;
   z-index: 2;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 0%, #F9B217 22%, #ffc84a 50%, #F9B217 78%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(249, 178, 23, 0.28) 30%, rgba(255, 200, 74, 0.4) 50%, rgba(249, 178, 23, 0.28) 70%, transparent 100%);
   opacity: 0.85;
 }
 .faq-3d__intro h2 {
