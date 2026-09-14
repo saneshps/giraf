@@ -634,16 +634,158 @@
   <!-- =====================
          3D Animation Studio AREA END
      ===================== -->
+  <!-- =====================
+        Why Choose AREA START
+     ===================== -->
+  <section class="choose-3d-area">
+    <div class="container">
+      <div class="choose-3d">
+        <div class="choose-3d__intro">
+          <span class="choose-3d__frame" aria-hidden="true"></span>
+          <div class="choose-3d__glow" aria-hidden="true"></div>
+          <div class="choose-3d__glow choose-3d__glow--alt" aria-hidden="true"></div>
+
+          <div class="choose-3d__heading">
+            <h2>Why Choose Giraf for <span>3D Animation?</span></h2>
+          </div>
+
+          <div class="choose-3d__copy">
+            <p class="choose-3d__lead">A reliable 3D animation partner offers more than just making a character model move. You need a creative studio that understands what your intention is and how you want the animation to communicate that idea.</p>
+            <p>As a 3D animation production house in India, at Giraf Creatives, we handle production from concept and modeling through animation, rendering, and post-production.</p>
+          </div>
+        </div>
+
+        <div class="choose-3d__approach">
+          <h3>Our approach focuses on:</h3>
+
+          <ul class="choose-3d__grid">
+            <li>
+              <article class="choose-3d__card">
+                <span class="choose-3d__num">01</span>
+                <div class="choose-3d__head">
+                  <span class="choose-3d__icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
+                  <h4>Everything under one roof</h4>
+                </div>
+                <p>Our in-house team well handles the important stages of 3D production.</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="choose-3d__card">
+                <span class="choose-3d__num">02</span>
+                <div class="choose-3d__head">
+                  <span class="choose-3d__icon" aria-hidden="true"><i class="fa-solid fa-user-gear"></i></span>
+                  <h4>Dedicated rigging artist</h4>
+                </div>
+                <p>With a dedicated rigging artist in the team, we ensure smooth and natural movements of the characters and objects.</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="choose-3d__card">
+                <span class="choose-3d__num">03</span>
+                <div class="choose-3d__head">
+                  <span class="choose-3d__icon" aria-hidden="true"><i class="fa-solid fa-clapperboard"></i></span>
+                  <h4>From ideation to final video</h4>
+                </div>
+                <p>We handle your project from the initial concept to the finished animation.</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="choose-3d__card">
+                <span class="choose-3d__num">04</span>
+                <div class="choose-3d__head">
+                  <span class="choose-3d__icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                  <h4>Right tools for the right job</h4>
+                </div>
+                <p>We make use of the right tools and software such as Maya, Blender, and Unreal Engine depending on your project requirements.</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="choose-3d__card">
+                <span class="choose-3d__num">05</span>
+                <div class="choose-3d__head">
+                  <span class="choose-3d__icon" aria-hidden="true"><i class="fa-solid fa-bullseye"></i></span>
+                  <h4>Animation with a purpose</h4>
+                </div>
+                <p>We don’t just make things look good; we make sure that your audience gets your intent.</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="choose-3d__card">
+                <span class="choose-3d__num">06</span>
+                <div class="choose-3d__head">
+                  <span class="choose-3d__icon" aria-hidden="true"><i class="fa-solid fa-stopwatch"></i></span>
+                  <h4>Quality without delay</h4>
+                </div>
+                <p>We plan the production around your content, task requirements, and platform, ensuring that you get the work within the estimated time and scope.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====================
+        Why Choose AREA END
+     ===================== -->
      
   <!-- =====================
           FAQ AREA START
      ===================== -->
-  <section class="faq-area">
+  <section class="faq-3d-area">
     <div class="container">
-      <div class="faq">
-        <div class="faq__intro">
-          <span class="faq__label">FAQ</span>
+      <div class="faq-3d">
+        <div class="faq-3d__intro">
+          <span class="faq-3d__frame" aria-hidden="true"></span>
+          <span class="faq-3d__glow" aria-hidden="true"></span>
+          <span class="faq-3d__glow faq-3d__glow--alt" aria-hidden="true"></span>
+          <span class="faq-3d__label">FAQ</span>
           <h2>FAQ</h2>
+        </div>
+
+        <div class="faq-3d__list">
+          <details class="faq-3d__item" name="faq-3d" open>
+            <summary class="faq-3d__question">
+              <span class="faq-3d__index">01</span>
+              <span class="faq-3d__title">Can you create 3D animation for any industry?</span>
+              <span class="faq-3d__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-3d__answer">
+              <div class="faq-3d__answer-inner">
+                <p><span class="faq-3d__mark">A</span> Yes, we can use 3D animation across industries, including manufacturing, engineering, technology, healthcare, education, advertising, and entertainment. The style and production approach can be adapted to suit your project requirements, audience, and brand intent.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-3d__item" name="faq-3d">
+            <summary class="faq-3d__question">
+              <span class="faq-3d__index">02</span>
+              <span class="faq-3d__title">Can you create both long and short 3D animations?</span>
+              <span class="faq-3d__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-3d__answer">
+              <div class="faq-3d__answer-inner">
+                <p><span class="faq-3d__mark">A</span> Yes, we can create both, from short logo reveals, product clips, and social media content to longer explainer videos, industrial animations, and character-driven films. The complexity and length of the animation depend on your content and how you intend to use it.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-3d__item" name="faq-3d">
+            <summary class="faq-3d__question">
+              <span class="faq-3d__index">03</span>
+              <span class="faq-3d__title">Can I use the same 3D animation for social media and my website?</span>
+              <span class="faq-3d__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-3d__answer">
+              <div class="faq-3d__answer-inner">
+                <p><span class="faq-3d__mark">A</span> Yes, we can prepare the animation in formats and dimensions that suit different platforms. Depending on the project we can create variations for social media, websites, presentations, product pages, and other digital channels.</p>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
     </div>
