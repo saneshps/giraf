@@ -4101,8 +4101,7 @@
   }
 
   @include respond-below(md) {
-    margin-bottom: 32px;
-    text-align: left;
+    margin-bottom: 32px; 
   }
 
   @include respond-below(sm) {
@@ -4580,6 +4579,924 @@
 }
 // ==================================   SERVICES PORTFOLIO AREA END
 
+// ==================================   WHY CHOOSE AREA START
+.why-choose-area {
+  padding: 10px 0 100px;
+  position: relative;
+
+  @include respond-below(xl) {
+    padding: 0 0 80px;
+  }
+
+  @include respond-below(lg) {
+    padding: 0 0 70px;
+  }
+
+  @include respond-below(md) {
+    padding: 0 0 50px;
+  }
+
+  @include respond-below(sm) {
+    padding: 0 0 40px;
+  }
+
+  .container {
+    @include respond-below(sm) {
+      padding: 0 15px !important;
+    }
+  }
+}
+
+.why-choose {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 48px 72px;
+  align-items: center;
+  padding: 72px 64px 68px;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      ellipse 46% 60% at 0% 0%,
+      rgba($brand-color, 0.14) 0%,
+      transparent 56%
+    ),
+    radial-gradient(
+      ellipse 42% 50% at 100% 100%,
+      rgba($brand-color, 0.08) 0%,
+      transparent 52%
+    ),
+    linear-gradient(155deg, #121212 0%, $box-color 46%, #090909 100%);
+  border: 1px solid rgba($brand-color, 0.16);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 60px rgba(0, 0, 0, 0.45);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 14%;
+    right: 14%;
+    height: 1px;
+    z-index: 2;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.5) 28%,
+      rgba(#ffc84a, 0.9) 50%,
+      rgba($brand-color, 0.5) 72%,
+      transparent 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    z-index: 2;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      $brand-color 22%,
+      #ffc84a 50%,
+      $brand-color 78%,
+      transparent 100%
+    );
+    opacity: 0.85;
+  }
+
+  @include respond-below(xl) {
+    gap: 40px 52px;
+    padding: 60px 48px 56px;
+    border-radius: 24px;
+  }
+
+  @include respond-below(lg) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 48px 36px 46px;
+    border-radius: 22px;
+    align-items: start;
+  }
+
+  @include respond-below(md) {
+    padding: 36px 24px 34px;
+    border-radius: 18px;
+    gap: 22px;
+  }
+
+  @include respond-below(sm) {
+    padding: 28px 18px 26px;
+    border-radius: 16px;
+    gap: 18px;
+  }
+}
+
+.why-choose__frame {
+  position: absolute;
+  inset: 18px;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 18px;
+  border: 1px solid rgba($brand-color, 0.1);
+  background:
+    linear-gradient($brand-color, $brand-color) 100% 0 / 42px 2px no-repeat,
+    linear-gradient($brand-color, $brand-color) 100% 0 / 2px 42px no-repeat,
+    linear-gradient($brand-color, $brand-color) 0 100% / 42px 2px no-repeat,
+    linear-gradient($brand-color, $brand-color) 0 100% / 2px 42px no-repeat;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-color: $brand-color;
+    border-style: solid;
+    opacity: 0.85;
+  }
+
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-width: 2px 0 0 2px;
+    border-radius: 4px 0 0 0;
+  }
+
+  &::after {
+    bottom: -1px;
+    right: -1px;
+    border-width: 0 2px 2px 0;
+    border-radius: 0 0 4px 0;
+  }
+
+  @include respond-below(lg) {
+    inset: 14px;
+    border-radius: 14px;
+    background-size: 28px 2px, 2px 28px, 28px 2px, 2px 28px;
+
+    &::before,
+    &::after {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  @include respond-below(sm) {
+    inset: 10px;
+    border-radius: 12px;
+    background-size: 20px 2px, 2px 20px, 20px 2px, 2px 20px;
+
+    &::before,
+    &::after {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.why-choose__glow {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: -150px;
+  left: -90px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba($brand-color, 0.16) 0%,
+    transparent 70%
+  );
+  filter: blur(10px);
+  pointer-events: none;
+  z-index: 0;
+  animation: whyChoosePulse 9s ease-in-out infinite;
+
+  &--alt {
+    width: 280px;
+    height: 280px;
+    top: auto;
+    left: auto;
+    bottom: -110px;
+    right: -70px;
+    background: radial-gradient(
+      circle,
+      rgba($brand-color, 0.1) 0%,
+      transparent 70%
+    );
+    animation-delay: -4.5s;
+  }
+
+  @include respond-below(md) {
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: -50px;
+
+    &--alt {
+      width: 160px;
+      height: 160px;
+      bottom: -60px;
+      right: -40px;
+    }
+  }
+
+  @include respond-below(sm) {
+    display: none;
+  }
+}
+
+.why-choose__intro {
+  position: relative;
+  z-index: 2;
+  padding-right: 8px;
+
+  @include respond-below(lg) {
+    padding-right: 0;
+  }
+
+  h2 {
+    position: relative;
+    color: $primary-color;
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+    margin: 0;
+    font-size: 2.7rem !important;
+    max-width: 460px;
+
+    span {
+      display: block;
+      margin-top: 6px;
+      color: $brand-color;
+      background: linear-gradient(90deg, $brand-color 0%, #ffc84a 55%, $brand-color 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @include respond-below(xl) {
+      font-size: 2.35rem !important;
+    }
+
+    @include respond-below(lg) {
+      font-size: 2.05rem !important;
+      max-width: 100%;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.72rem !important;
+      line-height: 1.26;
+      letter-spacing: -0.02em;
+
+      span {
+        display: inline;
+        margin-top: 0;
+      }
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.42rem !important;
+      line-height: 1.32;
+      letter-spacing: -0.015em;
+    }
+  }
+}
+
+.why-choose__content {
+  position: relative;
+  z-index: 2;
+  padding-left: 40px;
+  border-left: 1px solid rgba($brand-color, 0.24);
+
+  @include respond-below(lg) {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 8px;
+    border-top: 1px solid rgba($brand-color, 0.18);
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.78;
+    margin: 0 0 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include respond-below(md) {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    @include respond-below(sm) {
+      font-size: 14.5px;
+      line-height: 1.68;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.why-choose__lead {
+  color: $primary-color !important;
+  font-size: 1.08rem !important;
+  font-weight: 400 !important;
+  line-height: 1.72 !important;
+  position: relative;
+  padding: 22px 22px 22px 24px;
+  margin-bottom: 22px !important;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba($brand-color, 0.12) 0%,
+    rgba(255, 255, 255, 0.035) 52%,
+    transparent 100%
+  );
+  border: 1px solid rgba($brand-color, 0.18);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 16px;
+    bottom: 16px;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, $brand-color, #ffc84a);
+    box-shadow: 0 0 12px rgba($brand-color, 0.45);
+  }
+
+  @include respond-below(md) {
+    font-size: 1rem !important;
+    padding: 18px 16px 18px 18px;
+    margin-bottom: 16px !important;
+    border-radius: 14px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.95rem !important;
+    padding: 16px 14px 16px 16px;
+    margin-bottom: 14px !important;
+    border-radius: 12px;
+    line-height: 1.68 !important;
+  }
+}
+
+@keyframes whyChoosePulse {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .why-choose__glow {
+    animation: none;
+  }
+}
+// ==================================   WHY CHOOSE AREA END
+
+// ==================================   FAQ AREA START
+.faq-area {
+  padding: 10px 0 100px;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
+
+  @include respond-below(xl) {
+    padding: 0 0 80px;
+  }
+
+  @include respond-below(lg) {
+    padding: 0 0 70px;
+  }
+
+  @include respond-below(md) {
+    padding: 0 0 50px;
+  }
+
+  @include respond-below(sm) {
+    padding: 0 0 40px;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 1100px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+
+    @include respond-below(sm) {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+}
+
+.faq {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.faq__intro {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+  overflow-wrap: break-word;
+
+  @include respond-below(lg) {
+    margin-bottom: 36px;
+  }
+
+  @include respond-below(md) {
+    margin-bottom: 28px; 
+  }
+
+  @include respond-below(sm) {
+    margin-bottom: 22px;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.025em;
+    margin: 0;
+    font-size: 2.2rem !important;
+
+    @include respond-below(xl) {
+      font-size: 2rem !important;
+    }
+
+    @include respond-below(lg) {
+      font-size: 1.85rem !important;
+    }
+
+    @include respond-below(md) {
+      font-size: 1.6rem !important;
+      line-height: 1.32;
+    }
+
+    @include respond-below(sm) {
+      font-size: 1.38rem !important;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+    }
+  }
+}
+
+.faq__label {
+  display: inline-block;
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-color;
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      $brand-color,
+      #ffc84a,
+      transparent
+    );
+    box-shadow: 0 0 14px rgba($brand-color, 0.45);
+  }
+
+  @include respond-below(md) {
+    &::after {
+      left: 0;
+      transform: none;
+      background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+    }
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+  }
+}
+
+.faq__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  width: 100%;
+  max-width: 920px;
+  min-width: 0;
+  margin: 0 auto;
+
+  @include respond-below(lg) {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  @include respond-below(sm) {
+    gap: 10px;
+  }
+}
+
+.faq__item {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      ellipse 62% 70% at 0% 0%,
+      rgba($brand-color, 0.1) 0%,
+      transparent 58%
+    ),
+    linear-gradient(165deg, #141414 0%, $box-color 56%, #090909 100%);
+  border: 1px solid rgba($brand-color, 0.16);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 18px 36px rgba(0, 0, 0, 0.32);
+  transition:
+    border-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18%;
+    right: 18%;
+    height: 1px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba($brand-color, 0.42) 28%,
+      rgba(#ffc84a, 0.85) 50%,
+      rgba($brand-color, 0.42) 72%,
+      transparent 100%
+    );
+    opacity: 0.7;
+    transition: opacity 0.35s ease;
+  }
+
+  &:hover {
+    border-color: rgba($brand-color, 0.32);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+      0 0 28px rgba($brand-color, 0.1),
+      0 22px 40px rgba(0, 0, 0, 0.38);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .faq__toggle {
+      border-color: rgba($brand-color, 0.55);
+      background: rgba($brand-color, 0.12);
+    }
+  }
+
+  &[open] {
+    border-color: rgba($brand-color, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+      0 0 32px rgba($brand-color, 0.14),
+      0 24px 44px rgba(0, 0, 0, 0.42);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .faq__index {
+      color: #1a1204;
+      background: linear-gradient(180deg, #ffd056 0%, $brand-color 58%, #d9940c 100%);
+      box-shadow: 0 8px 18px rgba($brand-color, 0.28);
+    }
+
+    .faq__title {
+      color: $primary-color;
+    }
+
+    .faq__toggle {
+      border-color: $brand-color;
+      background: $brand-color;
+      box-shadow: 0 8px 18px rgba($brand-color, 0.3);
+
+      &::before,
+      &::after {
+        background: #1a1204;
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(90deg);
+        opacity: 0;
+      }
+    }
+
+    .faq__answer {
+      grid-template-rows: 1fr;
+    }
+
+    .faq__answer-inner p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @include respond-below(md) {
+    border-radius: 16px;
+  }
+
+  @include respond-below(sm) {
+    border-radius: 14px;
+  }
+}
+
+.faq__question {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+  padding: 22px 24px;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+
+  &::-webkit-details-marker,
+  &::marker {
+    display: none;
+    content: "";
+  }
+
+  &:focus-visible {
+    outline: 2px solid $brand-color;
+    outline-offset: -4px;
+    border-radius: 16px;
+  }
+
+  @include respond-below(md) {
+    gap: 14px;
+    padding: 18px 18px;
+  }
+
+  @include respond-below(sm) {
+    gap: 12px;
+    padding: 16px 14px;
+    align-items: flex-start;
+  }
+}
+
+.faq__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: $brand-color;
+  background: rgba($brand-color, 0.1);
+  border: 1px solid rgba($brand-color, 0.18);
+  transition:
+    color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  @include respond-below(md) {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 0.74rem;
+  }
+
+  @include respond-below(sm) {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    font-size: 0.68rem;
+    margin-top: 1px;
+  }
+}
+
+.faq__title {
+  min-width: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+  transition: color 0.35s ease;
+
+  @include respond-below(lg) {
+    font-size: 1.05rem;
+  }
+
+  @include respond-below(md) {
+    font-size: 0.98rem;
+    line-height: 1.42;
+  }
+
+  @include respond-below(sm) {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    padding-top: 4px;
+  }
+}
+
+.faq__toggle {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid rgba($brand-color, 0.28);
+  background: rgba($brand-color, 0.06);
+  transition:
+    border-color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: $brand-color;
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+    transition:
+      transform 0.35s ease,
+      opacity 0.35s ease,
+      background 0.35s ease;
+  }
+
+  &::before {
+    width: 14px;
+    height: 2px;
+  }
+
+  &::after {
+    width: 2px;
+    height: 14px;
+  }
+
+  @include respond-below(md) {
+    width: 36px;
+    height: 36px;
+
+    &::before {
+      width: 12px;
+    }
+
+    &::after {
+      height: 12px;
+    }
+  }
+
+  @include respond-below(sm) {
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+
+    &::before {
+      width: 11px;
+    }
+
+    &::after {
+      height: 11px;
+    }
+  }
+}
+
+.faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.faq__answer-inner {
+  min-height: 0;
+  overflow: hidden;
+
+  p {
+    min-width: 0;
+    margin: 0;
+    padding: 4px 24px 24px 86px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 15.5px;
+    font-weight: 300;
+    line-height: 1.78;
+    overflow-wrap: anywhere;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition:
+      opacity 0.35s ease 0.04s,
+      transform 0.35s ease 0.04s;
+
+    @include respond-below(md) {
+      padding: 2px 18px 20px 70px;
+      font-size: 14.5px;
+      line-height: 1.72;
+    }
+
+    @include respond-below(sm) {
+      padding: 2px 14px 18px 14px;
+      font-size: 14px;
+      line-height: 1.68;
+    }
+  }
+}
+
+.faq__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 6px;
+  vertical-align: middle;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #1a1204;
+  background: $brand-color;
+  box-shadow: 0 4px 10px rgba($brand-color, 0.28);
+  transform: translateY(-1px);
+
+  @include respond-below(sm) {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    font-size: 0.62rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq__item,
+  .faq__index,
+  .faq__title,
+  .faq__toggle,
+  .faq__toggle::before,
+  .faq__toggle::after,
+  .faq__answer,
+  .faq__answer-inner p {
+    transition: none;
+  }
+
+  .faq__item[open] .faq__answer-inner p {
+    transform: none;
+  }
+}
+// ==================================   FAQ AREA END
+
 .service-detailes-content {
   color: #fff;
 
@@ -4795,6 +5712,9 @@
 // ==================================   SERVICES DETAIL PAGE FORMS AREA START
 .services-form-area {
   padding: 80px 0 70px 0;
+  @include respond-below(sm) {
+    padding: 0px 0 50px 0;
+  }
 
   .form-container {
     font-size: 0;

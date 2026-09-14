@@ -492,252 +492,99 @@
 
   <section class="why-choose-area">
     <div class="container">
-      <div class="why-choose">
+      <article class="why-choose">
+        <span class="why-choose__frame" aria-hidden="true"></span>
+        <div class="why-choose__glow" aria-hidden="true"></div>
+        <div class="why-choose__glow why-choose__glow--alt" aria-hidden="true"></div>
+
         <div class="why-choose__intro">
-          <span class="why-choose__label">Why Choose Us</span>
-          <h2>Why Choose Giraf for 2D Animation?</h2>
-          <p> Choosing an animation studio isn’t just about finding an animating team. It’s about partnering with a reliable creative 
-            studio that understands why animation is essential for your project.
-
-          </p>
-          <p> At Giraf Creatives, we approach each project with a communication objective—who is the target audience? What is their intent?
-             What do you need them to remember? What action do you want them to take? 
-
-          </p>
-          <p> From ideation, script, and storyboard to visual style, animation timing, and sound design,
-             we ensure that you get the best results, helping your brand stand out in the digital landscape. 
-
-          </p>
+          <h2>Why Choose Giraf for <span>2D Animation?</span></h2>
         </div>
-      </div>
+
+        <div class="why-choose__content">
+          <p class="why-choose__lead">Choosing an animation studio isn’t just about finding an animating team. It’s about partnering with a reliable creative studio that understands why animation is essential for your project.</p>
+          <p>At Giraf Creatives, we approach each project with a communication objective—who is the target audience? What is their intent? What do you need them to remember? What action do you want them to take?</p>
+          <p>From ideation, script, and storyboard to visual style, animation timing, and sound design, we ensure that you get the best results, helping your brand stand out in the digital landscape.</p>
+        </div>
+      </article>
     </div>
   </section>
   <!-- =======================================
           Why Choose AREA END
       ====================================== -->
 
-  <!-- ================================
-           SERVICES CONTENT AREA START
-      ================================= -->
-  <section class="service-detailes-content">
-    <div class="main-box">
-      <div class="container">
-
-
-        <div class="row">
-
-          <div class="col-xl-6">
-            <div class="pdng brdr">
-              <h4> Video Animation Services </h4>
-
-              <p> We work to create animated video content that is consistently in line
-                with your brand using a bespoke approach. Some of the best businesses
-                in the world work with our team, producing anything from motion graphics
-                to 3D animation. Our services for producing animated videos include explainer,
-                app, demo, live-action, training, instructional, explanatory, corporate animations
-                and software walkthrough films in addition to animation videos.
-
-              </p>
-              <p> Equipped to use the newest animation techniques and tools,
-                whether you need to educate customers or staff, explain complicated concepts about products or services,
-                or build sumptuous animated characters from the ground up for your film directing debut.
-                Using complex technologies like Adobe After Effects, Flash, Photoshop, and Adobe Animate
-                in conjunction with methods like 3D visualization, model animation, GCI, drawn animation,
-                stop-motion animation, and cutout animation, we produce high-quality animation.
-
-              </p>
-              <p> A full-service provider of video animation, Giraf offers an outsourced framework
-                that fits any kind of budget and guarantees that your firm will receive a beautiful
-                animated video that meets your needs for video content.
-
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="animation-box-secnd pdng brdr">
-              <h4> Manage your videos </h4>
-              <p> As the best animation production company in India, we think that teamwork is extremely powerful.
-                Since 2021, we have produced <a href="https://www.giraf.in/photography-and-video-production.php" target="_blank">
-                  videos,</a> and we will oversee the entire process for you.
-                We use phased sign-offs, so up until the final video, you are in charge of every process.
-
-              </p>
-              <h4> Extend Your Reach </h4>
-              <p> A great deal of design collateral that can be utilized for your complete brand can be produced using animation.
-                Our animation company will make sure that your video marketing's finished animation reaches and impresses
-                both your target audience and potential new clients.
-
-              </p>
-              <h4> Let us set off on an adventure! </h4>
-              <p> The <a href="https://www.giraf.in" target="_blank"> Giraf </a> team is here to ignite your creativity and realize your aspirations.
-                Let's now discuss your project! Reach out to us, and we'll handle the rest!
-
-              </p>
-            </div>
-          </div>
-
-
-
+  <!-- =======================================
+         FAQ AREA START
+      ====================================== -->
+  <section class="faq-area">
+    <div class="container">
+      <div class="faq">
+        <div class="faq__intro">
+          <span class="faq__label">FAQ</span>
+          <h2>FAQ</h2>
         </div>
 
+        <div class="faq__list">
+          <details class="faq__item" name="2d-animation-faq" open>
+            <summary class="faq__question">
+              <span class="faq__index">01</span>
+              <span class="faq__title">How long does it take to create a 2D animation video?</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p><span class="faq__mark">A</span> The production time depends on the project requirements, such as the video’s duration, visual complexity, characters, scenes, and the feedback cycles. For instance, a short social media animation would take less time compared to a detailed explainer video. We can provide a realistic production timeline once we discuss the scope of the project.</p>
+              </div>
+            </div>
+          </details>
 
+          <details class="faq__item" name="2d-animation-faq">
+            <summary class="faq__question">
+              <span class="faq__index">02</span>
+              <span class="faq__title">How much does 2D animation cost in India?</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p><span class="faq__mark">A</span> There is no single fixed price for 2D animation because the production requirements may vary. Script development, illustration style, character design, animation, voice-over, video duration, and several other factors can affect the budget. The best approach would be to discuss the project requirements and formulate a quote based on it.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item" name="2d-animation-faq">
+            <summary class="faq__question">
+              <span class="faq__index">03</span>
+              <span class="faq__title">Can you create character-based 2D animation?</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p><span class="faq__mark">A</span> Yes, we create character-based animation that ranges from simple illustrated characters to more expressive and dialogue-driven sequences. The visual style is developed based on the project requirement, target audience, and intended message.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item" name="2d-animation-faq">
+            <summary class="faq__question">
+              <span class="faq__index">04</span>
+              <span class="faq__title">What can I use a 2D animation video for?</span>
+              <span class="faq__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p><span class="faq__mark">A</span> 2D animation can be used for different communication needs such as advertising, product explanation, e-learning, employee training, social media, presentations, customer education, and much more.</p>
+              </div>
+            </div>
+          </details>
+        </div>
       </div>
     </div>
   </section>
-  <!-- ================================
-           SERVICES CONTENT AREA END
-      ================================= -->
-
-
-
-
-
-  <!-- ==========================
-           ANIMATION AREA START
-      ========================== -->
-
-  <!-- =========================
-           ANIMATION AREA END
-      ========================= -->
-
-
-
-
-  <!-- =========================
-        OTHER SERVICEs AREA START
-      ========================= -->
-  <!-- <section class="services-list-area serv-detail">
-    <div class="container">
-
-      <h2> Giraf’s Digital Marketing Services </h2>
-      <p> Build Brand Recognition as an Industry Leader and Increase Profitability </p>
-      <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 services-list">
-          <div class="row">
-          
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 01 </h3>
-              <h2>Digital Strategy </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat. </p>
-            </div>
-         
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 02 </h3>
-              <h2> Conversion Rate </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-
-            </div>
-          
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 03 </h3>
-              <h2> Optimisation </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-
-            </div>
-            
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 04 </h3>
-              <h2> Digital Marketing </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-            </div>
-             
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 05 </h3>
-              <h2> Data Analysis </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-            </div>
-          
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 06 </h3>
-              <h2> E-Commerce </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-
-            </div>
-            
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 07 </h3>
-              <h2> SEO & SEM </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-
-            </div>
-             
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 08 </h3>
-              <h2> Website & Apps </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-
-            </div>
-            
-            <div class="col-xl-4 col-lg-6 col-md-6 services-list-box serv-detail-space">
-              <h3> 08 </h3>
-              <h2> CRM & CMS </h2>
-              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat.</p>
-
-
-            </div>
-            
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- =========================
-        OTHER SERVICEs AREA END
-      ========================= -->
+  <!-- =======================================
+          FAQ AREA END
+      ====================================== -->
+ 
+ 
 
 
   <!-- ============================
