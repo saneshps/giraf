@@ -2364,6 +2364,1231 @@
 }
 // ==================================   AROUND YOUR INTENT AREA END
 
+// ==================================   WHAT WE HELP AREA START
+.what-we-help-area {
+    padding: 20px 0 100px;
+    position: relative;
+
+    @include respond-below(xl) {
+        padding: 10px 0 80px;
+    }
+
+    @include respond-below(lg) {
+        padding: 0 0 70px;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 50px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 40px;
+    }
+
+    .container {
+        @include respond-below(sm) {
+            padding: 0 15px !important;
+        }
+    }
+}
+
+.what-we-help {
+    position: relative;
+}
+
+.what-we-help__intro {
+    max-width: 760px;
+    margin: 0 auto 56px;
+    text-align: center;
+
+    @include respond-below(lg) {
+        margin-bottom: 42px;
+    }
+
+    @include respond-below(md) {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    @include respond-below(sm) {
+        margin-bottom: 26px;
+    }
+
+    h2 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.28;
+        letter-spacing: -0.025em;
+        margin: 0 0 18px;
+        font-size: 2.2rem !important;
+
+        @include respond-below(xl) {
+            font-size: 2rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.85rem !important;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.6rem !important;
+            line-height: 1.32;
+            margin-bottom: 14px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.38rem !important;
+            line-height: 1.35;
+            letter-spacing: -0.015em;
+            margin-bottom: 12px;
+        }
+    }
+
+    > p {
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        margin: 0;
+
+        @include respond-below(md) {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        @include respond-below(sm) {
+            font-size: 14.5px;
+            line-height: 1.68;
+        }
+    }
+}
+
+.what-we-help__label {
+    display: inline-block;
+    margin: 0 0 18px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $brand-color;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 42px;
+        height: 2px;
+        border-radius: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(90deg, transparent, $brand-color, #ffc84a, transparent);
+        box-shadow: 0 0 14px rgba($brand-color, 0.45);
+    }
+
+    @include respond-below(md) {
+        &::after {
+            left: 0;
+            transform: none;
+            background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+        }
+    }
+
+    @include respond-below(sm) {
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 12px;
+    }
+}
+
+.what-we-help__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+
+    @include respond-below(xl) {
+        gap: 20px;
+    }
+
+    @include respond-below(lg) {
+        gap: 18px;
+    }
+
+    @include respond-below(md) {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    @include respond-below(sm) {
+        gap: 14px;
+    }
+}
+
+.what-we-help__card {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 30px 34px;
+    border-radius: 24px;
+    background:
+        radial-gradient(ellipse 70% 55% at 0% 0%, rgba($brand-color, 0.08) 0%, transparent 55%),
+        linear-gradient(165deg, #121212 0%, $box-color 55%, #0b0b0b 100%);
+    border: 1px solid rgba($brand-color, 0.16);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+        0 22px 48px rgba(0, 0, 0, 0.42);
+    transition:
+        border-color 0.45s ease,
+        box-shadow 0.45s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        z-index: 2;
+        background: linear-gradient(90deg, $brand-color 0%, #ffc84a 50%, transparent 100%);
+        transform: scaleX(0.22);
+        transform-origin: left center;
+        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    &:hover {
+        border-color: rgba($brand-color, 0.42);
+        box-shadow:
+            0 28px 56px rgba(0, 0, 0, 0.5),
+            0 0 0 1px rgba($brand-color, 0.14),
+            0 0 36px rgba($brand-color, 0.12);
+        transform: translateY(-6px);
+
+        &::after {
+            transform: scaleX(1);
+        }
+
+        .what-we-help__icon {
+            background: $brand-color;
+            color: $box-color;
+            border-color: $brand-color;
+        }
+
+        .what-we-help__num {
+            color: rgba($brand-color, 0.28);
+        }
+
+        h3 {
+            color: $brand-color;
+        }
+    }
+
+    @include respond-below(xl) {
+        padding: 28px 26px 30px;
+        border-radius: 22px;
+    }
+
+    @include respond-below(lg) {
+        padding: 24px 22px 26px;
+        border-radius: 20px;
+    }
+
+    @include respond-below(md) {
+        padding: 22px 20px 24px;
+        border-radius: 18px;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    @include respond-below(sm) {
+        padding: 20px 16px 22px;
+        border-radius: 16px;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.what-we-help__card--featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px 40px;
+    align-items: start;
+    padding: 40px 44px 42px;
+    background:
+        radial-gradient(ellipse 48% 70% at 0% 0%, rgba($brand-color, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 50% at 100% 100%, rgba($brand-color, 0.07) 0%, transparent 52%),
+        linear-gradient(165deg, #121212 0%, $box-color 50%, #0b0b0b 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 12%;
+        right: 12%;
+        height: 1px;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba($brand-color, 0.5) 30%,
+            rgba(#ffc84a, 0.85) 50%,
+            rgba($brand-color, 0.5) 70%,
+            transparent 100%
+        );
+    }
+
+    .what-we-help__card-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 0;
+        padding-top: 6px;
+    }
+
+    .what-we-help__num {
+        font-size: 3.4rem;
+        line-height: 0.85;
+    }
+
+    .what-we-help__card-body {
+        padding-left: 36px;
+        border-left: 1px solid rgba($brand-color, 0.22);
+    }
+
+    h3 {
+        font-size: 1.85rem !important;
+        margin-bottom: 16px;
+    }
+
+    @include respond-below(xl) {
+        padding: 36px 36px 38px;
+        gap: 8px 32px;
+
+        h3 {
+            font-size: 1.7rem !important;
+        }
+    }
+
+    @include respond-below(lg) {
+        padding: 30px 28px 32px;
+        gap: 8px 24px;
+
+        .what-we-help__card-body {
+            padding-left: 24px;
+        }
+
+        h3 {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    @include respond-below(md) {
+        grid-template-columns: 1fr;
+        padding: 24px 20px 26px;
+        gap: 0;
+
+        .what-we-help__card-top {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            padding-top: 0;
+        }
+
+        .what-we-help__num {
+            font-size: 2.4rem;
+        }
+
+        .what-we-help__card-body {
+            padding-left: 0;
+            border-left: none;
+            padding-top: 4px;
+            border-top: 1px solid rgba($brand-color, 0.18);
+        }
+
+        h3 {
+            font-size: 1.32rem !important;
+            margin-top: 16px;
+            margin-bottom: 12px;
+        }
+    }
+
+    @include respond-below(sm) {
+        padding: 20px 16px 22px;
+
+        .what-we-help__num {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.22rem !important;
+            margin-top: 14px;
+        }
+    }
+}
+
+.what-we-help__card:last-child {
+    @include respond-above(md) {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 8px 36px;
+        align-items: start;
+        padding: 32px 40px 34px;
+
+        .what-we-help__card-top {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 0;
+            padding-top: 4px;
+        }
+
+        .what-we-help__card-body {
+            padding-left: 32px;
+            border-left: 1px solid rgba($brand-color, 0.22);
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include respond-below(lg) {
+        @include respond-above(md) {
+            padding: 26px 26px 28px;
+            gap: 8px 24px;
+
+            .what-we-help__card-body {
+                padding-left: 22px;
+            }
+        }
+    }
+}
+
+.what-we-help__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+
+    @include respond-below(md) {
+        margin-bottom: 14px;
+    }
+
+    @include respond-below(sm) {
+        margin-bottom: 12px;
+    }
+}
+
+.what-we-help__num {
+    font-family: "Roboto", serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.08);
+    -webkit-text-stroke: 1px rgba($brand-color, 0.35);
+    transition: color 0.35s ease;
+
+    @include respond-below(lg) {
+        font-size: 2.2rem;
+    }
+
+    @include respond-below(md) {
+        font-size: 2rem;
+    }
+
+    @include respond-below(sm) {
+        font-size: 1.8rem;
+    }
+}
+
+.what-we-help__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    color: $brand-color;
+    font-size: 1.05rem;
+    background: rgba($brand-color, 0.1);
+    border: 1px solid rgba($brand-color, 0.28);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    transition: all 0.35s ease;
+
+    @include respond-below(md) {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        font-size: 0.95rem;
+    }
+
+    @include respond-below(sm) {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+    }
+}
+
+.what-we-help__card-body {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 0;
+
+    h3 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -0.015em;
+        margin: 0 0 12px;
+        font-size: 1.4rem !important;
+        transition: color 0.35s ease;
+
+        @include respond-below(xl) {
+            font-size: 1.32rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.24rem !important;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.2rem !important;
+            margin-bottom: 10px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.12rem !important;
+            margin-bottom: 8px;
+        }
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 15.5px;
+        font-weight: 300;
+        line-height: 1.72;
+        margin: 0 0 14px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include respond-below(md) {
+            font-size: 15px;
+            line-height: 1.68;
+            margin-bottom: 12px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 14.5px;
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+    }
+}
+// ==================================   WHAT WE HELP AREA END
+
+// ==================================   PROCESS WORKS AREA START
+.process-works-area {
+    padding: 20px 0 100px;
+    position: relative;
+
+    @include respond-below(xl) {
+        padding: 10px 0 80px;
+    }
+
+    @include respond-below(lg) {
+        padding: 0 0 70px;
+    }
+
+    @include respond-below(md) {
+        padding: 0 0 50px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0 0 40px;
+    }
+
+    .container {
+        @include respond-below(sm) {
+            padding: 0 15px !important;
+        }
+    }
+}
+
+.process-works {
+    position: relative;
+}
+
+.process-works__intro {
+    max-width: 760px;
+    margin: 0 auto 42px;
+    text-align: center;
+
+    @include respond-below(lg) {
+        margin-bottom: 34px;
+    }
+
+    @include respond-below(md) {
+        margin-bottom: 28px;
+        text-align: left;
+    }
+
+    @include respond-below(sm) {
+        margin-bottom: 22px;
+    }
+
+    h2 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.28;
+        letter-spacing: -0.025em;
+        margin: 0 0 16px;
+        font-size: 2.2rem !important;
+
+        @include respond-below(xl) {
+            font-size: 2rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.85rem !important;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.6rem !important;
+            line-height: 1.32;
+            margin-bottom: 12px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.38rem !important;
+            line-height: 1.35;
+            letter-spacing: -0.015em;
+            margin-bottom: 10px;
+        }
+    }
+
+    > p {
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        margin: 0;
+
+        @include respond-below(md) {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        @include respond-below(sm) {
+            font-size: 14.5px;
+            line-height: 1.68;
+        }
+    }
+}
+
+.process-works__label {
+    display: inline-block;
+    margin: 0 0 18px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $brand-color;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 42px;
+        height: 2px;
+        border-radius: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(90deg, transparent, $brand-color, #ffc84a, transparent);
+        box-shadow: 0 0 14px rgba($brand-color, 0.45);
+    }
+
+    @include respond-below(md) {
+        &::after {
+            left: 0;
+            transform: none;
+            background: linear-gradient(90deg, $brand-color, #ffc84a, transparent);
+        }
+    }
+
+    @include respond-below(sm) {
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 12px;
+    }
+}
+
+.process-works__overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 28px;
+    list-style: none;
+    margin: 0 auto 56px;
+    padding: 0;
+    max-width: 1040px;
+
+    @include respond-below(lg) {
+        margin-bottom: 42px;
+        gap: 10px 24px;
+    }
+
+    @include respond-below(md) {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 -15px 32px;
+        padding: 2px 15px 10px;
+        gap: 10px 22px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    @include respond-below(sm) {
+        margin-bottom: 26px;
+        gap: 8px 18px;
+    }
+
+    li {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 0.88);
+        background: rgba($brand-color, 0.08);
+        border: 1px solid rgba($brand-color, 0.22);
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $box-color;
+            background: $brand-color;
+            border-color: $brand-color;
+        }
+
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            left: calc(100% + 6px);
+            top: 50%;
+            width: 16px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba($brand-color, 0.7), transparent);
+        }
+
+        @include respond-below(md) {
+            flex-shrink: 0;
+        }
+
+        @include respond-below(sm) {
+            font-size: 12px;
+            padding: 7px 12px;
+        }
+    }
+}
+
+.process-works__timeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0 4px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        bottom: 12px;
+        left: 50%;
+        width: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba($brand-color, 0.55) 8%,
+            rgba($brand-color, 0.22) 50%,
+            rgba($brand-color, 0.55) 92%,
+            transparent 100%
+        );
+        box-shadow: 0 0 18px rgba($brand-color, 0.18);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    @include respond-below(md) {
+        padding: 0;
+
+        &::before {
+            left: 22px;
+        }
+    }
+
+    @include respond-below(sm) {
+        &::before {
+            left: 19px;
+        }
+    }
+}
+
+.process-works__step {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 88px minmax(0, 1fr);
+    align-items: center;
+    margin: 0 0 28px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .process-works__marker {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    &:nth-child(odd) {
+        .process-works__card {
+            grid-column: 1;
+            grid-row: 1;
+            justify-self: end;
+            text-align: right;
+
+            &::after {
+                transform-origin: right center;
+                background: linear-gradient(90deg, transparent 0%, #ffc84a 50%, $brand-color 100%);
+            }
+        }
+
+        .process-works__card-head {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &:nth-child(even) {
+        .process-works__card {
+            grid-column: 3;
+            grid-row: 1;
+            justify-self: start;
+        }
+    }
+
+    &:hover {
+        .process-works__num {
+            color: $box-color;
+            background: $brand-color;
+            border-color: $brand-color;
+            box-shadow:
+                0 0 0 8px #0a0a0b,
+                0 0 28px rgba($brand-color, 0.5);
+        }
+
+        .process-works__card {
+            border-color: rgba($brand-color, 0.42);
+            box-shadow:
+                0 28px 56px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba($brand-color, 0.14),
+                0 0 36px rgba($brand-color, 0.12);
+            transform: translateY(-5px);
+
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+
+        .process-works__icon {
+            color: $box-color;
+            background: $brand-color;
+            border-color: $brand-color;
+        }
+
+        h3 {
+            color: $brand-color;
+        }
+    }
+
+    @include respond-below(xl) {
+        margin-bottom: 24px;
+        grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1fr);
+    }
+
+    @include respond-below(lg) {
+        margin-bottom: 20px;
+        grid-template-columns: minmax(0, 1fr) 68px minmax(0, 1fr);
+    }
+
+    @include respond-below(md) {
+        grid-template-columns: 44px minmax(0, 1fr);
+        align-items: stretch;
+        margin-bottom: 16px;
+
+        .process-works__marker {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: start;
+            padding-top: 22px;
+        }
+
+        &:nth-child(odd),
+        &:nth-child(even) {
+            .process-works__card {
+                grid-column: 2;
+                grid-row: 1;
+                justify-self: stretch;
+                text-align: left;
+
+                &::after {
+                    transform-origin: left center;
+                    background: linear-gradient(90deg, $brand-color 0%, #ffc84a 50%, transparent 100%);
+                }
+            }
+
+            .process-works__card-head {
+                flex-direction: row;
+            }
+        }
+
+        &:hover {
+            .process-works__card {
+                transform: translateY(-3px);
+            }
+
+            .process-works__num {
+                box-shadow:
+                    0 0 0 6px #0a0a0b,
+                    0 0 20px rgba($brand-color, 0.4);
+            }
+        }
+    }
+
+    @include respond-below(sm) {
+        grid-template-columns: 38px minmax(0, 1fr);
+        margin-bottom: 14px;
+
+        .process-works__marker {
+            padding-top: 18px;
+        }
+
+        &:hover {
+            .process-works__card {
+                transform: none;
+            }
+        }
+    }
+}
+
+.process-works__marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.process-works__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: $brand-color;
+    background:
+        radial-gradient(circle at 30% 30%, rgba($brand-color, 0.16), #101010 58%);
+    border: 1px solid rgba($brand-color, 0.48);
+    box-shadow:
+        0 0 0 8px #0a0a0b,
+        0 10px 24px rgba(0, 0, 0, 0.35);
+    transition: all 0.35s ease;
+
+    @include respond-below(xl) {
+        width: 50px;
+        height: 50px;
+        font-size: 0.86rem;
+        box-shadow:
+            0 0 0 7px #0a0a0b,
+            0 8px 20px rgba(0, 0, 0, 0.32);
+    }
+
+    @include respond-below(lg) {
+        width: 46px;
+        height: 46px;
+        font-size: 0.8rem;
+        box-shadow:
+            0 0 0 6px #0a0a0b,
+            0 8px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    @include respond-below(md) {
+        width: 38px;
+        height: 38px;
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+        box-shadow:
+            0 0 0 6px #0a0a0b,
+            0 6px 14px rgba(0, 0, 0, 0.28);
+    }
+
+    @include respond-below(sm) {
+        width: 32px;
+        height: 32px;
+        font-size: 0.64rem;
+        box-shadow:
+            0 0 0 5px #0a0a0b,
+            0 4px 12px rgba(0, 0, 0, 0.26);
+    }
+}
+
+.process-works__card {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    width: 100%;
+    min-width: 0;
+    max-width: 520px;
+    padding: 28px 28px 30px;
+    border-radius: 24px;
+    background:
+        radial-gradient(ellipse 70% 55% at 0% 0%, rgba($brand-color, 0.08) 0%, transparent 55%),
+        linear-gradient(165deg, #121212 0%, $box-color 55%, #0b0b0b 100%);
+    border: 1px solid rgba($brand-color, 0.16);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+        0 22px 48px rgba(0, 0, 0, 0.42);
+    transition:
+        border-color 0.45s ease,
+        box-shadow 0.45s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        z-index: 2;
+        background: linear-gradient(90deg, $brand-color 0%, #ffc84a 50%, transparent 100%);
+        transform: scaleX(0.22);
+        transform-origin: left center;
+        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @include respond-below(xl) {
+        max-width: 470px;
+        padding: 24px 24px 26px;
+        border-radius: 22px;
+    }
+
+    @include respond-below(lg) {
+        max-width: 100%;
+        padding: 22px 20px 24px;
+        border-radius: 20px;
+    }
+
+    @include respond-below(md) {
+        padding: 20px 18px 22px;
+        border-radius: 18px;
+    }
+
+    @include respond-below(sm) {
+        padding: 16px 14px 18px;
+        border-radius: 16px;
+    }
+}
+
+.process-works__step--final {
+    .process-works__card {
+        background:
+            radial-gradient(ellipse 48% 70% at 0% 0%, rgba($brand-color, 0.14) 0%, transparent 55%),
+            radial-gradient(ellipse 40% 50% at 100% 100%, rgba($brand-color, 0.07) 0%, transparent 52%),
+            linear-gradient(165deg, #121212 0%, $box-color 50%, #0b0b0b 100%);
+        border-color: rgba($brand-color, 0.28);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 12%;
+            right: 12%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba($brand-color, 0.5) 30%,
+                rgba(#ffc84a, 0.85) 50%,
+                rgba($brand-color, 0.5) 70%,
+                transparent 100%
+            );
+        }
+    }
+
+    .process-works__num {
+        color: $box-color;
+        background: $brand-color;
+        border-color: $brand-color;
+        animation: processWorksPulse 2.8s ease-in-out infinite;
+    }
+}
+
+.process-works__card-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 14px;
+
+    h3 {
+        color: $primary-color;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -0.015em;
+        margin: 0;
+        font-size: 1.4rem !important;
+        transition: color 0.35s ease;
+
+        @include respond-below(xl) {
+            font-size: 1.28rem !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.2rem !important;
+        }
+
+        @include respond-below(md) {
+            font-size: 1.16rem !important;
+        }
+
+        @include respond-below(sm) {
+            font-size: 1.08rem !important;
+        }
+    }
+
+    @include respond-below(md) {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    @include respond-below(sm) {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.process-works__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    color: $brand-color;
+    font-size: 1.05rem;
+    background: rgba($brand-color, 0.1);
+    border: 1px solid rgba($brand-color, 0.28);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    transition: all 0.35s ease;
+
+    @include respond-below(md) {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        font-size: 0.95rem;
+    }
+
+    @include respond-below(sm) {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        font-size: 0.84rem;
+    }
+}
+
+.process-works__card p {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 15.5px;
+    font-weight: 300;
+    line-height: 1.72;
+    margin: 0;
+
+    @include respond-below(md) {
+        font-size: 15px;
+        line-height: 1.68;
+    }
+
+    @include respond-below(sm) {
+        font-size: 14.5px;
+        line-height: 1.65;
+    }
+}
+
+@keyframes processWorksPulse {
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 8px #0a0a0b,
+            0 0 18px rgba($brand-color, 0.35);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 8px #0a0a0b,
+            0 0 28px rgba($brand-color, 0.7);
+    }
+}
+
+@media (max-width: 991px) {
+    @keyframes processWorksPulse {
+        0%,
+        100% {
+            box-shadow:
+                0 0 0 6px #0a0a0b,
+                0 0 14px rgba($brand-color, 0.3);
+        }
+
+        50% {
+            box-shadow:
+                0 0 0 6px #0a0a0b,
+                0 0 22px rgba($brand-color, 0.55);
+        }
+    }
+}
+// ==================================   PROCESS WORKS AREA END
+
 .service-detailes-content {
     color: #fff;
 

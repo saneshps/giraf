@@ -167,7 +167,7 @@
       </div>
       <div class="row two-services-grid">
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="2d-animation-services.php">
+          <a href="./2d-animation.php">
           <article class="two-services-box">
             <div class="two-services-box__media">
               <img src="./img/services/2d-animation-service.jpg" alt="2D Animation Services">
@@ -181,7 +181,7 @@
           </a>
         </div>
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="3d-animation-services.php">
+          <a href="./3d-animation.php">
           <article class="two-services-box">
             <div class="two-services-box__media">
               <img src="./img/services/3d-animation-service.jpg" alt="3D Animation Services">

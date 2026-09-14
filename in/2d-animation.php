@@ -189,6 +189,235 @@
   <!-- ==============================
           Around Your Intent AREA END
       ========================= -->
+  <!-- ==============================
+          What We Help AREA START
+      ========================= -->
+  <section class="what-we-help-area">
+    <div class="container">
+      <div class="what-we-help">
+        <div class="what-we-help__intro">
+          <span class="what-we-help__label">We Help You Create</span>
+          <h2>What We Help You Create With 2D Animation</h2>
+          <p>The right type of animation style depends on what you are trying to communicate. These are some of the animated projects that we create:</p>
+        </div>
+
+        <div class="what-we-help__grid">
+          <article class="what-we-help__card what-we-help__card--featured">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">01</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-clapperboard"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>Explainer Videos</h3>
+              <p>Explainer videos simplify the idea, and this is more useful than you think it is. Maybe you have a product that takes five minutes to explain. But you can’t go about with a technical description, because holding audience attention is the true challenge.</p>
+              <p>This is where 2D explainer videos come in. We explain complex products and processes with simple flat graphics, characters, and illustrations. The goal is to help your audience understand what you offer without them having to work too hard to get it.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">02</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-desktop"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>Product Demo Videos</h3>
+              <p>What seems more effective describing every feature of a product or simply showing how it works? Obviously, showing them how it works would help people grasp the idea almost instantly. Our 2D product demo can visualize interfaces, features, and use cases in a way that is easier to follow.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">03</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-bullhorn"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>Animated Ads</h3>
+              <p>Are your ads getting ignored? Don’t worry, because we are here to turn your offers and updates into scroll-stopping ads. We create the perfect animated ads that match your campaign objective that help with brand recall.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">04</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>E-learning and Training Modules</h3>
+              <p>Are the five-step detailed descriptions of your safety procedures turning mundane? Then present them through engaging 2D animation. We turn procedures, concepts, and other technical subjects into engaging learning modules.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">05</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-masks-theater"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>Character Animation</h3>
+              <p>Where is your hero? Well, it’s high time you need a character that embodies your brand values. Our creative team designs and animates characters that communicate emotion and interact naturally with their environment, helping your viewers to connect well with your brand value.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">06</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-chalkboard"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>Whiteboard Animation</h3>
+              <p>Isn’t it nice when your audience gets to see what your offers are in the “drawing as you watch” format? That’s whiteboard animation for you. We create immersive whiteboard animations that keep your audience engaged. In this way you can take a complicated sales pitch and turn it into a 60s visual explanation.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">07</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-solid fa-mobile-screen"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>Social Media Reels</h3>
+              <p>Do you want to make a social media reel that makes people pause and think, “Ohh, this is nice”? Then try it out with our 2D animated reels. We give your content a creative route, making it different from the stream of reels in the digital landscape.</p>
+            </div>
+          </article>
+
+          <article class="what-we-help__card">
+            <div class="what-we-help__card-top">
+              <span class="what-we-help__num">08</span>
+              <span class="what-we-help__icon" aria-hidden="true"><i class="fa-brands fa-youtube"></i></span>
+            </div>
+            <div class="what-we-help__card-body">
+              <h3>YouTube Content</h3>
+              <p>Do you have the content idea? Then leave it to us to pack them into engaging videos that people can understand and watch. YouTube isn’t just any platform—it rewards genuine content that keeps viewers engaged. And we will help you in that journey.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==============================
+          What We Help AREA END
+      ========================= -->
+
+  <!-- ==============================
+          Process Works AREA START
+      ========================= -->
+  <section class="process-works-area">
+    <div class="container">
+      <div class="process-works">
+        <div class="process-works__intro">
+          <span class="process-works__label">2D Animation Process</span>
+          <h2>How Our 2D Animation Process Works</h2>
+          <p>Our processes are clear and collaborative—yes, from the first idea to the final video, you get to see how the work progresses.</p>
+        </div>
+
+        <ol class="process-works__overview" aria-hidden="true">
+          <li>Script</li>
+          <li>Storyboard</li>
+          <li>Animatic</li>
+          <li>Design</li>
+          <li>Animation</li>
+          <li>Sound</li>
+          <li>Delivery</li>
+        </ol>
+
+        <ol class="process-works__timeline" aria-label="2D animation production process">
+          <li class="process-works__step">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-file-pen"></i></span>
+                <h3>Script</h3>
+              </div>
+              <p>We start by understanding your idea, target audience, and goal. Our team creates or refines the script and voiceover, making sure that your message is clear.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">01</span>
+            </div>
+          </li>
+
+          <li class="process-works__step">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-table-cells-large"></i></span>
+                <h3>Storyboard</h3>
+              </div>
+              <p>The next step is turning this script into an engaging visual story. This phase shows what happens scene by scene—characters, backgrounds, actions, and transactions.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">02</span>
+            </div>
+          </li>
+
+          <li class="process-works__step">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-stopwatch"></i></span>
+                <h3>Animatic</h3>
+              </div>
+              <p>Now this is the rough and timed version of the video. This stage helps to establish the pacing and transitions, setting a consistent relationship between visuals and narration. Here, we fine-tune the storytelling before getting into detailed animation.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">03</span>
+            </div>
+          </li>
+
+          <li class="process-works__step">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></span>
+                <h3>Character and Background Design</h3>
+              </div>
+              <p>Once the story is approved, we move to the visual world—characters, backgrounds, props, and other aspects—creating consistent style frames. This gives you an overall picture of what the completed animation will look like.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">04</span>
+            </div>
+          </li>
+
+          <li class="process-works__step">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                <h3>Animation</h3>
+              </div>
+              <p>Now, your character and artwork start to move. Our animators use keyframes, tweening, rigging, and lip sync where needed, creating the natural movement. In this stage we refine timing, camera movements, and details so that every motion enhances the brand story.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">05</span>
+            </div>
+          </li>
+
+          <li class="process-works__step">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-music"></i></span>
+                <h3>Sound and Design</h3>
+              </div>
+              <p>With the perfect voice-over, music, and sound effects, we enhance the mood and rhythm of the scene. This ensures a more immersive viewing experience where the audio works naturally with the visuals.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">06</span>
+            </div>
+          </li>
+
+          <li class="process-works__step process-works__step--final">
+            <article class="process-works__card">
+              <div class="process-works__card-head">
+                <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+                <h3>Final Delivery</h3>
+              </div>
+              <p>Once the animation and sounds are approved, we prepare the final video. We ensure that the video meets your specific requirements and works for its intended platform.</p>
+            </article>
+            <div class="process-works__marker">
+              <span class="process-works__num">07</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- ==============================
+          Process Works AREA END
+      ========================= -->
 
   <!-- ================================
            SERVICES CONTENT AREA START
