@@ -310,18 +310,18 @@
           <p>Our processes are clear and collaborative—yes, from the first idea to the final video, you get to see how the work progresses.</p>
         </div>
 
-        <ol class="process-works__overview" aria-hidden="true">
-          <li>Script</li>
-          <li>Storyboard</li>
-          <li>Animatic</li>
-          <li>Design</li>
-          <li>Animation</li>
-          <li>Sound</li>
-          <li>Delivery</li>
+        <ol class="process-works__overview" aria-label="Jump to a process step">
+          <li><a href="#process-script">Script</a></li>
+          <li><a href="#process-storyboard">Storyboard</a></li>
+          <li><a href="#process-animatic">Animatic</a></li>
+          <li><a href="#process-design">Design</a></li>
+          <li><a href="#process-animation">Animation</a></li>
+          <li><a href="#process-sound">Sound</a></li>
+          <li><a href="#process-delivery">Delivery</a></li>
         </ol>
 
         <ol class="process-works__timeline" aria-label="2D animation production process">
-          <li class="process-works__step">
+          <li class="process-works__step" id="process-script">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-file-pen"></i></span>
@@ -334,7 +334,7 @@
             </div>
           </li>
 
-          <li class="process-works__step">
+          <li class="process-works__step" id="process-storyboard">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-table-cells-large"></i></span>
@@ -347,7 +347,7 @@
             </div>
           </li>
 
-          <li class="process-works__step">
+          <li class="process-works__step" id="process-animatic">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-stopwatch"></i></span>
@@ -360,7 +360,7 @@
             </div>
           </li>
 
-          <li class="process-works__step">
+          <li class="process-works__step" id="process-design">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></span>
@@ -373,7 +373,7 @@
             </div>
           </li>
 
-          <li class="process-works__step">
+          <li class="process-works__step" id="process-animation">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
@@ -386,7 +386,7 @@
             </div>
           </li>
 
-          <li class="process-works__step">
+          <li class="process-works__step" id="process-sound">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-music"></i></span>
@@ -399,7 +399,7 @@
             </div>
           </li>
 
-          <li class="process-works__step process-works__step--final">
+          <li class="process-works__step process-works__step--final" id="process-delivery">
             <article class="process-works__card">
               <div class="process-works__card-head">
                 <span class="process-works__icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
@@ -418,6 +418,103 @@
   <!-- ==============================
           Process Works AREA END
       ========================= -->
+
+  <!-- =======================================
+          Craft Behind Better  AREA START
+      ====================================== -->
+  <section class="craft-behind-better-area">
+    <div class="container">
+      <article class="craft-behind-better">
+        <span class="craft-behind-better__frame" aria-hidden="true"></span>
+        <div class="craft-behind-better__glow" aria-hidden="true"></div>
+        <div class="craft-behind-better__glow craft-behind-better__glow--alt" aria-hidden="true"></div>
+
+        <div class="craft-behind-better__intro">
+          <h2>The Craft Behind <span>Better 2D Animation</span></h2>
+        </div>
+
+        <div class="craft-behind-better__content">
+          <p class="craft-behind-better__lead">Yes, software matters, but how it is used matters the most. At Giraf, our production workflow involves software including Blender, Maya, and the like, depending on the project requirements.</p>
+          <p>Using the right tools helps to maintain consistent artwork and smoother production.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- =======================================
+          Craft Behind Better  AREA END
+      ====================================== -->
+
+
+  <!-- =======================================
+         Portfolio AREA START
+      ====================================== -->
+  <section class="services-portfolio-area">
+    <div class="container">
+      <div class="services-portfolio">
+        <div class="services-portfolio__intro">
+          <span class="services-portfolio__label">Portfolio</span>
+          <h2>Portfolio</h2>
+          <p>We have a portfolio of 2D animation projects that we have worked on. These projects are a representation of our skills and expertise.</p>
+        </div>
+
+        <div class="services-portfolio__stage">
+          <article class="services-portfolio__card">
+            <a href="https://www.youtube.com/watch?v=Qd5RVE94V24" class="services-portfolio__media popup-video" aria-label="Play YES Machinery 2D animation video">
+              <img src="./img/portfolio/intro.jpg" alt="YES Machinery 2D animation introduction">
+              <span class="services-portfolio__overlay" aria-hidden="true"></span>
+              <span class="services-portfolio__play" aria-hidden="true">
+                <i class="fas fa-play"></i>
+              </span>
+            </a>
+            <div class="services-portfolio__meta">
+              <div class="services-portfolio__copy">
+                <span class="services-portfolio__tag">2D Animation</span>
+                <h3>YES Machinery</h3>
+                <p>YES Machinery</p>
+              </div>
+              <div class="services-portfolio__flag">
+                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======================================
+          Portfolio AREA END
+      ====================================== -->
+
+
+  <!-- =======================================
+          Why Choose AREA START
+      ====================================== -->
+
+  <section class="why-choose-area">
+    <div class="container">
+      <div class="why-choose">
+        <div class="why-choose__intro">
+          <span class="why-choose__label">Why Choose Us</span>
+          <h2>Why Choose Giraf for 2D Animation?</h2>
+          <p> Choosing an animation studio isn’t just about finding an animating team. It’s about partnering with a reliable creative 
+            studio that understands why animation is essential for your project.
+
+          </p>
+          <p> At Giraf Creatives, we approach each project with a communication objective—who is the target audience? What is their intent?
+             What do you need them to remember? What action do you want them to take? 
+
+          </p>
+          <p> From ideation, script, and storyboard to visual style, animation timing, and sound design,
+             we ensure that you get the best results, helping your brand stand out in the digital landscape. 
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======================================
+          Why Choose AREA END
+      ====================================== -->
 
   <!-- ================================
            SERVICES CONTENT AREA START
@@ -817,6 +914,52 @@
   <!-- fancy box -->
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <!-- fancy box -->
+
+  <script>
+    (function () {
+      const overview = document.querySelector(".process-works__overview");
+      if (!overview) return;
+
+      const links = overview.querySelectorAll("a[href^='#process-']");
+      const steps = document.querySelectorAll(".process-works__step[id]");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const setActive = (hash) => {
+        links.forEach((link) => {
+          link.classList.toggle("is-active", link.getAttribute("href") === hash);
+        });
+        steps.forEach((step) => {
+          step.classList.toggle("is-current", "#" + step.id === hash);
+        });
+      };
+
+      const scrollToStep = (hash) => {
+        const target = document.querySelector(hash);
+        if (!target) return false;
+        target.scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "start"
+        });
+        setActive(hash);
+        return true;
+      };
+
+      overview.addEventListener("click", (event) => {
+        const link = event.target.closest("a[href^='#process-']");
+        if (!link) return;
+        const hash = link.getAttribute("href");
+        if (!scrollToStep(hash)) return;
+        event.preventDefault();
+        if (history.replaceState) {
+          history.replaceState(null, "", hash);
+        }
+      });
+
+      if (window.location.hash) {
+        setActive(window.location.hash);
+      }
+    })();
+  </script>
 
 
 
