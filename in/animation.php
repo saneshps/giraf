@@ -102,8 +102,8 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <section class="animation-hero">
-    <div class="banner-area banner-area--animation">
+    <section>
+    <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
         <img src="./img/services/Animation-banner.jpg" alt="Animation studio workspace">
       </div>

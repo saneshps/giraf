@@ -103,10 +103,16 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <section>
-    <div class="banner-area">
-      <img src="./img/services/Digital-Marketing-banner.jpg" alt="banner">
-      <h1> Digital Marketing </h1>
+    <section>
+    <div class="banner-area banner-area--hero">
+      <div class="banner-area__media">
+        <img src="./img/services/Digital-Marketing-banner.jpg" alt="Digital Marketing">
+      </div>
+      <div class="banner-area__shade" aria-hidden="true"></div>
+      <div class="banner-area__content">
+        <h1>Digital Marketing</h1>
+        <span class="banner-area__line" aria-hidden="true"></span>
+      </div>
     </div>
   </section>
   <!-- =====================

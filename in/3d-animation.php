@@ -102,10 +102,16 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <section>
-    <div class="banner-area">
-      <img src="./img/services/3d-Animation-banner.webp" alt="banner"> 
-      <h1> 3D Animation Service India </h1>
+    <section>
+    <div class="banner-area banner-area--hero">
+      <div class="banner-area__media">
+        <img src="./img/services/3d-Animation-banner.webp" alt="3D Animation Service India">
+      </div>
+      <div class="banner-area__shade" aria-hidden="true"></div>
+      <div class="banner-area__content">
+        <h1>3D Animation Service India</h1>
+        <span class="banner-area__line" aria-hidden="true"></span>
+      </div>
     </div>
   </section>
   <!-- =====================
