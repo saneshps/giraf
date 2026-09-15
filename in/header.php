@@ -61,10 +61,10 @@
            <li class="<?php echo ($curPageName == "web-and-app-development.php") ? 'is-current' : '' ?>">
              <a href="web-and-app-development.php"><span class="sub-index">04</span><span class="sub-label">Website Design &amp; Development</span></a>
            </li>
-           <li class="has-nested <?php echo $animationActive ? 'is-current is-open' : '' ?>">
+           <li class="has-nested <?php echo $animationActive ? 'is-current' : '' ?>">
              <div class="nav-sub-item">
                <a href="animation.php"><span class="sub-index">05</span><span class="sub-label">Animation Services</span></a>
-               <button type="button" class="nav-nested-toggle" aria-expanded="<?php echo $animationActive ? 'true' : 'false' ?>" aria-controls="animation-nested">
+               <button type="button" class="nav-nested-toggle" aria-expanded="false" aria-controls="animation-nested">
                  <span class="nav-chevron" aria-hidden="true"></span>
                </button>
              </div>

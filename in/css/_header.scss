@@ -1081,8 +1081,7 @@ main {
       }
 
       &:hover > .nav-nested,
-      &:focus-within > .nav-nested,
-      &.is-open > .nav-nested {
+      &:focus-within > .nav-nested {
         max-height: 140px !important;
         opacity: 1;
         visibility: visible;
@@ -1091,8 +1090,7 @@ main {
       }
 
       &:hover > .nav-sub-item .nav-nested-toggle,
-      &:focus-within > .nav-sub-item .nav-nested-toggle,
-      &.is-open > .nav-sub-item .nav-nested-toggle {
+      &:focus-within > .nav-sub-item .nav-nested-toggle {
         color: #F9B217;
 
         .nav-chevron {

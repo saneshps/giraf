@@ -1224,17 +1224,17 @@ main {
     color: #fff !important;
     background: rgba(249, 178, 23, 0.1);
   }
-  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-nested, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-nested, .nav-wrapper ul.site-nav .nav-submenu .has-nested.is-open > .nav-nested {
+  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-nested, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-nested {
     max-height: 140px !important;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     padding-bottom: 4px !important;
   }
-  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-sub-item .nav-nested-toggle, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-sub-item .nav-nested-toggle, .nav-wrapper ul.site-nav .nav-submenu .has-nested.is-open > .nav-sub-item .nav-nested-toggle {
+  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-sub-item .nav-nested-toggle, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-sub-item .nav-nested-toggle {
     color: #F9B217;
   }
-  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-sub-item .nav-nested-toggle .nav-chevron, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-sub-item .nav-nested-toggle .nav-chevron, .nav-wrapper ul.site-nav .nav-submenu .has-nested.is-open > .nav-sub-item .nav-nested-toggle .nav-chevron {
+  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-sub-item .nav-nested-toggle .nav-chevron, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-sub-item .nav-nested-toggle .nav-chevron {
     transform: rotate(225deg);
     margin-top: 1px;
   }
