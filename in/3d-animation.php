@@ -104,7 +104,7 @@
      ===================== -->
   <section>
     <div class="banner-area">
-      <img src="./img/services/Animation-banner.jpg" alt="banner"> 
+      <img src="./img/services/3d-Animation-banner.webp" alt="banner"> 
       <h1> 3D Animation Service India </h1>
     </div>
   </section>

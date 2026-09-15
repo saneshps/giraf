@@ -170,7 +170,7 @@
           <a href="./2d-animation.php">
           <article class="two-services-box">
             <div class="two-services-box__media">
-              <img src="./img/services/2d-animation-service.jpg" alt="2D Animation Services">
+              <img src="./img/services/2d-animation.webp" alt="2D Animation Services">
               <span class="two-services-box__badge">2D</span>
             </div>
             <div class="two-services-box__body">
@@ -184,7 +184,7 @@
           <a href="./3d-animation.php">
           <article class="two-services-box">
             <div class="two-services-box__media">
-              <img src="./img/services/3d-animation-service.jpg" alt="3D Animation Services">
+              <img src="./img/services/3d-animation.webp" alt="3D Animation Services">
               <span class="two-services-box__badge">3D</span>
             </div>
             <div class="two-services-box__body">
