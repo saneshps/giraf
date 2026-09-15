@@ -12,6 +12,11 @@
    </header>
    <?php $curPageName = substr($_SERVER["SCRIPT_NAME"], strrpos($_SERVER["SCRIPT_NAME"], "/") + 1); ?>
    <?php
+     $animationActive = in_array($curPageName, [
+       "animation.php",
+       "2d-animation.php",
+       "3d-animation.php"
+     ], true);
      $servicesActive = in_array($curPageName, [
        "services.php",
        "digital-marketing.php",
@@ -19,7 +24,9 @@
        "designing.php",
        "web-and-app-development.php",
        "photography-and-video-production.php",
-       "animation.php"
+       "animation.php",
+       "2d-animation.php",
+       "3d-animation.php"
      ], true);
    ?>
    <nav class="nav-wrapper">
@@ -54,8 +61,21 @@
            <li class="<?php echo ($curPageName == "web-and-app-development.php") ? 'is-current' : '' ?>">
              <a href="web-and-app-development.php"><span class="sub-index">04</span><span class="sub-label">Website Design &amp; Development</span></a>
            </li>
-           <li class="<?php echo ($curPageName == "animation.php") ? 'is-current' : '' ?>">
-             <a href="animation.php"><span class="sub-index">05</span><span class="sub-label">Animation Services</span></a>
+           <li class="has-nested <?php echo $animationActive ? 'is-current is-open' : '' ?>">
+             <div class="nav-sub-item">
+               <a href="animation.php"><span class="sub-index">05</span><span class="sub-label">Animation Services</span></a>
+               <button type="button" class="nav-nested-toggle" aria-expanded="<?php echo $animationActive ? 'true' : 'false' ?>" aria-controls="animation-nested">
+                 <span class="nav-chevron" aria-hidden="true"></span>
+               </button>
+             </div>
+             <ul class="nav-nested" id="animation-nested">
+               <li class="<?php echo ($curPageName == "2d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="2d-animation.php"><span class="sub-label">2D Animation</span></a>
+               </li>
+               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="3d-animation.php"><span class="sub-label">3D Animation</span></a>
+               </li>
+             </ul>
            </li>
            <li class="<?php echo ($curPageName == "photography-and-video-production.php") ? 'is-current' : '' ?>">
              <a href="photography-and-video-production.php"><span class="sub-index">06</span><span class="sub-label">Product Explanatory Videos</span></a>
@@ -77,8 +97,6 @@
    <script>
      (function () {
        var parents = document.querySelectorAll(".has-submenu > .nav-parent");
-       if (!parents.length) return;
-
        parents.forEach(function (btn) {
          btn.addEventListener("click", function (e) {
            e.preventDefault();
@@ -90,10 +108,22 @@
            document.querySelectorAll(".has-submenu.is-open").forEach(function (openItem) {
              if (openItem === item) return;
              openItem.classList.remove("is-open");
-             var openBtn = openItem.querySelector(".nav-parent");
+             var openBtn = openItem.querySelector(":scope > .nav-parent");
              if (openBtn) openBtn.setAttribute("aria-expanded", "false");
            });
 
+           item.classList.toggle("is-open", willOpen);
+           btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+         });
+       });
+
+       document.querySelectorAll(".nav-nested-toggle").forEach(function (btn) {
+         btn.addEventListener("click", function (e) {
+           e.preventDefault();
+           e.stopPropagation();
+           var item = btn.closest(".has-nested");
+           if (!item) return;
+           var willOpen = !item.classList.contains("is-open");
            item.classList.toggle("is-open", willOpen);
            btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
          });
