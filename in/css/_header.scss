@@ -904,7 +904,16 @@ main {
       opacity: 0.7;
     }
 
-    &.is-open > .nav-parent,
+    // Desktop: keep down arrow even when page has is-open/active;
+    // flip to up only while dropdown is shown (hover/focus).
+    &.is-open > .nav-parent {
+      .nav-chevron {
+        transform: rotate(45deg);
+        margin-top: -3px;
+        opacity: 0.7;
+      }
+    }
+
     &:hover > .nav-parent,
     &:focus-within > .nav-parent {
       color: #F9B217;

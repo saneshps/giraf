@@ -339,96 +339,90 @@
         OTHER SERVICEs AREA END 2
       ============================ -->
 
+         <!-- =============================
+          CALL TO ACTION AREA START
+        ============================ -->
+        <section class="call-to-action-area">
+        <div class="main-box">
+            <div class="cta-glow" aria-hidden="true"></div>
+            <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
+            <div class="cta-orb" aria-hidden="true"></div>
 
-  <!-- ============================
-        SERVICES STRIP AREA START
-      ============================ -->
-  <section class="services-details-strip-area">
-    <div class="main-box">
-      <div class="strip-text">
-        <h4> Photography & Video Production </h4>
-        <h3> Giving Your Business Some Great Ideas </h3>
-      </div>
-    </div>
-  </section>
-  <!-- =========================
-        SERVICES STRIP AREA END
-      ========================= -->
+            <div class="container">
+                <div class="row align-items-center cta-row">
 
-  <!-- ===========================
-        SERVICES FORM AREA START
-      ============================ -->
-  <section class="services-form-area">
-    <div class="main-box">
-      <div class="form-bg">
-        <div class="form-container">
-          <form class="form-horizontal">
-            <h3 class="title"> Fill-in and <span> Reach Out </span> </h3>
+                    <div class="col-xl-6 col-lg-6 col-md-12 cta-content" data-aos="fade-right">
+                        <span class="cta-label">Call To Action</span>
+                        <h2>Ready to Grow Your Brand with Creative Solutions?</h2>
+                        <p>
+                            At Giraf Creatives, we help businesses build stronger brands through strategic branding,
+                            digital marketing, creative designing, web development, animation, and product explanatory videos.
+                        </p>
+                        <p>
+                            Whether you're launching a new business, refreshing your brand, or expanding your digital presence,
+                            our team is ready to create solutions tailored to your goals.
+                        </p>
 
+                        <ul class="cta-highlights" aria-label="What we offer">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Strategic Branding</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Digital Marketing</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Web Development</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Animation &amp; Video</li>
+                        </ul>
+                    </div>
 
-            <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col" data-aos="fade-left">
+                        <div class="cta-form-panel">
+                            <div class="cta-form-head">
+                                <h3>Let's Start a Conversation</h3>
+                                <p>Tell us about your project — we'll get back within 24 hours.</p>
+                            </div>
 
-              <!-- col-md-4 -->
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
+                            <form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
+                                <div class="cta-form-grid">
+                                    <div class="cta-field">
+                                        <label for="cta_name">Full name *</label>
+                                        <input type="text" id="cta_name" name="firstname" class="form-control" placeholder="Your full name" autocomplete="name">
+                                        <span class="cta-field-error" id="cta_name_error" role="alert"></span>
+                                    </div>
+                                    <div class="cta-field">
+                                        <label for="cta_phone">Phone number *</label>
+                                        <input type="tel" id="cta_phone" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX" autocomplete="tel" inputmode="tel">
+                                        <span class="cta-field-error" id="cta_phone_error" role="alert"></span>
+                                    </div>
+                                    <div class="cta-field cta-field--full">
+                                        <label for="cta_email">Email *</label>
+                                        <input type="email" id="cta_email" name="email" class="form-control" placeholder="you@company.com" autocomplete="email">
+                                        <span class="cta-field-error" id="cta_email_error" role="alert"></span>
+                                    </div>
+                                    <div class="cta-field cta-field--full">
+                                        <label for="cta_subject">Subject</label>
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" placeholder="How can we help?">
+                                    </div>
+                                    <div class="cta-field cta-field--full">
+                                        <label for="cta_msg">Message</label>
+                                        <textarea id="cta_msg" name="msg" class="form-control" rows="4" placeholder="Share a little about your brand or goals..."></textarea>
+                                    </div>
+                                </div>
+
+                                <p class="cta-form-status" id="cta_form_status" role="status" aria-live="polite" hidden></p>
+
+                                <button type="submit" class="cta-submit">
+                                    Get in Touch
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-              <!--// col-md-4 -->
-              <!-- col-md-4 -->
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Phone">
-                </div>
-              </div>
-              <!--// col-md-4 -->
-              <!-- col-md-4 -->
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <!--// col-md-4 -->
-
-
-
-              <!-- col-md-4 -->
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Company Name">
-                </div>
-              </div>
-              <!--// col-md-4 -->
-              <!-- col-md-8 -->
-              <div class="col-xl-8 col-lg-8 col-md-12">
-                <div class="form-group">
-                  <textarea class="form-control" rows="4" cols="120" placeholder="Message"></textarea>
-
-                </div>
-              </div>
-              <!--// col-md-8 -->
-
             </div>
-
-
-            <div class="row">
-              <div class="col-md-3 mx-auto get-in-tuch">
-                <button type="button" class="btn btn-default"> Get in Touch <i class="fas fa-angle-right"></i> </button>
-              </div>
-            </div>
-
-
-
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- =========================
-        SERVICES FORM AREA END
-      ========================= -->
-
-
+    </section>
+    <!-- =============================
+          CALL TO ACTION AREA END
+        ============================ -->
+        
 
   <!-- ======================
           FOOTER AREA START
