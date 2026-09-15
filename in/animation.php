@@ -102,10 +102,16 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <section>
-    <div class="banner-area">
-      <img src="./img/services/Animation-banner.jpg" alt="banner">
-      <h1> Animation </h1>
+  <section class="animation-hero">
+    <div class="banner-area banner-area--animation">
+      <div class="banner-area__media">
+        <img src="./img/services/Animation-banner.jpg" alt="Animation studio workspace">
+      </div>
+      <div class="banner-area__shade" aria-hidden="true"></div>
+      <div class="banner-area__content">
+        <h1>Animation</h1>
+        <span class="banner-area__line" aria-hidden="true"></span>
+      </div>
     </div>
   </section>
   <!-- =====================
