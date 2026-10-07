@@ -75,6 +75,21 @@
                <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
                  <a href="3d-animation.php"><span class="sub-label">3D Animation</span></a>
                </li>
+               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="3d-animation.php"><span class="sub-label">  Product animation </span></a>
+               </li>
+               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="3d-animation.php"><span class="sub-label">  VFX  </span></a>
+               </li>
+               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="3d-animation.php"><span class="sub-label">  Product Pre-Viz </span></a>
+               </li>
+               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="3d-animation.php"><span class="sub-label">  Character Design </span></a>
+               </li>
+               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
+                 <a href="3d-animation.php"><span class="sub-label">  Motion Graphics </span></a>
+               </li>
              </ul>
            </li>
            <li class="<?php echo ($curPageName == "photography-and-video-production.php") ? 'is-current' : '' ?>">
@@ -117,7 +132,7 @@
          });
        });
 
-       document.querySelectorAll(".nav-nested-toggle").forEach(function (btn) {
+        document.querySelectorAll(".nav-nested-toggle").forEach(function (btn) {
          btn.addEventListener("click", function (e) {
            e.preventDefault();
            e.stopPropagation();
@@ -126,7 +141,32 @@
            var willOpen = !item.classList.contains("is-open");
            item.classList.toggle("is-open", willOpen);
            btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
-         });
-       });
-     })();
+          });
+        });
+
+        // Keep expanded rows in place until the desktop Services menu is left.
+        var desktopMenu = window.matchMedia("(min-width: 992px)");
+        document.querySelectorAll(".has-nested > .nav-sub-item > a").forEach(function (link) {
+          link.addEventListener("mouseenter", function () {
+            if (!desktopMenu.matches) return;
+            var item = link.closest(".has-nested");
+            item.classList.add("is-open");
+            item.querySelector(".nav-nested-toggle").setAttribute("aria-expanded", "true");
+          });
+        });
+
+        document.querySelectorAll(".has-submenu").forEach(function (menu) {
+          function closeNestedMenus() {
+            if (!desktopMenu.matches || menu.matches(":hover") || menu.contains(document.activeElement)) return;
+            menu.querySelectorAll(".has-nested.is-open").forEach(function (item) {
+              item.classList.remove("is-open");
+              item.querySelector(".nav-nested-toggle").setAttribute("aria-expanded", "false");
+            });
+          }
+          menu.addEventListener("mouseleave", closeNestedMenus);
+          menu.addEventListener("focusout", function () {
+            window.setTimeout(closeNestedMenus, 0);
+          });
+        });
+      })();
    </script>

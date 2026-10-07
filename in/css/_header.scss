@@ -611,7 +611,7 @@ main {
   }
 
   &.is-open > .nav-nested {
-    max-height: 160px;
+    max-height: none;
     opacity: 1;
     visibility: visible;
     padding-bottom: 6px !important;
@@ -1089,17 +1089,15 @@ main {
         }
       }
 
-      &:hover > .nav-nested,
-      &:focus-within > .nav-nested {
-        max-height: 140px !important;
+      &.is-open > .nav-nested {
+        max-height: none !important;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
         padding-bottom: 4px !important;
       }
 
-      &:hover > .nav-sub-item .nav-nested-toggle,
-      &:focus-within > .nav-sub-item .nav-nested-toggle {
+      &.is-open > .nav-sub-item .nav-nested-toggle {
         color: #F9B217;
 
         .nav-chevron {

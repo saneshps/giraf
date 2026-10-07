@@ -472,7 +472,8 @@ main {
   background: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   text-align: left;
   cursor: pointer;
@@ -826,7 +827,7 @@ main {
   color: #F9B217 !important;
 }
 .nav-wrapper ul.site-nav .has-nested.is-open > .nav-nested {
-  max-height: 160px;
+  max-height: none;
   opacity: 1;
   visibility: visible;
   padding-bottom: 6px !important;
@@ -862,7 +863,8 @@ main {
 @media (max-width: 991px) {
   header .logo {
     z-index: 2;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     max-height: 42px;
   }
   header .toggle-menus .menu-text {
@@ -937,7 +939,8 @@ main {
     height: 52px !important;
     max-height: 52px !important;
     max-width: 190px !important;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   header .toggle-menus .menu-text,
   header .toggle-menus .nav-button,
@@ -1230,17 +1233,17 @@ main {
     color: #fff !important;
     background: rgba(249, 178, 23, 0.1);
   }
-  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-nested, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-nested {
-    max-height: 140px !important;
+  .nav-wrapper ul.site-nav .nav-submenu .has-nested.is-open > .nav-nested {
+    max-height: none !important;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     padding-bottom: 4px !important;
   }
-  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-sub-item .nav-nested-toggle, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-sub-item .nav-nested-toggle {
+  .nav-wrapper ul.site-nav .nav-submenu .has-nested.is-open > .nav-sub-item .nav-nested-toggle {
     color: #F9B217;
   }
-  .nav-wrapper ul.site-nav .nav-submenu .has-nested:hover > .nav-sub-item .nav-nested-toggle .nav-chevron, .nav-wrapper ul.site-nav .nav-submenu .has-nested:focus-within > .nav-sub-item .nav-nested-toggle .nav-chevron {
+  .nav-wrapper ul.site-nav .nav-submenu .has-nested.is-open > .nav-sub-item .nav-nested-toggle .nav-chevron {
     transform: rotate(225deg);
     margin-top: 1px;
   }
@@ -1344,7 +1347,6 @@ button:focus {
   padding: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1733,7 +1735,8 @@ h2 {
 .banner-area img {
   width: 100%;
   height: 60vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .banner-area img {
@@ -1790,7 +1793,8 @@ h2 {
 .banner-area.portfolio img {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 991px) {
   .banner-area.portfolio img {
@@ -1881,8 +1885,10 @@ h2 {
 .banner-area--hero .banner-area__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   transform: scale(1.06);
   animation: bannerKenBurns 18s ease-out forwards;
 }
@@ -2438,7 +2444,8 @@ h2 {
 }
 .about-area .main-box .about-second .about-second-image-first img {
   width: 98%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
@@ -2648,6 +2655,7 @@ h2 {
   }
 }
 .text-loop-area .l {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   animation: example 50s linear 0.5s infinite;
@@ -2683,6 +2691,7 @@ h2 {
   }
 }
 .text-loop-area .r {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   animation: example2 50s linear 0.8s infinite;
@@ -4970,13 +4979,7 @@ h2 {
 }
 .benifits-area .benifits-faq-section .benifits-faq-box .accordion .accordian-chk:checked + h4 + div.accordian-content {
   opacity: 1;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   max-height: 1000px;
   overflow: hidden;
@@ -4999,13 +5002,7 @@ h2 {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   border: 1px solid rgba(249, 178, 23, 0.08);
   border-bottom: none;
@@ -5687,8 +5684,10 @@ h2 {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transform: scale(1);
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -7431,8 +7430,10 @@ h2 {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   transform: scale(1);
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
@@ -7612,7 +7613,8 @@ h2 {
 .work-3d__flag img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 @media (max-width: 991px) {
@@ -10936,8 +10938,10 @@ h2 {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   transform: scale(1);
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
@@ -11112,7 +11116,8 @@ h2 {
 .services-portfolio__flag img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 @media (max-width: 991px) {
@@ -11756,7 +11761,9 @@ h2 {
   list-style: none;
   position: relative;
   z-index: 1;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .faq__question::-webkit-details-marker, .faq__question::marker {
   display: none;
@@ -12410,7 +12417,9 @@ h2 {
   list-style: none;
   position: relative;
   z-index: 1;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .faq-3d__question::-webkit-details-marker, .faq-3d__question::marker {
   display: none;
@@ -12964,6 +12973,12 @@ h2 {
   box-shadow: none;
 }
 
+.form-container .form-horizontal .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .form-container .form-horizontal .form-control::placeholder {
   color: #ccc;
   font-size: 16px;
@@ -13335,7 +13350,8 @@ h2 {
 .photography-titles .photography-subs .photography-sub-title img {
   width: 100%;
   height: 160px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .how-we-do-the-magic-area {
@@ -15405,7 +15421,8 @@ h2 {
 .blog-slider__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   opacity: 0;
   border-radius: 6px;
@@ -15830,7 +15847,8 @@ h2 {
 .blog-details-content .blog-details-right .latest-post-ul li img {
   width: 100px;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 6px;
 }
 @media (max-width: 1199px) {
@@ -16333,6 +16351,11 @@ h2 {
 .address-from-area .address-from .form-container .form-horizontal .form-control:focus {
   outline: none;
   box-shadow: none;
+}
+.address-from-area .address-from .form-container .form-horizontal .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
 }
 .address-from-area .address-from .form-container .form-horizontal .form-control::placeholder {
   color: #ccc;
@@ -17520,7 +17543,6 @@ h2 {
   top: 5px;
   margin-right: 16px;
   text-align: center;
-  -webkit-transition: all 250ms ease 0s;
   transition: all 250ms ease 0s;
 }
 .career-form-box .form-horizontal .radio input[type=radio]:checked + .radio-label:before {
@@ -18801,8 +18823,10 @@ h2 {
 .new-services-home-area .ns-card-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -18867,7 +18891,9 @@ h2 {
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 0.06);
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   z-index: 0;
 }
 @media (max-width: 991px) {
@@ -18943,6 +18969,7 @@ h2 {
   align-items: center;
   gap: 8px;
   margin-top: auto;
+  width: -moz-fit-content;
   width: fit-content;
   color: #FFFFFF;
   font-size: 0.82rem;
@@ -19422,6 +19449,10 @@ h2 {
   line-height: 1.4;
   transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
+.call-to-action-area .cta-field .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 300;
+}
 .call-to-action-area .cta-field .form-control::placeholder {
   color: rgba(255, 255, 255, 0.38);
   font-weight: 300;
@@ -19744,4 +19775,4 @@ h2 {
     opacity: 1;
     transform: scale(1);
   }
-}
+}/*# sourceMappingURL=main.css.map */

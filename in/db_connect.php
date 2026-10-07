@@ -2,7 +2,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "giraf_new_db";
+// $database = "giraf_new_db";
+$database = "giraf_common_useless_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
