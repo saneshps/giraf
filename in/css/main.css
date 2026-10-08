@@ -13733,15 +13733,6 @@ h2 {
   isolation: isolate;
   background: #08090a;
 }
-.product-animation-page .pa-explainer::before, .product-animation-page .pa-why::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
-  background-size: 120px 120px;
-  pointer-events: none;
-}
 .product-animation-page .pa-explainer .pa-split, .product-animation-page .pa-why .pa-split {
   align-items: center;
   gap: clamp(40px, 7vw, 96px);
@@ -13790,8 +13781,6 @@ h2 {
 }
 .product-animation-page .pa-services {
   background-color: #08090a;
-  background-image: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
-  background-size: 120px 120px;
 }
 .product-animation-page .pa-service-grid {
   display: grid;
@@ -13856,8 +13845,6 @@ h2 {
 }
 .product-animation-page .pa-process {
   background-color: #08090a;
-  background-image: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
-  background-size: 120px 120px;
 }
 .product-animation-page .pa-process h2 {
   color: #f9b217;
@@ -13925,8 +13912,11 @@ h2 {
 }
 .product-animation-page .pa-faq {
   background-color: #08090a;
-  background-image: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
-  background-size: 120px 120px;
+}
+.product-animation-page .pa-section {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: clamp(160px, 21vw, 320px) 100%;
+  background-position: center top;
 }
 .product-animation-page .pa-faq-list {
   display: grid;
