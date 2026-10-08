@@ -13631,26 +13631,40 @@ h2 {
 .product-animation-page .pa-skip:focus {
   top: 15px;
 }
+.product-animation-page .pa-intro .pa-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-areas: "opening opening" "closing questions";
+  column-gap: clamp(36px, 6vw, 80px);
+  row-gap: 22px;
+  align-items: center;
+}
 .product-animation-page .pa-intro__opening {
-  max-width: 1000px;
-  margin-inline: auto;
+  grid-area: opening;
+  max-width: none;
+  margin: 0;
 }
 .product-animation-page .pa-intro__opening p {
   font-size: 21px !important;
   line-height: 1.75;
   color: #edede9;
 }
-.product-animation-page .pa-questions {
+.product-animation-page .pa-intro .pa-questions {
+  grid-area: questions;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin: 40px 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(96px, 1fr));
+  gap: 14px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 .product-animation-page .pa-questions li {
   position: relative;
-  padding: 28px 25px 28px 48px;
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  padding: 20px 24px 20px 52px;
   border: 1px solid #3b382f;
   border-radius: 6px;
   background: #1b1b19;
@@ -13662,15 +13676,17 @@ h2 {
   content: "";
   position: absolute;
   left: 25px;
-  top: 39px;
+  top: 50%;
   width: 6px;
   height: 6px;
+  transform: translateY(-50%);
   border-radius: 50%;
   background: #f9b217;
 }
 .product-animation-page .pa-intro__closing {
+  grid-area: closing;
   max-width: 1000px;
-  margin-inline: auto;
+  margin: 0;
 }
 .product-animation-page .pa-explainer {
   position: relative;
@@ -13879,6 +13895,24 @@ h2 {
   .product-animation-page .pa-section {
     padding: 65px 0;
   }
+  .product-animation-page .pa-intro .pa-shell {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opening" "questions" "closing";
+    row-gap: 24px;
+  }
+  .product-animation-page .pa-intro .pa-questions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 15px;
+  }
+  .product-animation-page .pa-intro .pa-questions li {
+    min-height: 120px;
+    padding: 22px 18px 22px 38px;
+    font-size: 18px;
+  }
+  .product-animation-page .pa-intro .pa-questions li::before {
+    left: 16px;
+  }
   .product-animation-page .pa-split {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -13923,6 +13957,13 @@ h2 {
   }
   .product-animation-page .pa-questions {
     margin: 28px 0;
+  }
+  .product-animation-page .pa-intro .pa-questions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .product-animation-page .pa-intro .pa-questions li {
+    min-height: 88px;
   }
   .product-animation-page .pa-intro__opening p {
     font-size: 18px !important;
