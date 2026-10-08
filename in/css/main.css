@@ -1913,7 +1913,7 @@ h2 {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 920px;
+  max-width: 930px;
   margin: 0 auto;
   padding: clamp(24px, 5vw, 48px) clamp(20px, 5vw, 40px);
   display: flex;
@@ -14170,7 +14170,58 @@ h2 {
 }
 
 .product-animation-page.previz-page .previz-intro {
+  position: relative;
+  isolation: isolate;
   background-color: #08090a;
+}
+.product-animation-page.previz-page .previz-intro::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(ellipse at 18% 45%, rgba(249, 178, 23, 0.08), transparent 42%);
+  pointer-events: none;
+}
+.product-animation-page.previz-page .previz-intro .pa-intro__opening {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: stretch;
+  gap: clamp(18px, 2.5vw, 32px);
+}
+.product-animation-page.previz-page .previz-intro .pa-intro__opening p {
+  position: relative;
+  margin: 0;
+  padding: clamp(26px, 3vw, 40px);
+  overflow: hidden;
+  border: 1px solid rgba(249, 178, 23, 0.2);
+  border-radius: 20px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.11), transparent 48%), linear-gradient(145deg, #101010, #050505);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(249, 178, 23, 0.06);
+  color: #d8d8d8;
+  font-size: clamp(17px, 1.25vw, 19px) !important;
+  line-height: 1.8;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.product-animation-page.previz-page .previz-intro .pa-intro__opening p::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  bottom: 26px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #f9b217, rgba(249, 178, 23, 0.16));
+  box-shadow: 0 0 18px rgba(249, 178, 23, 0.28);
+}
+.product-animation-page.previz-page .previz-intro .pa-intro__opening p:hover {
+  transform: translateY(-3px);
+  border-color: rgba(249, 178, 23, 0.42);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.1);
+}
+.product-animation-page.previz-page .previz-intro .pa-intro__opening p:first-child {
+  color: #f0efeb;
+  font-size: clamp(19px, 1.5vw, 18px) !important;
+  line-height: 1.75;
 }
 .product-animation-page.previz-page .pa-main .pa-prose p {
   padding-left: 0;
@@ -14214,6 +14265,9 @@ h2 {
   .product-animation-page.previz-page .pa-service-grid, .product-animation-page.previz-page .pa-process-grid {
     grid-template-columns: 1fr;
   }
+  .product-animation-page.previz-page .previz-intro .pa-intro__opening {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 575px) {
   .product-animation-page.previz-page .pa-service {
@@ -14225,10 +14279,73 @@ h2 {
   .product-animation-page.previz-page .previz-industries {
     grid-template-columns: 1fr;
   }
+  .product-animation-page.previz-page .previz-intro .pa-intro__opening {
+    gap: 14px;
+  }
+  .product-animation-page.previz-page .previz-intro .pa-intro__opening p,
+  .product-animation-page.previz-page .previz-intro .pa-intro__opening p:first-child {
+    padding: 23px 22px;
+    font-size: 16px !important;
+  }
+  .product-animation-page.previz-page .previz-intro .pa-intro__opening p::before {
+    top: 22px;
+    bottom: 22px;
+  }
 }
 
 .product-animation-page.character-design-page .character-intro {
+  position: relative;
+  isolation: isolate;
   background-color: #08090a;
+}
+.product-animation-page.character-design-page .character-intro::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(ellipse at 82% 50%, rgba(249, 178, 23, 0.08), transparent 42%);
+  pointer-events: none;
+}
+.product-animation-page.character-design-page .character-intro .pa-intro__opening {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: stretch;
+  gap: clamp(18px, 2.5vw, 32px);
+}
+.product-animation-page.character-design-page .character-intro .pa-intro__opening p {
+  position: relative;
+  margin: 0;
+  padding: clamp(26px, 3vw, 40px);
+  overflow: hidden;
+  border: 1px solid rgba(249, 178, 23, 0.2);
+  border-radius: 20px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.11), transparent 48%), linear-gradient(145deg, #101010, #050505);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(249, 178, 23, 0.06);
+  color: #d8d8d8;
+  font-size: clamp(17px, 1.25vw, 19px) !important;
+  line-height: 1.8;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.product-animation-page.character-design-page .character-intro .pa-intro__opening p::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  bottom: 26px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #f9b217, rgba(249, 178, 23, 0.16));
+  box-shadow: 0 0 18px rgba(249, 178, 23, 0.28);
+}
+.product-animation-page.character-design-page .character-intro .pa-intro__opening p:hover {
+  transform: translateY(-3px);
+  border-color: rgba(249, 178, 23, 0.42);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.1);
+}
+.product-animation-page.character-design-page .character-intro .pa-intro__opening p:first-child {
+  color: #f0efeb;
+  font-size: clamp(19px, 1.5vw, 18px) !important;
+  line-height: 1.75;
 }
 .product-animation-page.character-design-page .pa-main .pa-prose p {
   padding-left: 0;
@@ -14290,6 +14407,9 @@ h2 {
   .product-animation-page.character-design-page .pa-service-grid, .product-animation-page.character-design-page .pa-process-grid {
     grid-template-columns: 1fr;
   }
+  .product-animation-page.character-design-page .character-intro .pa-intro__opening {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 575px) {
   .product-animation-page.character-design-page .pa-service {
@@ -14303,6 +14423,18 @@ h2 {
   }
   .product-animation-page.character-design-page .character-assets th, .product-animation-page.character-design-page .character-assets td {
     padding: 12px 8px;
+  }
+  .product-animation-page.character-design-page .character-intro .pa-intro__opening {
+    gap: 14px;
+  }
+  .product-animation-page.character-design-page .character-intro .pa-intro__opening p,
+  .product-animation-page.character-design-page .character-intro .pa-intro__opening p:first-child {
+    padding: 23px 22px;
+    font-size: 16px !important;
+  }
+  .product-animation-page.character-design-page .character-intro .pa-intro__opening p::before {
+    top: 22px;
+    bottom: 22px;
   }
 }
 
