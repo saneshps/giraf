@@ -10954,7 +10954,7 @@
         background: radial-gradient(ellipse at top left, rgba(249, 178, 23, .11), transparent 48%), linear-gradient(145deg, #101010, #050505);
         box-shadow: 0 18px 42px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(249, 178, 23, .06);
         color: #d8d8d8;
-        font-size: clamp(17px, 1.25vw, 19px) !important;
+        font-size: 18px !important;
         line-height: 1.8;
         transition: border-color .2s, box-shadow .2s, transform .2s;
         &::before {
@@ -10975,7 +10975,7 @@
         }
         &:first-child {
           color: #f0efeb;
-          font-size: clamp(19px, 1.5vw, 18px) !important;
+          font-size: 18px !important;
           line-height: 1.75;
         }
       }
@@ -11041,7 +11041,7 @@
         background: radial-gradient(ellipse at top left, rgba(249, 178, 23, .11), transparent 48%), linear-gradient(145deg, #101010, #050505);
         box-shadow: 0 18px 42px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(249, 178, 23, .06);
         color: #d8d8d8;
-        font-size: clamp(17px, 1.25vw, 19px) !important;
+        font-size: 18px !important;
         line-height: 1.8;
         transition: border-color .2s, box-shadow .2s, transform .2s;
         &::before {
@@ -11062,7 +11062,7 @@
         }
         &:first-child {
           color: #f0efeb;
-          font-size: clamp(19px, 1.5vw, 18px) !important;
+          font-size: 18px !important;
           line-height: 1.75;
         }
       }
@@ -11106,7 +11106,7 @@
     .character-assets th, .character-assets td { padding: 12px 8px; }
     .character-intro .pa-intro__opening { gap: 14px; }
     .character-intro .pa-intro__opening p,
-    .character-intro .pa-intro__opening p:first-child { padding: 23px 22px; font-size: 16px !important; }
+    .character-intro .pa-intro__opening p:first-child { padding: 23px 22px; font-size: 18px !important; }
     .character-intro .pa-intro__opening p::before { top: 22px; bottom: 22px; }
   }
 }

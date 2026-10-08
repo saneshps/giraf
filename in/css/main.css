@@ -14322,7 +14322,7 @@ h2 {
   background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.11), transparent 48%), linear-gradient(145deg, #101010, #050505);
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(249, 178, 23, 0.06);
   color: #d8d8d8;
-  font-size: clamp(17px, 1.25vw, 19px) !important;
+  font-size: 18px !important;
   line-height: 1.8;
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
@@ -14344,7 +14344,7 @@ h2 {
 }
 .product-animation-page.character-design-page .character-intro .pa-intro__opening p:first-child {
   color: #f0efeb;
-  font-size: clamp(19px, 1.5vw, 18px) !important;
+  font-size: 18px !important;
   line-height: 1.75;
 }
 .product-animation-page.character-design-page .pa-main .pa-prose p {
@@ -14430,7 +14430,7 @@ h2 {
   .product-animation-page.character-design-page .character-intro .pa-intro__opening p,
   .product-animation-page.character-design-page .character-intro .pa-intro__opening p:first-child {
     padding: 23px 22px;
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .product-animation-page.character-design-page .character-intro .pa-intro__opening p::before {
     top: 22px;
