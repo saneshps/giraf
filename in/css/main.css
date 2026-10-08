@@ -14227,6 +14227,85 @@ h2 {
   }
 }
 
+.product-animation-page.character-design-page .character-intro {
+  background-color: #08090a;
+}
+.product-animation-page.character-design-page .pa-main .pa-prose p {
+  padding-left: 0;
+}
+.product-animation-page.character-design-page .pa-prose p::before {
+  content: none;
+}
+.product-animation-page.character-design-page .pa-main h2, .product-animation-page.character-design-page .pa-main h3 {
+  overflow-wrap: break-word;
+}
+.product-animation-page.character-design-page .pa-service-grid > .pa-service:last-child {
+  grid-column: 1 / -1;
+}
+.product-animation-page.character-design-page .character-list {
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+  color: #bfc1c2;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.product-animation-page.character-design-page .character-list li + li {
+  margin-top: 8px;
+}
+.product-animation-page.character-design-page .character-list li::marker {
+  color: #f9b217;
+}
+.product-animation-page.character-design-page .character-assets {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #bfc1c2;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.product-animation-page.character-design-page .character-assets th, .product-animation-page.character-design-page .character-assets td {
+  padding: 16px 12px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid rgba(249, 178, 23, 0.15);
+}
+.product-animation-page.character-design-page .character-assets thead th {
+  background: rgba(249, 178, 23, 0.08);
+  color: #f9b217;
+  font-weight: 500;
+}
+.product-animation-page.character-design-page .character-assets th:first-child {
+  width: 38%;
+}
+.product-animation-page.character-design-page .character-assets tbody th {
+  color: #f7f6f2;
+  font-weight: 500;
+}
+.product-animation-page.character-design-page .character-assets tbody tr:last-child th, .product-animation-page.character-design-page .character-assets tbody tr:last-child td {
+  border-bottom: 0;
+}
+@media (max-width: 800px) {
+  .product-animation-page.character-design-page .pa-service-grid, .product-animation-page.character-design-page .pa-process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 575px) {
+  .product-animation-page.character-design-page .pa-service {
+    padding: 22px;
+  }
+  .product-animation-page.character-design-page .pa-service h3 {
+    font-size: 19px !important;
+  }
+  .product-animation-page.character-design-page .character-assets {
+    font-size: 14px;
+  }
+  .product-animation-page.character-design-page .character-assets th, .product-animation-page.character-design-page .character-assets td {
+    padding: 12px 8px;
+  }
+}
+
 .team-home-area {
   padding: 100px 0 50px 0;
 }

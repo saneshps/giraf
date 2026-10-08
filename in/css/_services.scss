@@ -10954,3 +10954,43 @@
     .previz-industries { grid-template-columns: 1fr; }
   }
 }
+
+.product-animation-page.character-design-page {
+  .character-intro { background-color: #08090a; }
+  .pa-main .pa-prose p { padding-left: 0; }
+  .pa-prose p::before { content: none; }
+  .pa-main h2, .pa-main h3 { overflow-wrap: break-word; }
+  .pa-service-grid > .pa-service:last-child { grid-column: 1 / -1; }
+  .character-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style: disc;
+    color: #bfc1c2;
+    font-size: 15px;
+    line-height: 1.85;
+    li + li { margin-top: 8px; }
+    li::marker { color: #f9b217; }
+  }
+  .character-assets {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #bfc1c2;
+    font-size: 15px;
+    line-height: 1.7;
+    th, td { padding: 16px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; border-bottom: 1px solid rgba(249, 178, 23, .15); }
+    thead th { background: rgba(249, 178, 23, .08); color: #f9b217; font-weight: 500; }
+    th:first-child { width: 38%; }
+    tbody th { color: #f7f6f2; font-weight: 500; }
+    tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+  }
+  @media (max-width: 800px) {
+    .pa-service-grid, .pa-process-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 575px) {
+    .pa-service { padding: 22px; }
+    .pa-service h3 { font-size: 19px !important; }
+    .character-assets { font-size: 14px; }
+    .character-assets th, .character-assets td { padding: 12px 8px; }
+  }
+}
