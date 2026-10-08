@@ -13565,7 +13565,7 @@ h2 {
   overflow: clip;
 }
 .product-animation-page .pa-shell {
-  width: min(1280px, 100% - 120px);
+  width: min(1480px, 100% - 120px);
   margin-inline: auto;
 }
 .product-animation-page .pa-section {
@@ -14240,7 +14240,7 @@ h2 {
   overflow-wrap: break-word;
 }
 .product-animation-page.character-design-page .pa-service-grid > .pa-service:last-child {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 .product-animation-page.character-design-page .character-list {
   margin: 0;

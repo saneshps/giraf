@@ -84,7 +84,7 @@
     <!-- CookieConsent -->
 </head>
 
-<body class="product-animation-page character-design-page">
+<body class="product-animation-page previz-page motion-graphics-page">
   <!-- =====================
           HEADER START
      ===================== -->
@@ -102,7 +102,7 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <a class="pa-skip" href="#character-content">Skip to content</a>
+  <a class="pa-skip" href="#motion-content">Skip to content</a>
 <section aria-labelledby="pa-title">
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
@@ -110,26 +110,107 @@
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
-        <h1 id="pa-title">Motion Graphics</h1>
+        <h1 id="pa-title">Creative Motion Graphics Company in India Setting Graphics in Motion</h1>
         <span class="banner-area__line" aria-hidden="true"></span>
       </div>
     </div>
   </section>
-  <main class="pa-main" id="character-content">
- 
-     <section class="call-to-action-area" id="character-enquiry" aria-label="Get in Touch">
+  <main class="pa-main" id="motion-content">
+    <section class="pa-section previz-intro">
+      <div class="pa-shell">
+        <div class="pa-intro__opening"><p>How important the visuals are isn't something that we need to restate again,
+           right? We scroll past innumerable videos a day, but we only pause when something really catches our attention.
+            That’s exactly what we do at Giraf Creatives. As a motion graphics company in India, we create motions that make
+             your audience pause and persuade them to take the next move.</p>
+             <p>We create 2D and 3D motion graphics for marketing teams, B2B brands, and consumer businesses, and for agencies looking for white-label production support. Based in Calicut, India, we work with clients across India, as well as internationally, creating motion-based content for sales, marketing, social media, presentations, and several corporate communications.
+
+             </p>
+            </div>
+      </div>
+    </section>
+    <section class="pa-section pa-why" aria-labelledby="motion-explainer-title">
+      <div class="pa-shell pa-split">
+        <h2 id="motion-explainer-title">What Is Motion Graphics?</h2>
+        <div class="pa-prose">
+          <p>Designs in motion—yes, that is essentially what motion graphics is; the visual elements such as texts, shapes, illustrations, charts, numbers, logos, and other brand assets are animated, creating engaging content.</p>
+          <p>How are they useful? Well, they help businesses explain an idea, present information, and introduce a product or service, making communication more creative, clear, and quick.</p>
+        </div>
+      </div>
+    </section>
+    <section class="pa-section pa-services" aria-labelledby="motion-services-title">
+      <div class="pa-shell">
+        <h2 id="motion-services-title">Motion Graphics Services for Brands and Businesses</h2>
+        <div class="previz-section-intro"><p>Our team doesn’t just add motion to the design—we focus on communicating the idea clearly and meaningfully.</p></div>
+        <div class="pa-service-grid">
+          <article class="pa-service"><i class="fas fa-play" aria-hidden="true"></i><h3>Explainer and Promo Video</h3><p>Let’s face it, some business ideas, products, or services are hard to just explain in words. But with an explainer or promotional video you can easily convey the message. We combine visuals, illustrations, and animation to pitch a product, introduce a service, or promote a product launch.</p></article>
+          <article class="pa-service"><i class="fas fa-mobile-screen" aria-hidden="true"></i><h3>Social Media Motion Ads</h3><p>People scroll past videos almost instantly. So you have to really stand out to grab their attention within seconds. No worries, because we create short-form motion graphics for social media platforms to help your brand to present offers, product updates, and campaign ideas in an engaging way.</p></article>
+          <article class="pa-service"><i class="fas fa-font" aria-hidden="true"></i><h3>Kinetic Typography and Title Sequences</h3><p>We create animated text and opening titles, helping brands to present information in an engaging and appealing way. From eye-catching title sequences to animated words and icons, we turn the graphical elements into an active part of the video.</p></article>
+          <article class="pa-service"><i class="fas fa-chart-column" aria-hidden="true"></i><h3>Infographic and Data Visualization Animation</h3><p>Often it’s hard to make out numbers and statistics from charts and blocks of texts. But what if they are animated? Yes, it will be easier to understand the percentages, comparisons, and other business data when presented progressively.</p></article>
+          <article class="pa-service"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i><h3>Logo Animation and Brand Intros</h3><p>Logos is one of the crucial visual elements that people associate with a brand. We make sure that this visual face is dynamic and memorable. You can use the logo animation and brand intros across social media content, websites, videos, and other important brand communication.</p></article>
+          <article class="pa-service"><i class="fas fa-briefcase" aria-hidden="true"></i><h3>B2B and Corporate Motion Graphics</h3><p>The clear and engaging explanation of services, processes, technologies, and business information is crucial for any B2B business. With our B2B motion graphics services, we content for LinkedIn and turn sales presentations into animated videos that can be shared with potential customers, corporate explainers, and other similar content.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="pa-section pa-process" aria-labelledby="motion-process-title">
+      <div class="pa-shell">
+        <h2 id="motion-process-title">How Our Motion Graphics Process Works</h2>
+        <div class="previz-section-intro"><p>Good motion graphics are made from a series of dedicated steps, where each stage helps to establish the message, visual direction, and movement before the final out is given.</p></div>
+        <ol class="pa-process-grid">
+          <li><h3>1. Brief</h3><p>We start by reviewing the project objective, target audience, key message, brand requirement, platform, and the potential outcome. This way you get a clear project direction and creative brief.</p></li>
+          <li><h3>2. Script and Copy</h3><p>Once the objective is made clear, the next step is to develop the message in a way the audience needs to understand.</p></li>
+          <li><h3>3. Storyboard</h3><p>At this stage we map out the video scene by scene. This way you will have an idea of how the content will progress.</p></li>
+          <li><h3>4. Style Frames</h3><p>We create visual samples before the full animation starts. This helps the client to get an idea of what the final video’s visual style is.</p></li>
+          <li><h3>5. 2D or 3D Asset Design</h3><p>Depending on the project, we can create vector assets, illustrations, or 3D elements that will be used in the animation.</p></li>
+          <li><h3>6. Animation</h3><p>Animation is where the approved designs take the form of a moving video. Animators control how the graphics, objects, and texts appear and move, creating smooth and engaging video content.</p></li>
+          <li><h3>7. Sound Design</h3><p>Movement combined with the right audio is crucial to create the intended impact. We add music, voice-over, and sound effects that match the visual pacing.</p></li>
+          <li><h3>8. Delivery</h3><p>Once the client approves, the final motion graphics are exported.</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="pa-section pa-why" aria-labelledby="motion-comparison-title">
+      <div class="pa-shell pa-split">
+        <h2 id="motion-comparison-title">2D and 3D Motion Graphics: What’s the Difference?</h2>
+        <div class="pa-prose">
+          <p>So, what is the difference between 2D and 3D motion graphics?</p>
+          <p>2D motion graphics mostly contain flat visuals such as texts, icons, numbers, illustrations, shapes, and other graphics. If you're aiming to clearly explain a concept or brand message or create presentations or social media content, then 2D motion graphics is a smart option.</p>
+          <p>On the other hand, let’s say you want to introduce a product, then 3D motion graphics add more depth and dimensional elements. 3D objects, environment, lighting, textures, and camera movement can create a more immersive visual experience.</p>
+          <p>The right choice often depends on what you want to communicate, what style you opt for, and the level of detail your project needs. At Giraf Creatives, we provide both 2D and 3D motion graphics services, providing you with stylistic content in both forms, enhancing brand recall.</p>
+        </div>
+      </div>
+    </section>
+    <section class="pa-section pa-why" aria-labelledby="motion-why-title">
+      <div class="pa-shell pa-split">
+        <h2 id="motion-why-title">Why Choose Giraf Creatives for Motion Graphics?</h2>
+        <div class="pa-prose">
+          <p>At Giraf Creatives we believe that good motion graphics is the one that helps businesses to communicate better. Let it be an explainer video, social media ad, product visual, or any corporate content; as a reliable motion graphics company we create engaging visuals that support your message.</p>
+          <p>Our team consists of passionate designers, animators, and creative professionals who work in unison throughout the production process. We work with B2B and consumer-focused businesses, adapting our approach to meet the different industrial and communication goals.</p>
+          <p>Even the most stylistic motion graphic can go in vain if you fail to understand the intent. That’s why we start the process by understanding what you want to communicate and who you want to reach. With our professional motion graphics service, we build visual style, animation, and storytelling that matches your requirements, creating enthralling motion graphics that are visually appealing and promote brand recall as well.</p>
+        </div>
+      </div>
+    </section>
+    <section class="pa-section pa-faq" aria-labelledby="motion-faq-title">
+      <div class="pa-shell pa-split">
+        <h2 id="motion-faq-title">FAQ</h2>
+        <div class="pa-faq-list">
+          <details name="motion-faq" open><summary>1. What is the difference between animation and motion graphics?</summary><div><p>A: Animation is a much broader term that is an assimilation of multiple aspects such as character animation, storytelling, 3D animation, and other forms of visuals, while motion graphics is a type of animation that focuses on moving the graphical elements such as texts, shapes, icons, logos, illustrations, and data.</p></div></details>
+          <details name="motion-faq"><summary>2. How long does it take to create a motion graphics video?</summary><div><p>A: The time frame can come anywhere between a few days and several weeks depending on the project’s requirements, such as script, number of scenes, 2D or 3D requirements, design, sound, and the edits as well.</p></div></details>
+          <details name="motion-faq"><summary>3. What formats do you deliver motion graphics in?</summary><div><p>A: Depending on the platform, we can prepare content for social media, websites, presentations, advertising, and other similar digital channels in the required aspect ratio.</p></div></details>
+          <details name="motion-faq"><summary>4. Do you provide voice-over and sound design for motion graphics?</summary><div><p>A: Yes, we can include voice-over, sound effects, and background music as a part of the production process. We select and integrate the audio elements in such a way that they match perfectly with the visual pacing.</p></div></details>
+        </div>
+      </div>
+    </section>
+     <section class="call-to-action-area" id="motion-enquiry" aria-label="Get in Touch">
       <div class="main-box">
         <div class="cta-glow" aria-hidden="true"></div>
         <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
         <div class="container">
           <div class="row align-items-center cta-row">
             <div class="col-xl-6 col-lg-6 col-md-12 cta-content">
-                         <h2 id="product-enquiry-title"> Ready to Bring Your Product to the Screen? </h2>
+             <h2 id="product-enquiry-title"> Ready to Bring Your Product to the Screen? </h2>
               <p>Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project,
                  and we’ll help you explore the possibilities of 3D product animation.
 
               </p>
-
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
               <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
@@ -151,7 +232,7 @@
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_subject">Subject</label>
-                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="Character Design">
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="Motion Graphics">
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_msg">Message</label>
