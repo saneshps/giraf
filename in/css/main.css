@@ -13759,31 +13759,69 @@ h2 {
   max-width: 780px;
   margin-bottom: 45px;
 }
+.product-animation-page .pa-services {
+  background-color: #08090a;
+  background-image: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
+  background-size: 120px 120px;
+}
 .product-animation-page .pa-service-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  counter-reset: pa-service;
 }
 .product-animation-page .pa-service {
-  padding: 38px;
-  background: #191a1b;
-  border: 1px solid #303234;
-  border-radius: 8px;
-  transition: border-color 0.2s;
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  align-content: start;
+  align-items: center;
+  column-gap: 18px;
+  row-gap: 24px;
+  padding: 32px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.14), transparent 48%), linear-gradient(145deg, #101010, #030303);
+  border: 1px solid rgba(249, 178, 23, 0.22);
+  border-radius: 22px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(249, 178, 23, 0.06);
+  counter-increment: pa-service;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.product-animation-page .pa-service::before {
+  content: counter(pa-service, decimal-leading-zero);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: rgba(249, 178, 23, 0.16);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  pointer-events: none;
 }
 .product-animation-page .pa-service:hover {
-  border-color: #b4872c;
+  border-color: rgba(249, 178, 23, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.12);
 }
 .product-animation-page .pa-service > i {
-  display: block;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(249, 178, 23, 0.13);
   color: #f9b217;
-  font-size: 27px;
-  margin-bottom: 26px;
+  font-size: 24px;
+  margin: 0;
+  box-shadow: 0 0 24px rgba(249, 178, 23, 0.05);
 }
 .product-animation-page .pa-service h3 {
-  margin-bottom: 22px;
+  margin: 0;
+  padding-right: 40px;
+  font-size: 22px !important;
 }
 .product-animation-page .pa-service p {
+  grid-column: 1 / -1;
+  margin: 0;
   font-size: 15px !important;
 }
 .product-animation-page .pa-process {
@@ -13944,8 +13982,23 @@ h2 {
   .product-animation-page .pa-service {
     padding: 26px;
   }
+  .product-animation-page .pa-service {
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 14px;
+  }
+  .product-animation-page .pa-service > i {
+    width: 48px;
+    height: 48px;
+    font-size: 21px;
+  }
+  .product-animation-page .pa-service::before {
+    top: 20px;
+    right: 18px;
+    font-size: 34px;
+  }
   .product-animation-page .pa-service h3 {
-    font-size: 23px !important;
+    font-size: 20px !important;
+    padding-right: 30px;
   }
   .product-animation-page .pa-process-grid {
     grid-template-columns: 1fr 1fr;
