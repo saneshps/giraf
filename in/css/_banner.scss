@@ -156,7 +156,7 @@
         }
 
         @include respond-below(sm) {
-            min-height: clamp(300px, 62vh, 520px);
+            min-height: clamp(240px, 35vh, 300px);
         }
 
         &::after {
@@ -218,6 +218,10 @@
             align-items: center;
             text-align: center;
             animation: bannerContentIn 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+            @include respond-below(sm) {
+                padding-top: 80px;
+            }
         }
 
         h1 {

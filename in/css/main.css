@@ -1864,7 +1864,7 @@ h2 {
 }
 @media (max-width: 639px) {
   .banner-area--hero {
-    min-height: clamp(300px, 62vh, 520px);
+    min-height: clamp(240px, 35vh, 300px);
   }
 }
 .banner-area--hero::after {
@@ -1921,6 +1921,11 @@ h2 {
   align-items: center;
   text-align: center;
   animation: bannerContentIn 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (max-width: 639px) {
+  .banner-area--hero .banner-area__content {
+    padding-top: 80px;
+  }
 }
 .banner-area--hero h1 {
   position: static;
@@ -13569,7 +13574,7 @@ h2 {
   margin-inline: auto;
 }
 .product-animation-page .pa-section {
-  padding: 90px 0;
+  padding: 0 0 90px 0;
 }
 .product-animation-page .pa-main [id] {
   scroll-margin-top: 110px;
@@ -14005,7 +14010,7 @@ h2 {
     width: calc(100% - 40px);
   }
   .product-animation-page .pa-section {
-    padding: 65px 0;
+    padding: 35px 0;
   }
   .product-animation-page .pa-intro .pa-shell {
     grid-template-columns: 1fr;
@@ -14081,12 +14086,13 @@ h2 {
     width: 100%;
   }
 }
-@media (max-width: 575px) {
-  .product-animation-page .pa-questions, .product-animation-page .pa-service-grid, .product-animation-page .pa-process-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 639px) {
+  .product-animation-page .pa-section.pa-intro {
+    padding: 20px 0 48px;
   }
-  .product-animation-page .pa-questions {
-    margin: 28px 0;
+  .product-animation-page .pa-intro p {
+    font-size: 16px !important;
+    line-height: 1.65;
   }
   .product-animation-page .pa-intro .pa-questions {
     grid-template-columns: 1fr;
@@ -14100,8 +14106,13 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
   }
-  .product-animation-page .pa-intro__opening p {
-    font-size: 18px !important;
+}
+@media (max-width: 575px) {
+  .product-animation-page .pa-questions, .product-animation-page .pa-service-grid, .product-animation-page .pa-process-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-animation-page .pa-questions {
+    margin: 28px 0;
   }
   .product-animation-page .pa-explainer .pa-prose, .product-animation-page .pa-why .pa-prose {
     padding: 26px 22px;
@@ -14198,7 +14209,7 @@ h2 {
   background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.11), transparent 48%), linear-gradient(145deg, #101010, #050505);
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(249, 178, 23, 0.06);
   color: #d8d8d8;
-  font-size: clamp(17px, 1.25vw, 19px) !important;
+  font-size: 18px !important;
   line-height: 1.8;
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
@@ -14220,7 +14231,7 @@ h2 {
 }
 .product-animation-page.previz-page .previz-intro .pa-intro__opening p:first-child {
   color: #f0efeb;
-  font-size: clamp(19px, 1.5vw, 18px) !important;
+  font-size: 18px !important;
   line-height: 1.75;
 }
 .product-animation-page.previz-page .pa-main .pa-prose p {
@@ -14430,7 +14441,7 @@ h2 {
   .product-animation-page.character-design-page .character-intro .pa-intro__opening p,
   .product-animation-page.character-design-page .character-intro .pa-intro__opening p:first-child {
     padding: 23px 22px;
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
   .product-animation-page.character-design-page .character-intro .pa-intro__opening p::before {
     top: 22px;

@@ -10654,7 +10654,7 @@
   background: #101112;
   .pa-main { height: auto; padding: 0; background: #101112; color: #f7f6f2; font-family: 'Roboto', Arial, sans-serif; position: relative; z-index: 1; overflow: clip; }
   .pa-shell { width: min(1400px, calc(100% - 120px)); margin-inline: auto; }
-  .pa-section { padding: 90px 0; }
+  .pa-section { padding: 0 0 90px 0; }
   .pa-main [id] { scroll-margin-top: 110px; }
   .pa-main h2, .pa-main h3 { font-family: inherit; letter-spacing: -.035em; font-weight: 500; margin: 0; }
   .pa-main h2 { font-size: clamp(32px, 3.5vw, 48px) !important; line-height: 1.2; color: #f9b217; }
@@ -10865,7 +10865,7 @@
   }
   @media (max-width: 991px) {
     .pa-shell { width: calc(100% - 40px); }
-    .pa-section { padding: 65px 0; }
+    .pa-section { padding: 35px 0; }
     .pa-intro .pa-shell {
       grid-template-columns: 1fr;
       grid-template-areas: "opening" "questions" "closing";
@@ -10889,13 +10889,16 @@
     .pa-main .call-to-action-area { padding-inline: 16px; }
     .pa-main .call-to-action-area .container { width: 100%; }
   }
-  @media (max-width: 575px) {
-    .pa-questions, .pa-service-grid, .pa-process-grid { grid-template-columns: 1fr; }
-    .pa-questions { margin: 28px 0; }
+  @media (max-width: 639px) {
+    .pa-section.pa-intro { padding: 20px 0 48px; }
+    .pa-intro p { font-size: 16px !important; line-height: 1.65; }
     .pa-intro .pa-questions { grid-template-columns: 1fr; gap: 12px; }
     .pa-intro .pa-questions li { min-height: 96px; padding: 24px 58px 24px 80px; }
     .pa-intro .pa-questions li::before { top: 50%; transform: translateY(-50%); }
-    .pa-intro__opening p { font-size: 18px !important; }
+  }
+  @media (max-width: 575px) {
+    .pa-questions, .pa-service-grid, .pa-process-grid { grid-template-columns: 1fr; }
+    .pa-questions { margin: 28px 0; }
     .pa-explainer .pa-prose, .pa-why .pa-prose { padding: 26px 22px; border-radius: 16px; }
     .pa-explainer .pa-prose::before { margin-bottom: 22px; }
     .pa-explainer .pa-prose p, .pa-why .pa-prose p { padding-left: 38px; }
@@ -11106,7 +11109,7 @@
     .character-assets th, .character-assets td { padding: 12px 8px; }
     .character-intro .pa-intro__opening { gap: 14px; }
     .character-intro .pa-intro__opening p,
-    .character-intro .pa-intro__opening p:first-child { padding: 23px 22px; font-size: 18px !important; }
+    .character-intro .pa-intro__opening p:first-child { padding: 23px 22px; font-size: 16px !important; }
     .character-intro .pa-intro__opening p::before { top: 22px; bottom: 22px; }
   }
 }
