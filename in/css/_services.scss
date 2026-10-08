@@ -10807,7 +10807,7 @@
   .pa-process h3 { color: #f7f6f2; }
   .pa-process p { color: #bfc1c2; }
   .pa-process-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0; margin: 0; list-style: none; counter-reset: pa-step; }
-  .pa-process-grid li {
+  .pa-process-grid > li {
     position: relative;
     padding: 28px;
     border: 1px solid rgba(249, 178, 23, .22);
@@ -10830,7 +10830,7 @@
     }
     &:hover { border-color: rgba(249, 178, 23, .55); box-shadow: 0 18px 40px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(249, 178, 23, .12); }
   }
-  .pa-process-grid li::before { content: counter(pa-step, decimal-leading-zero); display: grid; place-items: center; width: 48px; height: 48px; background: rgba(249, 178, 23, .13); border-radius: 14px; color: #f9b217; font-size: 12px; margin-bottom: 22px; box-shadow: 0 0 24px rgba(249, 178, 23, .05); }
+  .pa-process-grid > li::before { content: counter(pa-step, decimal-leading-zero); display: grid; place-items: center; width: 48px; height: 48px; background: rgba(249, 178, 23, .13); border-radius: 14px; color: #f9b217; font-size: 12px; margin-bottom: 22px; box-shadow: 0 0 24px rgba(249, 178, 23, .05); }
   .pa-process-grid h3 { margin-bottom: 14px; font-size: 22px !important; }
   .pa-process-grid p { font-size: 15px !important; }
   .pa-faq { background-color: #08090a; }
@@ -10900,7 +10900,7 @@
     .pa-explainer .pa-prose::before { margin-bottom: 22px; }
     .pa-explainer .pa-prose p, .pa-why .pa-prose p { padding-left: 38px; }
     .pa-service { padding: 28px; }
-    .pa-process-grid li { padding: 24px; }
+    .pa-process-grid > li { padding: 24px; }
     .pa-process-grid h3 { font-size: 21px !important; }
     .pa-faq summary { padding: 20px; gap: 14px; font-size: 16px; }
     .pa-faq details > div { margin-inline: 20px; padding-bottom: 20px; }
@@ -10919,8 +10919,38 @@
   @media (max-width: 800px) {
     .pa-service-grid { grid-template-columns: 1fr; }
   }
+
   @media (max-width: 575px) {
     .pa-service { padding: 22px; }
     .pa-service h3 { font-size: 19px !important; }
+  }
+}
+
+.product-animation-page.previz-page {
+  .previz-intro { background-color: #08090a; }
+  .pa-main .pa-prose p { padding-left: 0; }
+  .pa-prose p::before { content: none; }
+  .pa-main h2, .pa-main h3 { overflow-wrap: break-word; }
+  .previz-section-intro { max-width: 960px; margin-bottom: 32px; }
+  .previz-list {
+    margin: 0 0 22px;
+    padding-left: 20px;
+    list-style: disc;
+    color: #bfc1c2;
+    font-size: 15px;
+    line-height: 1.85;
+    li + li { margin-top: 8px; }
+    li::marker { color: #f9b217; }
+    &:last-child { margin-bottom: 0; }
+  }
+  .previz-industries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; }
+  .previz-industries li + li { margin-top: 0; }
+  @media (max-width: 800px) {
+    .pa-service-grid, .pa-process-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 575px) {
+    .pa-service { padding: 22px; }
+    .pa-service h3 { font-size: 19px !important; }
+    .previz-industries { grid-template-columns: 1fr; }
   }
 }

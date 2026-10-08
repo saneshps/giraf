@@ -13864,7 +13864,7 @@ h2 {
   list-style: none;
   counter-reset: pa-step;
 }
-.product-animation-page .pa-process-grid li {
+.product-animation-page .pa-process-grid > li {
   position: relative;
   padding: 28px;
   border: 1px solid rgba(249, 178, 23, 0.22);
@@ -13874,7 +13874,7 @@ h2 {
   counter-increment: pa-step;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-.product-animation-page .pa-process-grid li::after {
+.product-animation-page .pa-process-grid > li::after {
   content: counter(pa-step, decimal-leading-zero);
   position: absolute;
   top: 24px;
@@ -13886,11 +13886,11 @@ h2 {
   letter-spacing: -0.06em;
   pointer-events: none;
 }
-.product-animation-page .pa-process-grid li:hover {
+.product-animation-page .pa-process-grid > li:hover {
   border-color: rgba(249, 178, 23, 0.55);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.12);
 }
-.product-animation-page .pa-process-grid li::before {
+.product-animation-page .pa-process-grid > li::before {
   content: counter(pa-step, decimal-leading-zero);
   display: grid;
   place-items: center;
@@ -14116,7 +14116,7 @@ h2 {
   .product-animation-page .pa-service {
     padding: 28px;
   }
-  .product-animation-page .pa-process-grid li {
+  .product-animation-page .pa-process-grid > li {
     padding: 24px;
   }
   .product-animation-page .pa-process-grid h3 {
@@ -14166,6 +14166,64 @@ h2 {
   }
   .product-animation-page.vfx-page .pa-service h3 {
     font-size: 19px !important;
+  }
+}
+
+.product-animation-page.previz-page .previz-intro {
+  background-color: #08090a;
+}
+.product-animation-page.previz-page .pa-main .pa-prose p {
+  padding-left: 0;
+}
+.product-animation-page.previz-page .pa-prose p::before {
+  content: none;
+}
+.product-animation-page.previz-page .pa-main h2, .product-animation-page.previz-page .pa-main h3 {
+  overflow-wrap: break-word;
+}
+.product-animation-page.previz-page .previz-section-intro {
+  max-width: 960px;
+  margin-bottom: 32px;
+}
+.product-animation-page.previz-page .previz-list {
+  margin: 0 0 22px;
+  padding-left: 20px;
+  list-style: disc;
+  color: #bfc1c2;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.product-animation-page.previz-page .previz-list li + li {
+  margin-top: 8px;
+}
+.product-animation-page.previz-page .previz-list li::marker {
+  color: #f9b217;
+}
+.product-animation-page.previz-page .previz-list:last-child {
+  margin-bottom: 0;
+}
+.product-animation-page.previz-page .previz-industries {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 28px;
+}
+.product-animation-page.previz-page .previz-industries li + li {
+  margin-top: 0;
+}
+@media (max-width: 800px) {
+  .product-animation-page.previz-page .pa-service-grid, .product-animation-page.previz-page .pa-process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 575px) {
+  .product-animation-page.previz-page .pa-service {
+    padding: 22px;
+  }
+  .product-animation-page.previz-page .pa-service h3 {
+    font-size: 19px !important;
+  }
+  .product-animation-page.previz-page .previz-industries {
+    grid-template-columns: 1fr;
   }
 }
 
