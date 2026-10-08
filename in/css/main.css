@@ -14139,6 +14139,36 @@ h2 {
   }
 }
 
+.product-animation-page.vfx-page .pa-service-grid > .pa-service:last-child {
+  grid-column: 1 / -1;
+}
+.product-animation-page.vfx-page .pa-main .pa-prose p {
+  padding-left: 0;
+}
+.product-animation-page.vfx-page .pa-prose p::before {
+  content: none;
+}
+.product-animation-page.vfx-page .pa-main h2 {
+  overflow-wrap: break-word;
+}
+.product-animation-page.vfx-page .pa-main .call-to-action-area .cta-form-col {
+  max-width: 900px;
+  margin-inline: auto;
+}
+@media (max-width: 800px) {
+  .product-animation-page.vfx-page .pa-service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 575px) {
+  .product-animation-page.vfx-page .pa-service {
+    padding: 22px;
+  }
+  .product-animation-page.vfx-page .pa-service h3 {
+    font-size: 19px !important;
+  }
+}
+
 .team-home-area {
   padding: 100px 0 50px 0;
 }

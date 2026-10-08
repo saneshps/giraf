@@ -10909,3 +10909,18 @@
     .pa-main *, .pa-main *::before, .pa-main *::after, .banner-area--hero .banner-area__media img { animation: none !important; transition: none !important; }
   }
 }
+
+.product-animation-page.vfx-page {
+  .pa-service-grid > .pa-service:last-child { grid-column: 1 / -1; }
+  .pa-main .pa-prose p { padding-left: 0; }
+  .pa-prose p::before { content: none; }
+  .pa-main h2 { overflow-wrap: break-word; }
+  .pa-main .call-to-action-area .cta-form-col { max-width: 900px; margin-inline: auto; }
+  @media (max-width: 800px) {
+    .pa-service-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 575px) {
+    .pa-service { padding: 22px; }
+    .pa-service h3 { font-size: 19px !important; }
+  }
+}
