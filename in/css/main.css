@@ -14140,7 +14140,7 @@ h2 {
 }
 
 .product-animation-page.vfx-page .pa-service-grid > .pa-service:last-child {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 .product-animation-page.vfx-page .pa-main .pa-prose p {
   padding-left: 0;
@@ -19683,6 +19683,7 @@ h2 {
   .call-to-action-area .main-box {
     padding: 40px 0 44px;
     border-radius: 16px;
+    margin: 0px !important;
   }
 }
 .call-to-action-area .main-box::before {

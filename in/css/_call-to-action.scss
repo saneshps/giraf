@@ -43,6 +43,7 @@
         @include respond-below(sm) {
             padding: 40px 0 44px;
             border-radius: 16px;
+            margin: 0px !important;
         }
 
         &::before {
