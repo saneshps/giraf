@@ -13565,7 +13565,7 @@ h2 {
   overflow: clip;
 }
 .product-animation-page .pa-shell {
-  width: min(1480px, 100% - 120px);
+  width: min(1400px, 100% - 120px);
   margin-inline: auto;
 }
 .product-animation-page .pa-section {

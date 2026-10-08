@@ -10653,7 +10653,7 @@
 .product-animation-page {
   background: #101112;
   .pa-main { height: auto; padding: 0; background: #101112; color: #f7f6f2; font-family: 'Roboto', Arial, sans-serif; position: relative; z-index: 1; overflow: clip; }
-  .pa-shell { width: min(1480px, calc(100% - 120px)); margin-inline: auto; }
+  .pa-shell { width: min(1400px, calc(100% - 120px)); margin-inline: auto; }
   .pa-section { padding: 90px 0; }
   .pa-main [id] { scroll-margin-top: 110px; }
   .pa-main h2, .pa-main h3 { font-family: inherit; letter-spacing: -.035em; font-weight: 500; margin: 0; }
