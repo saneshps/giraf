@@ -106,7 +106,7 @@
 <section aria-labelledby="pa-title">
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/3d-Animation-banner.webp" alt="Character Design">
+        <img src="./img/services/character-design.webp" alt="Character Design">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
@@ -124,7 +124,7 @@
               both graphics and images. Instead of repeating the age-old strategies of marketing,
                you can take an absolutely different turn with a strong character.</p>
                <p>We know how important a brand face is, which is why you can count on Giraf Creatives for character design. As a character design company in India, we transform abstract ideas into relatable and memorable figures that connect with your audience. 
-                
+
                </p>
               </div>
       </div>

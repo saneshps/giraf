@@ -106,7 +106,7 @@
 <section aria-labelledby="pa-title">
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/3d-Animation-banner.webp" alt="Motion Graphics">
+        <img src="./img/services/motion-graphics-banner.webp" alt="Motion Graphics">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
