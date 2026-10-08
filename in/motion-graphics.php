@@ -110,7 +110,7 @@
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
-        <h1 id="pa-title">Creative Motion Graphics</h1>
+        <h1 id="pa-title"> Motion Graphics</h1>
         <span class="banner-area__line" aria-hidden="true"></span>
       </div>
     </div>
