@@ -214,13 +214,17 @@
         </div>
       </div>
     </section>
-    <section class="call-to-action-area" id="vfx-enquiry" aria-label="Get in Touch">
+     <section class="call-to-action-area" id="vfx-enquiry" aria-labelledby="vfx-intro-title">
       <div class="main-box">
         <div class="cta-glow" aria-hidden="true"></div>
         <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
         <div class="container">
           <div class="row align-items-center cta-row">
-            <div class="col-12 cta-form-col">
+            <div class="col-xl-6 col-lg-6 col-md-12 cta-content">
+              <h2 id="vfx-intro-title"> Ready to Bring Your Product to the Screen? </h2>
+              <p> Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project, and we’ll help you explore the possibilities of 3D product animation.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
               <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
                                 <div class="cta-form-grid">
                                     <div class="cta-field">
