@@ -15,7 +15,8 @@
      $animationActive = in_array($curPageName, [
        "animation.php",
        "2d-animation.php",
-       "3d-animation.php"
+       "3d-animation.php",
+       "product-animation.php"
      ], true);
      $servicesActive = in_array($curPageName, [
        "services.php",
@@ -26,7 +27,8 @@
        "photography-and-video-production.php",
        "animation.php",
        "2d-animation.php",
-       "3d-animation.php"
+       "3d-animation.php",
+       "product-animation.php"
      ], true);
    ?>
    <nav class="nav-wrapper">
@@ -75,8 +77,8 @@
                <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
                  <a href="3d-animation.php"><span class="sub-label">3D Animation</span></a>
                </li>
-               <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
-                 <a href="3d-animation.php"><span class="sub-label">  Product animation </span></a>
+               <li class="<?php echo ($curPageName == "product-animation.php") ? 'is-current' : '' ?>">
+                 <a href="product-animation.php"><span class="sub-label">Product Animation</span></a>
                </li>
                <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
                  <a href="3d-animation.php"><span class="sub-label">  VFX  </span></a>
