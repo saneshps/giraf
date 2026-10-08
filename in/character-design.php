@@ -118,7 +118,15 @@
   <main class="pa-main" id="character-content">
     <section class="pa-section character-intro">
       <div class="pa-shell">
-        <div class="pa-intro__opening"><p>People recognize faces way more than corporate symbols—yes, characters are in fact an emotional shortcut for businesses. The digital realm is flooded with innumerable contents, both graphics and images. Instead of repeating the age-old strategies of marketing, you can take an absolutely different turn with a strong character.</p></div>
+        <div class="pa-intro__opening">
+          <p>People recognize faces way more than corporate symbols—yes, characters are in fact an
+             emotional shortcut for businesses. The digital realm is flooded with innumerable contents,
+              both graphics and images. Instead of repeating the age-old strategies of marketing,
+               you can take an absolutely different turn with a strong character.</p>
+               <p>We know how important a brand face is, which is why you can count on Giraf Creatives for character design. As a character design company in India, we transform abstract ideas into relatable and memorable figures that connect with your audience. 
+                
+               </p>
+              </div>
       </div>
     </section>
     <section class="pa-section pa-why" aria-labelledby="character-explainer-title">
@@ -216,7 +224,12 @@
         <div class="container">
           <div class="row align-items-center cta-row">
             <div class="col-xl-6 col-lg-6 col-md-12 cta-content">
-              <p>We know how important a brand face is, which is why you can count on Giraf Creatives for character design. As a character design company in India, we transform abstract ideas into relatable and memorable figures that connect with your audience.</p>
+                         <h2 id="product-enquiry-title"> Ready to Bring Your Product to the Screen? </h2>
+              <p>Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project,
+                 and we’ll help you explore the possibilities of 3D product animation.
+
+              </p>
+
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
               <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
