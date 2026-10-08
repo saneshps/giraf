@@ -13631,6 +13631,13 @@ h2 {
 .product-animation-page .pa-skip:focus {
   top: 15px;
 }
+.product-animation-page .pa-intro {
+  background: #08090a;
+}
+.product-animation-page .pa-intro .pa-questions li {
+  background: #111213;
+  border-color: #2b2c2d;
+}
 .product-animation-page .pa-intro .pa-shell {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);

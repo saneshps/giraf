@@ -10666,6 +10666,8 @@
   .pa-split > h2::before { content: ''; display: block; width: 55px; height: 3px; background: #f9b217; margin-bottom: 28px; }
   .pa-skip { position: fixed; top: -100px; left: 20px; padding: 15px 22px; background: #f9b217; color: #101112; z-index: 1000000; }
   .pa-skip:focus { top: 15px; }
+  .pa-intro { background: #08090a; }
+  .pa-intro .pa-questions li { background: #111213; border-color: #2b2c2d; }
   .pa-intro .pa-shell {
     display: grid;
     grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
