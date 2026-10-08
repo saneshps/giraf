@@ -13673,7 +13673,8 @@ h2 {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   grid-template-areas: "opening opening" "closing questions";
-  column-gap: clamp(36px, 6vw, 80px);
+  -moz-column-gap: clamp(36px, 6vw, 80px);
+       column-gap: clamp(36px, 6vw, 80px);
   row-gap: 22px;
   align-items: center;
 }
@@ -13727,12 +13728,12 @@ h2 {
   max-width: 1000px;
   margin: 0;
 }
-.product-animation-page .pa-explainer {
+.product-animation-page .pa-explainer, .product-animation-page .pa-why {
   position: relative;
   isolation: isolate;
   background: #08090a;
 }
-.product-animation-page .pa-explainer::before {
+.product-animation-page .pa-explainer::before, .product-animation-page .pa-why::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -13741,17 +13742,17 @@ h2 {
   background-size: 120px 120px;
   pointer-events: none;
 }
-.product-animation-page .pa-explainer .pa-split {
+.product-animation-page .pa-explainer .pa-split, .product-animation-page .pa-why .pa-split {
   align-items: center;
   gap: clamp(40px, 7vw, 96px);
 }
-.product-animation-page .pa-explainer .pa-split > h2::before {
+.product-animation-page .pa-explainer .pa-split > h2::before, .product-animation-page .pa-why .pa-split > h2::before {
   width: 58px;
   height: 4px;
   border-radius: 4px;
   box-shadow: 0 0 18px rgba(249, 178, 23, 0.38);
 }
-.product-animation-page .pa-explainer .pa-prose {
+.product-animation-page .pa-explainer .pa-prose, .product-animation-page .pa-why .pa-prose {
   position: relative;
   overflow: hidden;
   counter-reset: pa-explainer-copy;
@@ -13762,27 +13763,18 @@ h2 {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(249, 178, 23, 0.06);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-.product-animation-page .pa-explainer .pa-prose:hover {
+.product-animation-page .pa-explainer .pa-prose:hover, .product-animation-page .pa-why .pa-prose:hover {
   border-color: rgba(249, 178, 23, 0.55);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.12);
 }
-.product-animation-page .pa-explainer .pa-prose::before {
-  content: "01 / PRODUCT FILM";
-  display: block;
-  margin-bottom: 30px;
-  color: #f9b217;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
-.product-animation-page .pa-explainer .pa-prose p {
+.product-animation-page .pa-explainer .pa-prose p, .product-animation-page .pa-why .pa-prose p {
   position: relative;
   padding-left: 48px;
   color: #d0d1d1;
   line-height: 1.9;
   counter-increment: pa-explainer-copy;
 }
-.product-animation-page .pa-explainer .pa-prose p::before {
+.product-animation-page .pa-explainer .pa-prose p::before, .product-animation-page .pa-why .pa-prose p::before {
   content: counter(pa-explainer-copy, decimal-leading-zero);
   position: absolute;
   top: 0.3em;
@@ -13813,7 +13805,8 @@ h2 {
   grid-template-columns: 56px minmax(0, 1fr);
   align-content: start;
   align-items: center;
-  column-gap: 18px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
   row-gap: 24px;
   padding: 32px;
   background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.14), transparent 48%), linear-gradient(145deg, #101010, #030303);
@@ -13857,12 +13850,14 @@ h2 {
   font-size: 22px !important;
 }
 .product-animation-page .pa-service p {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
   margin: 0;
   font-size: 15px !important;
 }
 .product-animation-page .pa-process {
-  background: #191a1b;
+  background-color: #08090a;
+  background-image: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
+  background-size: 120px 120px;
 }
 .product-animation-page .pa-process h2 {
   color: #f9b217;
@@ -13875,31 +13870,51 @@ h2 {
 }
 .product-animation-page .pa-process-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  row-gap: 42px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
   padding: 0;
   margin: 0;
   list-style: none;
   counter-reset: pa-step;
 }
 .product-animation-page .pa-process-grid li {
-  border-top: 1px solid #383a3b;
-  padding-top: 22px;
+  position: relative;
+  padding: 28px;
+  border: 1px solid rgba(249, 178, 23, 0.22);
+  border-radius: 22px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.14), transparent 48%), linear-gradient(145deg, #101010, #030303);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(249, 178, 23, 0.06);
   counter-increment: pa-step;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.product-animation-page .pa-process-grid li::after {
+  content: counter(pa-step, decimal-leading-zero);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: rgba(249, 178, 23, 0.16);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  pointer-events: none;
+}
+.product-animation-page .pa-process-grid li:hover {
+  border-color: rgba(249, 178, 23, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.12);
 }
 .product-animation-page .pa-process-grid li::before {
   content: counter(pa-step, decimal-leading-zero);
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
-  background: #30291b;
-  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background: rgba(249, 178, 23, 0.13);
+  border-radius: 14px;
   color: #f9b217;
   font-size: 12px;
   margin-bottom: 22px;
+  box-shadow: 0 0 24px rgba(249, 178, 23, 0.05);
 }
 .product-animation-page .pa-process-grid h3 {
   margin-bottom: 14px;
@@ -13908,19 +13923,35 @@ h2 {
 .product-animation-page .pa-process-grid p {
   font-size: 15px !important;
 }
+.product-animation-page .pa-faq {
+  background-color: #08090a;
+  background-image: linear-gradient(rgba(249, 178, 23, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 178, 23, 0.025) 1px, transparent 1px);
+  background-size: 120px 120px;
+}
 .product-animation-page .pa-faq-list {
-  border-top: 1px solid #383a3b;
+  display: grid;
+  gap: 16px;
+  min-width: 0;
 }
 .product-animation-page .pa-faq details {
-  border-bottom: 1px solid #383a3b;
+  border: 1px solid rgba(249, 178, 23, 0.22);
+  border-radius: 22px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.14), transparent 48%), linear-gradient(145deg, #101010, #030303);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(249, 178, 23, 0.06);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.product-animation-page .pa-faq details:hover, .product-animation-page .pa-faq details[open] {
+  border-color: rgba(249, 178, 23, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 178, 23, 0.12);
 }
 .product-animation-page .pa-faq summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
   cursor: pointer;
-  padding: 24px 0;
+  padding: 24px 28px;
+  border-radius: 22px;
   color: #e6e6e2;
   font-size: 17px;
   line-height: 1.5;
@@ -13931,9 +13962,16 @@ h2 {
 }
 .product-animation-page .pa-faq summary::after {
   content: "+";
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(249, 178, 23, 0.13);
   color: #f9b217;
   font-size: 26px;
   font-weight: 300;
+  line-height: 1;
   flex-shrink: 0;
 }
 .product-animation-page .pa-faq details[open] summary::after {
@@ -13943,7 +13981,9 @@ h2 {
   color: #f9b217;
 }
 .product-animation-page .pa-faq details > div {
-  padding: 0 35px 25px 0;
+  margin-inline: 28px;
+  padding: 20px 0 28px;
+  border-top: 1px solid rgba(249, 178, 23, 0.15);
 }
 .product-animation-page .pa-faq details p {
   font-size: 15px !important;
@@ -14001,7 +14041,7 @@ h2 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .product-animation-page .pa-explainer .pa-split {
+  .product-animation-page .pa-explainer .pa-split, .product-animation-page .pa-why .pa-split {
     gap: 34px;
   }
   .product-animation-page .pa-questions {
@@ -14023,7 +14063,8 @@ h2 {
   }
   .product-animation-page .pa-service {
     grid-template-columns: 48px minmax(0, 1fr);
-    column-gap: 14px;
+    -moz-column-gap: 14px;
+         column-gap: 14px;
   }
   .product-animation-page .pa-service > i {
     width: 48px;
@@ -14072,35 +14113,33 @@ h2 {
   .product-animation-page .pa-intro__opening p {
     font-size: 18px !important;
   }
-  .product-animation-page .pa-explainer .pa-prose {
+  .product-animation-page .pa-explainer .pa-prose, .product-animation-page .pa-why .pa-prose {
     padding: 26px 22px;
     border-radius: 16px;
   }
   .product-animation-page .pa-explainer .pa-prose::before {
     margin-bottom: 22px;
   }
-  .product-animation-page .pa-explainer .pa-prose p {
+  .product-animation-page .pa-explainer .pa-prose p, .product-animation-page .pa-why .pa-prose p {
     padding-left: 38px;
   }
   .product-animation-page .pa-service {
     padding: 28px;
   }
   .product-animation-page .pa-process-grid li {
-    position: relative;
-    padding-left: 55px;
-  }
-  .product-animation-page .pa-process-grid li::before {
-    position: absolute;
-    left: 0;
-    top: 21px;
-    width: 35px;
-    height: 35px;
+    padding: 24px;
   }
   .product-animation-page .pa-process-grid h3 {
     font-size: 21px !important;
   }
   .product-animation-page .pa-faq summary {
+    padding: 20px;
+    gap: 14px;
     font-size: 16px;
+  }
+  .product-animation-page .pa-faq details > div {
+    margin-inline: 20px;
+    padding-bottom: 20px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

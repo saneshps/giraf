@@ -166,6 +166,17 @@
 <p>Don’t let the technical details of the product startle you, because we are here to take your product from drawings and references to the screen, giving it the 3-dimensional accuracy and presenting it in a tangible and informative way.</p></div>
       </div>
     </section>
+        <section class="pa-section pa-faq" aria-labelledby="pa-faq-title">
+      <div class="pa-shell pa-split">
+        <h2 id="pa-faq-title">FAQ</h2>
+        <div class="pa-faq-list">
+          <details name="product-animation-faq" open><summary>How is product animation different from product photography?</summary><div><p>A: Product photography is the capturing of the images of the physical photograph. Product animation involves creating the digital 3D version of a product that can be rotated, opened, moved, or shown from different angles. It is more flexible and versatile compared to the static images of the machine.</p></div></details>
+<details name="product-animation-faq"><summary>How much does 3D product animation cost in India?</summary><div><p>A: There is no fixed cost for product animation, because it depends on several factors such as product complexity, modelling requirements, animation length, level of detail, materials, and number of scenes and edits.</p></div></details>
+<details name="product-animation-faq"><summary>Do you need the physical prototype of the machine?</summary><div><p>A: Not necessarily. Depending on the project, you may hand over to us the following details, such as CAD files, drawings, specifications, photographs, reference videos, and other available product information. The more accurate information you provide us with, the more precise the 3D representation we will deliver.</p></div></details>
+<details name="product-animation-faq"><summary>Can the 3D model be modified or updated later?</summary><div><p>A: Yes, this is one of the major benefits of 3D product animation. Once the asset is modeled, you can easily alter the surface textures, re-render different angles, and swap out the new components according to the marketing requirements without needing to start over again.</p></div></details>
+        </div>
+      </div>
+    </section>
     <section class="call-to-action-area" id="product-enquiry" aria-labelledby="product-enquiry-title">
       <div class="main-box">
         <div class="cta-glow" aria-hidden="true"></div>
@@ -216,17 +227,7 @@
         </div>
       </div>
     </section>
-    <section class="pa-section pa-faq" aria-labelledby="pa-faq-title">
-      <div class="pa-shell pa-split">
-        <h2 id="pa-faq-title">FAQ</h2>
-        <div class="pa-faq-list">
-          <details name="product-animation-faq" open><summary>How is product animation different from product photography?</summary><div><p>A: Product photography is the capturing of the images of the physical photograph. Product animation involves creating the digital 3D version of a product that can be rotated, opened, moved, or shown from different angles. It is more flexible and versatile compared to the static images of the machine.</p></div></details>
-<details name="product-animation-faq"><summary>How much does 3D product animation cost in India?</summary><div><p>A: There is no fixed cost for product animation, because it depends on several factors such as product complexity, modelling requirements, animation length, level of detail, materials, and number of scenes and edits.</p></div></details>
-<details name="product-animation-faq"><summary>Do you need the physical prototype of the machine?</summary><div><p>A: Not necessarily. Depending on the project, you may hand over to us the following details, such as CAD files, drawings, specifications, photographs, reference videos, and other available product information. The more accurate information you provide us with, the more precise the 3D representation we will deliver.</p></div></details>
-<details name="product-animation-faq"><summary>Can the 3D model be modified or updated later?</summary><div><p>A: Yes, this is one of the major benefits of 3D product animation. Once the asset is modeled, you can easily alter the surface textures, re-render different angles, and swap out the new components according to the marketing requirements without needing to start over again.</p></div></details>
-        </div>
-      </div>
-    </section>
+
   </main>
   <?php include ('footer.php'); ?>
 

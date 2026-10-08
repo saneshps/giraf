@@ -10725,7 +10725,7 @@
   .pa-questions li { position: relative; display: flex; min-height: 96px; align-items: center; padding: 20px 24px 20px 52px; border: 1px solid #3b382f; border-radius: 6px; background: #1b1b19; color: #f3e5c7; font-size: 20px; line-height: 1.5; }
   .pa-questions li::before { content: ''; position: absolute; left: 25px; top: 50%; width: 6px; height: 6px; transform: translateY(-50%); border-radius: 50%; background: #f9b217; }
   .pa-intro__closing { grid-area: closing; max-width: 1000px; margin: 0; }
-  .pa-explainer {
+  .pa-explainer, .pa-why {
     position: relative;
     isolation: isolate;
     background: #08090a;
@@ -10758,15 +10758,6 @@
       box-shadow: 0 16px 36px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(249, 178, 23, .06);
       transition: border-color .2s, box-shadow .2s;
       &:hover { border-color: rgba(249, 178, 23, .55); box-shadow: 0 18px 40px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(249, 178, 23, .12); }
-      &::before {
-        content: '01 / PRODUCT FILM';
-        display: block;
-        margin-bottom: 30px;
-        color: #f9b217;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: .16em;
-      }
       p {
         position: relative;
         padding-left: 48px;
@@ -10786,6 +10777,7 @@
       }
     }
   }
+  
   .pa-services h2, .pa-process h2 { max-width: 780px; margin-bottom: 45px; }
   .pa-services {
     background-color: #08090a;
@@ -10827,23 +10819,65 @@
   .pa-service > i { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: rgba(249, 178, 23, .13); color: #f9b217; font-size: 24px; margin: 0; box-shadow: 0 0 24px rgba(249, 178, 23, .05); }
   .pa-service h3 { margin: 0; padding-right: 40px; font-size: 22px !important; }
   .pa-service p { grid-column: 1 / -1; margin: 0; font-size: 15px !important; }
-  .pa-process { background: #191a1b; }
+  .pa-process {
+    background-color: #08090a;
+    background-image:
+      linear-gradient(rgba(249, 178, 23, .025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(249, 178, 23, .025) 1px, transparent 1px);
+    background-size: 120px 120px;
+  }
   .pa-process h2 { color: #f9b217; }
   .pa-process h3 { color: #f7f6f2; }
   .pa-process p { color: #bfc1c2; }
-  .pa-process-grid { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 40px; row-gap: 42px; padding: 0; margin: 0; list-style: none; counter-reset: pa-step; }
-  .pa-process-grid li { border-top: 1px solid #383a3b; padding-top: 22px; counter-increment: pa-step; }
-  .pa-process-grid li::before { content: counter(pa-step, decimal-leading-zero); display: grid; place-items: center; width: 40px; height: 40px; background: #30291b; border-radius: 50%; color: #f9b217; font-size: 12px; margin-bottom: 22px; }
+  .pa-process-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0; margin: 0; list-style: none; counter-reset: pa-step; }
+  .pa-process-grid li {
+    position: relative;
+    padding: 28px;
+    border: 1px solid rgba(249, 178, 23, .22);
+    border-radius: 22px;
+    background: radial-gradient(ellipse at top left, rgba(249, 178, 23, .14), transparent 48%), linear-gradient(145deg, #101010, #030303);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(249, 178, 23, .06);
+    counter-increment: pa-step;
+    transition: border-color .2s, box-shadow .2s;
+    &::after {
+      content: counter(pa-step, decimal-leading-zero);
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: rgba(249, 178, 23, .16);
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -.06em;
+      pointer-events: none;
+    }
+    &:hover { border-color: rgba(249, 178, 23, .55); box-shadow: 0 18px 40px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(249, 178, 23, .12); }
+  }
+  .pa-process-grid li::before { content: counter(pa-step, decimal-leading-zero); display: grid; place-items: center; width: 48px; height: 48px; background: rgba(249, 178, 23, .13); border-radius: 14px; color: #f9b217; font-size: 12px; margin-bottom: 22px; box-shadow: 0 0 24px rgba(249, 178, 23, .05); }
   .pa-process-grid h3 { margin-bottom: 14px; font-size: 22px !important; }
   .pa-process-grid p { font-size: 15px !important; }
-  .pa-faq-list { border-top: 1px solid #383a3b; }
-  .pa-faq details { border-bottom: 1px solid #383a3b; }
-  .pa-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 25px; cursor: pointer; padding: 24px 0; color: #e6e6e2; font-size: 17px; line-height: 1.5; list-style: none; }
+  .pa-faq {
+    background-color: #08090a;
+    background-image:
+      linear-gradient(rgba(249, 178, 23, .025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(249, 178, 23, .025) 1px, transparent 1px);
+    background-size: 120px 120px;
+  }
+  .pa-faq-list { display: grid; gap: 16px; min-width: 0; }
+  .pa-faq details {
+    border: 1px solid rgba(249, 178, 23, .22);
+    border-radius: 22px;
+    background: radial-gradient(ellipse at top left, rgba(249, 178, 23, .14), transparent 48%), linear-gradient(145deg, #101010, #030303);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(249, 178, 23, .06);
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .pa-faq details:hover, .pa-faq details[open] { border-color: rgba(249, 178, 23, .55); box-shadow: 0 18px 40px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(249, 178, 23, .12); }
+  .pa-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 24px 28px; border-radius: 22px; color: #e6e6e2; font-size: 17px; line-height: 1.5; list-style: none; }
   .pa-faq summary::-webkit-details-marker { display: none; }
-  .pa-faq summary::after { content: '+'; color: #f9b217; font-size: 26px; font-weight: 300; flex-shrink: 0; }
+  .pa-faq summary::after { content: '+'; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 12px; background: rgba(249, 178, 23, .13); color: #f9b217; font-size: 26px; font-weight: 300; line-height: 1; flex-shrink: 0; }
   .pa-faq details[open] summary::after { content: '−'; }
   .pa-faq details[open] summary { color: #f9b217; }
-  .pa-faq details > div { padding: 0 35px 25px 0; }
+  .pa-faq details > div { margin-inline: 28px; padding: 20px 0 28px; border-top: 1px solid rgba(249, 178, 23, .15); }
   .pa-faq details p { font-size: 15px !important; }
   .pa-main .call-to-action-area { padding: 0 30px; }
   .pa-main .call-to-action-area .cta-content h2 { line-height: 1.2; margin-bottom: 25px; }
@@ -10865,7 +10899,7 @@
     .pa-intro .pa-questions li { min-height: 120px; padding: 80px 20px 24px; font-size: 18px; }
     .pa-intro .pa-questions li::before { left: 20px; top: 20px; transform: none; }
     .pa-split { grid-template-columns: 1fr; gap: 32px; }
-    .pa-explainer .pa-split { gap: 34px; }
+    .pa-explainer .pa-split, .pa-why .pa-split { gap: 34px; }
     .pa-questions { gap: 15px; }
     .pa-questions li { padding: 22px 18px 22px 32px; font-size: 18px; }
     .pa-questions li::before { left: 16px; top: 33px; }
@@ -10886,14 +10920,14 @@
     .pa-intro .pa-questions li { min-height: 96px; padding: 24px 58px 24px 80px; }
     .pa-intro .pa-questions li::before { top: 50%; transform: translateY(-50%); }
     .pa-intro__opening p { font-size: 18px !important; }
-    .pa-explainer .pa-prose { padding: 26px 22px; border-radius: 16px; }
+    .pa-explainer .pa-prose, .pa-why .pa-prose { padding: 26px 22px; border-radius: 16px; }
     .pa-explainer .pa-prose::before { margin-bottom: 22px; }
-    .pa-explainer .pa-prose p { padding-left: 38px; }
+    .pa-explainer .pa-prose p, .pa-why .pa-prose p { padding-left: 38px; }
     .pa-service { padding: 28px; }
-    .pa-process-grid li { position: relative; padding-left: 55px; }
-    .pa-process-grid li::before { position: absolute; left: 0; top: 21px; width: 35px; height: 35px; }
+    .pa-process-grid li { padding: 24px; }
     .pa-process-grid h3 { font-size: 21px !important; }
-    .pa-faq summary { font-size: 16px; }
+    .pa-faq summary { padding: 20px; gap: 14px; font-size: 16px; }
+    .pa-faq details > div { margin-inline: 20px; padding-bottom: 20px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .pa-main *, .pa-main *::before, .pa-main *::after, .banner-area--hero .banner-area__media img { animation: none !important; transition: none !important; }
