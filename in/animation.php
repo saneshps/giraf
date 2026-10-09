@@ -126,10 +126,10 @@
   <section class="service-detailes-brief-area">
     <div class="main-box">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center text-center">
 
           <!-- col-md-4 -->
-          <div class="col-xl-4 col-lg-4 col-md-12 service-detailes-brief-first">
+          <div class="col-md-12 service-detailes-brief-first">
             <h6> Animation </h6>
             <h4> YOU DREAM IT AND WE DO IT </h4>
           </div>
@@ -137,7 +137,7 @@
 
 
           <!-- col-md-8 -->
-          <div class="col-xl-8 col-lg-8 col-md-12 service-detailes-brief-scnd">
+          <div class="col-xl-12 service-detailes-brief-scnd">
             <p> Giraf is a full-service provider of video animation, offering an outsourced framework
               that fits any kind of budget while assisting businesses in differentiating their content
               and advancing their social media and marketing strategies.
@@ -149,11 +149,7 @@
 
 
 
-        </div>
-
-        <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
-        </div>
+        </div> 
 
       </div>
     </div>
@@ -215,55 +211,18 @@
       <div class="container">
 
 
-        <div class="row">
-
-          <div class="col-xl-6">
-            <div class="pdng brdr">
-              <h4> Video Animation Services </h4>
-
-              <p> We work to create animated video content that is consistently in line
-                with your brand using a bespoke approach. Some of the best businesses
-                in the world work with our team, producing anything from motion graphics
-                to 3D animation. Our services for producing animated videos include explainer,
-                app, demo, live-action, training, instructional, explanatory, corporate animations
-                and software walkthrough films in addition to animation videos.
-
-              </p>
-              <p> Equipped to use the newest animation techniques and tools,
-                whether you need to educate customers or staff, explain complicated concepts about products or services,
-                or build sumptuous animated characters from the ground up for your film directing debut.
-                Using complex technologies like Adobe After Effects, Flash, Photoshop, and Adobe Animate
-                in conjunction with methods like 3D visualization, model animation, GCI, drawn animation,
-                stop-motion animation, and cutout animation, we produce high-quality animation.
-
-              </p>
-              <p> A full-service provider of video animation, Giraf offers an outsourced framework
-                that fits any kind of budget and guarantees that your firm will receive a beautiful
-                animated video that meets your needs for video content.
-
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="animation-box-secnd pdng brdr">
-              <h4> Manage your videos </h4>
-              <p> As the best animation production company in India, we think that teamwork is extremely powerful.
-                Since 2021, we have produced <a href="https://www.giraf.in/photography-and-video-production.php" target="_blank">
-                  videos,</a> and we will oversee the entire process for you.
-                We use phased sign-offs, so up until the final video, you are in charge of every process.
-
-              </p>
-              <h4> Extend Your Reach </h4>
-              <p> A great deal of design collateral that can be utilized for your complete brand can be produced using animation.
-                Our animation company will make sure that your video marketing's finished animation reaches and impresses
-                both your target audience and potential new clients.
-
-              </p>
+        <div class="row d-flex align-items-center justify-content-center text-center">
+ 
+          <div class="col-xl-10 col-lg-10 col-md-12">
+            <div class="animation-box-secnd pdng brdr"> 
               <h4> Let us set off on an adventure! </h4>
               <p> The <a href="https://www.giraf.in" target="_blank"> Giraf </a> team is here to ignite your creativity and realize your aspirations.
                 Let's now discuss your project! Reach out to us, and we'll handle the rest!
 
               </p>
+              <div class="book-call">
+          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+        </div>
             </div>
           </div>
 
