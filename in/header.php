@@ -80,11 +80,11 @@
                <li class="<?php echo ($curPageName == "product-animation.php") ? 'is-current' : '' ?>">
                  <a href="product-animation.php"><span class="sub-label">Product Animation</span></a>
                </li>
-               <li class="<?php echo ($curPageName == "vfx.php") ? 'is-current' : '' ?>">
-                 <a href="vfx.php"><span class="sub-label">  VFX  </span></a>
+               <li class="<?php echo ($curPageName == "visual-effects.php") ? 'is-current' : '' ?>">
+                 <a href="visual-effects.php"><span class="sub-label">  VFX  </span></a>
                </li>
-               <li class="<?php echo ($curPageName == "product-pre-visualization.php") ? 'is-current' : '' ?>">
-                 <a href="product-pre-visualization.php"><span class="sub-label">  Product Pre Visualization </span></a>
+               <li class="<?php echo ($curPageName == "product-previsualization.php") ? 'is-current' : '' ?>">
+                 <a href="product-previsualization.php"><span class="sub-label">  Product Pre Visualization </span></a>
                </li>
                <li class="<?php echo ($curPageName == "character-design.php") ? 'is-current' : '' ?>">
                  <a href="character-design.php"><span class="sub-label">  Character Design </span></a>
