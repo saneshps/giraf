@@ -50,7 +50,7 @@
           <p> <a href="tel:918075461989"> +91 80 75 46 19 89 </a> </p>
           <p> <a href="mailto:info@girafcreatives.com "> info@girafcreatives.com  </a> </p>
 
-          <h4> SOCIAL MEDIA </h4>
+          <h4> Social Media </h4>
           <div class="social-links">
 
             <div id='contact-info'>

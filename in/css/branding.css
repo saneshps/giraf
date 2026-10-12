@@ -1,0 +1,157 @@
+/* Branding uses the same card and section system as visual-effects.php.
+   Keep these adaptations scoped to this page and its existing heading levels. */
+.branding-page .branding-intro {
+  padding-top: 24px;
+}
+
+.branding-page .branding-section-heading h4,
+.branding-page .branding-services-title {
+  margin: 0;
+  color: #f9b217;
+  font: 500 clamp(32px, 3.5vw, 48px)/1.2 "Roboto", Arial, sans-serif;
+  font-size: clamp(32px, 3.5vw, 48px) !important;
+  letter-spacing: -0.035em;
+  overflow-wrap: break-word;
+}
+
+.branding-page .branding-section-heading::before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 4px;
+  margin-bottom: 28px;
+  border-radius: 4px;
+  background: #f9b217;
+  box-shadow: 0 0 18px rgb(249 178 23 / 38%);
+}
+
+.branding-page .branding-section-heading h6 {
+  margin: 0 0 18px;
+  color: #d0d1d1;
+  font: 500 14px/1.5 "Roboto", Arial, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.branding-page .pa-main .pa-prose p {
+  padding-left: 0;
+}
+
+.product-animation-page.branding-page .pa-why .pa-prose p::before {
+  content: none;
+}
+
+.branding-page .branding-services-title {
+  margin-bottom: 40px;
+}
+
+.branding-page .branding-service {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 28px;
+  padding: clamp(26px, 3.2vw, 44px);
+  min-width: 0;
+}
+
+.branding-page .branding-service--wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+  align-items: start;
+  gap: clamp(32px, 5vw, 72px);
+}
+
+.branding-page .branding-service-heading {
+  min-width: 0;
+  padding-right: 36px;
+}
+
+.branding-page .branding-service-heading > i {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background: rgb(249 178 23 / 13%);
+  color: #f9b217;
+  font-size: 24px;
+}
+
+.branding-page .branding-service-heading h4 {
+  margin: 0 !important;
+  color: #f7f6f2;
+  font: 500 clamp(24px, 2.3vw, 32px)/1.25 "Roboto", Arial, sans-serif;
+  font-size: clamp(24px, 2.3vw, 32px) !important;
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+}
+
+.branding-page .branding-service-heading h6 {
+  margin: 18px 0 0 !important;
+  color: #f9b217;
+  font: 400 17px/1.6 "Roboto", Arial, sans-serif;
+}
+
+.branding-page .branding-service-copy p {
+  margin-bottom: 20px;
+  font-size: 16px !important;
+}
+
+.branding-page .branding-service-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.branding-page .branding-service-copy a {
+  color: #f9b217;
+  text-decoration: underline;
+  text-decoration-color: rgb(249 178 23 / 50%);
+  text-underline-offset: 4px;
+}
+
+.branding-page .branding-service-copy a:hover {
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 991px) {
+  .branding-page .branding-intro {
+    padding-top: 35px;
+  }
+
+  .branding-page .branding-service--wide {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    gap: 28px;
+  }
+}
+
+@media (max-width: 800px) {
+  .branding-page .pa-service-grid,
+  .branding-page .branding-service--wide {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .branding-page .branding-service {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .branding-page .branding-service {
+    padding: 26px 22px;
+    border-radius: 16px;
+  }
+
+  .branding-page .branding-section-heading h4,
+  .branding-page .branding-services-title {
+    font-size: 32px !important;
+  }
+
+  .branding-page .branding-section-heading::before {
+    margin-bottom: 22px;
+  }
+
+  .branding-page .branding-services-title {
+    margin-bottom: 28px;
+  }
+}
