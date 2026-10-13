@@ -106,7 +106,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/Digital-Marketing-banner.jpg" alt="Digital Marketing">
+        <img src="./img/services/digital/digital-marketing-banner.webp" alt="Digital Marketing">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">

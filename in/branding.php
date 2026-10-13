@@ -105,7 +105,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/brand-banner.jpg" alt="Branding">
+        <img src="./img/services/branding/branding-banner.webp" alt="Branding">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
