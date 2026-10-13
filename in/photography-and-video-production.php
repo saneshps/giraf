@@ -106,7 +106,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/Video&Photography.jpg" alt="Product Explanatory Videos">
+        <img src="./img/services/product-explanatory-videos.webp" alt="Product Explanatory Videos">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
