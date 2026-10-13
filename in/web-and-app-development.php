@@ -90,7 +90,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/WEB-app-banner.jpg" alt="Web and App Development">
+        <img src="./img/services/web/web-development-banner.webp" alt="Web and App Development">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
