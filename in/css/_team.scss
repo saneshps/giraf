@@ -703,3 +703,140 @@
 }
 
 // ==================================   TEAM PAGE AREA END
+
+.about-area ~ .team-area {
+    padding: 16px 0 40px;
+    background: #0a0a0b;
+
+    .main-box {
+        .team-first {
+            padding: 0 40px 0 0;
+
+            h6 {
+                margin: 0 0 18px;
+                color: #d0d1d1;
+                font-size: 13px !important;
+                font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: .18em;
+            }
+
+            h4 {
+                margin: 0;
+                padding: 0;
+                color: $brand-color;
+                font-size: clamp(30px, 3vw, 44px) !important;
+                line-height: 1.22 !important;
+                font-weight: 500;
+                letter-spacing: -.03em;
+                text-transform: none;
+            }
+        }
+
+        .team-scnd {
+            padding: 0 0 0 40px;
+            border-left: 1px solid rgba($brand-color, .25);
+            p { margin: 0; font-size: 16px; line-height: 1.85; color: #c9cbce; }
+        }
+
+        .team-box {
+            margin: 56px -12px 0;
+            padding: 0;
+            align-items: stretch;
+            row-gap: 24px;
+
+            > [class*="col-"] { padding: 0 12px; }
+
+            .team-title h4 {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                margin: 0 0 4px;
+                color: #f7f6f2;
+                font-size: 24px !important;
+                font-weight: 400;
+                line-height: 1.4;
+
+                &::after {
+                    content: "";
+                    flex: 1;
+                    height: 1px;
+                    background: linear-gradient(90deg, rgba($brand-color, .4), rgba(255, 255, 255, .06));
+                }
+            }
+
+            .our-team {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid rgba(255, 255, 255, .12);
+                border-radius: 16px;
+                background: #151617;
+                text-align: left;
+                transition: transform .25s ease, border-color .25s ease;
+            }
+
+            .our-team .pic { overflow: hidden; background: #222; }
+            .our-team .pic::before,
+            .our-team .pic::after,
+            .our-team .team-content::before { content: none; }
+
+            .our-team .pic img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                object-position: center top;
+                border-radius: 0;
+                transition: transform .35s ease;
+            }
+
+            .our-team .team-content {
+                top: 0;
+                padding: 22px 20px 24px;
+                border-top: 1px solid rgba($brand-color, .3);
+                background: transparent;
+            }
+
+            .our-team .title {
+                margin: 0 0 8px;
+                color: #f7f6f2;
+                font-size: 20px !important;
+                font-weight: 500;
+                line-height: 1.35;
+                text-transform: none;
+            }
+
+            .our-team .post { font-size: 14px; line-height: 1.6; color: #d2b577; text-transform: none; }
+            .our-team:hover .title { color: #f7f6f2; }
+            .our-team:hover .post { color: $brand-color; }
+
+            @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+                .our-team:hover { transform: translateY(-5px); border-color: rgba($brand-color, .55); }
+                .our-team:hover .pic img { transform: scale(1.035); }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .main-box .team-first { padding: 0 0 24px; }
+        .main-box .team-scnd { padding: 0; border: 0; }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .main-box .team-box > .col-xl-3 { flex: 0 0 50%; max-width: 50%; }
+    }
+
+    @media (max-width: 575px) {
+        padding: 8px 0 24px;
+        .main-box {
+            margin: 0 24px !important;
+            > .container { width: 100% !important; padding: 0 !important; }
+            > .container > .row:first-child { margin: 0; }
+            .team-scnd p { font-size: 15px; line-height: 1.8; }
+            .team-box { margin-top: 36px; }
+            .team-box .our-team { max-width: 400px; margin: 0 auto; }
+        }
+    }
+}

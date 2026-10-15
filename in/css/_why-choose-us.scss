@@ -181,3 +181,94 @@
 
     }
 }
+
+// Scope the refresh to the About page's existing section order.
+.about-area ~ .why-choose-us {
+    padding: 32px 0 80px;
+
+    .main-box {
+        padding: clamp(32px, 4.5vw, 68px) 0;
+        border: 1px solid rgba(255, 255, 255, .09);
+        border-radius: 28px;
+        background: linear-gradient(135deg, #171819, #101112);
+
+        &::before { content: none; }
+        > .container > .row { align-items: center; }
+
+        .why-first {
+            padding: 0 clamp(24px, 4vw, 64px) 0 0;
+            margin: 0;
+
+            h6 {
+                margin: 0 0 18px;
+                color: #d0d1d1;
+                font-size: 13px !important;
+                font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: .18em;
+            }
+
+            h4 {
+                margin: 0 0 30px;
+                padding: 0;
+                color: $brand-color;
+                font-size: clamp(30px, 3vw, 44px) !important;
+                font-weight: 500;
+                line-height: 1.22 !important;
+                letter-spacing: -.03em;
+            }
+
+            ul { padding: 0; margin: 0; }
+
+            ul li {
+                padding: 18px 0 18px 48px;
+                border-bottom: 1px solid rgba(255, 255, 255, .09);
+                color: #e1e2e3;
+                font-size: 15px;
+                line-height: 1.75;
+                text-transform: none;
+
+                &:last-child { border-bottom: 0; padding-bottom: 0; }
+
+                i {
+                    top: 20px;
+                    left: 0;
+                    display: grid;
+                    place-items: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 8px;
+                    background: rgba($brand-color, .1);
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .why-second {
+            padding: 0;
+            margin: 0;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+                border: 1px solid rgba($brand-color, .2);
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .main-box .why-first { padding: 0; margin-bottom: 32px; }
+        .main-box .why-second img { max-width: 640px; }
+    }
+
+    @media (max-width: 575px) {
+        padding: 0 0 48px;
+        .main-box {
+            margin: 0 16px !important;
+            border-radius: 20px;
+            > .container { width: 100% !important; padding: 0 24px !important; }
+        }
+    }
+}

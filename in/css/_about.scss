@@ -607,9 +607,12 @@
 
 
 
-                .our-team:hover .title,
+                .our-team:hover .title {
+                    color: #f7f6f2;
+                }
+
                 .our-team:hover .post {
-                    color: $box-color;
+                    color: $brand-color;
                 }
 
 
@@ -647,3 +650,164 @@
 }
 
 //  ========================= ABOUT PAGE AREA END =========================
+
+// About page refresh: keep the existing markup and SEO copy intact.
+.about-area {
+    padding: 24px 0 40px;
+
+    .main-box {
+        padding: clamp(32px, 5vw, 76px) 0;
+        border: 1px solid rgba($brand-color, .2);
+        border-radius: 28px;
+        background: radial-gradient(ellipse at top left, rgba($brand-color, .09), transparent 55%), #101112;
+        overflow: hidden;
+
+        &::before { content: none; }
+
+        > .container > .row { align-items: center; }
+
+        .about-first {
+            padding: 0 clamp(28px, 5vw, 80px) 0 0;
+            margin: 0;
+
+            h6 {
+                margin: 0 0 20px;
+                color: #d0d1d1;
+                font-size: 13px !important;
+                font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: .18em;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 52px;
+                    height: 3px;
+                    margin-bottom: 22px;
+                    border-radius: 3px;
+                    background: $brand-color;
+                }
+            }
+
+            h4 {
+                margin: 0 0 28px;
+                padding: 0; 
+                color: $brand-color;
+                font-size: clamp(30px, 3.2vw, 48px) !important;
+                font-weight: 500;
+                line-height: 1.2 !important;
+                letter-spacing: -.035em;
+            }
+
+            p {
+                margin: 0 0 18px;
+                color: #c9cbce;
+                font-size: 16px;
+                line-height: 1.85;
+                text-align: left;
+            }
+
+            p:nth-last-child(2) {
+                margin: 28px 0 0;
+                padding: 20px 0 0;
+                border-top: 1px solid rgba($brand-color, .2);
+                color: $brand-color;
+                font-weight: 500;
+            }
+
+            p:last-child { margin: 4px 0 0; color: #f7f6f2; }
+        }
+
+        .about-second {
+            padding: 0;
+
+            .about-second-image-first {
+                margin: 0;
+
+                .our-team {
+                    max-width: 430px;
+                    margin: 0 auto;
+                    padding: 0;
+                    overflow: hidden;
+                    border: 1px solid rgba($brand-color, .28);
+                    border-radius: 20px;
+                    box-shadow: 0 24px 50px rgba(0, 0, 0, .25);
+                    text-align: left;
+                }
+
+                .our-team .pic::before,
+                .our-team .pic::after,
+                .our-team .team-content::before { content: none; }
+
+                .our-team .pic { overflow: hidden; }
+
+                .our-team .pic img { display: block; border-radius: 0; }
+
+                .our-team .team-content {
+                    top: 0;
+                    padding: 25px 24px;
+                    background: #18191a;
+                    border: 0;
+                    border-top: 2px solid $brand-color;
+                }
+
+                .our-team .title {
+                    margin: 0 0 8px;
+                    font-size: clamp(19px, 1.5vw, 24px) !important;
+                    line-height: 1.35;
+                    color: #f7f6f2;
+                }
+
+                .our-team .post { color: $brand-color; letter-spacing: .12em; }
+
+                // Keep the caption readable instead of inheriting the old black hover text.
+                .our-team:hover .title { color: #f7f6f2; }
+                .our-team:hover .post { color: $brand-color; }
+
+                @media (hover: hover) and (pointer: fine) {
+                    .our-team:hover {
+                        border-color: rgba($brand-color, .65);
+                        box-shadow: 0 30px 60px rgba(0, 0, 0, .35);
+                    }
+
+                    .our-team:hover .team-content { background: #20201d; }
+                    .our-team:hover .title { color: $brand-color; }
+                }
+
+                @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+                    .our-team {
+                        transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+                    }
+
+                    .our-team .pic img { transition: transform .45s ease; }
+                    .our-team .team-content { transition: background-color .3s ease; }
+                    .our-team .title { transition: color .3s ease; }
+                    .our-team:hover { transform: translateY(-5px); }
+                    .our-team:hover .pic img { transform: scale(1.035); }
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                    .our-team,
+                    .our-team .pic img,
+                    .our-team .team-content,
+                    .our-team .title,
+                    .our-team .post { transition: none; }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .main-box .about-first { padding: 0; margin-bottom: 36px; }
+    }
+
+    @media (max-width: 575px) {
+        padding: 12px 0 24px;
+        .main-box {
+            margin: 0 16px !important;
+            border-radius: 20px;
+            > .container { width: 100% !important; padding: 0 24px !important; }
+            .about-first p { font-size: 15px; line-height: 1.8; }
+        }
+    }
+}
