@@ -16896,6 +16896,590 @@ html:has(link[rel=canonical][href$="/photography-and-video-production.php"]) bod
   }
 }
 
+html:has(link[rel=canonical][href$="/in/services.php"]) body {
+  --services-shell: min(1400px, calc(100% - 120px));
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .banner-area__line {
+  width: 64px;
+  background: #F9B217;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box {
+  margin: 0 !important;
+  padding: 0;
+  background: transparent;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box::before,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box::before,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box::before {
+  content: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box > .container,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box > .container,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box > .container {
+  width: var(--services-shell) !important;
+  padding: 0 !important;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area {
+  padding: 36px 0 72px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box > .container > .row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: center;
+  margin: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-first {
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-first::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-bottom: 24px;
+  border-radius: 3px;
+  background: #F9B217;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-first h6 {
+  margin: 0 0 18px;
+  color: #c9cbce;
+  font-size: 13px !important;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-first h4 {
+  margin: 0;
+  padding: 0;
+  color: #F9B217;
+  font-size: clamp(32px, 3.5vw, 48px) !important;
+  line-height: 1.2 !important;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-scnd {
+  width: auto;
+  max-width: none;
+  padding: clamp(28px, 3.5vw, 48px);
+  border: 1px solid rgba(249, 178, 23, 0.25);
+  border-radius: 24px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.1), transparent 70%), #111213;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-scnd p {
+  margin: 0;
+  color: #d0d1d1;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail {
+  padding: 0 0 72px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail > .container {
+  width: var(--services-shell) !important;
+  padding: 0 !important;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail > .container > h2 {
+  margin: 0 0 32px;
+  padding: 0;
+  color: #f7f6f2;
+  font-size: clamp(30px, 3vw, 42px) !important;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail > .container > .row {
+  margin: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list > .row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list > .row > div {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  padding: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page {
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: linear-gradient(145deg, #191a1b, #101112);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page > a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: clamp(26px, 2.7vw, 40px);
+  border-radius: inherit;
+  text-decoration: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page > a:focus-visible {
+  outline: 2px solid #F9B217;
+  outline-offset: 4px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page h3 {
+  position: static;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  margin: 0 0 28px;
+  border: 1px solid rgba(249, 178, 23, 0.25);
+  border-radius: 14px;
+  background: rgba(249, 178, 23, 0.07);
+  color: #F9B217;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 1;
+  -webkit-text-stroke-width: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page h3::after {
+  content: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page h2 {
+  margin: 0 0 22px;
+  padding: 0;
+  color: #f7f6f2;
+  font-size: clamp(25px, 2.2vw, 32px) !important;
+  font-weight: 500;
+  line-height: 1.25 !important;
+  letter-spacing: -0.025em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page p {
+  margin: 0 0 16px;
+  padding: 0;
+  color: #bec1c4;
+  font-size: 15px;
+  line-height: 1.8;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page h5 {
+  margin: 0 0 16px;
+  color: #e4d6b4;
+  font-size: 15px !important;
+  line-height: 1.6;
+  font-weight: 500;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page p:last-of-type {
+  margin-bottom: 28px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(249, 178, 23, 0.2);
+  color: #F9B217;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page:hover, html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page:focus-within {
+  border-color: rgba(249, 178, 23, 0.65);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page:hover h2 {
+  color: #F9B217;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page {
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list .services-list-box.serv-page:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: clamp(32px, 3vw, 56px) 0;
+  gap: 20px;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  animation: none;
+  -webkit-text-stroke-width: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area .loop-overlay {
+  display: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area .l,
+html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area .r {
+  flex: none;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: none;
+  margin: 0;
+  color: #b8b8b8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6.5vw, 112px);
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  animation: servicesTextDrift 55s linear -18s infinite alternate;
+  -webkit-text-stroke-width: 0;
+  -webkit-text-fill-color: currentColor;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area .r {
+  font-size: clamp(56px, 7.5vw, 128px);
+  color: #a7a7a7;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px currentColor;
+  animation-direction: alternate-reverse;
+  animation-delay: -18s;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area {
+    padding-inline: 24px;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area .l,
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .text-loop-area .r {
+    width: 100%;
+    white-space: normal;
+    font-size: clamp(28px, 4vw, 56px);
+    animation: none;
+  }
+}
+@keyframes servicesTextDrift {
+  from {
+    transform: translateX(calc(50% - 45vw));
+  }
+  to {
+    transform: translateX(calc(-50% + 45vw));
+  }
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area {
+  padding: 80px 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box > .container > .row:first-child {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+  margin: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box .benifits-first {
+  max-width: none;
+  padding: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box .benifits-first h6 {
+  margin: 0 0 18px;
+  color: #c9cbce;
+  font-size: 13px !important;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box .benifits-first h4 {
+  margin: 0;
+  padding: 0;
+  color: #F9B217;
+  font-size: clamp(30px, 3.3vw, 44px) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.03em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box .benifits-scnd {
+  max-width: none;
+  padding: 0 0 0 32px;
+  border-left: 1px solid rgba(249, 178, 23, 0.25);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box .benifits-scnd p {
+  margin: 0;
+  color: #c9cbce;
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 400;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+  margin: 48px 0 0;
+  padding: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-image {
+  max-width: none;
+  padding: 0;
+  position: sticky;
+  top: 112px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(249, 178, 23, 0.2);
+  border-radius: 22px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box {
+  max-width: none;
+  min-width: 0;
+  padding: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0 0 14px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: #141516;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion:has(.accordian-chk:checked) {
+  border-color: rgba(249, 178, 23, 0.45);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion:has(.accordian-chk:focus-visible) {
+  outline: 2px solid #F9B217;
+  outline-offset: 4px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordian-chk {
+  position: relative;
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion h4 {
+  grid-area: 1/1;
+  margin: 0;
+  padding: 22px 64px 22px 24px;
+  color: #f7f6f2;
+  font-size: 19px !important;
+  font-weight: 500;
+  line-height: 1.5 !important;
+  pointer-events: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion h4 .acc-icon {
+  top: calc(50% - 4px);
+  right: 26px;
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-right: 2px solid #F9B217;
+  border-bottom: 2px solid #F9B217;
+  transform: rotate(45deg);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordian-content {
+  display: none;
+  margin: 0;
+  padding: 0 24px 24px;
+  border: 0;
+  transition: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordian-content p {
+  margin: 0 0 16px;
+  color: #c2c5c8;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordian-content p:last-child {
+  margin-bottom: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion .accordian-chk:checked + h4 {
+  color: #F9B217;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion .accordian-chk:checked + h4 > .acc-icon {
+  top: calc(50% - 1px);
+  border: 0;
+  border-right: 2px solid #F9B217;
+  border-bottom: 2px solid #F9B217;
+  transform: rotate(225deg);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion .accordian-chk:checked + h4 + div.accordian-content {
+  display: block;
+  max-height: none;
+  padding: 0 24px 24px;
+  opacity: 1;
+  overflow: visible;
+  transition: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area {
+  padding: 0 0 80px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box > .container {
+  padding: clamp(28px, 4vw, 56px) !important;
+  border: 1px solid rgba(249, 178, 23, 0.25);
+  border-radius: 24px;
+  background: radial-gradient(ellipse at top left, rgba(249, 178, 23, 0.1), transparent 60%), #111213;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box > .container > .row {
+  margin: 0;
+  align-items: center;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-first {
+  padding: 0 32px 0 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-first h2 {
+  margin: 0 0 20px;
+  color: #F9B217;
+  font-family: "Roboto", sans-serif !important;
+  font-size: clamp(40px, 4vw, 60px) !important;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  -webkit-text-stroke-width: 0;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-first h4 {
+  margin: 0;
+  padding: 0;
+  color: #f7f6f2;
+  font-size: 24px !important;
+  line-height: 1.4 !important;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-scnd {
+  padding: 0 0 0 32px;
+  border-left: 1px solid rgba(249, 178, 23, 0.2);
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-scnd p {
+  margin: 0;
+  color: #c9cbce;
+  font-size: 16px;
+  line-height: 1.85;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .read-more {
+  position: static;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .read-more a {
+  margin: 0;
+  padding: 15px 30px !important;
+  border-radius: 10px !important;
+  background: #F9B217;
+  color: #17130a;
+  letter-spacing: 0.03em;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .read-more a::before {
+  content: none;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .read-more a:hover {
+  background: #ffd16a;
+  color: #17130a;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .read-more a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .read-more a i {
+  animation: none;
+}
+@media (max-width: 1199px) {
+  html:has(link[rel=canonical][href$="/in/services.php"]) body {
+    --services-shell: calc(100% - 64px);
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list > .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 991px) {
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box > .container > .row,
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box > .container > .row:first-child,
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .main-box .benifits-scnd {
+    padding: 0;
+    border: 0;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-image {
+    position: static;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-first {
+    padding: 0 0 24px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box .lets-talk-scnd {
+    padding: 0;
+    border: 0;
+  }
+}
+@media (max-width: 767px) {
+  html:has(link[rel=canonical][href$="/in/services.php"]) body {
+    --services-shell: calc(100% - 36px);
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area {
+    padding: 24px 0 48px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-scnd {
+    padding: 26px;
+    border-radius: 18px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-text-area .main-box .services-text-scnd p {
+    font-size: 16px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail {
+    padding-bottom: 48px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-area.serv-detail .services-list > .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area {
+    padding: 48px 0;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section {
+    margin-top: 30px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .benifits-area .benifits-faq-section .benifits-faq-box .accordion h4 {
+    padding-left: 20px;
+    font-size: 17px !important;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area {
+    padding-bottom: 48px;
+  }
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .main-box > .container {
+    padding: 28px 24px !important;
+    border-radius: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .services-list-box.serv-page,
+  html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .read-more a {
+    transition: none;
+  }
+}
+
 .team-home-area {
   padding: 100px 0 50px 0;
 }

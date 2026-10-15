@@ -297,15 +297,15 @@
   <!-- =======================
            TEXT LOOP AREA START
         ======================== -->
-  <section class="text-loop-area">
-    <div class="loop-overlay"></div>
-    <div class="l">
-      Web Development | UI/UX | Branding Strategy | Photography |
-    </div>
-    <div class="r">
-      eCommerce | Marketing | SEO | Graphic Design | Branding |
-    </div>
-  </section>
+    <section class="text-loop-area">
+        <div class="loop-overlay"></div>
+        <div class="l">
+            Digital Marketing | Branding | Designing | Web and App Development | Product Explanatory Videos | Animation
+        </div>
+        <div class="r">
+            Digital Marketing | Branding | Designing | Web and App Development | Product Explanatory Videos | Animation
+        </div>
+    </section>
 
   <!-- ======================
           TEXT LOOP AREA END
