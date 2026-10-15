@@ -1114,3 +1114,328 @@
 }
 
 // ==================================  PORTFOLIO DETAILS PAGE AREA END =====================================
+
+// Portfolio listing refresh. All content and navigation stay in the existing markup.
+body:has(> .portfolio-page-boxes) .home-header {
+    .home-header__content { height: clamp(340px, 38vw, 540px); }
+    .slider-text { height: 100%; }
+    .slider-text__slide { padding: 60px 24px 0; align-items: center; }
+    .slider-text__slide h1 {
+        font-size: clamp(48px, 6vw, 80px) !important;
+        line-height: 1.15;
+        letter-spacing: .02em;
+        text-transform: none;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 56px;
+            height: 3px;
+            margin: 24px auto 0;
+            border-radius: 3px;
+            background: $brand-color;
+        }
+    }
+
+    .slider-img::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+        background: linear-gradient(180deg, rgba(10, 10, 11, .35), rgba(10, 10, 11, .5) 50%, #0a0a0b);
+    }
+}
+
+.portfolio-page-boxes {
+    padding: 24px 0 60px;
+
+    .main-box { padding: 0; background: transparent; border-radius: 0; }
+
+    .tab-menu {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border: 1px solid rgba($brand-color, .2);
+        border-radius: 18px;
+        background: linear-gradient(120deg, #1e1c16, #121314 60%);
+    }
+
+    .tab-menu-link {
+        width: 100%;
+        min-height: 52px;
+        height: 100%;
+        margin: 0;
+        padding: 14px 10px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background: transparent;
+        color: #d0d1d1;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.4;
+
+        &::before { content: none; }
+        &:hover { color: #fff; border-color: rgba($brand-color, .35); background: #25231d; }
+        &.is-active { color: #17130a; background: $brand-color; border-color: $brand-color; }
+        &:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+    }
+
+    .tab-bar { overflow: visible; }
+
+    .tab-bar-content {
+        gap: 24px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        transition: none;
+
+        &.is-active { display: grid; margin: 32px 0 0; }
+        > .container { grid-column: 1 / -1; width: 100% !important; padding: 0 !important; }
+    }
+
+    .portfolio-page-box {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0 0 22px;
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-radius: 18px;
+        background: #151617;
+        overflow: hidden;
+
+        .box { border-radius: 17px 17px 0 0; background: #0e0f10; }
+        .box:hover { box-shadow: none; }
+        .box > a { display: block; }
+        .box img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: contain;
+            border-radius: 0;
+        }
+
+        h4 {
+            margin: 20px 20px 8px;
+            font-size: 20px !important;
+            line-height: 1.35 !important;
+            overflow-wrap: anywhere;
+
+            a {
+                display: inline;
+                margin: 0;
+                padding: 0;
+                color: #f7f6f2 !important;
+                font-size: 20px !important;
+                font-weight: 500;
+                line-height: inherit;
+                z-index: auto;
+            }
+        }
+
+        h6 {
+            margin: 0 20px;
+            font-size: 14px !important;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+
+            a { padding: 0; color: #b8bbbf !important; font-size: 14px; font-weight: 400; }
+        }
+
+        a:focus-visible { outline: 2px solid $brand-color; outline-offset: -3px; }
+        h4 a:hover,
+        h6 a:hover { color: $brand-color !important; }
+        &:focus-within { border-color: $brand-color; }
+
+        .flag-container,
+        .flag-container.video-flag {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            bottom: auto;
+            padding: 5px;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 6px;
+            background: #151617;
+            perspective: none;
+            pointer-events: none;
+            z-index: 3;
+
+            .flag {
+                display: block;
+                width: 28px;
+                height: 19px;
+                object-fit: contain;
+                border-radius: 0;
+                animation: none;
+            }
+        }
+
+        &.corporate { height: 100%; margin: 0; border-radius: 18px; }
+    }
+
+    .portfolio-videos-area {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+        margin: 0;
+
+        .video-1 {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            padding: 0;
+
+            .corporate > img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: contain;
+                border-radius: 0;
+                background: #0e0f10;
+            }
+
+            .hero-video {
+                inset: 0 0 auto;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 9;
+                pointer-events: none;
+
+                .video-play-btn1 {
+                    display: grid;
+                    place-items: center;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid rgba(255, 255, 255, .45);
+                    border-radius: 50%;
+                    background: $brand-color;
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
+                    animation: none;
+                    transform: none;
+                    pointer-events: auto;
+
+                    > i { display: none; }
+                    &:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+                    &:hover { background: #ffd16a; }
+                }
+
+                .pulse1 i {
+                    margin-left: 3px;
+                    padding: 0;
+                    background: transparent;
+                    color: #151617;
+                    font-size: 20px !important;
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+        .portfolio-page-box { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+        .portfolio-page-box:hover {
+            transform: translateY(-5px);
+            border-color: rgba($brand-color, .5);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, .25);
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .tab-bar-content { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 991px) {
+        .tab-menu { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .tab-bar-content { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+        .portfolio-videos-area { gap: 20px; }
+    }
+
+    @media (max-width: 575px) {
+        padding: 12px 0 40px;
+        .main-box { margin: 0 16px !important; }
+        .tab-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 3px; gap: 3px; border-radius: 16px; }
+        .tab-menu-link { min-height: 25px; padding: 10px 6px; font-size: 14px; }
+        .tab-bar-content { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+        .tab-bar-content.is-active { margin-top: 24px; }
+        .portfolio-videos-area { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .tab-menu-link,
+        .portfolio-page-box,
+        .box,
+        .video-play-btn1 { transition: none; }
+    }
+}
+
+.portfolio-page-boxes ~ .lets-talk-area {
+    padding: 0 0 72px;
+
+    .main-box {
+        padding: clamp(32px, 5vw, 72px) 0;
+        border: 1px solid rgba($brand-color, .22);
+        border-radius: 24px;
+        background: radial-gradient(ellipse at top left, rgba($brand-color, .1), transparent 60%), #111213;
+
+        .lets-talk-first {
+            padding: 0 36px 0 0;
+            h2 {
+                margin: 0 0 20px;
+                font-family: 'Roboto', sans-serif !important;
+                font-size: clamp(40px, 4.5vw, 64px) !important;
+                font-weight: 500;
+                line-height: 1.1;
+                letter-spacing: -.035em;
+                color: $brand-color;
+                -webkit-text-stroke-width: 0;
+            }
+            h4 { margin: 0; padding: 0; font-size: 24px !important; line-height: 1.4 !important; color: #f7f6f2; }
+        }
+
+        .lets-talk-scnd {
+            padding: 0 0 0 36px;
+            border-left: 1px solid rgba($brand-color, .22);
+            p { margin: 0; color: #c9cbce; font-size: 16px; line-height: 1.85; }
+        }
+
+        .read-more {
+            position: static;
+            justify-content: flex-start;
+            margin-top: 30px;
+
+            a {
+                margin: 0;
+                padding: 15px 28px !important;
+                border: 1px solid $brand-color;
+                border-radius: 10px;
+                background: $brand-color;
+                color: #17130a;
+                letter-spacing: .03em;
+                &:hover { background: #ffd16a; color: #17130a; }
+                &:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+                &::before { content: none; }
+                i { animation: none; }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .main-box .lets-talk-first { padding: 0 0 24px; }
+        .main-box .lets-talk-scnd { padding: 0; border: 0; }
+    }
+
+    @media (max-width: 575px) {
+        padding-bottom: 48px;
+        .main-box {
+            margin: 0 16px !important;
+            border-radius: 20px;
+            .container { width: 100% !important; padding: 0 30px !important; }
+            .lets-talk-scnd p { font-size: 15px; line-height: 1.8; }
+        }
+    }
+}
