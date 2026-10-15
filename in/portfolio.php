@@ -2565,7 +2565,23 @@
           <!-- ================ SEO  START =================== -->
           <div class="row tab-bar-content" id="seo">
 
+ <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-page-box">
 
+              <div class="box">
+                <a href="https://www.flexlifting.com/" target="_blank"> <img
+                    src="./img/services/web/flexlift.jpg" alt="Flexlift"> </a>
+
+
+              </div>
+
+              <h4> <a href="https://www.flexlifting.com/" target="_blank"> Flexlift </a> </h4>
+              <h6> <a href="https://www.flexlifting.com/" target="_blank"> www.flexlifting.com </a> </h6>
+              <!--  -->
+              <div class="flag-container">
+                <img class="flag" src="./img/flags/italy.jpg" alt="Italy">
+              </div>
+              <!--  -->
+            </div>
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-page-box">
 
