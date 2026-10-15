@@ -829,7 +829,7 @@ $result = $conn->query($sql);
                                             </div>
                                             <div class="team-content">
                                                 <h3 class="title"> Basil </h3>
-                                                <span class="post"> Lead Technical Artist </span>
+                                                <span class="post"> Animation Team Lead </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1004,7 +1004,7 @@ $result = $conn->query($sql);
                                         </div>
                                     </div>
                                     <!-- slide -->
-                             
+                         
 
 
 
