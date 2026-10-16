@@ -2172,27 +2172,29 @@ h2 {
     padding: 0 0 20px 4px;
   }
 }
-.about-home-area .main-box .about-home-first h5 {
+.about-home-area .main-box .about-home-first h1 {
   color: #F9B217;
   font-weight: 500;
   line-height: 1.55;
   margin: 0 0 18px;
   display: inline-block;
   position: relative;
+  font-size: 22px !important;
 }
-.about-home-area .main-box .about-home-first h5::before {
+.about-home-area .main-box .about-home-first h1::before {
   display: none;
 }
 @media (max-width: 991px) {
-  .about-home-area .main-box .about-home-first h5 {
+  .about-home-area .main-box .about-home-first h1 {
     letter-spacing: 1.2px;
     margin-bottom: 14px;
   }
 }
 @media (max-width: 639px) {
-  .about-home-area .main-box .about-home-first h5 {
+  .about-home-area .main-box .about-home-first h1 {
     letter-spacing: 1px;
     margin-bottom: 12px;
+    font-size: 18px !important;
   }
 }
 .about-home-area .main-box .about-home-first h4 {
@@ -20879,7 +20881,7 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   }
 }
 
-.slider-text__slide h1 {
+.slider-text__slide h2 {
   font-size: 5rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -20889,25 +20891,25 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   line-height: 100px;
 }
 @media (max-width: 1599px) {
-  .slider-text__slide h1 {
+  .slider-text__slide h2 {
     font-size: 4rem !important;
     line-height: 80px;
   }
 }
 @media (max-width: 1199px) {
-  .slider-text__slide h1 {
+  .slider-text__slide h2 {
     font-size: 3.2rem !important;
     line-height: 70px;
   }
 }
 @media (max-width: 991px) {
-  .slider-text__slide h1 {
+  .slider-text__slide h2 {
     font-size: 4.5rem;
     letter-spacing: 0;
   }
 }
 @media (max-width: 639px) {
-  .slider-text__slide h1 {
+  .slider-text__slide h2 {
     font-size: 2rem !important;
     width: 90%;
     letter-spacing: 0;
@@ -20915,7 +20917,7 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   }
 }
 
-.slider-text__slide h1 span {
+.slider-text__slide h2 span {
   color: #F9B217;
   white-space: nowrap;
 }
@@ -21272,7 +21274,7 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
-  .slider-text__slide h1 {
+  .slider-text__slide h2 {
     font-size: 4rem;
     line-height: 80px;
   }

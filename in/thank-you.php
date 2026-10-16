@@ -14,6 +14,9 @@ $displayName = $name !== '' ? htmlspecialchars($name) : '';
   <meta name="description" content="Thank you for contacting Giraf Creatives. We will get back to you within 24 hours.">
   <meta name="robots" content="noindex, follow">
   <title>Thank You | Giraf Creatives</title>
+    <!-- canonical -->
+  <link href="https://girafcreatives.com/in/thank-you.php" rel="canonical">
+  <!--// canonical -->
   <link href="https://girafcreatives.com/in/thank-you.php" rel="canonical">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">

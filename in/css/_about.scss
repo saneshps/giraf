@@ -126,13 +126,14 @@
                 padding: 0 0 20px 4px;
             }
 
-            h5 {
+            h1 {
                 color: $brand-color;
                 font-weight: 500; 
                 line-height: 1.55;
                 margin: 0 0 18px;
                 display: inline-block;
                 position: relative; 
+                font-size: 22px !important; 
 
                 &::before { 
                     display: none;
@@ -146,6 +147,7 @@
                 @include respond-below(sm) { 
                     letter-spacing: 1px;
                     margin-bottom: 12px;
+                    font-size: 18px !important;
                 }
             }
 

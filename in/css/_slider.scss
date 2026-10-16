@@ -58,7 +58,7 @@
     }
 }
 
-.slider-text__slide h1 {
+.slider-text__slide h2 {
     font-size: 5rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -90,7 +90,7 @@
     }
 }
 
-.slider-text__slide h1 span {
+.slider-text__slide h2 span {
     color: $brand-color;
     white-space: nowrap;
 }
@@ -451,7 +451,7 @@
 
 @media only screen and (min-width : 1600px) and (max-width : 1919px) {
 
-    .slider-text__slide h1 {
+    .slider-text__slide h2 {
         font-size: 4rem;
         line-height: 80px;
     }

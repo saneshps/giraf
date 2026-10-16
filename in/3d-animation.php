@@ -8,7 +8,7 @@
   <meta name="description" content="Giraf is a professional 3D animation agency in India.Contact us for professional and affordable animated video production services">
   <title> Best Animation Company,India|3D Animation Studio |Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/animation.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/3d-animation.php" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">

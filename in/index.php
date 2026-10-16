@@ -128,9 +128,9 @@ $result = $conn->query($sql);
                 <div class="slider-text">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slider-text__slide">
-                            <h1> Stand Tall <br>
+                            <h2> Stand Tall <br>
                                 <span> Stand Apart </span>
-                            </h1> 
+                            </h2> 
 
                             <div class="read-more mt-3">
                                 <a href="connect-us.php" class="btn btn-lg">
@@ -198,7 +198,7 @@ $result = $conn->query($sql);
 
                     <!-- col-md-4 -->
                     <div class="col-xl-4 col-lg-4 col-md-12 about-home-first" data-aos="fade-right">
-                        <h5>Advertising Agency in India for Digital Marketing & Branding</h5>
+                        <h1>Advertising Agency in India for Digital Marketing & Branding</h1>
                         <h4>Strategic Creative Solutions with <span>3+</span> Years of Strategic Excellence</h4>
 
                                 <!-- =============== BUTTON =================== -->
