@@ -60,7 +60,7 @@
 <link rel="alternate" hreflang="en-GB" href="https://girafcreatives.com/uk/" />
 <link rel="alternate" hreflang="x-default" href="https://girafcreatives.com/" />
 
-  <?php include ('gtag_head.php'); ?>
+  <?php include __DIR__ . '/../gtag_head.php'; ?>
 
 
   <!-- CookieConsent -->
@@ -76,7 +76,7 @@
 
 
 
-  <?php include ('header.php'); ?>
+  <?php include __DIR__ . '/../header.php'; ?>
 
 
   <!-- =====================
@@ -399,7 +399,7 @@
   <!-- ======================
           FOOTER AREA START
        ====================== -->
-  <?php include ('footer.php'); ?>
+  <?php include __DIR__ . '/../footer.php'; ?>
 
   <!-- =====================
           LINES AREA START

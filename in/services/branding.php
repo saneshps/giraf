@@ -75,7 +75,7 @@
 <link rel="alternate" hreflang="en-GB" href="https://girafcreatives.com/uk/" />
 <link rel="alternate" hreflang="x-default" href="https://girafcreatives.com/" />
 
-  <?php include ('gtag_head.php'); ?>
+  <?php include __DIR__ . '/../gtag_head.php'; ?>
 
   <!-- CookieConsent -->
     <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
@@ -91,7 +91,7 @@
 
 
 
-  <?php include ('header.php'); ?>
+  <?php include __DIR__ . '/../header.php'; ?>
 
 
   <!-- =====================
@@ -499,7 +499,7 @@
   <!-- ======================
           FOOTER AREA START
        ====================== -->
-  <?php include ('footer.php'); ?>
+  <?php include __DIR__ . '/../footer.php'; ?>
 
   <!-- =====================
           LINES AREA START
@@ -567,7 +567,7 @@
 
   <!-- animate aos -->
   <script>
-    AOS.init();
+    if (typeof AOS !== 'undefined') AOS.init();
   </script>
 
   <!--// animate aos -->
