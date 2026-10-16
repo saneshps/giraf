@@ -49,7 +49,7 @@
             Kerala - India.
           </p>
           <p> <a href="tel:918075461989"> +91 80 75 46 19 89 </a> </p>
-          <p> <a href="mailto:info@girafcreatives.com "> info@girafcreatives.com  </a> </p>
+          <p> <a href="mailto:saneshbigleap@gmail.com "> info@girafcreatives.com  </a> </p>
  
           <div class="social-links">
 

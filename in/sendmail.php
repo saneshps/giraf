@@ -14,7 +14,7 @@ $message = $_POST['message'] ?? 'No message provided.';
 $mail = new PHPMailer; // Default uses PHP mail()
 
 // From address and name
-$mail->From = "info@girafcreatives.com"; 
+$mail->From = "saneshbigleap@gmail.com"; 
 $mail->FromName = $name;
 
 // Recipient(s)
