@@ -2,7 +2,7 @@
 <?php include('db_common_cms.php');
 // Check if slug is set
 if (!isset($_GET['slug']) || empty($_GET['slug'])) {
-    header("Location: blogs.php");
+    header("Location: blogs");
     exit;
 }
 

@@ -8,7 +8,7 @@
   <meta name="description" content="Looking for a Digital Marketing Company in India? Then you are at the right place! We offer affordable online, Internet Marketing, and SEO Services to Clients">
   <title> Advertising and Digital Marketing Agency | Expert Digital Marketing Services | Giraf Creatives</title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/digital-marketing.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services/digital-marketing" rel="canonical">
   <!--// canonical -->
 
 
@@ -154,7 +154,7 @@
         </div>
 
         <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+          <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
         </div>
 
         <!-- CONTENT -->

@@ -244,7 +244,7 @@ if (typeof Swiper !== 'undefined') {
             })
             .then(function (data) {
                 if (data && data.status === 'success') {
-                    window.location.href = data.redirect || 'thank-you.php';
+                    window.location.href = data.redirect || 'thank-you';
                     return;
                 }
 

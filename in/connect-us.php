@@ -9,7 +9,7 @@
   <title>Contact Us| Giraf Creatives</title>
 
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/connect-us.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/connect-us" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">

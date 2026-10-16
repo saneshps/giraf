@@ -8,7 +8,7 @@
   <meta name="description" content="Unlock powerful design with Giraf Creatives — UI/UX that speaks, web design that performs, and graphics that leave a mark. Personalized, immersive, and brand-defining.">
   <title> UI/UX, Web & Graphic Design Services | Giraf Creatives - Stand Tall with Design </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/designing.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services/designing" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -145,7 +145,7 @@
         </div>
 
         <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+          <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
         </div>
       </div>
     </div>

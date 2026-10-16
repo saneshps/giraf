@@ -8,7 +8,7 @@
   <meta name="description" content="Check out all our Software services Ranging from Digital Marketing, website development, Branding, Seo, Smm, Sem, Animation to Photography and Videography">
   <title> Service| Digital Marketing, Branding,Animation,Development| Giraf Creatives</title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/services.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -168,7 +168,7 @@
             <div class="col-xl-4 col-lg-6 col-md-12">
 
               <div class="services-list-box serv-detail-space serv-page">
-                <a href="digital-marketing.php">
+                <a href="services/digital-marketing">
                   <h3> 01 </h3>
                   <h2> Digital Marketing </h2>
                   <p> Ideating, creating, and shipping wonderful strategies on the internet. </p>
@@ -179,7 +179,7 @@
                     as it connects a business with its ideal customers when they are online,
                     & is effective in all industries when they are on Google.
                   </p>
-                  <span href="digital-marketing.php"> View More ... </span>
+                  <span href="services/digital-marketing"> View More ... </span>
                 </a>
               </div>
 
@@ -188,7 +188,7 @@
             <div class="col-xl-4 col-lg-6 col-md-12">
 
               <div class="services-list-box serv-detail-space serv-page">
-                <a href="branding.php">
+                <a href="services/branding">
                   <h3> 02 </h3>
                   <h2> Branding </h2>
                   <p> “I Am going to tell a real story and Let’s start with my name” </p>
@@ -198,7 +198,7 @@
                     automatically associates with quality and durability rather than
                     what is paid for it.
                   </p>
-                  <span href="branding.php"> View More ... </span>
+                  <span href="services/branding"> View More ... </span>
                 </a>
               </div>
 
@@ -207,7 +207,7 @@
             <div class="col-xl-4 col-lg-6 col-md-12">
 
               <div class="services-list-box serv-detail-space serv-page">
-                <a href="designing.php">
+                <a href="services/designing">
                   <h3> 03 </h3>
                   <h2> Designing </h2>
                   <p> Welcome to our magic world. </p>
@@ -221,7 +221,7 @@
                     that can immediately communicate the value of your
                     business or product to a prospective customer.
                   </p>
-                  <span href="designing.php"> View More ... </span>
+                  <span href="services/designing"> View More ... </span>
                 </a>
               </div>
 
@@ -230,7 +230,7 @@
             <div class="col-xl-4 col-lg-6 col-md-12">
 
               <div class="services-list-box serv-detail-space serv-page">
-                <a href="web-and-app-development.php">
+                <a href="services/web-and-app-development">
                   <h3> 04 </h3>
                   <h2> Web and App Development</h2>
                   <p> "One size fits all" doesn't work in web designing. Each customer
@@ -239,7 +239,7 @@
                   </p>
                   <p> “Craft your ideas with us” </p>
                   <p> Our clients consider us as one of the top Web Developers because we have a team who got hands-on experience. </p>
-                  <span href="web-and-app-development.php"> View More ... </span>
+                  <span href="services/web-and-app-development"> View More ... </span>
                 </a>
               </div>
 
@@ -248,7 +248,7 @@
             <div class="col-xl-4 col-lg-6 col-md-12">
 
               <div class="services-list-box serv-detail-space serv-page">
-                <a href="photography-and-video-production.php">
+                <a href="services/photography-and-video-production">
                   <h3> 05 </h3>
                   <h2> Product Explanatory Videos </h2>
                   <p> Photography and videography are the best way to tell your brand
@@ -256,7 +256,7 @@
                     for your website and all other marketing mediums.
 
                   </p>
-                  <span href="photography-and-video-production.php"> View More ... </span>
+                  <span href="services/photography-and-video-production"> View More ... </span>
                 </a>
               </div>
 
@@ -265,7 +265,7 @@
             <div class="col-xl-4 col-lg-6 col-md-12">
 
               <div class="services-list-box serv-detail-space serv-page">
-                <a href="animation.php">
+                <a href="services/animation">
                   <h3> 06 </h3>
                   <h2> Animation </h2>
 
@@ -276,7 +276,7 @@
                     and advancing their social media and marketing strategies.
 
                   </p>
-                  <span href="animation.php"> View More ... </span>
+                  <span href="services/animation"> View More ... </span>
                 </a>
               </div>
 
@@ -543,7 +543,7 @@
 
           <!-- =============== BUTTON =================== -->
           <div class="read-more">
-            <a href="contact.php" class="btn btn-lg">
+            <a href="contact" class="btn btn-lg">
               Contact Us
               <i class="fas fa-angle-right"></i>
             </a>

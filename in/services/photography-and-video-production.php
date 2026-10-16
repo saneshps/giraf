@@ -8,7 +8,7 @@
   <meta name="description" content="Giraf offers professional photography and videography services specializing in warehouse and product shoots. Capture high-quality visuals that showcase your products perfectly.">
   <title> Creative photography and videography production services| Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/photography-and-video-production.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services/photography-and-video-production" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -153,7 +153,7 @@
 
         </div>
         <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+          <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
         </div>
 
       </div>

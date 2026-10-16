@@ -9,7 +9,7 @@
   <meta name="description" content="Looking for a Digital Marketing Company, Branding, Designing, Web and App Development, Animation, Photography and Video Production in India Contact Us: +91 9874598775">
 
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/privacy-policy.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/privacy-policy" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">

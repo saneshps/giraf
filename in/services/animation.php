@@ -8,7 +8,7 @@
   <meta name="description" content="Giraf is a professional 3D animation agency in India.Contact us for professional and affordable animated video production services">
   <title> Best Animation Company,India|3D Animation Studio |Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/animation.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services/animation" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -169,7 +169,7 @@
       </div>
       <div class="row two-services-grid">
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="../2d-animation.php">
+          <a href="../2d-animation">
           <article class="two-services-box">
             <div class="two-services-box__media">
               <img src="../img/services/2d-animation.webp" alt="2D Animation Services">
@@ -183,7 +183,7 @@
           </a>
         </div>
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="../3d-animation.php">
+          <a href="../3d-animation">
           <article class="two-services-box">
             <div class="two-services-box__media">
               <img src="../img/services/3d-animation.webp" alt="3D Animation Services">
@@ -221,7 +221,7 @@
 
               </p>
               <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+          <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
         </div>
             </div>
           </div>

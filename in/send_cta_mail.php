@@ -111,7 +111,7 @@ try {
     echo json_encode([
         'status' => 'success',
         'message' => 'Thank you! Your message has been sent.',
-        'redirect' => 'thank-you.php'
+        'redirect' => 'thank-you'
     ]);
 } catch (Exception $e) {
     echo json_encode([

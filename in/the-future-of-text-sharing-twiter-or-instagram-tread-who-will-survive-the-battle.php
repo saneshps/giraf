@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> The Future of Text Sharing: Twitter or Instagram Thread - Who Will Survive the Battle </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -249,7 +249,7 @@
               <img src="./img/blogs/The-Power-of-Animation-in-Marketing.jpg" alt="The Power of Animation in Marketing">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Oct 2023 </a> </span>
-                <h5> <a href="the-power-of-animation-in-marketing.php"> The Power of Animation in Marketing... </a> </h5>
+                <h5> <a href="the-power-of-animation-in-marketing"> The Power of Animation in Marketing... </a> </h5>
               </div>
 
             </li>
@@ -257,7 +257,7 @@
               <img src="./img/blogs/How-Does-Branding-Contribute-to-Effective-Business-Strategy-Implementation-banner.jpg" alt="The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Sept 2023 </a> </span>
-                <h5> <a href="how-does-branding-contribute-to-effective-business-strategy-implementation.php"> How Does Branding Contribute to Effective... </a> </h5>
+                <h5> <a href="how-does-branding-contribute-to-effective-business-strategy-implementation"> How Does Branding Contribute to Effective... </a> </h5>
               </div>
 
             </li>

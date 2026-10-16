@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> The Future of Web Development: Trends to Watch in 2024 </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/the-Future-of-Web-Development-Trends-to-Watch-in-2024.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/the-Future-of-Web-Development-Trends-to-Watch-in-2024" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -150,7 +150,7 @@
 
           </ul>
           <p> While some of these questions are best left for personal reflection, we've got you covered when
-            it comes to <a href="https://www.giraf.in/web-and-app-development.php" target="_blank"> web development's </a> future and how web developers may keep up to date in the technology sector.
+            it comes to <a href="https://www.giraf.in/web-and-app-development" target="_blank"> web development's </a> future and how web developers may keep up to date in the technology sector.
 
           </p>
           <h4> Web Development Trends of 2024 </h4>
@@ -264,7 +264,7 @@
               Because there is such a great need in learning new skills, there are many courses and workshops
               available to help you on your way. Many people who desire to shift careers and become web
               developers will discover that boot camps provide instruction on the most recent trends
-              to prepare their pupils for their first <a href="https://www.giraf.in/web-and-app-development.php" target="_blank"> web development </a> job.
+              to prepare their pupils for their first <a href="https://www.giraf.in/web-and-app-development" target="_blank"> web development </a> job.
             </li>
             <li> <i class="fas fa-long-arrow-alt-right"></i> Learn from a tutor or a peer: Many IT experts remain
               up to date on these developments and may elect to assist their peers in a teaching capacity;
@@ -299,7 +299,7 @@
               <img src="./img/blogs/The-Power-of-Animation-in-Marketing.jpg" alt="The Power of Animation in Marketing: Boosting Engagement and Conversion Rates">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Oct 2023 </a> </span>
-                <h5> <a href="the-power-of-animation-in-marketing.php"> The Power of Animation in Marketing... </a> </h5>
+                <h5> <a href="the-power-of-animation-in-marketing"> The Power of Animation in Marketing... </a> </h5>
               </div>
 
             </li>
@@ -307,7 +307,7 @@
               <img src="./img/blogs/How-Does-Branding-Contribute-to-Effective-Business-Strategy-Implementation-banner.jpg" alt="The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Sept 2023 </a> </span>
-                <h5> <a href="how-does-branding-contribute-to-effective-business-strategy-implementation.php"> How Does Branding Contribute to Effective... </a> </h5>
+                <h5> <a href="how-does-branding-contribute-to-effective-business-strategy-implementation"> How Does Branding Contribute to Effective... </a> </h5>
               </div>
 
             </li>
@@ -315,7 +315,7 @@
               <img src="./img/blogs/The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner.jpg" alt="The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Aug 2023 </a> </span>
-                <h5> <a href="the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle.php"> The Future of Text Sharing: Twitter or... </a></h5>
+                <h5> <a href="the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle"> The Future of Text Sharing: Twitter or... </a></h5>
               </div>
 
             </li>

@@ -8,7 +8,7 @@
   <meta name="description" content="Get custom web application development services from the top Best web and App development company.We provide Web & Mobile App,E-commerce Development services">
   <title> Website & Mobile App,E-commerce,Design Development Company,India|Giraf Creatives</title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/web-and-app-development.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services/web-and-app-development" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -134,7 +134,7 @@
         </div>
 
         <div class="book-call">
-          <a href="connect-us.php" class="blink-button" target="_blank"> BOOK A CALL </a>
+          <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
         </div>
       </div>
     </div>

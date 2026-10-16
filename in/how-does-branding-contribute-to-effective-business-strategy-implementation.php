@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> How Does Branding Contribute to Effective Business Strategy Implementation </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/how-does-branding-contribute-to-effective-business-strategy-implementation.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/how-does-branding-contribute-to-effective-business-strategy-implementation" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -132,7 +132,7 @@
           </p>
 
           <h4> The Essence of Branding </h4>
-          <p> <a href="https://girafcreatives.com/in/branding.php">Branding</a> encompasses more than merely a logo or a catchy tagline.It encompasses the entire perception and identity of
+          <p> <a href="https://girafcreatives.com/in/services/branding">Branding</a> encompasses more than merely a logo or a catchy tagline.It encompasses the entire perception and identity of
             a company in the minds of its customers. It's the emotional connection and trust that customers associate with a brand.
             Effective branding communicates the company's values, mission, and promises, creating a unique and memorable impression.
 
@@ -227,7 +227,7 @@
 
 
           <h5> 5. Adaptation and Innovation </h5>
-          <p> As business strategies evolve, so should your <a href="https://girafcreatives.com/in/branding.php">branding</a>. A branding company is well-equipped to adapt your brand identity
+          <p> As business strategies evolve, so should your <a href="https://girafcreatives.com/in/services/branding">branding</a>. A branding company is well-equipped to adapt your brand identity
             to changing circumstances while preserving its core values. They can help you stay innovative and relevant in your market,
             ensuring your brand continues to support your strategic goals.
           </p>
@@ -264,7 +264,7 @@
               <img src="./img/blogs/The-Power-of-Animation-in-Marketing.jpg" alt="The Power of Animation in Marketing">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Oct 2023 </a> </span>
-                <h5> <a href="the-power-of-animation-in-marketing.php"> The Power of Animation in Marketing... </a> </h5>
+                <h5> <a href="the-power-of-animation-in-marketing"> The Power of Animation in Marketing... </a> </h5>
               </div>
 
             </li>
@@ -273,7 +273,7 @@
               <img src="./img/blogs/The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner.jpg" alt="The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Aug 2023 </a> </span>
-                <h5> <a href="the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle.php"> The Future of Text Sharing: Twitter or... </a></h5>
+                <h5> <a href="the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle"> The Future of Text Sharing: Twitter or... </a></h5>
               </div>
 
             </li>

@@ -8,7 +8,7 @@
   <meta name="description" content="We are a leading Professional Advertising & Branding Agency in India.We also focus on Brand Strategy,Brand Identity,Digital Design,Print Design,Packaging services">
   <title>Advertising & Professional Branding Agency,India|Giraf Creatives</title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/branding.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/services/branding" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -251,7 +251,7 @@
             </p>
 <p> And we bring about that activity. </p>
 <p> We will provide whether it's in the form of 360-degree, augmented, virtual, live-action,
-              or <a href="https://www.giraf.in/animation.php" target="_blank"> animation</a>. and with quick response times as well!
+              or <a href="https://www.giraf.in/animation" target="_blank"> animation</a>. and with quick response times as well!
             </p>
 <p> Additionally, we have an impressive history of increasing traffic,
               and we'll make sure that every video you upload appears in search results.

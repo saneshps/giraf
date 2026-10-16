@@ -15,9 +15,9 @@ $displayName = $name !== '' ? htmlspecialchars($name) : '';
   <meta name="robots" content="noindex, follow">
   <title>Thank You | Giraf Creatives</title>
     <!-- canonical -->
-  <link href="https://girafcreatives.com/in/thank-you.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/thank-you" rel="canonical">
   <!--// canonical -->
-  <link href="https://girafcreatives.com/in/thank-you.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/thank-you" rel="canonical">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +56,7 @@ $displayName = $name !== '' ? htmlspecialchars($name) : '';
             Back to Home
             <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
-          <a href="connect-us.php" class="thank-you-btn thank-you-btn--ghost">Contact Us</a>
+          <a href="connect-us" class="thank-you-btn thank-you-btn--ghost">Contact Us</a>
         </div>
         <p class="thank-you-meta">
           Prefer a call?

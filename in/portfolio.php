@@ -11,7 +11,7 @@
 
     Portfolio | Digital Marketing & Advertising Agency| Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/portfolio.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/portfolio" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -483,11 +483,11 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-page-box">
 
               <div class="box">
-                <a href="logistica-portfolio.php" target="_blank"> <img
+                <a href="logistica-portfolio" target="_blank"> <img
                     src="./img/services/web/logistica.jpg" alt="logistica"> </a>
               </div>
 
-              <h4> <a href="logistica-portfolio.php" target="_blank"> Logistica Group </a> </h4>
+              <h4> <a href="logistica-portfolio" target="_blank"> Logistica Group </a> </h4>
 
               <h6> <a href="https://logistica-group.com" target="_blank"> www.logistica-group.com </a>
                 </a> </h6>
@@ -501,13 +501,13 @@
 
               <div class="box">
 
-                <a href="kistler-portfolio.php" target="_blank"> <img
+                <a href="kistler-portfolio" target="_blank"> <img
                     src="./img/services/web/kistler.jpg" alt="kistler"> </a>
 
 
               </div>
 
-              <h4> <a href="kistler-portfolio.php" target="_blank"> Kistler-machine </a> </h4>
+              <h4> <a href="kistler-portfolio" target="_blank"> Kistler-machine </a> </h4>
 
               <h6> <a href="https://www.kistler-machine.com/de" target="_blank">
                   www.kistler-machine.com/de </a> </a> </h6>
@@ -2468,13 +2468,13 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-page-box">
 
               <div class="box">
-                <a href="kistler-portfolio-sales-app.php" target="_blank">
+                <a href="kistler-portfolio-sales-app" target="_blank">
                   <img src="./img/services/branding/kistler-app-poster-change.jpg" alt="kistler"> </a>
 
 
               </div>
 
-              <h4> <a href="kistler-portfolio-sales-app.php" target="_blank"> Kistler Machines </a> </h4>
+              <h4> <a href="kistler-portfolio-sales-app" target="_blank"> Kistler Machines </a> </h4>
               <h6> <a href="https://www.kistler-machine.com/de" target="_blank"> www.kistler-machine.com
                 </a> </h6>
 
@@ -2799,12 +2799,12 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-page-box">
 
               <div class="box">
-                <a href="sbr-portfolio.php" target="_blank"> <img src="./img/services/seo/SBR.jpg"
+                <a href="sbr-portfolio" target="_blank"> <img src="./img/services/seo/SBR.jpg"
                     alt="sbr"> </a>
 
               </div>
 
-              <h4> <a href="sbr-portfolio.php" target="_blank"> SBR Batteries </a> </h4>
+              <h4> <a href="sbr-portfolio" target="_blank"> SBR Batteries </a> </h4>
               <h6> <a href="https://sbrbatteries.com/" target="_blank"> www.sbrbatteries.com </a> </h6>
               <!--  -->
               <div class="flag-container">
@@ -3444,7 +3444,7 @@
                       </a> </div>
 
 
-                    <h4> <a href="#" target="_blank"> <a href="logistica-portfolio.php"
+                    <h4> <a href="#" target="_blank"> <a href="logistica-portfolio"
                           target="_blank"> Logistica </a></a> </h4>
 
                     <a href="https://logistica-group.com/" target="_blank">
@@ -3630,7 +3630,7 @@
 
           <!-- =============== BUTTON =================== -->
           <div class="read-more">
-            <a href="contact.php" class="btn btn-lg">
+            <a href="contact" class="btn btn-lg">
               Contact Us
               <i class="fas fa-angle-right"></i>
             </a>

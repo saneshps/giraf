@@ -133,7 +133,7 @@ $result = $conn->query($sql);
                             </h2> 
 
                             <div class="read-more mt-3">
-                                <a href="connect-us.php" class="btn btn-lg">
+                                <a href="connect-us" class="btn btn-lg">
                                     Contact Us
                                     <i class="fas fa-angle-right"></i>
                                 </a>
@@ -203,7 +203,7 @@ $result = $conn->query($sql);
 
                                 <!-- =============== BUTTON =================== -->
                     <div class="read-more" data-aos="fade-up">
-                        <a href="about.php" class="btn btn-lg">
+                        <a href="about" class="btn btn-lg">
                             View More
                             <i class="fas fa-angle-right"></i>
                         </a>
@@ -492,7 +492,7 @@ $result = $conn->query($sql);
 
                         <!-- =============== BUTTON =================== -->
                         <div class="read-more">
-                            <a href="portfolio.php" class="btn btn-lg">
+                            <a href="portfolio" class="btn btn-lg">
                                 More Works
                                 <i class="fas fa-angle-right"></i>
                             </a>
@@ -546,7 +546,7 @@ $result = $conn->query($sql);
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <a href="branding.php" class="ns-card">
+                            <a href="services/branding" class="ns-card">
                                 <div class="ns-card-media">
                                     <img src="./img/services/branding.jpg" alt="Branding services">
                                     <span class="ns-card-num">01</span>
@@ -560,7 +560,7 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="digital-marketing.php" class="ns-card">
+                            <a href="services/digital-marketing" class="ns-card">
                                 <div class="ns-card-media">
                                     <img src="./img/services/digital-marketing.jpg" alt="Digital Marketing services">
                                     <span class="ns-card-num">02</span>
@@ -574,7 +574,7 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="designing.php" class="ns-card">
+                            <a href="services/designing" class="ns-card">
                                 <div class="ns-card-media">
                                     <img src="./img/services/Designing-banner.jpg" alt="Creative Designing services">
                                     <span class="ns-card-num">03</span>
@@ -588,7 +588,7 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="web-and-app-development.php" class="ns-card">
+                            <a href="services/web-and-app-development" class="ns-card">
                                 <div class="ns-card-media">
                                     <img src="./img/services/web-app-development.jpg" alt="Website Design and Development">
                                     <span class="ns-card-num">04</span>
@@ -602,7 +602,7 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="animation.php" class="ns-card">
+                            <a href="services/animation" class="ns-card">
                                 <div class="ns-card-media">
                                     <img src="./img/services/MOTION-GRAPHICS.jpeg" alt="Animation Services">
                                     <span class="ns-card-num">05</span>
@@ -616,7 +616,7 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="swiper-slide">
-                            <a href="photography-and-video-production.php" class="ns-card">
+                            <a href="services/photography-and-video-production" class="ns-card">
                                 <div class="ns-card-media">
                                     <img src="./img/services/PRODUCT-VIDEOS.jpeg" alt="Product Explanatory Videos">
                                     <span class="ns-card-num">06</span>
@@ -742,7 +742,7 @@ $result = $conn->query($sql);
 
                         <!-- =============== BUTTON =================== -->
                         <div class="read-more">
-                            <a href="about.php" class="btn btn-lg">
+                            <a href="about" class="btn btn-lg">
                                 View More
                                 <i class="fas fa-angle-right"></i>
                             </a>
@@ -1262,7 +1262,7 @@ $result = $conn->query($sql);
 
                             <!-- =============== BUTTON =================== -->
                             <div class="read-more">
-                                <a href="about.php" class="btn btn-lg">
+                                <a href="about" class="btn btn-lg">
                                     View More
                                     <i class="fas fa-angle-right"></i>
                                 </a>
@@ -1579,7 +1579,7 @@ $result = $conn->query($sql);
 
                         <!-- =============== BUTTON =================== -->
                         <div class="read-more">
-                            <a href="blogs.php" class="btn btn-lg">
+                            <a href="blogs" class="btn btn-lg">
                                 More blogs
                                 <i class="fas fa-angle-right"></i>
                             </a>

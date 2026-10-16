@@ -10,7 +10,7 @@
     <title> Top Marketing Company,Development,Branding Agency India|About </title>
 
     <!-- canonical -->
-    <link href="https://girafcreatives.com/in/about.php" rel="canonical">
+    <link href="https://girafcreatives.com/in/about" rel="canonical">
     <!--// canonical -->
 
     <link rel="stylesheet" href="./css/main.css">

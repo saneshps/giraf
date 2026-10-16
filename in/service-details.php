@@ -9,7 +9,7 @@
     content="Giraf is a leading digital marketing,web & App design & development company in India also focused on Designing,Branding,Photography and Video Production services">
   <title> Top Website & App Design,Development,Branding Agency India| Service Details </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/service-details.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/service-details" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">

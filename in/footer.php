@@ -6,12 +6,12 @@
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-first">
           <h4>Our Services</h4>
           <ul>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/branding.php"> Branding </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/digital-marketing.php"> Digital Marketing </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/designing.php"> Creative Designing </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/web-and-app-development.php"> Website Design & Development </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/animation.php"> Animation Services </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/photography-and-video-production.php"> Product Explanatory Videos </a> </li> 
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/branding"> Branding </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/digital-marketing"> Digital Marketing </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/designing"> Creative Designing </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/web-and-app-development"> Website Design & Development </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/animation"> Animation Services </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/photography-and-video-production"> Product Explanatory Videos </a> </li> 
           </ul>
 
         </div>
@@ -37,7 +37,7 @@
              </span>  
           </p>
           <p>  
-             <span>    <a class="privacy" href="<?php echo $inBasePath; ?>privacy-policy.php"> Privacy Policy </a>  </span>  
+             <span>    <a class="privacy" href="<?php echo $inBasePath; ?>privacy-policy"> Privacy Policy </a>  </span>  
           </p>
         </div>
         <!-- secnd -->

@@ -9,7 +9,7 @@
          <span class='lines'></span>
        </button>
        <!-- logo -->
-       <a href="<?php echo $inBasePath; ?>index.php"> <img class="logo" src="<?php echo $inBasePath; ?>img/logo.png" alt="logo"> </a>
+       <a href="<?php echo $inBasePath; ?>index"> <img class="logo" src="<?php echo $inBasePath; ?>img/logo.png" alt="logo"> </a>
        <!-- logo -->
      </div>
    </header>
@@ -40,13 +40,13 @@
      <!-- push logo -->
      <ul class="site-nav">
        <li class="<?php echo ($curPageName == "index.php") ? 'active' : '' ?>">
-         <a href="<?php echo $inBasePath; ?>index.php"> Home </a>
+         <a href="<?php echo $inBasePath; ?>index"> Home </a>
        </li>
        <li class="<?php echo ($curPageName == "about.php") ? 'active' : '' ?>">
-         <a href="<?php echo $inBasePath; ?>about.php"> About Us </a>
+         <a href="<?php echo $inBasePath; ?>about"> About Us </a>
        </li>
        <li class="<?php echo ($curPageName == "portfolio.php") ? 'active' : '' ?>">
-         <a href="<?php echo $inBasePath; ?>portfolio.php"> Works </a>
+         <a href="<?php echo $inBasePath; ?>portfolio"> Works </a>
        </li>
        <li class="has-submenu <?php echo $servicesActive ? 'active is-open' : '' ?>">
          <button type="button" class="nav-parent" aria-expanded="<?php echo $servicesActive ? 'true' : 'false' ?>" aria-controls="services-submenu">
@@ -55,61 +55,61 @@
          </button>
          <ul class="nav-submenu" id="services-submenu">
            <li class="<?php echo ($curPageName == "branding.php") ? 'is-current' : '' ?>">
-             <a href="<?php echo $inBasePath; ?>services/branding.php"><span class="sub-index">01</span><span class="sub-label">Branding</span></a>
+             <a href="<?php echo $inBasePath; ?>services/branding"><span class="sub-index">01</span><span class="sub-label">Branding</span></a>
            </li>
            <li class="<?php echo ($curPageName == "digital-marketing.php") ? 'is-current' : '' ?>">
-             <a href="<?php echo $inBasePath; ?>services/digital-marketing.php"><span class="sub-index">02</span><span class="sub-label">Digital Marketing</span></a>
+             <a href="<?php echo $inBasePath; ?>services/digital-marketing"><span class="sub-index">02</span><span class="sub-label">Digital Marketing</span></a>
            </li>
            <li class="<?php echo ($curPageName == "designing.php") ? 'is-current' : '' ?>">
-             <a href="<?php echo $inBasePath; ?>services/designing.php"><span class="sub-index">03</span><span class="sub-label">Creative Designing</span></a>
+             <a href="<?php echo $inBasePath; ?>services/designing"><span class="sub-index">03</span><span class="sub-label">Creative Designing</span></a>
            </li>
            <li class="<?php echo ($curPageName == "web-and-app-development.php") ? 'is-current' : '' ?>">
-             <a href="<?php echo $inBasePath; ?>services/web-and-app-development.php"><span class="sub-index">04</span><span class="sub-label">Website Design &amp; Development</span></a>
+             <a href="<?php echo $inBasePath; ?>services/web-and-app-development"><span class="sub-index">04</span><span class="sub-label">Website Design &amp; Development</span></a>
            </li>
            <li class="has-nested <?php echo $animationActive ? 'is-current' : '' ?>">
              <div class="nav-sub-item">
-               <a href="<?php echo $inBasePath; ?>services/animation.php"><span class="sub-index">05</span><span class="sub-label">Animation Services</span></a>
+               <a href="<?php echo $inBasePath; ?>services/animation"><span class="sub-index">05</span><span class="sub-label">Animation Services</span></a>
                <button type="button" class="nav-nested-toggle" aria-expanded="false" aria-controls="animation-nested">
                  <span class="nav-chevron" aria-hidden="true"></span>
                </button>
              </div>
              <ul class="nav-nested" id="animation-nested">
                <li class="<?php echo ($curPageName == "2d-animation.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/2d-animation.php"><span class="sub-label">2D Animation</span></a>
+                 <a href="<?php echo $inBasePath; ?>services/2d-animation"><span class="sub-label">2D Animation</span></a>
                </li>
                <li class="<?php echo ($curPageName == "3d-animation.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/3d-animation.php"><span class="sub-label">3D Animation</span></a>
+                 <a href="<?php echo $inBasePath; ?>services/3d-animation"><span class="sub-label">3D Animation</span></a>
                </li>
                <li class="<?php echo ($curPageName == "product-animation.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/product-animation.php"><span class="sub-label">Product Animation</span></a>
+                 <a href="<?php echo $inBasePath; ?>services/product-animation"><span class="sub-label">Product Animation</span></a>
                </li>
                <li class="<?php echo ($curPageName == "visual-effects.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/visual-effects.php"><span class="sub-label">  VFX  </span></a>
+                 <a href="<?php echo $inBasePath; ?>services/visual-effects"><span class="sub-label">  VFX  </span></a>
                </li>
                <li class="<?php echo ($curPageName == "product-previsualization.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/product-previsualization.php"><span class="sub-label">  Product Pre Visualization </span></a>
+                 <a href="<?php echo $inBasePath; ?>services/product-previsualization"><span class="sub-label">  Product Pre Visualization </span></a>
                </li>
                <li class="<?php echo ($curPageName == "character-design.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/character-design.php"><span class="sub-label">  Character Design </span></a>
+                 <a href="<?php echo $inBasePath; ?>services/character-design"><span class="sub-label">  Character Design </span></a>
                </li>
                <li class="<?php echo ($curPageName == "motion-graphics.php") ? 'is-current' : '' ?>">
-                 <a href="<?php echo $inBasePath; ?>services/motion-graphics.php"><span class="sub-label">  Motion Graphics </span></a>
+                 <a href="<?php echo $inBasePath; ?>services/motion-graphics"><span class="sub-label">  Motion Graphics </span></a>
                </li>
              </ul>
            </li>
            <li class="<?php echo ($curPageName == "photography-and-video-production.php") ? 'is-current' : '' ?>">
-             <a href="<?php echo $inBasePath; ?>services/photography-and-video-production.php"><span class="sub-index">06</span><span class="sub-label">Product Explanatory Videos</span></a>
+             <a href="<?php echo $inBasePath; ?>services/photography-and-video-production"><span class="sub-index">06</span><span class="sub-label">Product Explanatory Videos</span></a>
            </li>
            <li class="nav-submenu-all <?php echo ($curPageName == "services.php") ? 'is-current' : '' ?>">
-             <a href="<?php echo $inBasePath; ?>services.php"><span class="sub-label">View all services</span><span class="sub-arrow" aria-hidden="true">→</span></a>
+             <a href="<?php echo $inBasePath; ?>services"><span class="sub-label">View all services</span><span class="sub-arrow" aria-hidden="true">→</span></a>
            </li>
          </ul>
        </li>
        <li class="<?php echo ($curPageName == "blogs.php" || $curPageName == "blog-details.php") ? 'active' : '' ?>">
-         <a href="<?php echo $inBasePath; ?>blogs.php"> Blogs </a>
+         <a href="<?php echo $inBasePath; ?>blogs"> Blogs </a>
        </li>
        <li class="<?php echo ($curPageName == "connect-us.php") ? 'active' : '' ?>">
-         <a href="<?php echo $inBasePath; ?>connect-us.php"> Contact Us </a>
+         <a href="<?php echo $inBasePath; ?>connect-us"> Contact Us </a>
        </li>
      </ul>
      <span class="nav-marker"></span>

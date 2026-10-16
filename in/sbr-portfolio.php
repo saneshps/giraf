@@ -8,7 +8,7 @@
   <meta name="description" content="Check out our Portfolio which made us the best Digital Marketing,Branding,E-commerce,Web Design & Development Company in India.Have a look at our extensive portfolio">
   <title> Digital Marketing & Web Design,Branding Company| Portfolio |Giraf </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/sbr-portfolio.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/sbr-portfolio" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -354,7 +354,7 @@
 
           <!-- =============== BUTTON =================== -->
           <div class="read-more">
-            <a href="contact.php" class="btn btn-lg">
+            <a href="contact" class="btn btn-lg">
               Contact Us
               <i class="fas fa-angle-right"></i>
             </a>

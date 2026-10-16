@@ -8,7 +8,7 @@
   <title> The Power of Animation to Drive User Engagement | Marketing Maestros | Blogs | Giraf </title>
   <meta name="description" content="Elevate engagement with animated marketing! Captivate your audience through dynamic visuals and storytelling. Unleash the power of animation for maximum impact.">
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/the-power-of-animation-in-marketing.php.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/the-power-of-animation-in-marketing" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -246,9 +246,9 @@
           <p> We’ve discussed above the popular video formats that you can use with animation to support
             your marketing plan and how effective those plans are in boosting customer engagements.
             Whatever animation video format you choose, the key step is to find a good team who
-            can help you create meaningful <a href="animation.php"> animation videos </a> at very high quality. <a href="index.php"> Giraf </a> has proven experience
+            can help you create meaningful <a href="services/animation"> animation videos </a> at very high quality. <a href="index"> Giraf </a> has proven experience
             in this field, and they have delivered numerous projects in India and abroad. Equipped with a
-            team of qualified experts, <a href="index.php"> Giraf </a> stands tall in the digital marketing industry.
+            team of qualified experts, <a href="index"> Giraf </a> stands tall in the digital marketing industry.
 
           </p>
 
@@ -262,7 +262,7 @@
               <img src="./img/blogs/How-Does-Branding-Contribute-to-Effective-Business-Strategy-Implementation-banner.jpg" alt="The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Sept 2023 </a> </span>
-                <h5> <a href="how-does-branding-contribute-to-effective-business-strategy-implementation.php"> How Does Branding Contribute to Effective... </a> </h5>
+                <h5> <a href="how-does-branding-contribute-to-effective-business-strategy-implementation"> How Does Branding Contribute to Effective... </a> </h5>
               </div>
 
             </li>
@@ -270,7 +270,7 @@
               <img src="./img/blogs/The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner.jpg" alt="The-Future-Of-Text-Sharing-Twiter-Or-Instagram-Tread-Who-Will-Survive-The-Battle-banner">
               <div class="latest-post-ul-content">
                 <span> <i class="fas fa-calendar-alt"></i> <a> 31 Aug 2023 </a> </span>
-                <h5> <a href="the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle.php"> The Future of Text Sharing: Twitter or... </a></h5>
+                <h5> <a href="the-future-of-text-sharing-twiter-or-instagram-tread-who-will-survive-the-battle"> The Future of Text Sharing: Twitter or... </a></h5>
               </div>
 
             </li>

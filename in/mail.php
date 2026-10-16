@@ -83,7 +83,7 @@ session_start();
       $result = mail('info@giraf.com', 'Enquiry From Giraf website', $message, $header);
       ?>
       <script type="text/javascript">
-          window.location="contact.php";
+          window.location="contact";
       </script>
       <?php
       //mail($email,'Thanks for your feedback' , $feedback,$header);
