@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Giraf is a professional 3D animation agency in India.Contact us for professional and affordable animated video production services">
-  <title> Best Animation Company,India|VFX |Giraf Creatives </title>
+  <title> Best Animation Company,India|Product Animation Studio |Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/visual-effects.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/product-animation.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -44,12 +44,12 @@
   <!-- video -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -84,7 +84,7 @@
     <!-- CookieConsent -->
 </head>
 
-<body class="product-animation-page vfx-page">
+<body class="product-animation-page">
   <!-- =====================
           HEADER START
      ===================== -->
@@ -102,127 +102,90 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <a class="pa-skip" href="#vfx-content">Skip to content</a>
+  <a class="pa-skip" href="#product-content">Skip to content</a>
 <section aria-labelledby="pa-title">
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/vfx.webp" alt="VFX">
+        <img src="../img/services/product-animation.webp" alt="Product Animation">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
-        <h1 id="pa-title">VFX Service</h1>
+        <h1 id="pa-title">Product Animation</h1>
         <span class="banner-area__line" aria-hidden="true"></span>
       </div>
     </div>
   </section>
-  <main class="pa-main" id="vfx-content">
-    <section class="pa-section pa-why vfx-intro" aria-labelledby="vfx-intro-title">
-      <div class="pa-shell pa-split">
-        <h2 id="vfx-intro-title">Done with the shoot? Then it’s time to make it better</h2>
-        <div class="pa-prose"><p>Maybe it's a background, maybe it's the effects, maybe it’s a whole new environment. Got footage that needs an upgrade? At Giraf Creatives, we provide VFX services that turn your ideas into polished and engaging visuals. From creating new elements to cleaning up the shots and adding CGI, we work with your footage to achieve the video precisely how you want it to be.</p></div>
+  <main class="pa-main" id="product-content">
+    <section class="pa-section pa-intro">
+      <div class="pa-shell">
+        <div class="pa-intro__opening"><p>A detailed photograph of your machine can be great. But still images can’t convey the core functionalities, can they? The image of a robust CNC machine can definitely impress a potential client. But what persuades them to buy the product will depend on how clearly you answer these questions:</p></div>
+        <ul class="pa-questions"><li>How does the machine work?</li>
+<li>What makes it different?</li>
+<li>How would they benefit from the machine?</li></ul>
+        <div class="pa-intro__closing"><p>And what better way to answer these questions than with 3D product animation? At Giraf Creatives we create engaging 3D product animations, helping brands showcase their products from different angles, explain moving parts, and demonstrate how they work, enhancing the marketing scope.</p>
+<p>We create informative and appealing product and technical videos for e-commerce brands, B2C businesses, manufacturers, and engineering companies.</p></div>
       </div>
     </section>
-    <section class="pa-section pa-services" id="vfx-services" aria-labelledby="vfx-services-title">
+    <section class="pa-section pa-explainer" aria-labelledby="pa-explainer-title">
+      <div class="pa-shell pa-split">
+        <h2 id="pa-explainer-title">What Is Product Animation?</h2>
+        <div class="pa-prose"><p>Product animation is a type of 3D animation. Yes, your brand-new 5-axis CNC machine is popping right up, dismantling itself to show the interiors, giving a detailed view of its functions and construction, and creating an informative video about the product.</p>
+<p>You have control over what the audience views—you can rotate, zoom into particular parts, show an internal mechanism, highlight a feature that is difficult to capture through a camera, and add the specifications as graphics. Easier understanding and access to a machine’s operationality–that is what makes a product animation so relevant.</p></div>
+      </div>
+    </section>
+    <section class="pa-section pa-services" id="product-services" aria-labelledby="pa-services-title">
       <div class="pa-shell">
-        <h2 id="vfx-services-title">VFX Services We Offer</h2>
+        <h2 id="pa-services-title">Product Animation Services We Provide</h2>
         <div class="pa-service-grid">
-          <article class="pa-service">
-            <i class="fas fa-layer-group" aria-hidden="true"></i>
-            <h3>Compositing and Green-screen Removal</h3>
-            <p>Got footage that is shot against a green screen? Then leave the rest to us, because we can remove the background and place your subject in a new environment, background, or CGI elements and turn the shot into a meaningful and complete scene.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-paint-brush" aria-hidden="true"></i>
-            <h3>Rotoscoping and Paint/Cleanup</h3>
-            <p>Need to separate a character, product, or object from its background? With rotoscoping we trace out the moving objects and work on them separately if required. Any unwanted marks and imperfections will be removed with paint/cleanup. This way you get clean footage.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-eraser" aria-hidden="true"></i>
-            <h3>Wire, Rig, and Object Removal</h3>
-            <p>Your hero is about to do a stunt, absolutely stylish. But what if you see the wires and cables along with that? Doesn’t sit right, is it? We too think so. Our wire, rig, and object removal cut the unwanted elements, nice and clean. We naturally remove these, reconstructing the background, just perfect. Stunt wires, safety cables, supporting rigs, unwanted people, or a logo—your audience won’t see any of these.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-camera" aria-hidden="true"></i>
-            <h3>Matchmoving and 3D Camera Tracking</h3>
-            <p>Let’s say you have shot a scene and then found out that there is a chair missing. We track the movement of the camera and the scene so that the chair or the object appears along with the movement, giving off the impression that it was already there all along.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-cube" aria-hidden="true"></i>
-            <h3>CGI Integration and 3D Element Creation</h3>
-            <p>Sometimes you may want to add a building or anything similar that can’t be filmed in real life. We can create that as a 3D element and integrate it into the footage in such a way it looks like it belongs in that scene.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-city" aria-hidden="true"></i>
-            <h3>Set Extensions and Digital Environment</h3>
-            <p>You have set the location to shoot, and everything looks fine until you realize you need a bigger building, a longer street, or a totally different landscape. This is where we digitally extend the existing set or create a whole environment.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-mountain" aria-hidden="true"></i>
-            <h3>Matte Painting</h3>
-            <p>You want your hero to stand against a mountain or a futuristic city. Or you may want to show your machine along with the background of an industrial facility. Quite not practical at times to shoot, but definitely possible to create digitally with our matte painting services.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-fire" aria-hidden="true"></i>
-            <h3>FX Stimulation</h3>
-            <p>Your gaming character enters with loaded guns, and suddenly the fire and smoke effects pop in—do you have a scene like that in mind? Then we got it covered. We create realistic digital effects and combine them with the footage so that your character gets the entry he or she deserves.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-users" aria-hidden="true"></i>
-            <h3>Crowd Replication</h3>
-            <p>The leader comes and addresses a stadium filled with more than thousands of people. We can digitally duplicate them to make the crowd look much larger and realistic.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-font" aria-hidden="true"></i>
-            <h3>Title Design and Motion Graphics</h3>
-            <p>You want the product name to appear with a striking animation and style. We will help you achieve that with our title design and motion graphics. This way you get to decide what to appear and when to appear.</p>
-          </article>
-          <article class="pa-service">
-            <i class="fas fa-palette" aria-hidden="true"></i>
-            <h3>Color Grading and Finishing</h3>
-            <p>Color plays a huge role in deciding the impact of a scene. For instance, a commercial product may need bright and clean colors, while a thrilling game may need a darker and colder look. As we enter the finishing stage, we refine the colors and make sure that the overall look of the footage seems polished and consistent.</p>
-          </article>
+          <article class="pa-service"><i class="fas fa-cube" aria-hidden="true"></i><h3>E-commerce and B2C Product Showcase</h3><p>When your customers search for products online, their information is limited to the photos and carousals. They can’t pick up the product or examine it from different angles unless the photographs are taken so. Even then, an intricate and nuanced one isn’t always practical.</p>
+<p>So why not show them a detailed product animation? This way they can see the product and its components and understand how it works. Businesses thus get an upper hand as they are able to showcase their products in an engaging way.</p></article>
+<article class="pa-service"><i class="fas fa-gears" aria-hidden="true"></i><h3>Industrial and Mechanical Product Animation</h3><p>At times carousels and dedicated collages with descriptions might be enough for customers to understand a particular machine. With product animation we can show what is happening inside-out or how each part works together.</p></article>
+<article class="pa-service"><i class="fas fa-box-open" aria-hidden="true"></i><h3>Packaging and Unboxing Animation</h3><p>Yes, first impressions really matter, especially when a new product is on the way. With 3D packaging and unboxing animation, we will help you show what the product looks like, how it is packaged, and what the customers will find inside the box. This way you reveal the product even before the manufacturing is complete. Thus, you can give your audience an exciting unboxing experience as well.</p></article>
+<article class="pa-service"><i class="fas fa-play" aria-hidden="true"></i><h3>Product Ad for Social Media and Paid Campaigns</h3><p>To break the scroll, you have to create content that hooks the audience. With social media filled with content clutter, you really have to stand out to catch that 60 seconds of attention. We can help you in that by turning the 3D product animation into short videos for social media, paid ads, websites, and more.</p></article>
         </div>
       </div>
     </section>
-    <section class="pa-section pa-process" aria-labelledby="vfx-process-title">
+    <section class="pa-section pa-process" aria-labelledby="pa-process-title">
       <div class="pa-shell">
-        <h2 id="vfx-process-title">Our VFX Workflow</h2>
+        <h2 id="pa-process-title">How We Create 3D Product Animation</h2>
         <ol class="pa-process-grid">
-          <li><h3>Brief and Shot Breakdown</h3><p>Firstly, we review the footage, requirements, and the individual shots to get a clear idea about what needs to be added or changed.</p></li>
-          <li><h3>Footage Review and Plate Preparation</h3><p>At this stage we check the footage and proceed to prepare the shots for VFX work, including cleanup and removal.</p></li>
-          <li><h3>3D/CGI Work</h3><p>When the project requires digital objects or elements, our team creates, tracks, and prepares those 3D assets.</p></li>
-          <li><h3>Compositing</h3><p>Here, we combine the different elements with the original footage to create the final visuals.</p></li>
-          <li><h3>Review and Revisions</h3><p>Once the integration is done, you can review the work and provide the feedback so that we can make the necessary revisions and refinements, if any.</p></li>
-          <li><h3>Final Delivery</h3><p>We deliver the approved shots in the required format, such as EXR or DPX and in high resolutions as well.</p></li>
+          <li><h3>3D Modelling</h3><p>First, we create a digital 3D version of the product based on the information you provide us.</p></li>
+<li><h3>Texturing and Materials</h3><p>Next, we add colors, finishes, textures, glass, metal, plastic, and other elements to make the product look realistic.</p></li>
+<li><h3>Lighting</h3><p>With the right lighting we make the product, its parts, and important features clearly visible.</p></li>
+<li><h3>Rigging</h3><p>If the product has moving parts, our rigging artist will ensure that they move correctly in the animation.</p></li>
+<li><h3>Animation</h3><p>Then we begin the animation. Moving in pace with the story of the video, we animate the product, its components, and camera movement and demonstration.</p></li>
+<li><h3>Rendering and Compositing</h3><p>Now we move on to compositing, wherein the final 3D scenes are rendered and polished, thus creating the final video.</p></li>
         </ol>
       </div>
     </section>
-    <section class="pa-section pa-why" aria-labelledby="vfx-why-title">
+    <section class="pa-section pa-why" aria-labelledby="pa-why-title">
       <div class="pa-shell pa-split">
-        <h2 id="vfx-why-title">Why Choose Giraf Creatives?</h2>
-        <div class="pa-prose"><p>Looking for a VFX company in India that can support you in your production process? When you work with Giraf Creatives, you aren’t just handing over a task to a VFX team. Rather, you are partnering with a Calicut-based production house whose expertise extends across VFX, animation, pre-visualization, and production. Whether you need a few shots cleaned or support across a post-production project, we can actively discuss the requirements and plan the overall workflow.</p></div>
+        <h2 id="pa-why-title">Why Choose Giraf Creatives?</h2>
+        <div class="pa-prose"><p>Your product has something worth showing. We make sure that it is presented at its best. At Giraf Creatives, we combine 3D animation with creative ideas to develop clear and informative product visuals. Whether you want to showcase your new product, explain how a machine works, or create an engaging ad for marketing purposes; we help you present it in an interesting and comprehensible way.</p>
+<p>As a reliable production animation company in India, we help businesses to level up their promotion and marketing strategy with compelling 3D animation.</p>
+<p>Don’t let the technical details of the product startle you, because we are here to take your product from drawings and references to the screen, giving it the 3-dimensional accuracy and presenting it in a tangible and informative way.</p></div>
       </div>
     </section>
-    <section class="pa-section pa-faq" aria-labelledby="vfx-faq-title">
+        <section class="pa-section pa-faq" aria-labelledby="pa-faq-title">
       <div class="pa-shell pa-split">
-        <h2 id="vfx-faq-title">FAQ</h2>
+        <h2 id="pa-faq-title">FAQ</h2>
         <div class="pa-faq-list">
-          <details name="vfx-faq" open><summary>1. What is the difference between VFX and animation?</summary><div><p>A: Animation involves creating visuals digitally from scratch, while VFX works with filmed footage. With VFX you can add, remove, or change the elements in the existing footage.</p></div></details>
-          <details name="vfx-faq"><summary>2. How much do VFX services cost in India?</summary><div><p>A: There is no fixed price for VFX because the cost depends on several factors, such as the number of shots, their complexity, and the type of the work required. The cost of simple cleanup costs less than complex CGI, simulations, and other detailed compositing.</p></div></details>
-          <details name="vfx-faq"><summary>3. What should I send you to get a VFX quote?</summary><div><p>A: You should send us your footage or sample shot, the number of shots, the changes you want, your preferred output, and the deadline. Sending reference images or videos will also be helpful for us to understand your vision even better.</p></div></details>
-          <details name="vfx-faq"><summary>4. How long does VFX post-production take?</summary><div><p>A: The timeline of the project depends on the number and complexity of the shots involved. Simple cleanup may take less time, while CGI, detailed compositing, and simulation may take longer. Once we review the project in detail , we can give you a more realistic deadline.</p></div></details>
+          <details name="product-animation-faq" open><summary>How is product animation different from product photography?</summary><div><p>A: Product photography is the capturing of the images of the physical photograph. Product animation involves creating the digital 3D version of a product that can be rotated, opened, moved, or shown from different angles. It is more flexible and versatile compared to the static images of the machine.</p></div></details>
+<details name="product-animation-faq"><summary>How much does 3D product animation cost in India?</summary><div><p>A: There is no fixed cost for product animation, because it depends on several factors such as product complexity, modelling requirements, animation length, level of detail, materials, and number of scenes and edits.</p></div></details>
+<details name="product-animation-faq"><summary>Do you need the physical prototype of the machine?</summary><div><p>A: Not necessarily. Depending on the project, you may hand over to us the following details, such as CAD files, drawings, specifications, photographs, reference videos, and other available product information. The more accurate information you provide us with, the more precise the 3D representation we will deliver.</p></div></details>
+<details name="product-animation-faq"><summary>Can the 3D model be modified or updated later?</summary><div><p>A: Yes, this is one of the major benefits of 3D product animation. Once the asset is modeled, you can easily alter the surface textures, re-render different angles, and swap out the new components according to the marketing requirements without needing to start over again.</p></div></details>
         </div>
       </div>
     </section>
-     <section class="call-to-action-area" id="vfx-enquiry" aria-labelledby="vfx-intro-title">
+    <section class="call-to-action-area" id="product-enquiry" aria-labelledby="product-enquiry-title">
       <div class="main-box">
         <div class="cta-glow" aria-hidden="true"></div>
         <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
         <div class="container">
           <div class="row align-items-center cta-row">
             <div class="col-xl-6 col-lg-6 col-md-12 cta-content">
-              <h2 id="vfx-intro-title"> Ready to Bring Your Product to the Screen? </h2>
-              <p> Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project, and we’ll help you explore the possibilities of 3D product animation.</p>
+              <h2 id="product-enquiry-title">Ready to Bring Your Product to the Screen?</h2>
+              <p>Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project, and we’ll help you explore the possibilities of 3D product animation.</p>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
               <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
@@ -244,7 +207,7 @@
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_subject">Subject</label>
-                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="VFX">
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="Product Animation">
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_msg">Message</label>
@@ -307,11 +270,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

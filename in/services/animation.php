@@ -10,7 +10,7 @@
   <!-- canonical -->
   <link href="https://girafcreatives.com/in/animation.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -44,12 +44,12 @@
   <!-- video -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -105,7 +105,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/Animation-banner.jpg" alt="Animation studio workspace">
+        <img src="../img/services/Animation-banner.jpg" alt="Animation studio workspace">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
@@ -169,10 +169,10 @@
       </div>
       <div class="row two-services-grid">
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="./2d-animation.php">
+          <a href="../2d-animation.php">
           <article class="two-services-box">
             <div class="two-services-box__media">
-              <img src="./img/services/2d-animation.webp" alt="2D Animation Services">
+              <img src="../img/services/2d-animation.webp" alt="2D Animation Services">
               <span class="two-services-box__badge">2D</span>
             </div>
             <div class="two-services-box__body">
@@ -183,10 +183,10 @@
           </a>
         </div>
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="./3d-animation.php">
+          <a href="../3d-animation.php">
           <article class="two-services-box">
             <div class="two-services-box__media">
-              <img src="./img/services/3d-animation.webp" alt="3D Animation Services">
+              <img src="../img/services/3d-animation.webp" alt="3D Animation Services">
               <span class="two-services-box__badge">3D</span>
             </div>
             <div class="two-services-box__body">
@@ -519,11 +519,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

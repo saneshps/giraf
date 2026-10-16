@@ -10,7 +10,7 @@
   <!-- canonical -->
   <link href="https://girafcreatives.com/in/designing.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -40,16 +40,16 @@
   <!-- video -->
 
   <!-- text-loop -->
-  <link rel="stylesheet" href="./css/text-loop.css">
+  <link rel="stylesheet" href="../css/text-loop.css">
   <!-- text-loop -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -100,7 +100,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/creative-banner.webp" alt="Designing">
+        <img src="../img/services/creative-banner.webp" alt="Designing">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
@@ -187,7 +187,7 @@
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <img src="./img/services/designing/UI-UX-Design.jpg" alt="UI-UX-Design">
+              <img src="../img/services/designing/UI-UX-Design.jpg" alt="UI-UX-Design">
             </div>
 
 
@@ -203,7 +203,7 @@
           <div class="row">
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <img src="./img/services/web/Website-development.jpg" alt="Web Design">
+              <img src="../img/services/web/Website-development.jpg" alt="Web Design">
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
@@ -256,7 +256,7 @@
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <img src="./img/services/designing/graphic-design.jpg" alt="graphic design">
+              <img src="../img/services/designing/graphic-design.jpg" alt="graphic design">
             </div>
 
 
@@ -271,7 +271,7 @@
           <div class="row">
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <img src="./img/services/designing/brand-identity.jpg" alt="Brand Identity">
+              <img src="../img/services/designing/brand-identity.jpg" alt="Brand Identity">
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
@@ -497,11 +497,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

@@ -12,7 +12,7 @@
   <!--// canonical -->
 
 
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -42,16 +42,16 @@
   <!-- video -->
 
   <!-- text-loop -->
-  <link rel="stylesheet" href="./css/text-loop.css">
+  <link rel="stylesheet" href="../css/text-loop.css">
   <!-- text-loop -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -106,7 +106,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/digital/digital-marketing-banner.webp" alt="Digital Marketing">
+        <img src="../img/services/digital/digital-marketing-banner.webp" alt="Digital Marketing">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
@@ -184,7 +184,7 @@
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/marketing-animate.svg" alt="digital">
+                    <img src="../img/services/digatal/marketing-animate.svg" alt="digital">
                   </div>
  
                 </div>
@@ -194,7 +194,7 @@
               <div class="col-xl-6 col-lg-6 col-md-12 services-list serv-first" data-aos="fade-right" data-aos-duration="2000">
                 <div class="row serv-digi">
                   <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 serv-digital-image">
-                    <img src="./img/services/digatal/Digital-Marketing.jpg" alt="digital">
+                    <img src="../img/services/digatal/Digital-Marketing.jpg" alt="digital">
                   </div>
                   <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 services-list-box serv-detail-space serv-digital">
                     <h4> Digital Marketing - Your Trusted Marketing Partner </h4>
@@ -216,7 +216,7 @@
               <div class="col-xl-6 col-lg-6 col-md-12 services-list serv-first" data-aos="fade-right" data-aos-duration="2000">
                 <div class="row serv-digi">
                   <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 serv-digital-image">
-                    <img src="./img/services/digatal/why-choose.jpg" alt="digital">
+                    <img src="../img/services/digatal/why-choose.jpg" alt="digital">
                   </div>
                   <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 services-list-box serv-detail-space serv-digital">
                     <h4> Why Choose Giraf? </h4>
@@ -245,7 +245,7 @@
                 <div class="row">
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/seo-digital.jpg" alt="seo">
+                    <img src="../img/services/digatal/seo-digital.jpg" alt="seo">
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
@@ -286,7 +286,7 @@
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/PPC.jpg" alt="ppc">
+                    <img src="../img/services/digatal/PPC.jpg" alt="ppc">
                   </div>
 
                 </div>
@@ -299,7 +299,7 @@
                 <div class="row">
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/SMM.jpg" alt="smm">
+                    <img src="../img/services/digatal/SMM.jpg" alt="smm">
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
@@ -338,7 +338,7 @@
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/Content Marketing.jpg" alt="content marketing">
+                    <img src="../img/services/digatal/Content Marketing.jpg" alt="content marketing">
                   </div>
 
                 </div>
@@ -351,7 +351,7 @@
                 <div class="row">
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/Email-Marketing.jpg" alt="email marketing">
+                    <img src="../img/services/digatal/Email-Marketing.jpg" alt="email marketing">
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
@@ -386,7 +386,7 @@
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/Web-Design-and-Development.jpg" alt="web designing and development">
+                    <img src="../img/services/digatal/Web-Design-and-Development.jpg" alt="web designing and development">
                   </div>
 
                 </div>
@@ -399,7 +399,7 @@
                 <div class="row">
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/Success.jpg" alt="success">
+                    <img src="../img/services/digatal/Success.jpg" alt="success">
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
@@ -434,7 +434,7 @@
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-                    <img src="./img/services/digatal/Let’s-Get-Started.jpg" alt="let's get started">
+                    <img src="../img/services/digatal/Let’s-Get-Started.jpg" alt="let's get started">
                   </div>
 
                 </div>
@@ -873,11 +873,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

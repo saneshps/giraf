@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Giraf is a professional 3D animation agency in India.Contact us for professional and affordable animated video production services">
-  <title> Best Animation Company,India|Product-Previsualization |Giraf Creatives </title>
+  <title> Best Animation Company,India|VFX |Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/product-previsualization.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/visual-effects.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -44,12 +44,12 @@
   <!-- video -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -84,7 +84,7 @@
     <!-- CookieConsent -->
 </head>
 
-<body class="product-animation-page previz-page">
+<body class="product-animation-page vfx-page">
   <!-- =====================
           HEADER START
      ===================== -->
@@ -102,124 +102,127 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <a class="pa-skip" href="#previz-content">Skip to content</a>
+  <a class="pa-skip" href="#vfx-content">Skip to content</a>
 <section aria-labelledby="pa-title">
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/product-pre-visualization.webp" alt="Product-Previsualization">
+        <img src="../img/services/vfx.webp" alt="VFX">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
-        <h1 id="pa-title">Product Pre Visualization </h1>
+        <h1 id="pa-title">VFX Service</h1>
         <span class="banner-area__line" aria-hidden="true"></span>
       </div>
     </div>
   </section>
-  <main class="pa-main" id="previz-content">
-    <section class="pa-section previz-intro">
-      <div class="pa-shell">
-        <div class="pa-intro__opening">
-          <p>Let’s say you are at a stage where the machine is in the making, except that it exists as CAD files 
-            and engineering drawings. While the obvious question of "Why not manufacture it already?” seems plausible,
-             it is important to know how it will look and work. Product pre-visualisation makes this possible.
-            </p>
-            <p>At Giraf, we offer product-previsualisation services, turning the technical data into a tangible visual,
-               helping manufacturers to see, understand, and communicate the scope of the product. 
-
-            </p>
-            </div>
+  <main class="pa-main" id="vfx-content">
+    <section class="pa-section pa-why vfx-intro" aria-labelledby="vfx-intro-title">
+      <div class="pa-shell pa-split">
+        <h2 id="vfx-intro-title">Done with the shoot? Then it’s time to make it better</h2>
+        <div class="pa-prose"><p>Maybe it's a background, maybe it's the effects, maybe it’s a whole new environment. Got footage that needs an upgrade? At Giraf Creatives, we provide VFX services that turn your ideas into polished and engaging visuals. From creating new elements to cleaning up the shots and adding CGI, we work with your footage to achieve the video precisely how you want it to be.</p></div>
       </div>
     </section>
-    <section class="pa-section pa-why" aria-labelledby="previz-explainer-title">
-      <div class="pa-shell pa-split">
-        <h2 id="previz-explainer-title">What Is Product Pre-visualization?</h2>
-        <div class="pa-prose">
-          <p>Your customer or stakeholder can’t understand your machine and its features through data and drawings. But through a visual? They certainly can. With product-pre visualization services, we create a digital prototype of your machine, giving an insight into how the machine works in a real-world situation.</p>
-          <p>This way you can introduce the product to potential clients and investors. Alongside this, previz enables you to review and refine the product visually, which is a huge advantage. Because any change after manufacturing means additional expenses.</p>
+    <section class="pa-section pa-services" id="vfx-services" aria-labelledby="vfx-services-title">
+      <div class="pa-shell">
+        <h2 id="vfx-services-title">VFX Services We Offer</h2>
+        <div class="pa-service-grid">
+          <article class="pa-service">
+            <i class="fas fa-layer-group" aria-hidden="true"></i>
+            <h3>Compositing and Green-screen Removal</h3>
+            <p>Got footage that is shot against a green screen? Then leave the rest to us, because we can remove the background and place your subject in a new environment, background, or CGI elements and turn the shot into a meaningful and complete scene.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-paint-brush" aria-hidden="true"></i>
+            <h3>Rotoscoping and Paint/Cleanup</h3>
+            <p>Need to separate a character, product, or object from its background? With rotoscoping we trace out the moving objects and work on them separately if required. Any unwanted marks and imperfections will be removed with paint/cleanup. This way you get clean footage.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-eraser" aria-hidden="true"></i>
+            <h3>Wire, Rig, and Object Removal</h3>
+            <p>Your hero is about to do a stunt, absolutely stylish. But what if you see the wires and cables along with that? Doesn’t sit right, is it? We too think so. Our wire, rig, and object removal cut the unwanted elements, nice and clean. We naturally remove these, reconstructing the background, just perfect. Stunt wires, safety cables, supporting rigs, unwanted people, or a logo—your audience won’t see any of these.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-camera" aria-hidden="true"></i>
+            <h3>Matchmoving and 3D Camera Tracking</h3>
+            <p>Let’s say you have shot a scene and then found out that there is a chair missing. We track the movement of the camera and the scene so that the chair or the object appears along with the movement, giving off the impression that it was already there all along.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-cube" aria-hidden="true"></i>
+            <h3>CGI Integration and 3D Element Creation</h3>
+            <p>Sometimes you may want to add a building or anything similar that can’t be filmed in real life. We can create that as a 3D element and integrate it into the footage in such a way it looks like it belongs in that scene.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-city" aria-hidden="true"></i>
+            <h3>Set Extensions and Digital Environment</h3>
+            <p>You have set the location to shoot, and everything looks fine until you realize you need a bigger building, a longer street, or a totally different landscape. This is where we digitally extend the existing set or create a whole environment.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-mountain" aria-hidden="true"></i>
+            <h3>Matte Painting</h3>
+            <p>You want your hero to stand against a mountain or a futuristic city. Or you may want to show your machine along with the background of an industrial facility. Quite not practical at times to shoot, but definitely possible to create digitally with our matte painting services.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-fire" aria-hidden="true"></i>
+            <h3>FX Stimulation</h3>
+            <p>Your gaming character enters with loaded guns, and suddenly the fire and smoke effects pop in—do you have a scene like that in mind? Then we got it covered. We create realistic digital effects and combine them with the footage so that your character gets the entry he or she deserves.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <h3>Crowd Replication</h3>
+            <p>The leader comes and addresses a stadium filled with more than thousands of people. We can digitally duplicate them to make the crowd look much larger and realistic.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-font" aria-hidden="true"></i>
+            <h3>Title Design and Motion Graphics</h3>
+            <p>You want the product name to appear with a striking animation and style. We will help you achieve that with our title design and motion graphics. This way you get to decide what to appear and when to appear.</p>
+          </article>
+          <article class="pa-service">
+            <i class="fas fa-palette" aria-hidden="true"></i>
+            <h3>Color Grading and Finishing</h3>
+            <p>Color plays a huge role in deciding the impact of a scene. For instance, a commercial product may need bright and clean colors, while a thrilling game may need a darker and colder look. As we enter the finishing stage, we refine the colors and make sure that the overall look of the footage seems polished and consistent.</p>
+          </article>
         </div>
       </div>
     </section>
-    <section class="pa-section pa-process" aria-labelledby="previz-process-title">
+    <section class="pa-section pa-process" aria-labelledby="vfx-process-title">
       <div class="pa-shell">
-        <h2 id="previz-process-title">How We Do It</h2>
-        <div class="previz-section-intro"><p>As expected, everything starts with the drawings and CAD data. Our creative team will examine the data and specifications and proceed to create a 3D digital mockup. We refine the visual and give you a clearer representation of the machine.</p></div>
+        <h2 id="vfx-process-title">Our VFX Workflow</h2>
         <ol class="pa-process-grid">
-          <li><h3>1. CAD/Design Import</h3><p>The technical materials, such as CAD files, engineering drawings, product dimensions, component drawings, and reference images, are handed over, which our team examines, and brought into the 3D workflow. Thus, in this stage we create the digital version of the fully specified machine.</p></li>
-          <li>
-            <h3>2. 3D Digital Mockup</h3>
-            <p>In this stage the technical information is turned into a 3D representation of the product. The different components are prepared and put together according to the provided data, allowing the machine to be visualized from multiple perspectives, such as</p>
-            <ul class="previz-list">
-              <li>View from different angles</li>
-              <li>Internal mechanisms show in detail</li>
-              <li>Placed in a real-world environment</li>
-              <li>Exploded or sectional views</li>
-            </ul>
-            <p>Here we focus on getting the structure and geometry right.</p>
-          </li>
-          <li><h3>3. Visual Refinement</h3><p>Next step, the raw 3D model is transformed into a tangible visual representation. Our team focuses on the material, color, texture, lighting, and camera angles, creating a realistic 3D model. Because the goal isn’t just to create a technically accurate model but a visually engaging digital prototype.</p></li>
-          <li>
-            <h3>4. Review the Product Inside Out</h3>
-            <p>Now that the product exists digitally, you can inspect it in detail:</p>
-            <ul class="previz-list">
-              <li>How the machine looks</li>
-              <li>How the components are arranged</li>
-              <li>What happens internally</li>
-              <li>How the components interact</li>
-            </ul>
-          </li>
-          <li>
-            <h3>5. Visual Corrections or Suggested Changes</h3>
-            <p>Once the digital prototype is reviewed, you can assess and give your feedback. This could include changing the camera angle, increasing the size or visibility of the control panel, highlighting specific components, or changing how the machine is shown in the real environment.</p>
-            <p>As a matter of fact, previz helps to identify potential physical changes. For instance, you may realize the control panel needs to be repositioned or a particular component requires more space.</p>
-          </li>
-          <li><h3>6. Presentation-Ready Digital Prototype</h3><p>Once the models and visuals are approved, you get a refined digital representation of the product, which can be used for customer pitch, stakeholder presentation, product introduction, sales presentation, and marketing.</p></li>
+          <li><h3>Brief and Shot Breakdown</h3><p>Firstly, we review the footage, requirements, and the individual shots to get a clear idea about what needs to be added or changed.</p></li>
+          <li><h3>Footage Review and Plate Preparation</h3><p>At this stage we check the footage and proceed to prepare the shots for VFX work, including cleanup and removal.</p></li>
+          <li><h3>3D/CGI Work</h3><p>When the project requires digital objects or elements, our team creates, tracks, and prepares those 3D assets.</p></li>
+          <li><h3>Compositing</h3><p>Here, we combine the different elements with the original footage to create the final visuals.</p></li>
+          <li><h3>Review and Revisions</h3><p>Once the integration is done, you can review the work and provide the feedback so that we can make the necessary revisions and refinements, if any.</p></li>
+          <li><h3>Final Delivery</h3><p>We deliver the approved shots in the required format, such as EXR or DPX and in high resolutions as well.</p></li>
         </ol>
       </div>
     </section>
-    <section class="pa-section pa-services" aria-labelledby="previz-why-title">
-      <div class="pa-shell">
-        <h2 id="previz-why-title">Why Choose Giraf Creatives in India</h2>
-        <div class="pa-service-grid">
-          <article class="pa-service"><i class="fas fa-users" aria-hidden="true"></i><h3>Experienced production team:</h3><p>Our dedicated team of animators, designers, rigging artist, and generalists will work with you hand in hand to turn the technical data into 3D visuals.</p></article>
-          <article class="pa-service"><i class="fas fa-layer-group" aria-hidden="true"></i><h3>Experience across industries:</h3><p>We work with businesses across different industries such as manufacturing, advertising, gaming, and more, adding to our versatile expertise.</p></article>
-          <article class="pa-service"><i class="fas fa-location-dot" aria-hidden="true"></i><h3>Based in Calicut:</h3><p>Our dedicated studio in Calicut brings together the creative and production team, making collaboration easier throughout the project.</p></article>
-          <article class="pa-service"><i class="fas fa-film" aria-hidden="true"></i><h3>Previsualization within a full production house:</h3><p>Your pre-viz doesn’t have to stop at the prototype stage, because we can turn the approved visuals into other relevant production assets such as product animation, explainer videos, and promotional films.</p></article>
-        </div>
+    <section class="pa-section pa-why" aria-labelledby="vfx-why-title">
+      <div class="pa-shell pa-split">
+        <h2 id="vfx-why-title">Why Choose Giraf Creatives?</h2>
+        <div class="pa-prose"><p>Looking for a VFX company in India that can support you in your production process? When you work with Giraf Creatives, you aren’t just handing over a task to a VFX team. Rather, you are partnering with a Calicut-based production house whose expertise extends across VFX, animation, pre-visualization, and production. Whether you need a few shots cleaned or support across a post-production project, we can actively discuss the requirements and plan the overall workflow.</p></div>
       </div>
     </section>
-    <section class="pa-section pa-why" aria-labelledby="previz-industries-title">
+    <section class="pa-section pa-faq" aria-labelledby="vfx-faq-title">
       <div class="pa-shell pa-split">
-        <h2 id="previz-industries-title">Industries We Serve</h2>
-        <div class="pa-prose">
-          <p>Our 3D pre-visualization services support businesses and creative teams across industries, such as stakeholders</p>
-          <ul class="previz-list previz-industries">
-            <li>Advertising</li><li>Gaming</li><li>Architecture and real estate</li><li>Product manufacturing</li><li>Education</li><li>Events</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="pa-section pa-faq" aria-labelledby="previz-faq-title">
-      <div class="pa-shell pa-split">
-        <h2 id="previz-faq-title">FAQ</h2>
+        <h2 id="vfx-faq-title">FAQ</h2>
         <div class="pa-faq-list">
-          <details name="previz-faq" open><summary>1. Is it possible to create a pre-viz if the machine is still being designed?</summary><div><p>A: Yes, pre-viz is useful while the product is under development, provided there should be sufficient technical data to build the 3D representation.</p></div></details>
-          <details name="previz-faq"><summary>2. Can pre-viz be used for marketing?</summary><div><p>A: Yes, we can create a detailed 3D pre-visualization for a technically defined product. You can show the 3D prototype to potential customers, stakeholders, or even present it at a trade show.</p></div></details>
-          <details name="previz-faq"><summary>3. Is it possible to show the intricate and nuanced parts through pre-viz?</summary><div><p>A: Yes, 3D pre-visualization makes it easier to understand the nuanced areas. With cutaway views, sectional views, or exploded views, you show the internal parts and components.</p></div></details>
+          <details name="vfx-faq" open><summary>1. What is the difference between VFX and animation?</summary><div><p>A: Animation involves creating visuals digitally from scratch, while VFX works with filmed footage. With VFX you can add, remove, or change the elements in the existing footage.</p></div></details>
+          <details name="vfx-faq"><summary>2. How much do VFX services cost in India?</summary><div><p>A: There is no fixed price for VFX because the cost depends on several factors, such as the number of shots, their complexity, and the type of the work required. The cost of simple cleanup costs less than complex CGI, simulations, and other detailed compositing.</p></div></details>
+          <details name="vfx-faq"><summary>3. What should I send you to get a VFX quote?</summary><div><p>A: You should send us your footage or sample shot, the number of shots, the changes you want, your preferred output, and the deadline. Sending reference images or videos will also be helpful for us to understand your vision even better.</p></div></details>
+          <details name="vfx-faq"><summary>4. How long does VFX post-production take?</summary><div><p>A: The timeline of the project depends on the number and complexity of the shots involved. Simple cleanup may take less time, while CGI, detailed compositing, and simulation may take longer. Once we review the project in detail , we can give you a more realistic deadline.</p></div></details>
         </div>
       </div>
     </section>
-     <section class="call-to-action-area" id="previz-enquiry" aria-label="Get in Touch">
+     <section class="call-to-action-area" id="vfx-enquiry" aria-labelledby="vfx-intro-title">
       <div class="main-box">
         <div class="cta-glow" aria-hidden="true"></div>
         <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
         <div class="container">
           <div class="row align-items-center cta-row">
             <div class="col-xl-6 col-lg-6 col-md-12 cta-content">
-              <h2 id="product-enquiry-title"> Ready to Bring Your Product to the Screen? </h2>
-              <p>Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project,
-                 and we’ll help you explore the possibilities of 3D product animation.
-
-              </p>
+              <h2 id="vfx-intro-title"> Ready to Bring Your Product to the Screen? </h2>
+              <p> Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project, and we’ll help you explore the possibilities of 3D product animation.</p>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
               <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
@@ -241,7 +244,7 @@
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_subject">Subject</label>
-                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="Product-Previsualization">
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="VFX">
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_msg">Message</label>
@@ -304,11 +307,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

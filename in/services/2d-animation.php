@@ -10,7 +10,7 @@
   <!-- canonical -->
   <link href="https://girafcreatives.com/in/2d-animation.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -44,12 +44,12 @@
   <!-- video -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -105,7 +105,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/2d-animation-banner.webp" alt="2D Animation Service India">
+        <img src="../img/services/2d-animation-banner.webp" alt="2D Animation Service India">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
@@ -466,7 +466,7 @@
         <div class="services-portfolio__stage">
           <article class="services-portfolio__card">
             <a href="https://www.youtube.com/watch?v=Qd5RVE94V24" class="services-portfolio__media popup-video" aria-label="Play YES Machinery 2D animation video">
-              <img src="./img/portfolio/intro.jpg" alt="YES Machinery 2D animation introduction">
+              <img src="../img/portfolio/intro.jpg" alt="YES Machinery 2D animation introduction">
               <span class="services-portfolio__overlay" aria-hidden="true"></span>
               <span class="services-portfolio__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -479,7 +479,7 @@
                 <p>YES Machinery</p>
               </div>
               <div class="services-portfolio__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
@@ -720,11 +720,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

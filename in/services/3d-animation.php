@@ -10,7 +10,7 @@
   <!-- canonical -->
   <link href="https://girafcreatives.com/in/3d-animation.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -44,12 +44,12 @@
   <!-- video -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -105,7 +105,7 @@
     <section>
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/3d-Animation-banner.webp" alt="3D Animation Service India">
+        <img src="../img/services/3d-Animation-banner.webp" alt="3D Animation Service India">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
@@ -268,7 +268,7 @@
         <div class="work-3d__stage">
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=auOZZC4-Hf0" class="work-3d__media popup-video" aria-label="Play YES Machinery - New Milestone- Robotics">
-              <img src="./img/portfolio/videography/New-Milestone-Robotics.webp" alt="YES Machinery - New Milestone- Robotics">
+              <img src="../img/portfolio/videography/New-Milestone-Robotics.webp" alt="YES Machinery - New Milestone- Robotics">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -281,14 +281,14 @@
                 <p>New Milestone- Robotics</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=RFA9MnEpce4" class="work-3d__media popup-video" aria-label="Play YES Open House 2026 - Are you ready?">
-              <img src="./img/portfolio/videography/yes-open-house-2026-youtube-bg.webp" alt="YES Open House 2026 - Are you ready?">
+              <img src="../img/portfolio/videography/yes-open-house-2026-youtube-bg.webp" alt="YES Open House 2026 - Are you ready?">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -301,14 +301,14 @@
                 <p>Are you ready?</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=N_R01hitCw8" class="work-3d__media popup-video" aria-label="Play Meet Jack, the new Mascot of M.tech">
-              <img src="./img/portfolio/videography/M-tech-Mascot.jpg" alt="Meet Jack, the new Mascot of M.tech, brought to life by Giraf creatives.">
+              <img src="../img/portfolio/videography/M-tech-Mascot.jpg" alt="Meet Jack, the new Mascot of M.tech, brought to life by Giraf creatives.">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -321,14 +321,14 @@
                 <p>The new Mascot of M.tech, brought to life by Giraf creatives.</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=4zwcpkwqmqw" class="work-3d__media popup-video" aria-label="Play BIAX Deburring Spindles with Radial Deflection">
-              <img src="./img/portfolio/videography/BIAX.jpg" alt="BIAX Deburring Spindles with Radial Deflection">
+              <img src="../img/portfolio/videography/BIAX.jpg" alt="BIAX Deburring Spindles with Radial Deflection">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -341,14 +341,14 @@
                 <p>Deburring Spindles with Radial Deflection</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/german.jpg" alt="Germany">
+                <img src="../img/flags/german.jpg" alt="Germany">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=geMtgE6RmTQ" class="work-3d__media popup-video" aria-label="Play YES Open House 2025 Promotion Video">
-              <img src="./img/portfolio/videography/yes-openhouse-2025.jpg" alt="YES Open House 2025| Promotion Video">
+              <img src="../img/portfolio/videography/yes-openhouse-2025.jpg" alt="YES Open House 2025| Promotion Video">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -361,14 +361,14 @@
                 <p>Promotion Video</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=GvZwXQ3bF_k" class="work-3d__media popup-video" aria-label="Play YES Machinery - 10 Years of delivering high quality machines">
-              <img src="./img/portfolio/videography/YES-Machinery-10-Years.jpg" alt="YES Machinery - 10 Years of delivering high quality machines">
+              <img src="../img/portfolio/videography/YES-Machinery-10-Years.jpg" alt="YES Machinery - 10 Years of delivering high quality machines">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -381,14 +381,14 @@
                 <p>10 Years of delivering high quality machines</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=Li2mhnCfPlY" class="work-3d__media popup-video" aria-label="Play Neo Intro Video">
-              <img src="./img/portfolio/videography/Neo-Intro-Video.jpg" alt="Neo Intro Video">
+              <img src="../img/portfolio/videography/Neo-Intro-Video.jpg" alt="Neo Intro Video">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -401,14 +401,14 @@
                 <p>Neo Intro Video</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/uae.jpg" alt="United Arab Emirates">
+                <img src="../img/flags/uae.jpg" alt="United Arab Emirates">
               </div>
             </div>
           </article>
 
           <article class="work-3d__card">
             <a href="https://www.youtube.com/watch?v=q0Wvxyk2JEw" class="work-3d__media popup-video" aria-label="Play Permanent Lasthebemagnete FX by Flaig Magnetsysteme">
-              <img src="./img/portfolio/videography/Permanent-Lasthebemagnete.jpg" alt="Permanent Lasthebemagnete FX by Flaig Magnetsysteme">
+              <img src="../img/portfolio/videography/Permanent-Lasthebemagnete.jpg" alt="Permanent Lasthebemagnete FX by Flaig Magnetsysteme">
               <span class="work-3d__overlay" aria-hidden="true"></span>
               <span class="work-3d__play" aria-hidden="true">
                 <i class="fas fa-play"></i>
@@ -421,7 +421,7 @@
                 <p>Permanent Lasthebemagnete FX</p>
               </div>
               <div class="work-3d__flag">
-                <img src="./img/flags/german.jpg" alt="Germany">
+                <img src="../img/flags/german.jpg" alt="Germany">
               </div>
             </div>
           </article>
@@ -930,11 +930,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 

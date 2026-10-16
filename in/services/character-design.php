@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Giraf is a professional 3D animation agency in India.Contact us for professional and affordable animated video production services">
-  <title> Best Animation Company,India|Motion Graphics |Giraf Creatives </title>
+  <title> Best Animation Company,India|Character Design |Giraf Creatives </title>
   <!-- canonical -->
-  <link href="https://girafcreatives.com/in/motion-graphics.php" rel="canonical">
+  <link href="https://girafcreatives.com/in/character-design.php" rel="canonical">
   <!--// canonical -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- google font -->
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- google font -->
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!--// bootstrap -->
@@ -44,12 +44,12 @@
   <!-- video -->
 
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/slick.theme.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick.theme.css">
   <!-- slick -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png">
-  <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
   <!-- humberger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -84,7 +84,7 @@
     <!-- CookieConsent -->
 </head>
 
-<body class="product-animation-page previz-page motion-graphics-page">
+<body class="product-animation-page character-design-page">
   <!-- =====================
           HEADER START
      ===================== -->
@@ -102,115 +102,134 @@
   <!-- =====================
           HERO AREA START
      ===================== -->
-  <a class="pa-skip" href="#motion-content">Skip to content</a>
+  <a class="pa-skip" href="#character-content">Skip to content</a>
 <section aria-labelledby="pa-title">
     <div class="banner-area banner-area--hero">
       <div class="banner-area__media">
-        <img src="./img/services/motion-graphics-banner.webp" alt="Motion Graphics">
+        <img src="../img/services/character-design.webp" alt="Character Design">
       </div>
       <div class="banner-area__shade" aria-hidden="true"></div>
       <div class="banner-area__content">
-        <h1 id="pa-title"> Motion Graphics</h1>
+        <h1 id="pa-title">Character Design </h1>
         <span class="banner-area__line" aria-hidden="true"></span>
       </div>
     </div>
   </section>
-  <main class="pa-main" id="motion-content">
-    <section class="pa-section previz-intro">
+  <main class="pa-main" id="character-content">
+    <section class="pa-section character-intro">
       <div class="pa-shell">
-        <div class="pa-intro__opening"><p>How important the visuals are isn't something that we need to restate again,
-           right? We scroll past innumerable videos a day, but we only pause when something really catches our attention.
-            That’s exactly what we do at Giraf Creatives. As a motion graphics company in India, we create motions that make
-             your audience pause and persuade them to take the next move.</p>
-             <p>We create 2D and 3D motion graphics for marketing teams, B2B brands, and consumer businesses, and for agencies looking for white-label production support. Based in Calicut, India, we work with clients across India, as well as internationally, creating motion-based content for sales, marketing, social media, presentations, and several corporate communications.
+        <div class="pa-intro__opening">
+          <p>People recognize faces way more than corporate symbols—yes, characters are in fact an
+             emotional shortcut for businesses. The digital realm is flooded with innumerable contents,
+              both graphics and images. Instead of repeating the age-old strategies of marketing,
+               you can take an absolutely different turn with a strong character.</p>
+               <p>We know how important a brand face is, which is why you can count on Giraf Creatives for character design. As a character design company in India, we transform abstract ideas into relatable and memorable figures that connect with your audience. 
 
-             </p>
-            </div>
+               </p>
+              </div>
       </div>
     </section>
-    <section class="pa-section pa-why" aria-labelledby="motion-explainer-title">
+    <section class="pa-section pa-why" aria-labelledby="character-explainer-title">
       <div class="pa-shell pa-split">
-        <h2 id="motion-explainer-title">What Is Motion Graphics?</h2>
-        <div class="pa-prose">
-          <p>Designs in motion—yes, that is essentially what motion graphics is; the visual elements such as texts, shapes, illustrations, charts, numbers, logos, and other brand assets are animated, creating engaging content.</p>
-          <p>How are they useful? Well, they help businesses explain an idea, present information, and introduce a product or service, making communication more creative, clear, and quick.</p>
+        <h2 id="character-explainer-title">What Is Character Design?</h2>
+        <div class="pa-prose"><p>Character design is the process of creating a visual personality for your brand from scratch. A brand may need a mascot, while an animation studio may need a character that can move freely across the scenes, or a publisher may need characters that suit the style of a children’s tale or comics. And our job as a reliable character design agency in India is to understand the varying objectives and create a design that works for the purpose.</p></div>
+      </div>
+    </section>
+    <section class="pa-section pa-services" aria-labelledby="character-services-title">
+      <div class="pa-shell">
+        <h2 id="character-services-title">What We Deliver</h2>
+        <div class="pa-service-grid character-delivery-grid">
+          <article class="pa-service"><i class="fas fa-face-smile" aria-hidden="true"></i><h3>Brand Mascot Design</h3><p>An interesting character drives customer connection for decades. A custom mascot humanizes your company, making the service, software, and marketing campaigns more approachable. A unique mascot helps to bridge the corporate gap and build familiarity and trust among the audience.</p></article>
+          <article class="pa-service"><i class="fas fa-gamepad" aria-hidden="true"></i><h3>Game Character Design</h3><p>Characters take you through the adventures of the gaming world. The hero, anti-hero, and supporting characters should uphold the lore of the game and its mechanics. A well-designed character, whoever it may, instantly captures a player’s attention and keeps them immersed in the gaming world, which means direct downloads and player retention.</p></article>
+          <article class="pa-service"><i class="fas fa-film" aria-hidden="true"></i><h3>Animation-Ready Characters</h3><p>We deliver characters that move through the production line smoothly. Building clean layouts from scratch, we create characters with animation in mind, including the views, poses, expressions, and other references that help your production team to deal with things easily.</p></article>
+          <article class="pa-service"><i class="fas fa-book-open" aria-hidden="true"></i><h3>Book and Comic Characters</h3><p>We reimagine the characters in a way that keeps your readers in awe. We help to create eye-catching character artwork on your covers and pages that drives book sales, alongside creating a fanbase for your work.</p></article>
+          <article class="pa-service"><i class="fas fa-user-astronaut" aria-hidden="true"></i><h3>Brand Avatars and Virtual Influencers</h3><p>We build brand personas suited for modern customer service platforms, social media, and VR. This gives your company a modern digital presence.</p></article>
         </div>
       </div>
     </section>
-    <section class="pa-section pa-services" aria-labelledby="motion-services-title">
+    <section class="pa-section pa-process" aria-labelledby="character-process-title">
       <div class="pa-shell">
-        <h2 id="motion-services-title">Motion Graphics Services for Brands and Businesses</h2>
-        <div class="previz-section-intro"><p>Our team doesn’t just add motion to the design—we focus on communicating the idea clearly and meaningfully.</p></div>
-        <div class="pa-service-grid">
-          <article class="pa-service"><i class="fas fa-play" aria-hidden="true"></i><h3>Explainer and Promo Video</h3><p>Let’s face it, some business ideas, products, or services are hard to just explain in words. But with an explainer or promotional video you can easily convey the message. We combine visuals, illustrations, and animation to pitch a product, introduce a service, or promote a product launch.</p></article>
-          <article class="pa-service"><i class="fas fa-mobile-screen" aria-hidden="true"></i><h3>Social Media Motion Ads</h3><p>People scroll past videos almost instantly. So you have to really stand out to grab their attention within seconds. No worries, because we create short-form motion graphics for social media platforms to help your brand to present offers, product updates, and campaign ideas in an engaging way.</p></article>
-          <article class="pa-service"><i class="fas fa-font" aria-hidden="true"></i><h3>Kinetic Typography and Title Sequences</h3><p>We create animated text and opening titles, helping brands to present information in an engaging and appealing way. From eye-catching title sequences to animated words and icons, we turn the graphical elements into an active part of the video.</p></article>
-          <article class="pa-service"><i class="fas fa-chart-column" aria-hidden="true"></i><h3>Infographic and Data Visualization Animation</h3><p>Often it’s hard to make out numbers and statistics from charts and blocks of texts. But what if they are animated? Yes, it will be easier to understand the percentages, comparisons, and other business data when presented progressively.</p></article>
-          <article class="pa-service"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i><h3>Logo Animation and Brand Intros</h3><p>Logos is one of the crucial visual elements that people associate with a brand. We make sure that this visual face is dynamic and memorable. You can use the logo animation and brand intros across social media content, websites, videos, and other important brand communication.</p></article>
-          <article class="pa-service"><i class="fas fa-briefcase" aria-hidden="true"></i><h3>B2B and Corporate Motion Graphics</h3><p>The clear and engaging explanation of services, processes, technologies, and business information is crucial for any B2B business. With our B2B motion graphics services, we content for LinkedIn and turn sales presentations into animated videos that can be shared with potential customers, corporate explainers, and other similar content.</p></article>
-        </div>
-      </div>
-    </section>
-    <section class="pa-section pa-process" aria-labelledby="motion-process-title">
-      <div class="pa-shell">
-        <h2 id="motion-process-title">How Our Motion Graphics Process Works</h2>
-        <div class="previz-section-intro"><p>Good motion graphics are made from a series of dedicated steps, where each stage helps to establish the message, visual direction, and movement before the final out is given.</p></div>
+        <h2 id="character-process-title">How Our Process Works</h2>
         <ol class="pa-process-grid">
-          <li><h3>1. Brief</h3><p>We start by reviewing the project objective, target audience, key message, brand requirement, platform, and the potential outcome. This way you get a clear project direction and creative brief.</p></li>
-          <li><h3>2. Script and Copy</h3><p>Once the objective is made clear, the next step is to develop the message in a way the audience needs to understand.</p></li>
-          <li><h3>3. Storyboard</h3><p>At this stage we map out the video scene by scene. This way you will have an idea of how the content will progress.</p></li>
-          <li><h3>4. Style Frames</h3><p>We create visual samples before the full animation starts. This helps the client to get an idea of what the final video’s visual style is.</p></li>
-          <li><h3>5. 2D or 3D Asset Design</h3><p>Depending on the project, we can create vector assets, illustrations, or 3D elements that will be used in the animation.</p></li>
-          <li><h3>6. Animation</h3><p>Animation is where the approved designs take the form of a moving video. Animators control how the graphics, objects, and texts appear and move, creating smooth and engaging video content.</p></li>
-          <li><h3>7. Sound Design</h3><p>Movement combined with the right audio is crucial to create the intended impact. We add music, voice-over, and sound effects that match the visual pacing.</p></li>
-          <li><h3>8. Delivery</h3><p>Once the client approves, the final motion graphics are exported.</p></li>
+          <li><h3>1. Brief and Reference Gathering</h3><p>Your vision sets the base for the project. We sit down together and discuss the evolution of the character, backstory, core personality traits, and target audience. You share your ideas, mood boards, and visual references to our design team so that we stay right on track together.</p></li>
+          <li><h3>2. Concept Sketches and Silhouette Exploration</h3><p>Silhouette, the solid black outline of the character, is an important aspect because we know that a great character must be recognized from its shape alone. And so, at this stage we present a variety of rough sketches exploring different shapes and forms.</p></li>
+          <li><h3>3. Client Direction Selection</h3><p>Here you step into the driver’s seat. You review the initial shapes and rough sketches and choose a direction—explain what you love, what needs refinement, and which visual path seems to match the personality you envisioned.</p></li>
+          <li><h3>4. Refine Line Art and Color</h3><p>Once the basic shape is confirmed, the next step is cleaning up the rough sketch and turning it into crisp line art. This is followed by the color palette test, choosing the right color combinations.</p></li>
+          <li><h3>5. Turnaround and Expression Sheets</h3><p>This is the stage where we build a comprehensive character bible, which includes a turnaround sheet that shows a character from different angles, along with an expression sheet that shows the different facial expressions and reactions of the character.</p></li>
+          <li><h3>6. Final Delivery</h3><p>As the final step, we pack your character into clean, organized, and production-ready files that are ready for immediate deployment.</p></li>
         </ol>
       </div>
     </section>
-    <section class="pa-section pa-why" aria-labelledby="motion-comparison-title">
+    <section class="pa-section pa-why" aria-labelledby="character-assets-title">
       <div class="pa-shell pa-split">
-        <h2 id="motion-comparison-title">2D and 3D Motion Graphics: What’s the Difference?</h2>
+        <h2 id="character-assets-title">What’s in the Deliverable?</h2>
         <div class="pa-prose">
-          <p>So, what is the difference between 2D and 3D motion graphics?</p>
-          <p>2D motion graphics mostly contain flat visuals such as texts, icons, numbers, illustrations, shapes, and other graphics. If you're aiming to clearly explain a concept or brand message or create presentations or social media content, then 2D motion graphics is a smart option.</p>
-          <p>On the other hand, let’s say you want to introduce a product, then 3D motion graphics add more depth and dimensional elements. 3D objects, environment, lighting, textures, and camera movement can create a more immersive visual experience.</p>
-          <p>The right choice often depends on what you want to communicate, what style you opt for, and the level of detail your project needs. At Giraf Creatives, we provide both 2D and 3D motion graphics services, providing you with stylistic content in both forms, enhancing brand recall.</p>
+          <p>You should know exactly what you get, and rest assured when you work with us you get a complete, professional asset package that is set for immediate use.</p>
+          <table class="character-assets" aria-labelledby="character-assets-title">
+            <thead><tr><th scope="col">Asset Type</th><th scope="col">What it includes</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Expression sheet</th><td>4 to 6 core expressions</td></tr>
+              <tr><th scope="row">Multi-angle view</th><td>Front, side, back, and ¾ views</td></tr>
+              <tr><th scope="row">Pose sheet</th><td>3 to 4 dynamic poses</td></tr>
+              <tr><th scope="row">Color variants</th><td>Transparent, light, dark, and grayscale versions</td></tr>
+              <tr><th scope="row">Rig-ready files</th><td>Layer-separated files that match industry standards</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
-    <section class="pa-section pa-why" aria-labelledby="motion-why-title">
+    <section class="pa-section pa-why" aria-labelledby="character-cost-title">
       <div class="pa-shell pa-split">
-        <h2 id="motion-why-title">Why Choose Giraf Creatives for Motion Graphics?</h2>
+        <h2 id="character-cost-title">Cost and Timeline</h2>
         <div class="pa-prose">
-          <p>At Giraf Creatives we believe that good motion graphics is the one that helps businesses to communicate better. Let it be an explainer video, social media ad, product visual, or any corporate content; as a reliable motion graphics company we create engaging visuals that support your message.</p>
-          <p>Our team consists of passionate designers, animators, and creative professionals who work in unison throughout the production process. We work with B2B and consumer-focused businesses, adapting our approach to meet the different industrial and communication goals.</p>
-          <p>Even the most stylistic motion graphic can go in vain if you fail to understand the intent. That’s why we start the process by understanding what you want to communicate and who you want to reach. With our professional motion graphics service, we build visual style, animation, and storytelling that matches your requirements, creating enthralling motion graphics that are visually appealing and promote brand recall as well.</p>
+          <p>The cost and timeline of the character design depends on project requirements, level of detail, and several other factors. More detailed designs, which require additional product assets, can increase the cost.</p>
+          <p>Some of the major factors that affect the price include:</p>
+          <ul class="character-list">
+            <li>Level of character detail</li>
+            <li>Number of characters</li>
+            <li>Poses and expressions</li>
+            <li>Trunaround views</li>
+            <li>2D and 3D character design</li>
+            <li>Animation-rig-ready requirements</li>
+            <li>Additional revisions</li>
+          </ul>
         </div>
       </div>
     </section>
-    <section class="pa-section pa-faq" aria-labelledby="motion-faq-title">
+    <section class="pa-section pa-services" aria-labelledby="character-why-title">
+      <div class="pa-shell">
+        <h2 id="character-why-title">Why Choose Giraf Creatives?</h2>
+        <div class="pa-service-grid">
+          <article class="pa-service"><i class="fas fa-users" aria-hidden="true"></i><h3>In-House Designers</h3><p>Our dedicated in-house team collaborates with you, ensuring clear communication, brainstorming, security of your ideas, and most of all accountability from start to finish.</p></article>
+          <article class="pa-service"><i class="fas fa-palette" aria-hidden="true"></i><h3>Visual Consistency</h3><p>Our team is adept at maintaining strict visual consistency across the assets. There will be no mismatched styles, just characters that looks like and belong to their world and story.</p></article>
+          <article class="pa-service"><i class="fas fa-layer-group" aria-hidden="true"></i><h3>Seamless Animation Pipeline</h3><p>At Giraf, our illustrators build characters with motion in mind, which means we take your character from design to animation under one roof. Our design and animation team work together right from the start, ensuring the character’s consistent look and details throughout the animation.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="pa-section pa-faq" aria-labelledby="character-faq-title">
       <div class="pa-shell pa-split">
-        <h2 id="motion-faq-title">FAQ</h2>
+        <h2 id="character-faq-title">FAQ</h2>
         <div class="pa-faq-list">
-          <details name="motion-faq" open><summary>1. What is the difference between animation and motion graphics?</summary><div><p>A: Animation is a much broader term that is an assimilation of multiple aspects such as character animation, storytelling, 3D animation, and other forms of visuals, while motion graphics is a type of animation that focuses on moving the graphical elements such as texts, shapes, icons, logos, illustrations, and data.</p></div></details>
-          <details name="motion-faq"><summary>2. How long does it take to create a motion graphics video?</summary><div><p>A: The time frame can come anywhere between a few days and several weeks depending on the project’s requirements, such as script, number of scenes, 2D or 3D requirements, design, sound, and the edits as well.</p></div></details>
-          <details name="motion-faq"><summary>3. What formats do you deliver motion graphics in?</summary><div><p>A: Depending on the platform, we can prepare content for social media, websites, presentations, advertising, and other similar digital channels in the required aspect ratio.</p></div></details>
-          <details name="motion-faq"><summary>4. Do you provide voice-over and sound design for motion graphics?</summary><div><p>A: Yes, we can include voice-over, sound effects, and background music as a part of the production process. We select and integrate the audio elements in such a way that they match perfectly with the visual pacing.</p></div></details>
+          <details name="character-faq" open><summary>1. Do I own the full rights to the characters once the project is finished?</summary><div><p>A: Yes, you receive the complete commercial ownership of the final character designs. Once the final payment is done, the intellectual property is 100% yours to use for diverse purposes. We retain the right to showcase the work on our portfolio.</p></div></details>
+          <details name="character-faq"><summary>2. Can you create characters for animation?</summary><div><p>A: Yes, we can create characters specifically for animation projects, and depending on the requirements, this can also include different expressions, character views, and poses required for the animation work.</p></div></details>
+          <details name="character-faq"><summary>3. What format file will I receive?</summary><div><p>A: Common deliverables usually include PNG, JPG, PDF, and other editable or source files. The final file format depends on how you plan to use the character.</p></div></details>
+          <details name="character-faq"><summary>4. Can you create a full cast of characters?</summary><div><p>A: Yes, we can develop multiple characters while maintaining consistent visual direction across the cast. This is useful for animated videos, games, series, and comics where different characters should feel like they belong to same story.</p></div></details>
         </div>
       </div>
     </section>
-     <section class="call-to-action-area" id="motion-enquiry" aria-label="Get in Touch">
+     <section class="call-to-action-area" id="character-enquiry" aria-label="Get in Touch">
       <div class="main-box">
         <div class="cta-glow" aria-hidden="true"></div>
         <div class="cta-glow cta-glow--alt" aria-hidden="true"></div>
         <div class="container">
           <div class="row align-items-center cta-row">
             <div class="col-xl-6 col-lg-6 col-md-12 cta-content">
-             <h2 id="product-enquiry-title"> Ready to Bring Your Product to the Screen? </h2>
+                         <h2 id="product-enquiry-title"> Ready to Bring Your Product to the Screen? </h2>
               <p>Let’s create an animation that gets your product noticed. It’s simple—contact us, tell us about your project,
                  and we’ll help you explore the possibilities of 3D product animation.
 
               </p>
+
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
               <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
@@ -232,7 +251,7 @@
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_subject">Subject</label>
-                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="Motion Graphics">
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" value="Character Design">
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_msg">Message</label>
@@ -295,11 +314,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
   <!-- back to top -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!--// back to top -->
 
 
