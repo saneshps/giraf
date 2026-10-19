@@ -222,7 +222,7 @@
               </p>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 cta-form-col">
-              <div class="cta-form-panel"><form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
+              <div class="cta-form-panel"><form class="cta-form" method="post" action="../send_cta_mail.php" id="cta_contact_form" novalidate>
                                 <div class="cta-form-grid">
                                     <div class="cta-field">
                                         <label for="cta_name">Full name *</label>

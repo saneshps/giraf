@@ -840,7 +840,7 @@
                                 <p>Tell us about your project — we'll get back within 24 hours.</p>
                             </div>
 
-                            <form class="cta-form" method="post" action="send_cta_mail.php" id="cta_contact_form" novalidate>
+                            <form class="cta-form" method="post" action="../send_cta_mail.php" id="cta_contact_form" novalidate>
                                 <div class="cta-form-grid">
                                     <div class="cta-field">
                                         <label for="cta_name">Full name *</label>
@@ -859,7 +859,7 @@
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_subject">Subject</label>
-                                        <input type="text" id="cta_subject" name="subject" class="form-control" placeholder="How can we help?">
+                                        <input type="text" id="cta_subject" name="subject" class="form-control" placeholder="How can we help?" value="3D Animation">
                                     </div>
                                     <div class="cta-field cta-field--full">
                                         <label for="cta_msg">Message</label>
