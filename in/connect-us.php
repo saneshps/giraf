@@ -134,7 +134,7 @@
                 Calicut - 673661 <br>
                 Kerala - India.</a> </li>
             <li> <i class="fas fa-phone"></i> <a href="tel:918075461989"> +91 80 75 46 19 89 </a> </li>
-            <li> <i class="fas fa-envelope"></i> <a href="mailto:saneshbigleap@gmail.com"> info@girafcreatives.com </a> </li>
+            <li> <i class="fas fa-envelope"></i> <a href="mailto:info@giraf.in"> info@girafcreatives.com </a> </li>
             <li> <i class="fas fa-map-marker-alt"></i> <a> Calicut, Kerala, <br>
                 India </a>
             </li>

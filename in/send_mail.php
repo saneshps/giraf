@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Recipients
         $mail->setFrom('demo@girafcreatives.com', 'Message From Giraf Creatives'); // Sender
-        $mail->addAddress('saneshbigleap@gmail.com');                // Recipient (can be same as above)
+        $mail->addAddress('info@giraf.in');                // Recipient (can be same as above)
         $mail->addReplyTo($email, $name);
 
         // Content

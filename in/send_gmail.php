@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Recipients
             $mail->setFrom($email, $name );
-            $mail->addAddress('saneshbigleap@gmail.com'); 
+            $mail->addAddress('info@giraf.in'); 
 
             $mail->isHTML(true);
             $mail->Subject = 'New Message From Giraf Creatives';
