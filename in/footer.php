@@ -2,22 +2,8 @@
   <section class="footer-area">
     <div class="container">
       <div class="row">
-        <!-- first -->
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-first">
-          <h4>Our Services</h4>
-          <ul>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/branding"> Branding </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/digital-marketing"> Digital Marketing </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/designing"> Creative Designing </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/web-and-app-development"> Website Design & Development </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/animation"> Animation Services </a> </li>
-            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/photography-and-video-production"> Product Explanatory Videos </a> </li> 
-          </ul>
-
-        </div>
-        <!-- first -->
-        <!-- secnd -->
-        <div class="col-xl-4 col-lg-4 col-md-12 footer-second">
+           <!-- secnd -->
+        <div class="col-xl-3 col-lg-3 col-md-12 footer-second">
 
           <!-- ============================
             BACK TO BUTTON START
@@ -41,8 +27,38 @@
           </p>
         </div>
         <!-- secnd -->
+        <!-- first -->
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-first">
+          <h4>Animation Services</h4>
+          <ul>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/2d-animation"> 2D Animation </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/3d-animation"> 3D Animation </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/product-animation"> Product Animation </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/visual-effects"> VFX </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/product-previsualization"> Product Pre Visualization </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/character-design"> Character Design </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/motion-graphics"> Motion Graphics </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/photography-and-video-production"> Product Explanatory Videos </a> </li> 
+          </ul>
+
+        </div>
+        <!-- first -->
+        <!-- first -->
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-first">
+      <h4>Other Services</h4>
+          <ul>  
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/branding"> Branding </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/digital-marketing"> Digital Marketing </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/designing"> Creative Designing </a> </li>
+            <li> <i class="fas fa-chevron-right"></i> <a href="<?php echo $inBasePath; ?>services/web-and-app-development"> Website Design & Development </a> </li> 
+            
+          </ul>
+
+        </div>
+        <!-- first -->
+     
         <!-- Third -->
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 footer-third">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-third">
           <h4> Our Office </h4>
         <p class="f-address"> Masters Building Mavoor, <br>
             Calicut - 673661 <br>
