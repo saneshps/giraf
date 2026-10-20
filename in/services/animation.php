@@ -169,7 +169,7 @@
       </div>
       <div class="row two-services-grid">
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="../2d-animation">
+          <a href="../services/2d-animation">
           <article class="two-services-box">
             <div class="two-services-box__media">
               <img src="../img/services/2d-animation.webp" alt="2D Animation Services">
@@ -183,7 +183,7 @@
           </a>
         </div>
         <div class="col-xl-6 col-lg-6 col-12 two-services-col">
-          <a href="../3d-animation">
+          <a href="../services/3d-animation">
           <article class="two-services-box">
             <div class="two-services-box__media">
               <img src="../img/services/3d-animation.webp" alt="3D Animation Services">
@@ -221,7 +221,7 @@
 
               </p>
               <div class="book-call">
-          <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
+          <a href="../connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
         </div>
             </div>
           </div>

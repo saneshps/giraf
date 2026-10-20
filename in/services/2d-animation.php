@@ -157,7 +157,7 @@
           </div>
 
           <div class="anim-brief__cta book-call">
-            <a href="connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
+            <a href="../connect-us" class="blink-button" target="_blank"> BOOK A CALL </a>
           </div>
         </div>
       </div>

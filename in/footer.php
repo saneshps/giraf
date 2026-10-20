@@ -58,7 +58,7 @@
         <!-- first -->
      
         <!-- Third -->
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-third">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 footer-third">
           <h4> Our Office </h4>
         <p class="f-address"> Masters Building Mavoor, <br>
             Calicut - 673661 <br>
