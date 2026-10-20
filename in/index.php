@@ -1899,6 +1899,7 @@ $result = $conn->query($sql);
         var swiper = new Swiper(".bloghomeSwiper", {
             spaceBetween: 30,
             centeredSlides: true,
+            autoHeight: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,

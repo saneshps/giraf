@@ -19498,7 +19498,7 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   transform: translateX(3px);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .blogs-home-area {
     padding: 56px 0;
   }
@@ -19529,14 +19529,20 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-pic img {
     height: auto;
     min-height: 0;
-    max-height: 420px;
+    max-height: 360px;
     aspect-ratio: 16/9;
   }
   .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-details {
-    padding: 36px 40px 40px;
+    padding: 28px 32px 32px;
   }
   .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-details h2 {
     font-size: clamp(2rem, 5vw, 3rem);
+  }
+  .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-details p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
   }
 }
 @media (max-width: 639px) {
@@ -19571,18 +19577,27 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
     border-radius: 18px;
   }
   .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-details {
-    padding: 26px 24px 30px;
+    padding: 22px 20px 24px;
   }
   .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-details h2 {
-    margin-bottom: 14px;
-    font-size: clamp(1.7rem, 7vw, 2.25rem);
+    display: -webkit-box;
+    overflow: hidden;
+    margin-bottom: 12px;
+    font-size: clamp(1.55rem, 6vw, 2rem);
+    line-height: 1.12;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
   .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-details p {
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: 1.6;
+    -webkit-line-clamp: 4;
+  }
+  .blog-slider .bloghomeSwiper .swiper-slide > .row .bloghomeSwiper-pic img {
+    max-height: 240px;
   }
   .blog-slider .bloghomeSwiper .swiper-pagination {
-    margin: 20px 22px 22px !important;
+    margin: 16px 20px 18px !important;
   }
   .blog-slider > .read-more {
     justify-content: center;
