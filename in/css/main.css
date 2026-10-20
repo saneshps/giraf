@@ -19120,16 +19120,19 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   align-items: center;
 }
 .footer-area #contact-info {
+  width: 100%;
   justify-content: flex-end;
 }
 .footer-area #contact-info .links {
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 5px;
 }
 .footer-area #contact-info .links a {
   position: relative;
   display: block;
+  flex: 0 0 38px;
   color: #C5C5C5;
   font-size: 1rem;
   text-decoration: none;
@@ -19140,8 +19143,8 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
 .footer-area #contact-info .links a div {
   position: relative;
   display: block;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   transition: transform 0.2s ease;
 }
 .footer-area #contact-info .links a span {
@@ -19238,14 +19241,37 @@ html:has(link[rel=canonical][href$="/in/services.php"]) body .lets-talk-area .ma
   }
   .footer-area .footer-third {
     margin-top: 0;
+    align-items: flex-start;
     padding-top: 24px;
+    text-align: left;
   }
   .footer-area .footer-third h4 {
     margin-top: 0;
     font-size: 1.35rem;
   }
+  .footer-area .footer-third h4::after {
+    right: auto;
+    left: 0;
+    transform: none;
+  }
   .footer-area .footer-third .social-links {
     margin-top: 12px;
+  }
+  .footer-area #contact-info,
+  .footer-area #contact-info .links {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 374px) {
+  .footer-area #contact-info .links {
+    gap: 4px;
+  }
+  .footer-area #contact-info .links a {
+    flex-basis: 32px;
+  }
+  .footer-area #contact-info .links a div {
+    width: 32px;
+    height: 32px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
