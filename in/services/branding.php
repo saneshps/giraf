@@ -82,6 +82,7 @@
     </script>
     <!-- CookieConsent -->
   <link rel="stylesheet" href="../css/branding.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="product-animation-page branding-page">
@@ -479,6 +480,11 @@
                                 </div>
 
                                 <p class="cta-form-status" id="cta_form_status" role="status" aria-live="polite" hidden></p>
+                                <br>
+                                <br>
+
+                                  <div class="g-recaptcha" data-sitekey="6Le7ggIrAAAAAJun6e28-mI0moO5OwQHzvENAt9f"> Giraf Live </div>
+                                   
 
                                 <button type="submit" class="cta-submit">
                                     Get in Touch
