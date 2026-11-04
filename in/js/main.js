@@ -221,6 +221,12 @@ if (typeof Swiper !== 'undefined') {
             return;
         }
 
+        var captchaResponse = form.querySelector('[name="g-recaptcha-response"]');
+        if (captchaResponse && !captchaResponse.value.trim()) {
+            showStatus('error', 'Please complete the reCAPTCHA verification.');
+            return;
+        }
+
         clearStatus();
 
         if (submitBtn) {
